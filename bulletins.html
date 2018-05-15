@@ -1,0 +1,50 @@
+---
+mnemonic: bulletins
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Bulletins
+open_graph_title: >
+  Current and Past Bulletins for
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  The weekly Bulletin covers the life of our parish.
+  Find links to the latest and past Bulletins.
+---
+
+{% assign bulletins = site.data.bulletins %}
+{% assign tagged_latest = false %}
+
+<section id="bulletins" class="page-container">
+  <h1 class="page-title">{{ bulletins.title }}</h1>
+  <p class="page-descriptive">{{ bulletins.descriptive }}</p>
+  {% for year in bulletins.issues %}
+  <section class="bulletins-year">
+    <h1>{{ year.year }}</h1>
+    {% for month in year.months %}
+    <section class="bulletins-month">
+      <h1>{{ month.month }}</h1>
+      <div class="pure-g">
+        {% for bulletin in month.bulletins %}
+        <div class="bulletins-bulletin pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3">
+          <a target="_blank" class="bulletins-bulletin-issue" href="{{ bulletin.link }}">
+            {{ month.month }}&nbsp;{{ bulletin.date }}&nbsp;&ndash; {{ bulletin.title }}
+            {% if tagged_latest == false %}
+            <span class="bulletins-bulletin-latest">Latest</span>
+            {% assign tagged_latest = true %}
+            {% endif %}
+          </a>
+          <div>
+            {% if bulletin.inserts %}<div>Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</div>{% endif %}
+            {% for insert in bulletin.inserts %}
+            <a target="_blank" class="bulletins-bulletin-insert" href="{{ insert.link }}">{{ insert.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </section>
+  {% endfor %}
+</section>

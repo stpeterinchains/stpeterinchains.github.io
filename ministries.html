@@ -1,0 +1,24 @@
+---
+mnemonic: ministries
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Ministries
+open_graph_title: >
+  Ministry Profiles for
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  Profiles of the Ministry groups within our parish.
+---
+
+{% assign ministries = site.data.ministries %}
+
+<section id="ministries" class="page-container">
+  <h1 class="page-title">{{ ministries.title }}</h1>
+  <p class="page-descriptive">{{ ministries.descriptive }}</p>
+
+  <h2 style="margin:0;font-weight:300;font-size:1.5rem;color:crimson;">Work in&ndash;progress</h2>
+  <img style="margin:1rem 0;object-fit:contain;" src="{{ 'work-in-progress.jpg' | prepend: site.images_path | relative_url }}">
+  <h3 style="margin:0;font-weight:400;font-size:1rem;font-style:italic;color:green;">As above, so below; and as below, so above</h2>
+  <h4 style="margin:0;font-weight:300;font-size:0.9rem;font-style:italic;color:green;">Hermes</h3>
+</section>

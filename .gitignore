@@ -1,0 +1,7 @@
+**/.DS_Store
+.jekyll-metadata
+.vscode
+Gemfile.lock
+media
+temp
+_site

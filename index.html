@@ -1,0 +1,69 @@
+---
+mnemonic: index
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Home
+open_graph_title: >
+  Home of
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  Everyone is welcome at our beautiful Cathedral.
+  We hold numerous holy masses and other events daily.
+  Join our loving faith community today!
+---
+
+<!-- SCHEDULE -->
+
+{% assign schedule = site.data.schedule %}
+
+<section id="index-schedule">
+  <h1>{{ schedule.title }}</h1>
+  {% for event in schedule.events %}
+  {% if event.homepage %}
+  <div>
+    <span class="index-schedule-title">{{ event.title }}</span>
+    {% for day in event.days %}
+    <span class="index-schedule-days-times">
+      <span class="index-schedule-day">{{ day.day | replace: '--', '&ndash;' }}</span>
+      {% for time in day.times %}
+      <span class="index-schedule-time">{{ time | replace: '--', '&ndash;' }}</span>
+      {% endfor %}
+    </span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endfor %}
+  <div id="index-schedule-more"><a href="{{ '/schedule.html' | relative_url }}">More</a></div>
+</section>
+
+<!-- SOCIAL MEDIA & MAP -->
+
+{% assign social = site.data.index.social %}
+
+<section id="social">
+  <div id="social-logos">
+    {% for app in social.apps %}
+    <a target="_blank" href="{% if app.link %}{{ app.link }}{% else %}javascript:void(0){% endif %}"><img src="{{ app.logo | prepend: site.social_images_path | relative_url }}"></a>
+    {% endfor %}
+  </div>
+  <div id="social-message">{{ social.message }}</div>
+</section>
+
+<!-- FORMED -->
+
+{% assign access_code = site.data.index.formed_access_code %}
+
+<a id="formed" target="_blank" href="https://formed.org/">
+  <img src="{{ 'formed-logo.png' | prepend: site.images_path | relative_url }}">
+  <div>Our parishioners may register on the site using Access&nbsp;Code&nbsp;<strong>{{ access_code }}</strong></div>
+</a>
+
+<!-- CALL TO ACTION -->
+
+{% assign cta = site.data.index.call_to_action %}
+
+<section id="call-to-action">
+  <iframe src="https://www.youtube.com/embed/{{ cta.video_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div id="call-to-action-message">{{ cta.message }}</div>
+</section>

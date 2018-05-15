@@ -1,0 +1,68 @@
+# Site
+
+# Locations
+
+#source
+#destination
+#collections_dir
+#plugins_dir
+#layouts_dir
+#data_dir
+#includes_dir
+
+styles_path:           "/styles/"
+scripts_path:          "/scripts/"
+images_path:           "/images/"
+slideshow_path:        "/images/slideshow/"
+social_images_path:    "/images/social/"
+schedule_images_path:  "/images/schedule/"
+bulletin_images_path:  "/images/bulletins/"
+clergy_images_path:    "/images/clergy/"
+ministry_images_path:  "/images/ministries/"
+sacrament_images_path: "/images/sacraments/"
+history_images_path:   "/images/history/"
+
+
+
+# Build
+
+#url: "https://stpeterspeterborough.ca"
+#baseurl: ""
+
+timezone: America/Toronto
+exclude: ["media", "temp"]
+#include
+#keep_files
+#encoding
+#safe
+
+future: true
+#show_drafts
+#unpublished
+#limit_posts
+strict_front_matter: true
+
+#permalink
+#paginate_path
+
+#excerpt_separator
+#markdown
+#highlighter
+#whitelist
+#plugins
+
+#lsi
+#incremental
+#profile
+
+#quiet
+#verbose
+
+
+
+# Server
+
+#port
+#host
+#detach
+#show_dir_listing

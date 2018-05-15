@@ -1,0 +1,383 @@
+---
+---
+
+
+
+/*** PAGE: INDEX ***/
+
+
+/* SECTION: SCHEDULE */
+
+#index-schedule {
+  text-align: center;
+}
+
+#index-schedule > h1 {
+  margin: 0 5%; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  font-weight: 400; font-size: 0.9rem;
+  color: #333;
+}
+
+#index-schedule > div {
+  padding-top: 0.5rem;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+span.index-schedule-title {
+  padding: 0.1rem 0.4rem;
+  background-color: #f6f6f6;
+  font-weight: 400;
+  color: #999;
+}
+
+span.index-schedule-days-times { display: block; }
+
+span.index-schedule-day {
+  padding-left: 0.75rem;
+  white-space: nowrap;
+  color: #666;
+}
+
+span.index-schedule-time {
+  padding-left: 0.25rem;
+  white-space: nowrap;
+  color: #999;
+}
+
+#index-schedule-more { padding-top: 0.5rem; }
+
+#index-schedule-more > a {
+  font-weight: 400; font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+#index-schedule-more > a:hover { color: skyblue; }
+
+@media screen and (min-width: 48rem) {
+  #index-schedule > h1 { font-size: 1rem; }
+  #index-schedule > div { font-size: 1rem; }
+  #index-schedule-more > a { font-size: 1rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #index-schedule > h1 { margin: 0 10%; font-size: 1.1rem; }
+  #index-schedule > div { padding-top: 0.75rem; font-size: 1.1rem; }
+  span.index-schedule-days-times { display: inline; }
+  #index-schedule-more > a { font-size: 1.1rem; }
+}
+
+
+/* SECTION: SOCIAL MEDIA */
+
+#social {
+  margin: 3rem 5% 0 5%;
+  text-align: center;
+}
+
+#social-logos > a { margin-right: 5%; filter: grayscale(0.5); }
+#social-logos > a:last-of-type { margin: 0 0 0 8%; }
+
+#social-logos > a > img { width: 36px; height: 36px; }
+
+#social-message {
+  margin-top: 0.25rem; padding-top: 0.25rem;
+  border-top: 2px solid #eee;
+  font-weight: 400; font-size: 0.9rem;
+  color: #333;
+}
+
+@media screen and (min-width: 35.5rem) {
+  #social-logos > a > img { width: 45px; height: 45px; }
+}
+
+@media screen and (min-width: 48rem) {
+  #social-logos > a > img { width: 54px; height: 54px; }
+  #social-message { font-size: 1rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #social { margin-left: 10%; margin-right: 10%; }
+  #social-logos > a > img { width: 72px; height: 72px; }
+  #social-message { font-size: 1.1rem; }
+}
+
+
+/* SECTION: FORMED */
+
+#formed {
+  display: block;
+  margin: 2rem 0 3rem 0;
+  text-align: center; text-decoration: none;
+  color: #666;
+}
+
+#formed > img {
+  width: 100%; max-width: 435px;
+  object-fit: contain;
+  filter: grayscale(0.5);
+}
+
+#formed > div {
+  margin-top: 0.25rem;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+
+/* SECTION: CALL TO ACTION */
+
+#call-to-action {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#call-to-action > iframe { width: 240px; height: 135px; }
+@media screen and (min-width: 48rem) { #call-to-action > iframe { width: 560px; height: 315px; } }
+
+#call-to-action-message {
+  margin: 0.5rem 10%;
+  font-weight: 300; font-size: 0.9rem;
+  color: #999;
+}
+
+@media screen and (min-width: 48rem) {
+  #call-to-action-message { font-size: 1rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #call-to-action-message { font-size: 1.1rem; }
+}
+
+@media screen and (min-width: 80rem) {
+  #call-to-action-message { margin-left: 15%; margin-right: 15%; }
+}
+
+
+
+/*** COMMON PAGE STYLES ***/
+
+section.page-container {
+  margin: 0 5%;
+}
+
+h1.page-title {
+  margin: 0;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
+  color: black; text-shadow: -1px 1px 2px #ccc;
+}
+
+p.page-descriptive {
+  margin: 1rem 0 2rem 0;
+  font-weight: 300; font-size: 0.9rem;
+  color: #666;
+}
+
+@media screen and (min-width: 48rem) {
+  h1.page-title { font-size: 1.75rem; }
+  p.page-descriptive { font-size: 1rem; }
+}
+
+@media screen and (min-width: 64rem) {}
+@media screen and (min-width: 80rem) {}
+
+
+
+/*** PAGE: SCHEDULE ***/
+
+section.schedule-event { margin-top: 2rem; font-size: 0.9rem; }
+
+section.schedule-event > div.pure-g > div { box-sizing: border-box; }
+
+div.schedule-event-image { text-align: right; padding-right: 5%; }
+div.schedule-event-image > img { display: none; }
+
+h1.schedule-event-text-title {
+  margin: 0;
+  font-weight: 400; font-size: 0.9rem;
+  color: #333;
+}
+
+p.schedule-event-text-descriptive {
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: 300;
+  color: #999;
+}
+
+div.schedule-event-text-day {
+  margin: 0.25rem 0 0 1rem;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #666;
+}
+
+div.schedule-event-text-time {
+  margin-left: 2rem;
+  white-space: nowrap;
+  font-weight: 300;
+  color: #999;
+}
+
+@media screen and (min-width: 35.5rem) {
+  div.schedule-event-text-day { margin-left: 0; }
+  div.schedule-event-text-time { margin-left: 1rem; }
+
+  div.schedule-event-image { margin-top: 0.25rem; }
+
+  div.schedule-event-image > img {
+    display: inline;
+    width: 180px; height: 101px;
+    object-fit: cover;
+    filter: contrast(50%) brightness(1.5);
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  div.schedule-event-image { margin-top: 0.5rem; }
+  p.schedule-event-text-descriptive { margin-right: 5%; }
+}
+
+@media screen and (min-width: 64rem) {
+  section.schedule-event { font-size: 1rem; }
+  div.schedule-event-image > img { width: 240px; height: 135px; }
+  h1.schedule-event-text-title { font-size: 1rem; }
+}
+
+@media screen and (min-width: 80rem) {
+  p.schedule-event-text-descriptive { margin-right: 10%; }
+  div.schedule-event-image > img { width: 280px; height: 158px; }
+}
+
+
+
+/*** PAGE: BULLETINS ***/
+
+section.bulletins-year > h1 {
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #ccc;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+section.bulletins-month > h1 {
+  margin: 1rem 0 0.25rem 1rem;
+  font-weight: 300; font-size: 0.9rem;
+  color: #999;
+}
+
+section.bulletins-month > div.pure-g > div { box-sizing: border-box; }
+
+a.bulletins-bulletin-issue {
+  display: block;
+  margin: 0.25rem 0 0 2rem;
+  font-weight: 300; font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+span.bulletins-bulletin-latest {
+  margin-left: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  background-color: #eee;
+  color: #333;
+}
+
+div.bulletins-bulletin > div > div {
+  margin: 0.15rem 0 0 3rem;
+  font-weight: 400; font-size: 0.8rem;
+  color: #999;
+}
+
+a.bulletins-bulletin-insert {
+  display: block;
+  margin: 0rem 0 0 3.5rem;
+  font-weight: 300; font-size: 0.8rem;
+  text-decoration: none;
+  color: #333;
+}
+
+div.bulletins-bulletin a:hover { color: skyblue; }
+
+
+
+/*** PAGE: CLERGY ***/
+
+section.clergy-member { margin-top: 2rem; font-size: 0.9rem; }
+
+section.clergy-member > div.pure-g > div { box-sizing: border-box; }
+
+div.clergy-member-image { text-align: right; padding-right: 5%; }
+div.clergy-member-image > img { display: none; }
+
+h1.clergy-member-text-identity {
+  margin: 0;
+  font-weight: 400; font-size: 0.9rem;
+  color: #333;
+}
+
+span.clergy-member-text-title { font-weight: 300; font-style: italic; color: #999; }
+span.clergy-member-text-name { margin-left: 0.1rem; font-weight: 600; color: #333; }
+span.clergy-member-text-position { margin-left: 0.5rem; font-weight: 300; color: #666; }
+
+p.clergy-member-text-bio {
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: 300;
+  color: #999;
+}
+
+div.clergy-member-text-contact { margin-top: 0.5rem; }
+
+div.clergy-member-text-contact > a {
+  margin-right: 1rem;
+  font-weight: 300; font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+div.clergy-member-text-contact > a:last-of-type { margin-left: 0; white-space: nowrap; }
+div.clergy-member-text-contact > a:hover { color: skyblue; }
+
+@media screen and (min-width: 35.5rem) {
+  div.clergy-member-image { margin-top: 0.25rem; }
+
+  div.clergy-member-image > img {
+    display: inline;
+    width: 180px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  p.clergy-member-text-bio { margin-right: 5%; }
+}
+
+@media screen and (min-width: 64rem) {
+  div.clergy-member-image > img { width: 240px; }
+  h1.clergy-member-text-identity { font-size: 1.25rem; }
+  div.clergy-member-text-contact, section.clergy-member-text-bio { font-size: 1rem; }
+  span.clergy-member-text-name { margin-left: 0.2rem; }
+  span.clergy-member-text-position { margin-left: 1rem; }
+  div.clergy-member-text-contact > a { margin-right: 1.25rem; }
+
+  /* h1.schedule-event-text-title { font-size: 1rem; } */
+}
+
+@media screen and (min-width: 80rem) {
+  div.clergy-member-image > img { width: 280px; }
+  p.clergy-member-text-bio { margin-right: 10%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*** PAGE: MINISTRIES ***/
+/*** PAGE: SACRAMENTS ***/
+/*** PAGE: HISTORY ***/

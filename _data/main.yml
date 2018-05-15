@@ -1,0 +1,83 @@
+---
+
+welcome:
+  title: >
+    Rediscover&nbsp;faith,
+    and&nbsp;a&nbsp;loving&nbsp;community
+  message: >
+    Whether you're a life-long&nbsp;Christian, curious about the
+    Catholic&nbsp;faith, or have heard the whisper of the
+    <span class="deity">Holy&nbsp;Spirit</span> in your life and want to
+    know more about <span class="deity">Christ</span>'s&nbsp;message, our
+    beautiful Cathedral is a welcoming&nbsp;place for&nbsp;everyone.
+    Come,&nbsp;attend a mass or one of our devotions or other faith events.
+    <strong>Everyone&nbsp;is&nbsp;welcome.</strong>
+
+slideshow:
+  -
+    image: mural-white.jpg
+    caption: Optional caption text
+  -
+    image: cathedral-exterior-interior.jpg
+    caption: Our beautiful Cathedral
+  -
+    image: teamwork.jpg
+    caption: Team effort <span style="color:yellow">wins</span> the day
+  -
+    image: monty-python-holy-handgrenade.jpg
+    caption: >
+      First shalt thou take out the <em>Holy&nbsp;Pin</em>.<br>
+      Then, lobbest thou, thy <em>Holy&nbsp;Handgrenade</em>!
+
+navbar:
+  internal:
+    -
+      title: Home
+      mnemonic: index
+      link: /
+    -
+      title: Schedule
+      mnemonic: schedule
+      link: /schedule.html
+    -
+      title: Bulletins
+      mnemonic: bulletins
+      link: /bulletins.html
+    -
+      title: Clergy
+      mnemonic: clergy
+      link: /clergy.html
+    -
+      title: Ministries
+      mnemonic: ministries
+      link: /ministries.html
+    -
+      title: Sacraments
+      mnemonic: sacraments
+      link: /sacraments.html
+    -
+      title: History
+      mnemonic: history
+      link: /history.html
+  external:
+    -
+      title: Donate at Canada&nbsp;Helps
+      link: https://www.canadahelps.org/en/charities/cathedral-of-st-peter-in-chains/
+    -
+      title: Peterborough Diocese
+      link: https://www.peterboroughdiocese.org/en/index.aspx
+    -
+      title: Peterborough Vocations
+      link: https://www.ptbovocations.ca/en/index.aspx
+    -
+      title: From the Vineyard
+      link: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
+    -
+      title: The Catholic Herald
+      link: https://www.peterboroughdiocese.org/en/about-us/magazine.aspx
+    -
+      title: Canadian Conference of Catholic Bishops
+      link: http://www.cccb.ca/site/
+    -
+      title: The Vatican
+      link: http://w2.vatican.va/content/vatican/en.html

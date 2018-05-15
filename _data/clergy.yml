@@ -1,0 +1,64 @@
+---
+
+title: Clergy
+descriptive: >
+  Our parish is blessed to have men dedicated to the call of Christian
+  ministry. Each of our faith leaders brings his own conviction and dedication
+  to the faith life of the Cathedral and its parishioners.
+
+clergy:
+
+  -
+    last_name: Miehm
+    first_name: Daniel
+    title: Most Reverend
+    position: Bishop
+    image: bp-miehm-portrait.jpg
+    bio: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    contact:
+      -
+        platform: Website
+        link: https://www.peterboroughdiocese.org/en/about-us/bishop.aspx
+
+  -
+    last_name: Lynch
+    first_name: Thomas
+    title: Father
+    position: Rector
+    image: fr-lynch-portrait.jpg
+    bio: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    contact:
+      -
+        platform: E-mail
+        link: rector@stpeterspeterborough.ca
+
+  -
+    last_name: Smullen
+    first_name: Damian
+    title: Father
+    position: Vice-Rector
+    bio: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    contact:
+      -
+        platform: E-mail
+        link: vicerector@stpeterspeterborough.ca
+
+  -
+    last_name: Rathinaswamy
+    first_name: John
+    title: Father
+    position: Associate&nbsp;Pastor
+    image: fr-rathinaswamy-portrait.jpg
+    bio: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    contact:
+      -
+        platform: E-mail
+        link: associate@stpeterspeterborough.ca

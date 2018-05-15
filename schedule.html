@@ -1,0 +1,42 @@
+---
+mnemonic: schedule
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Schedule
+open_graph_title: >
+  Regular Schedule for
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  Listing of masses, devotions, confessions, and other special events
+  held weekly and throughout the year.
+---
+
+{% assign schedule = site.data.schedule %}
+
+<section id="schedule" class="page-container">
+  <h1 class="page-title">{{ schedule.title }}</h1>
+  <p class="page-descriptive">{{ schedule.descriptive }}</p>
+  {% for event in schedule.events %}
+  {% capture x %}{% cycle 'odd', 'even' %}{% endcapture %}
+  <section class="schedule-event">
+    <div class="pure-g">
+      {% if x == 'odd' or x == 'even' %}
+      <div class="schedule-event-image pure-u-1 pure-u-sm-2-5"><img src="{{ event.image | prepend: site.schedule_images_path | relative_url }}"></div>
+      <div class="schedule-event-text pure-u-1 pure-u-sm-3-5">
+        <h1 class="schedule-event-text-title">{{ event.title }}</h1>
+        <p class="schedule-event-text-descriptive">{{ event.descriptive }}</p>
+        {% for day in event.days %}
+        <div>
+          <div class="schedule-event-text-day">{{ day.day | replace: '--', '&ndash;' }}</div>
+          {% for time in day.times %}
+          <div class="schedule-event-text-time">{{ time | replace: '--', '&ndash;' }}</div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+</section>

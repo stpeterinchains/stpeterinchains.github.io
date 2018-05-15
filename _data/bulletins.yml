@@ -1,0 +1,177 @@
+---
+
+title: Bulletins
+descriptive: >
+  The weekly Bulletin is the go-to source covering the life of
+  our parish. If you missed your copy of this week's printed Bulletin,
+  find links below to the latest, as well as to past Bulletins.
+
+issues:
+
+  -
+    year: 2018
+    months:
+
+      -
+        month: May
+        bulletins:
+          -
+            date: 6
+            title: Sixth Sunday of Easter
+            link: https://drive.google.com/drive/folders/0B845JxwWvJX1fjlBTFBQUlBVSjBNdnBaRHpEb1h4YXNvbnE0VG1zTG5FVEN5d3pCbzFyUjg
+
+      -
+        month: April
+        bulletins:
+          -
+            date: 29
+            title: Fifth Sunday of Easter
+            link: https://drive.google.com/drive/folders/0B845JxwWvJX1fjZpRWZTclQtNVRSVDZFa1Q2TXlaWWh2WkE2V0puWFNtV1dybXZRRmdVNHc
+          -
+            date: 22
+            title: Fourth Sunday of Easter
+            link: https://drive.google.com/file/d/1OcpH4QaquWp6wN1dWV5m3LMq-IB5UK29/view
+          -
+            date: 15
+            title: Third Sunday of Easter
+            link: https://drive.google.com/file/d/1pQOBD4coGF964wrQm4OOTyvNEWgHa-Rz/view
+            inserts:
+              -
+                title: Spring Fashion Show
+                link: https://drive.google.com/file/d/1a1V47olcLFv2RnBHDCrg9qCzdmauwrlT/view
+              -
+                title: CWL Homelessness Project for Youth in Need
+                link: https://drive.google.com/file/d/1ZEB3vnrJ47UkjkMrGSv1xpQyb38yQ6-d/view
+          -
+            date: 8
+            title: Divine Mercy Sunday
+            link: https://drive.google.com/file/d/1AfoDaAHjpPfEvUxZBfu9VPt6DNqx4R25/view
+          -
+            date: 1
+            title: Easter Sunday
+            link: https://drive.google.com/file/d/1P_WqvVdMfxQVd_2XY7Fa3pOqLF5bAJFc/view
+            inserts:
+              -
+                title: The Divine Mercy Novena
+                link: https://drive.google.com/file/d/1kR8Z31eu4OgRW26lhzwFwE_jiXPLhOl1/view
+
+      -
+        month: March
+        bulletins:
+          -
+            date: 25
+            title: Palm Sunday of the Passion of the Lord
+            link: https://drive.google.com/file/d/1wdVbIehTshRupmUSoYn0iDcMvsewVYMO/view
+          -
+            date: 18
+            title: Fifth Sunday of Lent
+            link: https://drive.google.com/file/d/1tpXFSOyjjyCLm2xgiQh2gjIEFh55DyWH/view
+            inserts:
+              -
+                title: Knights of Columbus Knights of Columbus
+                link: https://drive.google.com/file/d/1hXj6sHaITDx5amKXpHVOoZ6tFKuZp8JK/view
+              -
+                title: Tenebrae&nbsp;&ndash; The Office of Darkness
+                link: https://drive.google.com/file/d/1Cvs7XguItlSaY97RuXFhEw2TbiJVZyB2/view
+          -
+            date: 11
+            title: Fourth Sunday of Lent
+            link: https://drive.google.com/file/d/1fso41g6feiZD8BdmgcOtGTXLQpYB2ejU/view
+            inserts:
+              -
+                title: Weekly Insert
+                link: https://drive.google.com/file/d/1JxDtIavKje5hTvndIXU6R1mW5t6JuW2i/view
+          -
+            date: 4
+            title: Third Sunday of Lent
+            link: https://drive.google.com/file/d/1DtQ66zUU7Kz_UlFKjaG2MCGBVy_xySjJ/view
+            inserts:
+              -
+                title: >
+                  Formed.org<br>
+                  “Theology of the Body Certificate Series”
+                link: https://drive.google.com/file/d/1hVBSH-ZUjWn7mqpT1gHHoQuBqpT1iT5p/view
+
+      -
+        month: February
+        bulletins:
+          -
+            date: 25
+            title: Second Sunday of Lent
+            link: https://drive.google.com/file/d/1VD8wYd3GbEi_TMYsI7JogA2nq5jkqG-f/view
+          -
+            date: 18
+            title: First Sunday of Lent
+            link: https://drive.google.com/file/d/1Sc51EcOYzvppwEFoNkSM697C_Bfxpaz0/view
+          -
+            date: 11
+            title: Sixth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/1ntrcyBcjlytdZDg_yUAn5MqqhS8TnlPN/view
+            inserts:
+              -
+                title: Weekly Insert
+                link: https://drive.google.com/file/d/1vzOL5yUNafjrOJCRf71RJFFEWjS2iEtL/view
+          -
+            date: 4
+            title: Fifth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/1VvZgXosoyMj__P_DPq9FIOU5vyPofNCC/view
+
+      -
+        month: January
+        bulletins:
+          -
+            date: 28
+            title: Fourth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/1omw0u51TDAojcm6v42hcjjEprEcVh_1I/view
+            inserts:
+              -
+                title: Shrove Tuesday Pancake Supper
+                link: https://drive.google.com/file/d/1omwkss921mjzyEYflnkR50B1nrzWjpmg/view
+          -
+            date: 21
+            title: Third Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/1qCWpvwKZp11FMk8NLsYZ7EZrf_Vj1E8G/view
+            inserts:
+              -
+                title: Weekly Insert
+                link: https://drive.google.com/file/d/1N1RaNWByqIkUeTkRRGoMLyvWlxKCyE33/view
+          -
+            date: 14
+            title: Second Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/1ePfSMppVzgxfGB5nEMpaayEgkga7Zk7b/view
+          -
+            date: 7
+            title: The Epiphany of the Lord
+            link: https://drive.google.com/file/d/1e8Q1oRtehs9A-gFD26iFUk4vU8UMb1Uy/view
+
+  -
+    year: 2017
+    months:
+
+      -
+        month: December
+        bulletins:
+          - &christmas2017
+            date: 31
+            title: Holy Family of Jesus, Mary, and Joseph
+            link: https://drive.google.com/file/d/1vOHe1vfRXG0--3lMpN6vsUHlwjn0YHPN/view
+          -
+            <<: *christmas2017
+            date: 25
+            title: Nativity of the Lord (Christmas Day)
+          -
+            date: 24
+            title: Fourth Sunday of Advent
+            link: https://drive.google.com/file/d/1oPXAg4azUyvYhQGH1pSekOX42l7vDbsr/view
+          -
+            date: 17
+            title: Third Sunday of Advent
+            link: https://drive.google.com/file/d/19vd9Yba5m5UhQ17tMuBKrknvEf2J0eT1/view
+          -
+            date: 10
+            title: Second Sunday of Advent
+            link: https://drive.google.com/file/d/14BzQXTzfqt9v3Yptjc340MX5ixHjNzA_/view
+          -
+            date: 3
+            title: First Sunday of Advent
+            link: https://drive.google.com/file/d/1h6Z-hS1XMq6tt-mr6XXdbah-v0bWwlKA/view

@@ -1,0 +1,116 @@
+---
+
+-
+  - section: St Peter-in-Chains Parish
+    subsections:
+      - subsection: Leadership
+        items:
+          - item: Fr Thomas Lynch, Rector
+            mail: rector@stpeterspeterborough.ca
+          - item: Fr Damien Smullen, Vice-Rector
+            mail: vicerector@stpeterspeterborough.ca
+          - item: Fr John Rathinaswamy, Associate&nbsp;Pastor
+            mail: associate@stpeterspeterborough.ca
+      - subsection: Office
+        items:
+          - item: Office Administrator
+            text: Kathy Romard
+          - item: Phone
+            text: 705-745-4681
+          - item: E-mail
+            mail: office@stpeterspeterborough.ca
+          - item: Hours
+            text: |
+              Monday&nbsp;-&nbsp;Thursday: 9:00&nbsp;AM&nbsp;-&nbsp;12:30&nbsp;PM<br>
+              Monday&nbsp;-&nbsp;Thursday: 1:30&nbsp;PM&nbsp;-&nbsp;5:00&nbsp;PM<br>
+              Friday,&nbsp;Saturday,&nbsp;Sunday: Closed
+          - item: Address
+            text: |
+              411 Reid St<br>
+              Peterborough, ON<br>
+              K9J 6Y8
+      - subsection: St Peter-in-Chains Fundraising Committee
+        items:
+          - item: E-mail
+            mail: payitforwardspic@gmail.com
+      - subsection: St Peter-in-Chains Perpetual Fund
+        items:
+          - item: President
+            text: Mary Catherine Masciangelo
+          - item: E-mail
+            mail: the4masciangelos@yahoo.ca
+
+-
+  - section: Peterborough Diocese
+    subsections:
+      - subsection: Leadership
+        items:
+          - item: Most Rev Daniel Miehm
+            text: Bishop
+          - item: Fr Joseph J. Moran
+            text: Vicar General
+      - subsection: Office
+        items:
+          - item: Address
+            text: |
+              Peterborough Diocese<br>
+              Chancery Office<br>
+              350 Hunter St W, PO Box 175<br>
+              Peterborough, ON<br>
+              K9J 6Y8
+          - item: Phone
+            text: 705-745-5123
+          - item: Fax
+            text: 705-745-2555
+          - item: Web
+            link: https://www.peterboroughdiocese.org
+          - item: E-mail
+            mail: chancery@peterboroughdiocese.org
+
+-
+  - section: St Teresa Elementary School
+    subsections:
+      - subsection:
+        items:
+          - item: Phone
+            text: 705-745-0332
+            item: Web
+            link: http://stteresa.pvnccdsb.on.ca/
+  - section: St Peter Secondary School
+    subsections:
+      - subsection:
+        items:
+          - item: Phone
+            text: 705-745-1358
+            item: Web
+            link: http://stteresa.pvnccdsb.on.ca/
+  - section: St Peter's Cemetary Office
+    subsections:
+      - subsection:
+        items:
+          - item: Phone
+            text: 705-742-9951
+          - item: Fax
+            text: 705-742-0344
+          - item: E-mail
+            mail: stpeterscemetery@bellnet.ca
+  - section: Hall Rentals
+    subsections:
+      - subsection:
+        items:
+          - item: Contact
+            text: Ken Richardson
+          - item: Contact
+            text: Bob Blakely
+          - item: Phone
+            text: 705-875-0404
+  - section: St Vincent de Paul
+    subsections:
+      - subsection: Food Pantry
+        items:
+          - item: Phone
+            text: 705-874-3937
+      - subsection: Vinnies
+        items:
+          - item: Phone
+            text: 705-742-2585

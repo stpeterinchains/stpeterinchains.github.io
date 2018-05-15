@@ -1,0 +1,24 @@
+---
+
+social:
+  message: Join us on social media, and in the real world
+  apps:
+    -
+      link: https://www.facebook.com/CathedralSaintPeterInChains/
+      logo: facebook-logo.png
+    -
+      logo: twitter-logo.png
+    -
+      logo: youtube-logo.png
+    -
+      logo: google-maps-logo.png
+      link: https://goo.gl/maps/Vz73TcvLW8P2
+
+call_to_action:
+  video_id: Bm3nVTF90mw
+  message: >
+    This is a sample call-to-action. Its presence demonstrates an
+    embedded&nbsp;YouTube&nbsp;video.<br>
+    Substitute for parish-specific content.
+
+formed_access_code: MT9YZ7

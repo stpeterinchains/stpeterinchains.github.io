@@ -1,0 +1,367 @@
+---
+---
+
+/***
+ ***   Cathedral of Saint Peter-in-Chains
+ ***   Peterborough, Ontario
+ ***   CANADA
+ ***
+ ***   Derek Coulter <sdohtem [at] gmail.com>
+ ***   May 2018
+ ***/
+
+
+
+/*** COMMON ***/
+
+
+/* MEDIA QUERY BREAKPOINTS */
+
+/* Pure.css DEFAULTS */
+/*@media screen and (min-width: 35.5rem) {}*/
+/*@media screen and (min-width: 48rem) {}*/
+/*@media screen and (min-width: 64rem) {}*/
+/*@media screen and (min-width: 80rem) {}*/
+
+
+/* BASE STYLES */
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: 'Open Sans', sans-serif; }
+
+.deity { color: #c33; }
+
+
+
+/*** LAYOUT: MAIN ***/
+
+
+/* TEMPORARY DEVICE WIDTH INDICATOR */
+
+#width-indicator {
+  position: fixed; width: 30px; height: 10px; top: 0; right: 0;
+  background-color: yellow;
+}
+
+@media screen and (min-width: 35.5rem) { #width-indicator { background-color: red; } }
+@media screen and (min-width: 48rem) { #width-indicator { background-color: green; } }
+@media screen and (min-width: 64rem) { #width-indicator { background-color: blue; } }
+@media screen and (min-width: 80rem) { #width-indicator { background-color: magenta; } }
+
+
+/* SECTION: BANNER */
+
+#banner {
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+#banner-logo {
+  display: block;
+  height: 60px;
+  margin: 0 auto;
+}
+
+#banner-title > div:nth-child(1) {
+  position: relative; top: 0.85rem;
+  font-weight: 300; font-size: 1rem; letter-spacing: -0.05rem;
+  color: #999; text-shadow: -1px 1px 1px #eee;
+}
+
+#banner-title > div:nth-child(2) {
+  position: relative; top: 0.1rem;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.1rem;
+  color: #666; text-shadow: -1px 1px 2px #ccc;
+}
+
+#banner-title > div:nth-child(2) > span {
+  font-weight: 400; font-size: 2rem; letter-spacing: -0.1rem;
+  color: #333; text-shadow: -1px 1px 2px #999;
+}
+
+#banner-title > div:nth-child(3) {
+  position: relative; top: -0.25rem;
+  font-weight: 300; font-size: 0.75rem;
+  color: #999;
+}
+
+
+@media screen and (min-width: 35.5rem) {
+  #banner { height: 84px; }
+
+  #banner-logo {
+    display: inline;
+    height: 80px;
+    margin: 0 0.5rem 0 0;
+  }
+
+  #banner-title {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+
+  #banner-title > div:nth-child(1) { font-size: 0.85rem; }
+  #banner-title > div:nth-child(2) { font-size: 2rem; }
+  #banner-title > div:nth-child(2) > span { font-size: 2.5rem; }
+
+  #banner-title > div:nth-child(3) {
+    right: 2rem;
+    font-size: 0.65rem;
+    text-align: right;
+  }
+}
+
+
+/* SECTION: WELCOME */
+
+#welcome {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#welcome > h1 {
+  margin: 0 5%;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
+  color: black; text-shadow: -1px 1px 2px #ccc;
+}
+
+#welcome > p {
+  margin: 0.5rem 5% 0 5%;
+  font-weight: 300; font-size: 1rem;
+  color: #666;
+}
+
+#welcome > p > strong { font-weight: 400; color: black; }
+
+@media screen and (min-width: 48rem) { #welcome > p { margin: 0.5rem 10%; } }
+@media screen and (min-width: 64rem) { #welcome > p { margin: 0.5rem 15%; } }
+@media screen and (min-width: 80rem) { #welcome > p { margin: 0.5rem 20%; } }
+
+
+/* SECTION: SLIDESHOW */
+
+#slideshow {
+  position: relative; max-width: 1280px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+div.slideshow-slide { display: none; }
+
+div.slideshow-slide > img { width: 100%; }
+
+div.slideshow-slide > span {
+  box-sizing: border-box;
+  position: absolute; bottom: 20%; left: 5%;
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  background-color: rgba(0,0,0,0.2);
+  font-weight: 600; font-size: 1rem;
+  text-overflow: clip;
+  color: white; text-shadow: 0 0 3px black;
+}
+
+div.slideshow-effect { animation-name: slideshow-effect; animation-duration: 1s; }
+@keyframes slideshow-effect { from {opacity: 0.5} to {opacity: 1} }
+
+#slideshow-previous, #slideshow-next {
+  box-sizing: border-box;
+  position: absolute; top: 50%;
+  margin-top: -2.5rem; padding: 0.5rem 1rem 1rem 1rem;
+  transition: 0.25s ease;
+  font-weight: 400; font-size: 2rem;
+  color: rgba(255,255,255,0.5);
+}
+
+#slideshow-previous {
+  border-radius: 0 3px 3px 0;
+  border-left: none;
+}
+
+#slideshow-next {
+  right: 0;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+#slideshow-previous:hover, #slideshow-next:hover {
+  background-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
+}
+
+#slideshow-indicators {
+  text-align: center;
+}
+
+span.slideshow-indicator {
+  display: inline-block;
+  width: 0.75rem; height: 0.75rem;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #ccc;
+  transition: background-color 0.25s ease;
+}
+
+#slideshow-pause {
+  display: inline-block;
+  width: 0.75rem; height: 0.75rem;
+  margin-left: 8px;
+  transition: background-color 0.25s ease;
+}
+
+span.slideshow-indicator:hover, #slideshow-pause:hover { background-color: black; }
+span.slideshow-indicator-active { background-color: #666; }
+span.slideshow-pause-inactive { background-color: #ccc; }
+span.slideshow-pause-active { background-color: #666; }
+
+@media screen and (min-width: 35.5rem) {
+  div.slideshow-slide > span { font-size: 1.5rem; bottom: 15%; }
+}
+
+
+/* SECTION: NAVIGATION & CONTENT */
+
+#main { margin-top: 1rem; }
+
+#main > div.pure-g > div { box-sizing: border-box; }
+
+#content { padding: 0 2%; }
+
+#navbar { margin-bottom: 2rem; }
+
+#navbar-internal {
+  padding: 1rem 5% 0.5rem 5%;
+  text-align: center;
+}
+
+#navbar-internal > a {
+  padding-right: 0.5rem;
+  font-weight: 300; font-size: 0.9rem;
+  text-decoration: none;
+  cursor: default;
+  color: #999;
+}
+
+#navbar-internal > a:last-of-type { padding-right: 0; }
+#navbar-internal > a:hover { color: skyblue; }
+
+#navbar-internal > a.navbar-internal-current { color: #333; }
+
+#navbar-external {
+  padding: 0.5rem 5% 0 5%;
+  border-top: 2px solid #eee;
+  text-align: center; line-height: 1.5rem;
+}
+
+#navbar-external > a {
+  padding-right: 1rem;
+  font-weight: 300; font-size: 0.9rem;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: default;
+  color: #333;
+}
+
+#navbar-external > a:last-of-type { padding-right: 0; }
+#navbar-external > a:hover { color: skyblue; }
+
+@media screen and (min-width: 48rem) {
+  #main { margin-top: 2rem; }
+
+  #content { border-left: 2px solid #eee; }
+
+  #navbar-internal {
+    padding: 0 10%;
+    text-align: right;
+  }
+
+  #navbar-internal > a {
+    display: block;
+    padding: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  #navbar-internal > a:last-of-type { padding-bottom: 0; }
+
+  #navbar-external {
+    margin-top: 0.5rem; padding: 0.5rem 10% 0 10%;
+    text-align: right; line-height: normal;
+  }
+
+  #navbar-external > a {
+    display: block;
+    padding: 0 0 0.75rem 0;
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  #navbar-internal > a { font-size: 1.1rem; }
+  #navbar-external > a { font-size: 1.1rem; }
+}
+
+
+/* SECTION: CONTACT */
+
+#contact {
+  box-sizing: border-box;
+  margin-top: 3rem; padding: 1rem 5% 2rem 5%;
+  border-top: 2px solid #eee;
+  background-image: linear-gradient(-15deg, #ddd, #fff);
+  overflow-wrap: break-word;
+  color: #333;
+}
+
+.contact-container > h1 {
+  margin: 1rem 5% 0.5rem 0;
+  font-weight: 400; font-size: 0.9rem;
+}
+
+.contact-container > dl { margin: 0; }
+
+.contact-container > dl > h1 {
+  margin: 0.5rem 0 0 1rem;
+  font-weight: 400; font-size: 0.75rem;
+}
+
+.contact-container > dl > dt {
+  margin: 0 0 0 2rem;
+  font-weight: 400; font-size: 0.75rem;
+}
+
+.contact-container > dl > dd {
+  margin: 0 5% 0 3rem;
+  font-weight: 300; font-size: 0.75rem;
+  color: rgba(0,0,0,0.5);
+}
+
+.contact-container > dl > dd > a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.5);
+}
+
+.contact-container > dl > dd > a:hover { text-decoration: underline; }
+
+
+/* SECTION: COLOPHON */
+
+#colophon {
+  padding: 0.5rem 5%;
+  background-color: black;
+  font-weight: 300;
+  color: #999;
+  text-align: center;
+}
+
+#colophon > p { margin: 0; }
+#colophon-copyright { font-size: 0.5rem; }
+#colophon-license { font-size: 0.5rem; }
+#colophon-license > a { text-decoration: none; color: #ccc; }
+#colophon-license > a:hover { color: white; }
+#colophon-attribution { font-size: 0.5rem; }
+#colophon-attribution-cross { color: white; }
+#colophon-attribution-heart { color: red; }
+#colophon-attribution > a { font-weight: 400; text-decoration: none; color: #ccc; }
+#colophon-attribution > a:hover { color: white;}

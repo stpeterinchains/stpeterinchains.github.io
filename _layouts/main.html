@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>{{ page.display_title }}</title>
+
+<meta name="description" content="{{ page.open_graph_description }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="og:url" content="{{ page.url | absolute_url }}">
+<meta name="og:title" content="{{ page.open_graph_title }}">
+<meta name="og:description" content="{{ page.open_graph_description }}">
+<meta name="og:image" content="{{ 'open-graph-share.jpg' | prepend: site.images_path | absolute_url }}">
+<meta name="og:image:type" content="image/jpeg">
+<meta name="og:image:width" content="1200">
+<meta name="og:image:height" content="480">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"> -->
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="{{ 'layout.css' | prepend: site.styles_path | relative_url }}">
+<link rel="stylesheet" href="{{ 'pages.css' | prepend: site.styles_path | relative_url }}">
+<!-- <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | prepend: site.images_path | relative_url }}"> -->
+
+</head>
+
+<body>
+
+<div id="width-indicator"></div>
+
+<!-- BANNER -->
+
+<header id="banner">
+  <img id="banner-logo" src="{{ 'cathedral-logo.png' | prepend: site.images_path | relative_url }}">
+  <div id="banner-title">
+    <div>The&nbsp;Cathedral&nbsp;of</div>
+    <div>Saint <span>Peter&#x2011;in&#x2011;Chains</span></div>
+    <div>Peterborough,&nbsp;Ontario</div>
+  </div>
+</header>
+
+<!-- WELCOME -->
+
+{% if page.mnemonic == 'index' %}
+{% assign welcome = site.data.main.welcome %}
+
+<section id="welcome">
+  <h1>{{ welcome.title }}</h1>
+  <p>{{ welcome.message }}</p>
+</section>
+
+{% endif %}
+
+<!-- SLIDESHOW -->
+
+{% if page.mnemonic == 'index' %}
+{% assign slideshow = site.data.main.slideshow %}
+
+<div id="slideshow">
+  <div id="slideshow-container">
+    {% for slide in slideshow %}
+    <div class="slideshow-slide slideshow-effect">
+      <img src="{{ slide.image | prepend: site.slideshow_path | relative_url }}">
+      <span>{{ slide.caption }}</span>
+    </div>
+    {% endfor %}
+    <a id="slideshow-previous" onclick="slideshow.previous()">&#x00AB;<!-- &#10094; --></a>
+    <a id="slideshow-next" onclick="slideshow.next()">&#x00BB;<!-- &#10095; --></a>
+  </div>
+  <div id="slideshow-indicators">
+    {% for slide in slideshow %}
+    {% assign count = 0 %}
+    <span class="slideshow-indicator" onclick="slideshow.set({% increment slide_index %})"></span>
+    {% endfor %}
+    <span id="slideshow-pause" class="slideshow-pause-inactive" onclick="slideshow.pause()"></span>
+  </div>
+</div>
+
+{% endif %}
+
+<!-- NAVIGATION & CONTENT -->
+
+{% assign navbar = site.data.main.navbar %}
+
+<div id="main">
+  <div class="pure-g">
+    <div id="navbar" class="pure-u-1 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+      <div id="navbar-internal">
+        {% for item in navbar.internal %}
+        <a {% if page.mnemonic == item.mnemonic %}class="navbar-internal-current" {% endif %}href="{{ item.link | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+      <div id="navbar-external">
+        {% for item in navbar.external %}
+        <a target="_blank" class="navbar-item-external" href="{{ item.link }}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-lg-4-5 pure-u-xl-5-6">
+      <!-- PAGE INJECTION -->
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+<footer>
+
+<!-- CONTACT -->
+
+<div id="contact" class="pure-g">
+{% for column in site.data.contacts %}
+  <div class="pure-u-1 pure-u-sm-1-3 contact-column">
+  {% for section in column %}
+    <div class="contact-container">
+      <h1>{{ section.section }}</h1>
+      {% for subsection in section.subsections %}
+      <dl>
+        <h1>{{ subsection.subsection }}</h1>
+        {% for item in subsection.items %}
+          <dt>{{ item.item }}</dt>
+          {% if item.mail %}
+            <dd><a href="mailto:{{ item.mail }}">{{ item.mail }}</a></dd>
+          {% elsif item.link %}
+            <dd><a href="{{ item.link }}">{{ item.link }}</a></dd>
+          {% else %}
+            <dd>{{ item.text }}</dd>
+          {% endif %}
+        {% endfor %}
+      </dl>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+<!-- COLOPHON -->
+
+<div id="colophon">
+  <p id="colophon-copyright">Copyright&nbsp;&copy;&nbsp;2018 Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains</p>
+  <p id="colophon-license">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+  <p id="colophon-attribution"><a href="https://www.facebook.com/sdohtem/" target="_blank">Made</a>&nbsp;with&nbsp;<span id="colophon-attribution-cross">&#x271D;</span><span id="colophon-attribution-heart">&#x2764;</span> in&nbsp;Peterborough</p>
+</div>
+
+</footer>
+
+{% if page.mnemonic == 'index' %}
+<script src="{{ 'main.js' | prepend: site.scripts_path | relative_url }}"></script>
+{% endif %}
+
+</body>
+
+</html>
