@@ -28,8 +28,6 @@
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: 'Open Sans', sans-serif; }
 
-.deity { color: #c33; }
-
 
 
 /*** LAYOUT: MAIN ***/
@@ -54,6 +52,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family
   width: 100%;
   padding: 0.5rem 0;
   text-align: center;
+  background-color: #c33;
 }
 
 #banner-logo {
@@ -65,24 +64,24 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family
 #banner-title > div:nth-child(1) {
   position: relative; top: 0.85rem;
   font-weight: 300; font-size: 1rem; letter-spacing: -0.05rem;
-  color: #999; text-shadow: -1px 1px 1px #eee;
+  color: rgba(255,255,255,0.7); text-shadow: -1px 1px 2px #666;
 }
 
 #banner-title > div:nth-child(2) {
   position: relative; top: 0.1rem;
   font-weight: 300; font-size: 1.5rem; letter-spacing: -0.1rem;
-  color: #666; text-shadow: -1px 1px 2px #ccc;
+  color: rgba(255,255,255,0.8); text-shadow: -1px 1px 2px #666;
 }
 
 #banner-title > div:nth-child(2) > span {
   font-weight: 400; font-size: 2rem; letter-spacing: -0.1rem;
-  color: #333; text-shadow: -1px 1px 2px #999;
+  color: white; text-shadow: -1px 1px 2px #333;
 }
 
 #banner-title > div:nth-child(3) {
   position: relative; top: -0.25rem;
   font-weight: 300; font-size: 0.75rem;
-  color: #999;
+  color: rgba(255,255,255,0.7);
 }
 
 
@@ -118,21 +117,23 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family
 #welcome {
   padding: 1rem 0;
   text-align: center;
+  background-color: #c33;
 }
 
 #welcome > h1 {
   margin: 0 5%;
   font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
-  color: black; text-shadow: -1px 1px 2px #ccc;
+  color: white; text-shadow: -1px 1px 2px #333;
 }
 
 #welcome > p {
   margin: 0.5rem 5% 0 5%;
   font-weight: 300; font-size: 1rem;
-  color: #666;
+  color: rgba(255,255,255,0.75);
 }
 
-#welcome > p > strong { font-weight: 400; color: black; }
+#welcome > p > strong { font-weight: 400; color: black;  color: white; }
+#welcome > p > span.deity { color: white; }
 
 @media screen and (min-width: 48rem) { #welcome > p { margin: 0.5rem 10%; } }
 @media screen and (min-width: 64rem) { #welcome > p { margin: 0.5rem 15%; } }
@@ -145,6 +146,11 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family
   position: relative; max-width: 1280px;
   margin: 0 auto;
   cursor: default;
+}
+
+#slideshow-container {
+  border-top: 5px solid black;
+  background-color: black;
 }
 
 div.slideshow-slide { display: none; }
@@ -190,9 +196,7 @@ div.slideshow-effect { animation-name: slideshow-effect; animation-duration: 1s;
   color: rgba(255,255,255,0.75);
 }
 
-#slideshow-indicators {
-  text-align: center;
-}
+#slideshow-indicators { margin-top: 0.35rem; text-align: center; }
 
 span.slideshow-indicator {
   display: inline-block;
