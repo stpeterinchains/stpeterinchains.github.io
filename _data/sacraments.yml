@@ -1,0 +1,117 @@
+---
+
+title: Sacraments
+descriptive: >
+  The seven Holy Sacraments of the Catholic Church represent the channels
+  by which grace is received by the individual who receives them.
+  Our parish offers preparatory classes for both children and adults in
+  the application of the Sacraments and for initiation in Church.
+  Those interested are invited to complete the respective application
+  forms and to contact the Rectory office.
+
+sacraments:
+
+  -
+    title: RCIA &ndash; Rite of Christian Initiation of Adults
+    anchor: rcia
+    image: rcia.jpg
+    form: RCIA-Application-Form.pdf
+    headline: RCIA sessions begin September
+    text: |
+      Our RCIA sessions will begin on Wednesday, September 6th,
+      from 6:30-8:30 pm, at Mount St. Joseph, located at 1555 Monaghan Road,
+      Peterborough.
+
+      The RCIA sessions (classes) will run until Pentecost 2018.
+      The RCIA process focuses on all things spiritual and intellectual about
+      the Catholic Church. For more information, please contact the
+      Rectory office at 705-745-4681 or speak with a priest after mass.
+
+      Is the Holy Spirit drawing you, a family member, or a friend toward the
+      Great Mystery known as the Catholic Church? If so, the
+      Rite of Christian Initiation of Adults (RCIA) may be for you!
+
+  -
+    title: Baptism
+    anchor: baptism
+    image:
+    form: Baptismal-Application-Form.pdf
+    headline: Children's baptism
+    text: |
+      To arrange an occasion for your child's baptism, please contact the
+      Rectory office with your completed application form.
+
+  -
+    title: Confirmation
+    anchor: confirmation
+    image: confirmation.jpg
+    form:
+    headline: Preparation for Confirmation
+    text: |
+      The typical practice in the Diocese of Peterborough is for children to
+      receive this Sacrament in Grade 7 or older.
+
+      # Dates in preparation for Confirmation
+
+      Occasion        | Date              | Time
+      --------------  | ----------------- | --------
+      Parent/Child Information Night | September 7, 2017 | 7:00 PM
+      1st Session     | September 12, 2017 | 7:00 - 8:30 PM
+      2nd Session     | October 3, 2017    | 7:00 - 8:30 PM
+      3rd Session     | October 17, 2017   | 7:00 - 8:30 PM
+      4th Session     | November 14, 2017  | 7:00 - 8:30 PM
+      5th Session     | December 5, 2017   | 7:00 - 8:30 PM
+      6th Session     | January 30, 2018   | 7:00 - 8:30 PM
+      7th Session     | February 6, 2018   | 7:00 - 8:30 PM
+      8th Session     | February 27, 2018  | 7:00 - 8:30 PM
+      9th Session     | March 20, 2018     | 7:00 - 8:30 PM
+      10th Session    | April 17, 2018     | 7:00 - 8:30 PM
+      Retreat Day     | April 28, 2018     | 10:00 AM - 2:00 PM
+      First Communion | May 20, 2018       | 10:00 AM
+
+      NOTE: Retreat Day location to be announced.
+
+  -
+    title: First Reconciliation and First Communion
+    anchor: reconciliation-communion
+    image: first-communion.jpg
+    form: Registration-Form-Reconciliation1st-Communion.pdf
+    headline: Preparation for First Reconciliation and First Communion
+    text: |
+      Please attend the Parent/Child Information Night on September 7
+      at 7:00 PM in the Cathedral to learn about these crucial rites within the
+      Catholic Church.
+
+      # Dates for First Reconciliation
+
+      Occasion       | Date               | Time     | Location
+      -------------- | ------------------ | -------- | --------
+      1st Session    | September 16, 2017 | 10:00 AM | Columbus Hall
+      2nd Session    | October 21, 2017   | 10:00 AM | Bishop Doyle Hall
+      3rd Session    | November 11, 2017  | 10:00 AM | Bishop Doyle Hall
+      4th Session    | December 9, 2017   | 10:00 AM | Columbus Hall
+      Reconciliation | January 13, 2018   | 10:00 AM | Cathedral of Saint Peter-in-Chains
+
+      Note: Columbus Hall is the smaller hall across from Bishop Doyle Hall.
+      Side entrance off parking lot.
+
+      # Dates for First Communion
+
+      Occasion        | Date              | Time     | Location
+      --------------  | ----------------- | -------- | --------
+      1st Session     | February 10, 2018 | 10:00 AM | Bishop Doyle Hall
+      2nd Session     | March 10, 2018    | 10:00 AM | Bishop Doyle Hall
+      3rd Session     | April 14, 2018    | 10:00 AM | Bishop Doyle Hall
+      4th Session     | May 12, 2018      | 10:00 AM | Bishop Doyle Hall
+      Retreat Day     | June 2, 2018      | 10:00 AM - 2:00 PM | Cathedral of Saint Peter-in-Chains
+      First Communion | June 3, 2018      | 10:30 AM | Cathedral of Saint Peter-in-Chains
+
+  -
+    title: Marriage
+    anchor: marriage
+    image: marriage.jpg
+    form: Baptismal-Application-Form.pdf
+    headline: The Sacrament of Marriage
+    text: |
+      Please make an appointment through the office a minimum of 12 months
+      prior to your planned date of marriage.

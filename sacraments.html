@@ -8,15 +8,41 @@ open_graph_title: >
   Roman Catholic Parish
   in Peterborough, Ontario
 open_graph_description: >
-  The sacraments and rites offered by our parish.
+  The preparations our parish offers for the Holy Sacraments.
 ---
 
-<section id="sacraments" class="page-container">
-  <h1 class="page-title">Sacraments</h1>
-  <p class="page-descriptive">Sacraments</p>
+{% assign sacraments = site.data.sacraments %}
 
-  <h2 style="margin:0;font-weight:300;font-size:1.5rem;color:crimson;">Work in&ndash;progress</h2>
-  <img style="margin:1rem 0;object-fit:contain;" src="{{ 'work-in-progress.jpg' | prepend: site.images_path | relative_url }}">
-  <h3 style="margin:0;font-weight:400;font-size:1rem;font-style:italic;color:green;">When your only tool is a hammer, every problem looks like a nail</h2>
-  <h4 style="margin:0;font-weight:300;font-size:0.9rem;font-style:italic;color:green;">Abraham Maslow</h3>
+<section id="sacraments" class="page-container">
+  <h1 class="page-title">{{ sacraments.title }}</h1>
+  <p class="page-descriptive">{{ sacraments.descriptive }}</p>
+  <div id="sacraments-links">
+    <div id="sacraments-links-heading">On this page</div>
+    {% for sacrament in sacraments.sacraments %}
+    <div class="sacraments-links-link"><a href="#sacrament-{{ sacrament.anchor }}">{{ sacrament.title }}</a></div>
+    {% endfor %}
+  </div>
+  {% for sacrament in sacraments.sacraments %}
+  <section id="{{ sacrament.anchor | prepend: 'sacrament-' }}" class="sacraments-sacrament">
+    {% if sacrament.image %}
+    <div class="sacraments-image"><img src="{{ sacrament.image | prepend: site.sacrament_images_path | relative_url }}"></div>
+    {% endif %}
+    <div class="pure-g">
+      <div class="sacraments-sacrament-title pure-u-1 pure-u-lg-1-4">
+        <h1>{{ sacrament.title }}</h1>
+        {% if sacrament.form %}
+        <a target="_blank" href="{{ sacrament.form | prepend: site.forms_path | relative_url }}">Download&nbsp;Form</a>
+        {% endif %}
+      </div>
+      <div class="sacraments-sacrament-text pure-u-1 pure-u-lg-3-4">
+        {% if sacrament.headline %}
+        <h2 class="sacraments-sacrament-text-headline">{{ sacrament.headline }}</h2>
+        {% endif %}
+        <div class="sacraments-sacrament-text-body">
+          {{ sacrament.text | markdownify }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
 </section>

@@ -370,14 +370,110 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
 
 
 
-
-
-
-
-
-
-
-
 /*** PAGE: MINISTRIES ***/
+
+
+
 /*** PAGE: SACRAMENTS ***/
+
+#sacraments-links {
+  margin: 4rem 0;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+#sacraments-links-heading {
+  margin-bottom: 0.5rem; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  color: #666;
+}
+
+div.sacraments-links-link { margin: 0 0 0.25rem 1rem; }
+div.sacraments-links-link > a { text-decoration: none; color: #333; }
+div.sacraments-links-link > a:last-of-type { padding-right: 0; }
+div.sacraments-links-link > a:hover { color: skyblue; }
+
+section.sacraments-sacrament {
+  margin-top: 4rem;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+div.sacraments-image { display: none; }
+
+section.sacraments-sacrament > div.pure-g > div { box-sizing: border-box; }
+
+div.sacraments-sacrament-title > h1 {
+  margin: 0 0 0.15rem 0;
+  font-weight: 600; font-size: 1rem;
+  color: #333;
+}
+
+div.sacraments-sacrament-title > a {
+  text-decoration: none;
+  color: #666;
+}
+
+div.sacraments-sacrament-title > a:hover { color: skyblue; }
+
+div.sacraments-sacrament-text {
+  margin-top: 0.25rem; padding-top: 1rem;
+  border-top: 2px solid #eee;
+  color: #333;
+}
+
+h2.sacraments-sacrament-text-headline {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600; font-size: 0.9rem;
+}
+
+div.sacraments-sacrament-text-body > p { margin: 0 0 0.5rem 0; }
+
+div.sacraments-sacrament-text-body > table {
+  margin-bottom: 0.5rem;
+  border-collapse: collapse;
+}
+
+div.sacraments-sacrament-text-body th, div.sacraments-sacrament-text-body td {
+  padding: 0 0 0.1rem 0.5rem;
+  text-align: left; vertical-align: top;
+  font-size: 0.9rem;
+}
+
+div.sacraments-sacrament-text-body th {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #333;
+}
+
+div.sacraments-sacrament-text-body td {
+  font-weight: 300;
+  color: #666;
+}
+
+div.sacraments-sacrament-text-body h1 { font-weight: 400; font-size: 0.9rem; color: #333; }
+div.sacraments-sacrament-text-body h2 { font-weight: 400; font-size: 0.9rem; color: #666; }
+
+@media screen and (min-width: 64rem) {
+  #sacraments-links { font-size: 1rem; }
+  section.sacraments-sacrament { font-size: 1rem; }
+
+  div.sacraments-sacrament-title { padding-right: 1%; border-right: 2px solid #eee; }
+
+  div.sacraments-sacrament-title > h1 { font-size: 1.1rem; }
+
+  div.sacraments-sacrament-text {
+    margin-top: 0; padding: 0 0 0 1%; border-top: none;
+  }
+
+  h2.sacraments-sacrament-text-headline { font-size: 1rem; }
+
+  div.sacraments-sacrament-text-body th,
+    div.sacraments-sacrament-text-body td,
+    div.sacraments-sacrament-text-body h1,
+    div.sacraments-sacrament-text-body h2 { font-size: 1rem; }
+}
+
+
+
 /*** PAGE: HISTORY ***/
+
+/* tbd */

@@ -12,6 +12,7 @@
 
 styles_path:           "/styles/"
 scripts_path:          "/scripts/"
+forms_path:            "/forms/"
 images_path:           "/images/"
 slideshow_path:        "/images/slideshow/"
 social_images_path:    "/images/social/"
