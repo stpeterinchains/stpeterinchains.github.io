@@ -15,8 +15,8 @@ welcome:
 
 slideshow:
   -
-    image: mural-white.jpg
-    caption: Optional caption text
+    image: mural.jpg
+    caption: The Great Mosaic Mural of the Last Supper
   -
     image: cathedral-exterior-interior.jpg
     caption: Our beautiful Cathedral
