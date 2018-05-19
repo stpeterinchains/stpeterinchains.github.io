@@ -139,8 +139,11 @@ span.index-schedule-time {
 #call-to-action-message {
   margin: 0.5rem 10%;
   font-weight: 300; font-size: 0.9rem;
-  color: #999;
+  color: #666;
 }
+
+#call-to-action-message > a { font-weight: 400; text-decoration: none; color: #333; }
+#call-to-action-message > a:hover { color: skyblue; }
 
 @media screen and (min-width: 48rem) {
   #call-to-action-message { font-size: 1rem; }
