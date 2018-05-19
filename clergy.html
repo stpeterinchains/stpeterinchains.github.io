@@ -19,13 +19,13 @@ open_graph_description: >
   {% for member in clergy.clergy %}
   <section class="clergy-member">
     <div class="pure-g">
-      <div class="clergy-member-image pure-u-1 pure-u-sm-2-5">{% if member.image %}<img src="{{ member.image | prepend: site.clergy_images_path | relative_url }}">{% endif %}</div>
-      <div class="clergy-member-text pure-u-1 pure-u-sm-3-5">
+      <div class="clergy-member-image pure-u-1 pure-u-sm-2-5 pure-u-xl-1-4">{% if member.image %}<img src="{{ member.image | prepend: site.clergy_images_path | relative_url }}">{% else %}<div></div>{% endif %}</div>
+      <div class="clergy-member-text pure-u-1 pure-u-sm-3-5 pure-u-xl-3-4">
         <h1 class="clergy-member-text-identity">
           <span class="clergy-member-text-title">{{ member.title }}</span>
           <span class="clergy-member-text-name">{{ member.first_name }}&nbsp;{{ member.last_name }}</span>
-          <span class="clergy-member-text-position">{{ member.position }}</span>
         </h1>
+        <h2 class="clergy-member-text-position">{{ member.position }}</h2>
         <p class="clergy-member-text-bio">{{ member.bio }}</p>
         <div class="clergy-member-text-contact">
           {% for contact in member.contact %}

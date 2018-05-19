@@ -19,8 +19,17 @@ clergy:
       tempor incididunt ut labore et dolore magna aliqua.
     contact:
       -
+        platform: Facebook
+        link: https://www.facebook.com/daniel.miehm.31
+      -
+        platform: Twitter
+        link: https://twitter.com/BishopMiehm
+      -
         platform: Website
         link: https://www.peterboroughdiocese.org/en/about-us/bishop.aspx
+      -
+        platform: E&ndash;mail
+        link: BishopMiehm@peterboroughdiocese.org
 
   -
     last_name: Lynch
@@ -33,20 +42,29 @@ clergy:
       tempor incididunt ut labore et dolore magna aliqua.
     contact:
       -
-        platform: E-mail
+        platform: Facebook
+        link: https://www.facebook.com/profile.php?id=100007047938280
+      -
+        platform: Twitter
+        link: https://twitter.com/frthomaslynch
+      -
+        platform: YouTube
+        link: https://www.youtube.com/user/PriestsForLifeCanada/videos
+      -
+        platform: E&ndash;mail
         link: rector@stpeterspeterborough.ca
 
   -
     last_name: Smullen
     first_name: Damian
     title: Father
-    position: Vice-Rector
+    position: Vice&ndash;Rector
     bio: >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     contact:
       -
-        platform: E-mail
+        platform: E&ndash;mail
         link: vicerector@stpeterspeterborough.ca
 
   -
@@ -60,5 +78,5 @@ clergy:
       tempor incididunt ut labore et dolore magna aliqua.
     contact:
       -
-        platform: E-mail
+        platform: E&ndash;mail
         link: associate@stpeterspeterborough.ca
