@@ -16,7 +16,7 @@ welcome:
 slideshow:
   -
     image: mural.jpg
-    caption: The Great Mosaic Mural of <span style="color:yellow">The Last Supper</span>
+    caption: The Great Mosaic Mural of <span style="color:#ff9">The Last Supper</span>
   -
     image: cathedral-exterior-interior.jpg
     caption: Our beautiful Cathedral
