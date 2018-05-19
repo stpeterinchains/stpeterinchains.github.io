@@ -18,8 +18,7 @@
 <meta name="og:image:width" content="1200">
 <meta name="og:image:height" content="480">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 <!--[if lte IE 8]>
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
@@ -32,7 +31,6 @@
 <!--<![endif]-->
 <link rel="stylesheet" href="{{ 'layout.css' | prepend: site.styles_path | relative_url }}">
 <link rel="stylesheet" href="{{ 'pages.css' | prepend: site.styles_path | relative_url }}">
-<!-- <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | prepend: site.images_path | relative_url }}"> -->
 
 </head>
 
@@ -76,8 +74,8 @@
       <span>{{ slide.caption }}</span>
     </div>
     {% endfor %}
-    <a id="slideshow-previous" onclick="slideshow.previous()">&#x00AB;<!-- &#10094; --></a>
-    <a id="slideshow-next" onclick="slideshow.next()">&#x00BB;<!-- &#10095; --></a>
+    <a id="slideshow-previous" onclick="slideshow.previous()">&#x00AB;</a>
+    <a id="slideshow-next" onclick="slideshow.next()">&#x00BB;</a>
   </div>
   <div id="slideshow-indicators">
     {% for slide in slideshow %}
