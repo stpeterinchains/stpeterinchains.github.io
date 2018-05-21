@@ -249,9 +249,10 @@ div.schedule-event-time {
     display: inline-block;
     width: 75%; max-width: 360px; object-fit: cover;
     margin-top: 2rem;
+    border-radius: 11px; box-shadow: -6px 8px 6px #666;
   }
 
-  h1.schedule-event-title-with-image { margin-top: 0; }
+  h1.schedule-event-title-with-image { margin-top: 0.75rem; }
 }
 
 
@@ -354,7 +355,7 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
   div.clergy-member-image > img {
     display: inline;
     width: 180px; object-fit: cover;
-    border-radius: 11px;  box-shadow: -6px 8px 6px #666;
+    border-radius: 11px; box-shadow: -6px 8px 6px #666;
   }
 
   div.clergy-member-image > div {
