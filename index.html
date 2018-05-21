@@ -19,9 +19,11 @@ open_graph_description: >
 
 <section id="index-schedule">
   <h1>{{ schedule.title }}</h1>
-  {% for event in schedule.events %}
+  {% for occasion in schedule.occasions %}
+  {% if occasion.homepage %}<div class="index-schedule-occasion">{{ occasion.title }}</div>{% endif %}
+  {% for event in occasion.events %}
   {% if event.homepage %}
-  <div>
+  <div class="index-schedule-event">
     <span class="index-schedule-title">{{ event.title }}</span>
     {% for day in event.days %}
     <span class="index-schedule-days-times">
@@ -33,6 +35,7 @@ open_graph_description: >
     {% endfor %}
   </div>
   {% endif %}
+  {% endfor %}
   {% endfor %}
   <div id="index-schedule-more"><a href="{{ '/schedule.html' | relative_url }}">More</a></div>
 </section>

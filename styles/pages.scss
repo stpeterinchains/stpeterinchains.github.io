@@ -19,7 +19,13 @@
   color: #333;
 }
 
-#index-schedule > div {
+div.index-schedule-occasion {
+  padding-top: 0.75rem;
+  font-weight: 600; font-size: 0.9rem;
+  color: #999; color: #333;
+}
+
+div.index-schedule-event {
   padding-top: 0.5rem;
   font-weight: 300; font-size: 0.9rem;
 }
@@ -45,7 +51,7 @@ span.index-schedule-time {
   color: #999;
 }
 
-#index-schedule-more { padding-top: 0.5rem; }
+#index-schedule-more { padding-top: 1rem; }
 
 #index-schedule-more > a {
   font-weight: 400; font-size: 0.9rem;
@@ -57,13 +63,15 @@ span.index-schedule-time {
 
 @media screen and (min-width: 48rem) {
   #index-schedule > h1 { font-size: 1rem; }
-  #index-schedule > div { font-size: 1rem; }
+  div.index-schedule-occasion { font-size: 1rem; }
+  div.index-schedule-event { font-size: 1rem; }
   #index-schedule-more > a { font-size: 1rem; }
 }
 
 @media screen and (min-width: 64rem) {
   #index-schedule > h1 { margin: 0 10%; font-size: 1.1rem; }
-  #index-schedule > div { padding-top: 0.75rem; font-size: 1.1rem; }
+  div.index-schedule-occasion { font-size: 1.1rem; }
+  div.index-schedule-event { padding-top: 0.75rem; font-size: 1.1rem; }
   span.index-schedule-days-times { display: inline; }
   #index-schedule-more > a { font-size: 1.1rem; }
 }
@@ -189,67 +197,61 @@ p.page-descriptive {
 
 /*** PAGE: SCHEDULE ***/
 
-section.schedule-event { margin-top: 2rem; font-size: 0.9rem; }
-
-section.schedule-event > div.pure-g > div { box-sizing: border-box; }
-
-div.schedule-event-image { text-align: right; padding-right: 5%; }
-div.schedule-event-image > img { display: none; }
-
-h1.schedule-event-text-title {
-  margin: 0;
-  font-weight: 400; font-size: 0.9rem;
+h1.schedule-occasion-title {
+  margin: 3rem 0 0 0; padding-bottom: 0.1rem;
+  border-bottom: 2px solid #ccc;
+  font-weight: 300; font-size: 1.1rem;
   color: #333;
 }
 
-p.schedule-event-text-descriptive {
-  margin: 0.25rem 0 0.5rem 0;
-  font-weight: 300;
-  color: #999;
+h2.schedule-occasion-start {
+  margin: 0.5rem 0;
+  font-weight: 600; font-size: 1rem;
+  color: #333;
 }
 
-div.schedule-event-text-day {
-  margin: 0.25rem 0 0 1rem;
-  white-space: nowrap;
-  font-weight: 400;
+p.schedule-occasion-descriptive {
+  margin: 0.5rem 0 0 0;
+  font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
 
-div.schedule-event-text-time {
+section.schedule-occasion > div.pure-g > div { box-sizing: border-box; }
+
+img.schedule-event-image { display: none; }
+
+h1.schedule-event-title-with-image, h1.schedule-event-title-without-image {
+  margin: 2rem 0 0.25rem 0;
+  font-weight: 400; font-size: 1rem;
+  color: #333;
+}
+
+p.schedule-event-descriptive {
+  margin: 0; margin-right: 10%;
+  font-weight: 300; font-size: 0.9rem;
+  color: #999;
+}
+
+div.schedule-event-day {
+  margin: 0.25rem 0 0 1rem;
+  font-weight: 400; font-size: 0.9rem;
+  color: #666;
+}
+
+div.schedule-event-time {
   margin-left: 2rem;
-  white-space: nowrap;
-  font-weight: 300;
+  font-weight: 300; font-size: 0.9rem;
   color: #999;
 }
 
 @media screen and (min-width: 35.5rem) {
-  div.schedule-event-text-day { margin-left: 0; }
-  div.schedule-event-text-time { margin-left: 1rem; }
-
-  div.schedule-event-image { margin-top: 0.25rem; }
-
-  div.schedule-event-image > img {
-    display: inline;
-    width: 180px; height: 101px;
-    object-fit: cover;
-    filter: contrast(50%) brightness(1.5);
+  img.schedule-event-image {
+    display: inline-block;
+    width: 75%; max-width: 360px; object-fit: cover;
+    margin-top: 2rem;
   }
-}
 
-@media screen and (min-width: 48rem) {
-  div.schedule-event-image { margin-top: 0.5rem; }
-  p.schedule-event-text-descriptive { margin-right: 5%; }
-}
-
-@media screen and (min-width: 64rem) {
-  section.schedule-event { font-size: 1rem; }
-  div.schedule-event-image > img { width: 240px; height: 135px; }
-  h1.schedule-event-text-title { font-size: 1rem; }
-}
-
-@media screen and (min-width: 80rem) {
-  p.schedule-event-text-descriptive { margin-right: 10%; }
-  div.schedule-event-image > img { width: 280px; height: 158px; }
+  h1.schedule-event-title-with-image { margin-top: 0; }
 }
 
 

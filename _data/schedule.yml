@@ -1,145 +1,268 @@
 ---
 
-# To express a time, use one space character between the time
-# specification and meridian indicator. To express a time or day range, use
-# double hyphens between terms, absent of whitespace.
-#
-# Examples:
-#   3:45 PM           // one space between time and meridian indicator
-#   5:00 PM--6:00 PM  // double-hyphen between terms
-#   Monday--Friday    // double-hyphen between terms
-#
-# If an event should appear in abbreviated form on the home page, specify true
-# for the homepage attribute.
-#
-# Images should have a minimum resolution of 280x158 pixels and an aspect ratio
-# of 16:9.
-
 title: Schedule
 descriptive: >
   Our parish holds daily and weekly masses and devotions, as well as
-  confessions and other faith events. We also feature special events during
-  the liturgical year.
-
+  confessions and other faith events. We also feature many special events
+  during the liturgical year.
 occasions:
+
+
   -
-    mnemonic: regular
     title: Regular Schedule
+    descriptive: >
+      Join us for masses and other faith events scheduled
+      daily and weekly throughout the year.
+      Note that events belonging to special periods during the year may
+      supercede or supplement the regular schedule.
+    events:
+      -
+        title: Sunday Mass
+        image: weekend-mass.jpg
+        homepage: true
+        descriptive: >
+          Join us for our signature Sunday morning masses.
+          For those who prefer an anticipated mass, join us for the
+          Saturday vigil.
+        days:
+          -
+            day: Sunday Morning
+            times:
+              - 8:30 AM
+              - 10:30 AM
+          -
+            day: Saturday Vigil
+            times:
+              - 5:00 PM
+      -
+        title: Weekday Mass
+        image: weekday-mass.jpg
+        homepage: true
+        descriptive: >
+          For parishioners who wish to begin or punctuate their busy schedules in
+          faith and praise, join us weekdays for our morning or mid-day masses,
+          as well as on Saturday mornings.
+        days:
+          -
+            day: Monday--Friday
+            times:
+              - 7:30 AM
+              - 12:10 PM
+          -
+            day: Saturday
+            times:
+              - 9:00 AM
+      -
+        title: Confessions
+        image: confessions.jpg
+        homepage: true
+        descriptive:
+        days:
+          -
+            day: Saturday
+            times:
+              - 3:45 PM--4:45 PM
+          -
+            day: First Friday
+            times:
+              - 7:00 AM--7:30 AM
+              - 11:00 AM--12:00 PM
+      -
+        title: Devotion:&nbsp;Mother of Perpetual&nbsp;Help
+        image: mother-of-perpetual-help.jpg
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Saturday
+            times:
+              - 8:30 AM
+      -
+        title: Devotion:&nbsp;Exposition of the Blessed&nbsp;Sacrament
+        image: exposition-blessed-sacrament.jpg
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: First Friday
+            times:
+              - 7:30 AM--12:00 PM
+          -
+            day: First Saturday
+            times:
+              - 8:00 AM--9:00 AM
+      -
+        title: Anointing of the Sick
+        image: anointing-sick.jpg
+        homepage: false
+        descriptive: >
+        days:
+          -
+            day: First Saturday
+            times:
+              - 9:00 AM
+
+
   -
-    mnemonic: ashwednesday
-    title: Ash Wednesday
+    title: Special Event
+    homepage: false
+    start: February 14
+    events:
+      -
+        title: Ash Wednesday
+        image:
+        homepage: false
+        descriptive: Ash will be distributed to parishioners during each mass.
+        days:
+          -
+            day: Wednesday
+            times:
+              - 7:30 AM
+              - 12:10 PM
+              - 7:00 PM
+
+
   -
-    mnemonic: holyweek
     title: Holy Week
-    begins: March 26
-  -
-    mnemonic: christmas
-    title: Christmas
-    begins: December 24
-
-events:
-
-  -
-    title: Sunday Mass
-    image: weekend-mass.jpg
-    occasion: regular
-    homepage: true
-    descriptive: >
-      Join us for our signature Sunday morning masses.
-      For those who prefer an anticipated mass, join us for the
-      Saturday vigil.
-    days:
-      -
-        day: Sunday Morning
-        times:
-          - 8:30 AM
-          - 10:30 AM
-      -
-        day: Saturday Vigil
-        times:
-          - 5:00 PM
-
-  -
-    title: Weekday Mass
-    image: weekday-mass.jpg
-    occasion: regular
-    homepage: true
-    descriptive: >
-      For parishioners who wish to begin or punctuate their busy schedules in
-      faith and praise, join us weekdays for our morning or mid-day masses,
-      as well as on Saturday mornings.
-    days:
-      -
-        day: Monday--Friday
-        times:
-          - 7:30 AM
-          - 12:10 PM
-      -
-        day: Saturday
-        times:
-          - 9:00 AM
-
-  -
-    title: Confessions
-    image: confessions.jpg
-    occasion: regular
-    homepage: true
-    descriptive: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    days:
-      -
-        day: Saturday
-        times:
-          - 3:45 PM--4:45 PM
-      -
-        day: First Friday
-        times:
-          - 7:00 AM--7:30 AM
-          - 11:00 AM--12:00 PM
-
-  -
-    title: Devotion:&nbsp;Mother of Perpetual&nbsp;Help
-    image: mother-of-perpetual-help.jpg
-    occasion: regular
+    start: March 26
     homepage: false
-    descriptive: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    days:
+    descriptive:
+    events:
       -
-        day: Saturday
-        times:
-          - 8:30 AM
+        title: Crism Mass
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Monday
+            times:
+              - 7:00 PM
+      -
+        title: Tenebrae &ndash; The Office of&nbsp;Darkness
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Tuesday
+            times:
+              - 7:30 PM
+      -
+        title: Mass of the Lord's Supper
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Holy Thursday
+            times:
+              - 7:00 PM
+      -
+        title: The Way of the Cross
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Good Friday
+            times:
+              - 10:00 AM
+      -
+        title: Passion of Our Lord Jesus Christ
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Good Friday
+            times:
+              - 3:00 PM
+      -
+        title: Easter Vigil
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Saturday
+            times:
+              - 8:00 PM
+      -
+        title: Easter Sunday
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Sunday
+            times:
+              - 8:30 AM
+              - 10:30 AM
+      -
+        title: Easter Monday
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Monday
+            times:
+              - 9:00 AM
+
 
   -
-    title: Devotion:&nbsp;Exposition of the Blessed&nbsp;Sacrament
-    image: exposition-blessed-sacrament.jpg
-    occasion: regular
+    title: Christmas 2017
     homepage: false
-    descriptive: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    days:
+    descriptive:
+    events:
       -
-        day: First Friday
-        times:
-          - 7:30 AM--12:00 PM
+        title: Christmas Eve
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Sunday December 24
+            times:
+              - 4:00 PM
+              - 8:00 PM
+              - Midnight
       -
-        day: First Saturday
-        times:
-          - 8:00 AM--9:00 AM
+        title: Christmas Day
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Monday December 25
+            times:
+              - 10:30 AM
+
 
   -
-    title: Anointing of the Sick
-    image: anointing-sick.jpg
-    occasion: regular
+    title: New Year 2018
     homepage: false
-    descriptive: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    days:
+    descriptive:
+    events:
       -
-        day: First Saturday
-        times:
-          - 9:00 AM
+        title: New Year's Eve
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Sunday December 31
+            times:
+              - 5:00 PM
+      -
+        title: New Year's Day
+        image:
+        homepage: false
+        descriptive:
+        days:
+          -
+            day: Monday January 1
+            times:
+              - 8:30 AM
+              - 10:30 AM

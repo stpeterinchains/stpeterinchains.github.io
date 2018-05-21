@@ -8,8 +8,8 @@ open_graph_title: >
   Roman Catholic Parish
   in Peterborough, Ontario
 open_graph_description: >
-  Listing of masses, devotions, confessions, and other special events
-  held weekly and throughout the year.
+  Listing of masses and other faith events,
+  held daily, weekly, and throughout the year.
 ---
 
 {% assign schedule = site.data.schedule %}
@@ -17,25 +17,29 @@ open_graph_description: >
 <section id="schedule" class="page-container">
   <h1 class="page-title">{{ schedule.title }}</h1>
   <p class="page-descriptive">{{ schedule.descriptive }}</p>
-  {% for event in schedule.events %}
-  {% capture x %}{% cycle 'odd', 'even' %}{% endcapture %}
-  <section class="schedule-event">
+  {% for occasion in schedule.occasions %}
+  <section class="schedule-occasion">
+    <h1 class="schedule-occasion-title">{{ occasion.title }}</h1>
+    {% if occasion.start %}<h2 class="schedule-occasion-start">{{ occasion.start }}</h2>{% endif %}
+    {% if occasion.descriptive %}<p class="schedule-occasion-descriptive">{{ occasion.descriptive }}</p>{% endif %}
     <div class="pure-g">
-      {% if x == 'odd' or x == 'even' %}
-      <div class="schedule-event-image pure-u-1 pure-u-sm-2-5"><img src="{{ event.image | prepend: site.schedule_images_path | relative_url }}"></div>
-      <div class="schedule-event-text pure-u-1 pure-u-sm-3-5">
-        <h1 class="schedule-event-text-title">{{ event.title }}</h1>
-        <p class="schedule-event-text-descriptive">{{ event.descriptive }}</p>
+      {% for event in occasion.events %}
+      <div class="schedule-event pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 pure-u-xl-1-4"><section>
+        {% if event.image  %}
+        <img class="schedule-event-image" src="{{ event.image | prepend: site.schedule_images_path | relative_url }}">
+        <h1 class="schedule-event-title-with-image">{{ event.title }}</h1>
+        {% else %}
+        <h1 class="schedule-event-title-without-image">{{ event.title }}</h1>
+        {% endif %}
+        {% if event.descriptive %}<p class="schedule-event-descriptive">{{ event.descriptive }}</p>{% endif %}
         {% for day in event.days %}
-        <div>
-          <div class="schedule-event-text-day">{{ day.day | replace: '--', '&ndash;' }}</div>
-          {% for time in day.times %}
-          <div class="schedule-event-text-time">{{ time | replace: '--', '&ndash;' }}</div>
-          {% endfor %}
-        </div>
+        <div class="schedule-event-day">{{ day.day | replace: '--', '&ndash;' }}</div>
+        {% for time in day.times %}
+        <div class="schedule-event-time">{{ time | replace: '--', '&ndash;' }}</div>
         {% endfor %}
-      </div>
-      {% endif %}
+        {% endfor %}
+      </section></div>
+      {% endfor %}
     </div>
   </section>
   {% endfor %}
