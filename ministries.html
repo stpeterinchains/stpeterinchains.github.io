@@ -17,8 +17,23 @@ open_graph_description: >
   <h1 class="page-title">{{ ministries.title }}</h1>
   <p class="page-descriptive">{{ ministries.descriptive }}</p>
 
-  <h2 style="margin:0;font-weight:300;font-size:1.5rem;color:crimson;">Work in&ndash;progress</h2>
-  <img style="margin:1rem 0;object-fit:contain;" src="{{ 'work-in-progress.jpg' | prepend: site.images_path | relative_url }}">
-  <h3 style="margin:0;font-weight:400;font-size:1rem;font-style:italic;color:green;">When your only tool is a hammer, every problem looks like a nail</h2>
-  <h4 style="margin:0;font-weight:300;font-size:0.9rem;font-style:italic;color:green;">Abraham Maslow</h3>
+  {% for ministry in ministries.ministries %}
+  <section class="ministries-ministry">
+    <div class="pure-g">
+      <div class="ministries-ministry-image pure-u-1 pure-u-sm-2-5 pure-u-xl-1-4">{% if ministry.image %}<img src="{{ ministry.image | prepend: site.ministry_images_path | relative_url }}">{% else %}<div></div>{% endif %}</div>
+      <div class="ministries-ministry-text pure-u-1 pure-u-sm-3-5 pure-u-xl-3-4">
+        <h1 class="ministries-ministry-text-title">{{ ministry.title }}</h1>
+        {% if ministry.descriptive %}<div class="ministries-ministry-text-descriptive">{{ ministry.descriptive | markdownify }}</div>{% endif %}
+        {% for contact in ministry.contacts %}
+        <div class="ministries-ministry-text-name">{{ contact.name }}</div>
+        {% if contact.title %}<div class="ministries-ministry-text-title">{{ contact.title }}</div>{% endif %}
+        <div class="ministries-ministry-text-method">
+          {% if contact.email %}<div class="ministries-ministry-text-email">E&ndash;mail<a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>{% endif %}
+          {% if contact.phone %}<div class="ministries-ministry-text-phone">Phone<span>{{ contact.phone }}</span></div>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endfor %}
 </section>

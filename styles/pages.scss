@@ -313,8 +313,7 @@ section.clergy-member { margin-top: 2rem; }
 
 section.clergy-member > div.pure-g > div { box-sizing: border-box; }
 
-div.clergy-member-image > img { display: none; }
-div.clergy-member-image > div { display: none; }
+div.clergy-member-image > img, div.clergy-member-image > div { display: none; }
 
 h1.clergy-member-text-identity {
   margin: 0;
@@ -353,16 +352,9 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
   div.clergy-member-image { margin-top: 0.25rem; }
 
   div.clergy-member-image > img {
-    display: inline;
-    width: 180px; object-fit: cover;
-    border-radius: 11px; box-shadow: -6px 8px 6px #666;
-  }
-
-  div.clergy-member-image > div {
     display: inline-block;
-    width: 178px; height: 158px; border-radius: 11px;
-    border: 1px solid #eee;
-    background-image: linear-gradient(45deg, #eee, white);
+    width: 75%; max-width: 360px; object-fit: cover;
+    border-radius: 11px; box-shadow: -6px 8px 6px #666;
   }
 }
 
@@ -371,11 +363,10 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
 }
 
 @media screen and (min-width: 64rem) {
-  div.clergy-member-image > img { width: 220px; }
-  div.clergy-member-image > div { width: 218px; height: 178px; }
   h1.clergy-member-text-identity { font-size: 1.1rem; }
   h2.clergy-member-text-position { font-size: 1rem; }
-  p.clergy-member-text-bio, div.clergy-member-text-contact > a { font-size: 1rem; }
+  p.clergy-member-text-bio,
+  div.clergy-member-text-contact > a { font-size: 1rem; }
   span.clergy-member-text-name { margin-left: 0.2rem; }
   div.clergy-member-text-contact > a { margin-right: 1.25rem; }
 }
@@ -387,6 +378,65 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
 
 
 /*** PAGE: MINISTRIES ***/
+
+section.ministries-ministry { margin-top: 2rem; }
+
+section.ministries-ministry > div.pure-g > div { box-sizing: border-box; }
+
+div.ministries-ministry-image > img,
+  div.ministries-ministry-image > div { display: none; }
+
+h1.ministries-ministry-text-title {
+  margin: 0 0 0.5rem 0;
+  border-bottom: 2px solid #eee;
+  font-weight: 400; font-size: 0.9rem;
+  color: #333;
+}
+
+div.ministries-ministry-text-descriptive { margin: 0.25rem 0 0 0; }
+
+div.ministries-ministry-text-descriptive > p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+div.ministries-ministry-text-name {
+  margin-top: 0.75rem;
+  font-weight: 600; font-size: 0.9rem;
+  color: #333;
+}
+
+div.ministries-ministry-text-title {
+  font-weight: 400; font-size: 0.9rem; letter-spacing: -0.05rem;
+  color: #666;
+}
+
+div.ministries-ministry-text-method {
+  margin-left: 1rem;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+div.ministries-ministry-text-email > a { padding-left: 1rem; text-decoration: none; color: #999; }
+div.ministries-ministry-text-email > a:hover { color: skyblue; }
+div.ministries-ministry-text-phone > span { padding-left: 1rem; color: #999; }
+
+@media screen and (min-width: 35.5rem) {
+  div.ministries-ministry-image > img {
+    display: inline-block;
+    width: 75%; max-width: 360px; object-fit: cover;
+    border-radius: 11px; box-shadow: -6px 8px 6px #666;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  h1.ministries-ministry-text-title { font-size: 1rem; }
+  div.ministries-ministry-text-descriptive > p { font-size: 1rem; }
+  div.ministries-ministry-text-name { font-size: 1rem; }
+  div.ministries-ministry-text-title { font-size: 1rem; }
+  div.ministries-ministry-text-method { font-size: 1rem; }
+}
 
 
 
