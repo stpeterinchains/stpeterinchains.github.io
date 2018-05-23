@@ -23,7 +23,7 @@ ministries:
   -
     title: EMHC
     descriptive: |
-      Extraordinary Ministers of Holy Communion (EMHCs) are properly
+      Extraordinary Ministers of Holy Communion (EMHC) are properly
       formed, instructed, and commissioned male of female laypersons. These
       ministers are appointed for a given parish community to aid in the
       distribution of Holy Communion at Mass and to the sick and homebound when
@@ -103,3 +103,23 @@ ministries:
         title: Senior Leader
         phone:
         email: siobhaindoyle@hotmail.com
+
+  -
+    title: Parish Knights of Columbus
+    descriptive:
+    image: koc.jpg
+    contacts:
+      -
+        name: Mike Minicola
+        title: Grand Knight
+        phone: 705-742-4374
+        email: mikeandtrudy@sympatico.ca
+
+  -
+    title: Legion of Mary
+    descriptive:
+    image: lom.png
+    contacts:
+      -
+        name: Jack Cerveny
+        phone: 705-742-9839
