@@ -6,10 +6,11 @@ social:
     -
       link: https://www.facebook.com/CathedralSaintPeterInChains/
       logo: facebook-logo.png
-    -
-      logo: twitter-logo.png
+#    -
+#      logo: twitter-logo.png
     -
       logo: youtube-logo.png
+      link: https://www.youtube.com/user/PriestsForLifeCanada/videos
     -
       logo: google-maps-logo.png
       link: https://goo.gl/maps/Vz73TcvLW8P2

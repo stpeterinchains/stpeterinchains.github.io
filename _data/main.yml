@@ -16,18 +16,15 @@ welcome:
 slideshow:
   -
     image: mural.jpg
-    caption: The Great Mosaic Mural of <span style="color:#ff6">The Last Supper</span>
+    caption: The Great Mural of <span style="color:#ff6">The Last Supper</span>
   -
     image: cathedral-exterior-interior.jpg
-    caption: Our beautiful Cathedral
+    caption: The beautiful Cathedral of <span style="color:#ff6">Saint&nbsp;Peter&ndash;in&ndash;Chains</span>
   -
     image: teamwork.jpg
-    caption: Team effort <span style="color:#ff6">wins</span> the day
-  -
-    image: monty-python-holy-handgrenade.jpg
     caption: >
-      First shalt thou take out the <em>Holy&nbsp;Pin</em>.<br>
-      Then, lobbest thou, thy <em>Holy&nbsp;Handgrenade</em>!
+      March 30, 2018: <span style="color:#ff6">The Passion of Our Lord</span><br>
+      Team effort wins the day!
 
 navbar:
   internal:
