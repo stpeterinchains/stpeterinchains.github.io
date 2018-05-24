@@ -526,6 +526,16 @@ div.sacraments-sacrament-text-body h2 { font-weight: 400; font-size: 0.9rem; col
 
   div.sacraments-sacrament-title > h1 { font-size: 1.1rem; }
 
+  div.sacraments-image {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  div.sacraments-image > img {
+    width: 100%; max-width: 360px; object-fit: cover;
+    border-radius: 11px; box-shadow: -6px 8px 6px #666;
+  }
+
   div.sacraments-sacrament-text {
     margin-top: 0; padding: 0 0 0 1%; border-top: none;
   }

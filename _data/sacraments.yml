@@ -2,10 +2,11 @@
 
 title: Sacraments
 descriptive: >
-  The seven Holy Sacraments of the Catholic Church represent the channels
+  The Holy Sacraments of the Catholic Church represent the channels
   by which grace is received by the individual who receives them.
-  Our parish offers preparatory classes for both children and adults in
-  the application of the Sacraments and for initiation in Church.
+  Our parish offers classes for both children and adults in preparation for
+  receiving the Sacraments of initiation into the Church, and of Matrimony.
+
   Those interested are invited to complete the respective application
   forms and to contact the Rectory office.
 
@@ -34,7 +35,7 @@ sacraments:
   -
     title: Baptism
     anchor: baptism
-    image:
+    image: baptism.jpg
     form: Baptismal-Application-Form.pdf
     headline: Children's baptism
     text: |
