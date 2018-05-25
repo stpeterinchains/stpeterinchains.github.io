@@ -2,17 +2,16 @@
 
 title: Schedule
 descriptive: >
-  Our parish holds daily and weekly masses and devotions, as well as
-  confessions and other faith events. We also feature many special events
-  during the liturgical year.
+  Our parish holds daily and weekly masses, devotions, confessions,
+  and other faith events. We also feature many special events
+  throughout the liturgical year.
 occasions:
 
 
   -
     title: Regular Schedule
     descriptive: >
-      Join us for masses and other faith events scheduled
-      daily and weekly throughout the year.
+      Join us for masses and other faith events scheduled daily and weekly.
       Note that events belonging to special periods during the year may
       supercede or supplement the regular schedule.
     events:
@@ -23,7 +22,7 @@ occasions:
         descriptive: >
           Join us for our signature Sunday morning masses.
           For those who prefer an anticipated mass, join us for the
-          Saturday vigil.
+          Saturday Vigil.
         days:
           -
             day: Sunday Morning
@@ -39,9 +38,9 @@ occasions:
         image: weekday-mass.jpg
         homepage: true
         descriptive: >
-          For parishioners who wish to begin or punctuate their busy schedules in
-          faith and praise, join us weekdays for our morning or mid-day masses,
-          as well as on Saturday mornings.
+          For parishioners who wish to begin or punctuate their busy schedules
+          in faith and praise, join us weekdays for our morning or mid-day
+          masses, as well as on Saturday mornings.
         days:
           -
             day: Monday--Friday
@@ -101,168 +100,3 @@ occasions:
             day: First Saturday
             times:
               - 9:00 AM
-
-
-  -
-    title: Special Event
-    homepage: false
-    start: February 14
-    events:
-      -
-        title: Ash Wednesday
-        image:
-        homepage: false
-        descriptive: Ash will be distributed to parishioners during each mass.
-        days:
-          -
-            day: Wednesday
-            times:
-              - 7:30 AM
-              - 12:10 PM
-              - 7:00 PM
-
-
-  -
-    title: Holy Week
-    start: March 26
-    homepage: false
-    descriptive:
-    events:
-      -
-        title: Crism Mass
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Monday
-            times:
-              - 7:00 PM
-      -
-        title: Tenebrae &ndash; The Office of&nbsp;Darkness
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Tuesday
-            times:
-              - 7:30 PM
-      -
-        title: Mass of the Lord's Supper
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Holy Thursday
-            times:
-              - 7:00 PM
-      -
-        title: The Way of the Cross
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Good Friday
-            times:
-              - 10:00 AM
-      -
-        title: Passion of Our Lord Jesus Christ
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Good Friday
-            times:
-              - 3:00 PM
-      -
-        title: Easter Vigil
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Saturday
-            times:
-              - 8:00 PM
-      -
-        title: Easter Sunday
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Sunday
-            times:
-              - 8:30 AM
-              - 10:30 AM
-      -
-        title: Easter Monday
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Monday
-            times:
-              - 9:00 AM
-
-
-  -
-    title: Christmas 2017
-    homepage: false
-    descriptive:
-    events:
-      -
-        title: Christmas Eve
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Sunday December 24
-            times:
-              - 4:00 PM
-              - 8:00 PM
-              - Midnight
-      -
-        title: Christmas Day
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Monday December 25
-            times:
-              - 10:30 AM
-
-
-  -
-    title: New Year 2018
-    homepage: false
-    descriptive:
-    events:
-      -
-        title: New Year's Eve
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Sunday December 31
-            times:
-              - 5:00 PM
-      -
-        title: New Year's Day
-        image:
-        homepage: false
-        descriptive:
-        days:
-          -
-            day: Monday January 1
-            times:
-              - 8:30 AM
-              - 10:30 AM

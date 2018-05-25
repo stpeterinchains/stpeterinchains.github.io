@@ -38,9 +38,7 @@ open_graph_description: >
         {% if sacrament.headline %}
         <h2 class="sacraments-sacrament-text-headline">{{ sacrament.headline }}</h2>
         {% endif %}
-        <div class="sacraments-sacrament-text-body">
-          {{ sacrament.text | markdownify }}
-        </div>
+        <div class="sacraments-sacrament-text-body markdown">{{ sacrament.text | markdownify }}</div>
       </div>
     </div>
   </section>

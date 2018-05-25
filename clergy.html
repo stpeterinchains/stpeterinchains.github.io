@@ -26,7 +26,7 @@ open_graph_description: >
           <span class="clergy-member-text-name">{{ member.first_name }}&nbsp;{{ member.last_name }}</span>
         </h1>
         <h2 class="clergy-member-text-position">{{ member.position }}</h2>
-        <p class="clergy-member-text-bio">{{ member.bio }}</p>
+        <div class="clergy-member-text-bio markdown">{{ member.bio | markdownify }}</div>
         <div class="clergy-member-text-contact">
           {% for contact in member.contact %}
           <a target="_blank" href="{% if contact.link contains '@' %}mailto:{% endif %}{{ contact.link }}">{{ contact.platform }}</a>

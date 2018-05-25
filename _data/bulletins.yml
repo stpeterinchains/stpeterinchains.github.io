@@ -16,6 +16,18 @@ issues:
         month: May
         bulletins:
           -
+            date: 20
+            title: Pentecost Sunday
+            link: https://drive.google.com/file/d/1XaInxclxuSahXRgOjNyBupxCu2mFx33I/view
+          -
+            date: 13
+            title: Ascension Sunday
+            link:
+            inserts:
+              -
+                title: Peterborough Pregnancy Support Services
+                link: https://drive.google.com/file/d/1-5UfMYEsbxxWai86wi7pHGp_tUW7-XaP/view
+          -
             date: 6
             title: Sixth Sunday of Easter
             link: https://drive.google.com/drive/folders/0B845JxwWvJX1fjlBTFBQUlBVSjBNdnBaRHpEb1h4YXNvbnE0VG1zTG5FVEN5d3pCbzFyUjg
@@ -143,35 +155,3 @@ issues:
             date: 7
             title: The Epiphany of the Lord
             link: https://drive.google.com/file/d/1e8Q1oRtehs9A-gFD26iFUk4vU8UMb1Uy/view
-
-  -
-    year: 2017
-    months:
-
-      -
-        month: December
-        bulletins:
-          - &christmas2017
-            date: 31
-            title: Holy Family of Jesus, Mary, and Joseph
-            link: https://drive.google.com/file/d/1vOHe1vfRXG0--3lMpN6vsUHlwjn0YHPN/view
-          -
-            <<: *christmas2017
-            date: 25
-            title: Nativity of the Lord (Christmas Day)
-          -
-            date: 24
-            title: Fourth Sunday of Advent
-            link: https://drive.google.com/file/d/1oPXAg4azUyvYhQGH1pSekOX42l7vDbsr/view
-          -
-            date: 17
-            title: Third Sunday of Advent
-            link: https://drive.google.com/file/d/19vd9Yba5m5UhQ17tMuBKrknvEf2J0eT1/view
-          -
-            date: 10
-            title: Second Sunday of Advent
-            link: https://drive.google.com/file/d/14BzQXTzfqt9v3Yptjc340MX5ixHjNzA_/view
-          -
-            date: 3
-            title: First Sunday of Advent
-            link: https://drive.google.com/file/d/1h6Z-hS1XMq6tt-mr6XXdbah-v0bWwlKA/view

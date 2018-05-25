@@ -14,9 +14,7 @@ clergy:
     title: Most Reverend
     position: Bishop
     image: bp-miehm-portrait.jpg
-    bio: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    bio:
     contact:
       -
         platform: Facebook
@@ -37,9 +35,7 @@ clergy:
     title: Father
     position: Rector
     image: fr-lynch-portrait.jpg
-    bio: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    bio:
     contact:
       -
         platform: Facebook
@@ -59,9 +55,7 @@ clergy:
     first_name: Damian
     title: Father
     position: Vice&ndash;Rector
-    bio: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    bio:
     contact:
       -
         platform: E&ndash;mail
@@ -73,9 +67,7 @@ clergy:
     title: Father
     position: Associate&nbsp;Pastor
     image: fr-rathinaswamy-portrait.jpg
-    bio: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    bio:
     contact:
       -
         platform: E&ndash;mail

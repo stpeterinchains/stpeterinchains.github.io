@@ -185,13 +185,61 @@ p.page-descriptive {
   color: #666;
 }
 
+div.markdown > p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 300; font-size: 0.9rem;
+  color: #666;
+}
+
+div.markdown > h1 {
+  /* margin: 1rem 0 0 0; */
+  font-weight: 400; font-size: 0.9rem;
+  color: #666;
+}
+
+div.markdown > h2 {
+  /* margin: 0.5rem 0 0 0; */
+  font-weight: 400; font-size: 0.9rem;
+  color: #999;
+}
+
+
+div.markdown > table {
+  margin-bottom: 0.5rem;
+  border-collapse: collapse;
+}
+
+div.markdown th, div.markdown td {
+  padding: 0 0 0.1rem 0.5rem;
+  text-align: left; vertical-align: top;
+  font-size: 0.9rem;
+}
+
+div.markdown th {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #333;
+}
+
+div.markdown td {
+  font-weight: 300;
+  color: #666;
+}
+
+
+
+
 @media screen and (min-width: 48rem) {
   h1.page-title { font-size: 1.75rem; }
   p.page-descriptive { font-size: 1rem; }
 }
 
-@media screen and (min-width: 64rem) {}
-@media screen and (min-width: 80rem) {}
+@media screen and (min-width: 64rem) {
+  div.markdown > p, div.markdown > h1, div.markdown > h2 { font-size: 1rem; }
+  div.markdown > h1, div.markdown > h2, div.markdown th, div.markdown td { font-size: 1rem; }
+}
+
+/* @media screen and (min-width: 80rem) {} */
 
 
 
@@ -229,7 +277,7 @@ h1.schedule-event-title-with-image, h1.schedule-event-title-without-image {
 p.schedule-event-descriptive {
   margin: 0; margin-right: 10%;
   font-weight: 300; font-size: 0.9rem;
-  color: #999;
+  color: #666;
 }
 
 div.schedule-event-day {
@@ -317,6 +365,7 @@ div.clergy-member-image > img, div.clergy-member-image > div { display: none; }
 
 h1.clergy-member-text-identity {
   margin: 0;
+  border-bottom: 2px solid #eee;
   font-weight: 400; font-size: 0.9rem;
   color: #333;
 }
@@ -330,11 +379,7 @@ h2.clergy-member-text-position {
   color: #666;
 }
 
-p.clergy-member-text-bio {
-  margin: 0.25rem 0 0.5rem 0;
-  font-weight: 300; font-size: 0.9rem;
-  color: #999;
-}
+div.clergy-member-text-bio { margin: 0.5rem 0; }
 
 div.clergy-member-text-contact { margin-top: 0.5rem; }
 
@@ -410,12 +455,6 @@ h1.ministries-ministry-text-title {
 }
 
 div.ministries-ministry-text-descriptive { margin: 0.25rem 0 0 0; }
-
-div.ministries-ministry-text-descriptive > p {
-  margin: 0 0 0.5rem 0;
-  font-weight: 300; font-size: 0.9rem;
-  color: #333;
-}
 
 div.ministries-ministry-text-name {
   margin-top: 0.75rem;
@@ -507,33 +546,6 @@ h2.sacraments-sacrament-text-headline {
   font-weight: 600; font-size: 0.9rem;
 }
 
-div.sacraments-sacrament-text-body > p { margin: 0 0 0.5rem 0; }
-
-div.sacraments-sacrament-text-body > table {
-  margin-bottom: 0.5rem;
-  border-collapse: collapse;
-}
-
-div.sacraments-sacrament-text-body th, div.sacraments-sacrament-text-body td {
-  padding: 0 0 0.1rem 0.5rem;
-  text-align: left; vertical-align: top;
-  font-size: 0.9rem;
-}
-
-div.sacraments-sacrament-text-body th {
-  font-weight: 400;
-  text-decoration: underline;
-  color: #333;
-}
-
-div.sacraments-sacrament-text-body td {
-  font-weight: 300;
-  color: #666;
-}
-
-div.sacraments-sacrament-text-body h1 { font-weight: 400; font-size: 0.9rem; color: #333; }
-div.sacraments-sacrament-text-body h2 { font-weight: 400; font-size: 0.9rem; color: #666; }
-
 @media screen and (min-width: 64rem) {
   #sacraments-links { font-size: 1rem; }
   section.sacraments-sacrament { font-size: 1rem; }
@@ -542,10 +554,7 @@ div.sacraments-sacrament-text-body h2 { font-weight: 400; font-size: 0.9rem; col
 
   div.sacraments-sacrament-title > h1 { font-size: 1.1rem; }
 
-  div.sacraments-image {
-    display: inline-block;
-    margin-top: 0.5rem;
-  }
+  div.sacraments-image { display: inline-block; margin-top: 0.5rem; }
 
   div.sacraments-image > img {
     width: 100%; max-width: 360px; object-fit: cover;
@@ -553,15 +562,11 @@ div.sacraments-sacrament-text-body h2 { font-weight: 400; font-size: 0.9rem; col
   }
 
   div.sacraments-sacrament-text {
-    margin-top: 0; padding: 0 0 0 1%; border-top: none;
+    margin-top: 0; padding: 0 0 0 1%;
+    border-top: none;
   }
 
   h2.sacraments-sacrament-text-headline { font-size: 1rem; }
-
-  div.sacraments-sacrament-text-body th,
-    div.sacraments-sacrament-text-body td,
-    div.sacraments-sacrament-text-body h1,
-    div.sacraments-sacrament-text-body h2 { font-size: 1rem; }
 }
 
 
