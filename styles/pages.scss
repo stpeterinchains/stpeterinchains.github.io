@@ -379,7 +379,23 @@ div.clergy-member-text-contact > a:hover { color: skyblue; }
 
 /*** PAGE: MINISTRIES ***/
 
-section.ministries-ministry { margin-top: 3rem; }
+#ministries-links {
+  margin: 4rem 0;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+#ministries-links-heading {
+  margin-bottom: 0.5rem; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  color: #666;
+}
+
+div.ministries-links-link { margin: 0 0 0.25rem 1rem; }
+div.ministries-links-link > a { text-decoration: none; color: #333; }
+div.ministries-links-link > a:last-of-type { padding-right: 0; }
+div.ministries-links-link > a:hover { color: skyblue; }
+
+section.ministries-ministry { margin-top: 4rem; }
 
 section.ministries-ministry > div.pure-g > div { box-sizing: border-box; }
 

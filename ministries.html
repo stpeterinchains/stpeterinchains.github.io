@@ -16,7 +16,12 @@ open_graph_description: >
 <section id="ministries" class="page-container">
   <h1 class="page-title">{{ ministries.title }}</h1>
   <p class="page-descriptive">{{ ministries.descriptive }}</p>
-
+  <div id="ministries-links">
+    <div id="ministries-links-heading">On this page</div>
+    {% for ministry in ministries.ministries %}
+    <div class="ministries-links-link"><a href="#ministry-{{ ministry.anchor }}">{{ ministry.title }}</a></div>
+    {% endfor %}
+  </div>
   {% for ministry in ministries.ministries %}
   <section class="ministries-ministry">
     <div class="pure-g">

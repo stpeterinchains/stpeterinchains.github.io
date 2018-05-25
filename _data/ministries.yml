@@ -1,12 +1,17 @@
 ---
 
 title: Ministries
-descriptive:
+descriptive: >
+  The ministries form a vital part of our parish and are essential to
+  the function and execution of every mass. Would you like to volunteer?
+  See below for information about each of the ways your talents or
+  interests can benefit the entire parish.
 
 ministries:
 
   -
     title: Music Ministry
+    anchor: music
     descriptive: >
       Bishop Daniel Miehm would like to hear your beautiful voices! As part of
       the renewal of liturgy here at the Cathedral, we are hoping to see
@@ -22,10 +27,11 @@ ministries:
 
   -
     title: Ministry of Lectors
+    anchor: lectors
     descriptive: >
       If you have ever considered becoming a lector and/or commentator, now is
       the time! You will receive education for your role.
-    image: lector.jpg
+    image: lectors.jpg
     contacts:
       -
         name: Mary Porter
@@ -36,6 +42,7 @@ ministries:
 
   -
     title: CAST
+    anchor: cast
     descriptive: |
       The Cathedral Altar Servers Team (CAST) was started in January 2015 as a
       means to unite young people and families around the beautiful ministry of
@@ -67,6 +74,7 @@ ministries:
 
   -
     title: Hospitality
+    anchor: hospitality
     descriptive: |
       The minister of hospitality (or greeter) is a relatively new role for
       Catholics. As part of our efforts to build up the community of
@@ -85,6 +93,7 @@ ministries:
 
   -
     title: EMHC
+    anchor: emhc
     descriptive: |
       Extraordinary Ministers of Holy Communion (EMHC) are properly
       formed, instructed, and commissioned male of female laypersons. These
@@ -106,6 +115,7 @@ ministries:
 
   -
     title: Parish Knights of Columbus
+    anchor: koc
     descriptive:
     image: koc.jpg
     contacts:
@@ -117,6 +127,7 @@ ministries:
 
   -
     title: Catholic Women's League
+    anchor: cwl
     descriptive:
     image: cwl.jpg
     contacts:
@@ -125,6 +136,7 @@ ministries:
 
   -
     title: Legion of Mary
+    anchor: lom
     descriptive:
     image: lom.png
     contacts:
