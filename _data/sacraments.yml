@@ -17,20 +17,18 @@ sacraments:
     anchor: rcia
     image: rcia.jpg
     form: RCIA-Application-Form.pdf
-    headline: RCIA sessions begin September
+    headline: RCIA sessions begin September 2018
     text: |
-      Our RCIA sessions will begin on Wednesday, September 6th,
-      from 6:30-8:30 pm, at Mount St. Joseph, located at 1555 Monaghan Road,
-      Peterborough.
-
-      The RCIA sessions (classes) will run until Pentecost 2018.
-      The RCIA process focuses on all things spiritual and intellectual about
-      the Catholic Church. For more information, please contact the
-      Rectory office at 705-745-4681 or speak with a priest after mass.
-
       Is the Holy Spirit drawing you, a family member, or a friend toward the
       Great Mystery known as the Catholic Church? If so, the
       Rite of Christian Initiation of Adults (RCIA) may be for you!
+      The RCIA process focuses on all things spiritual and intellectual about
+      the Catholic Church.
+
+      Our RCIA sessions will begin again in September, 2018.
+      Please watch for more information here and in our bulletin.
+      For more information, please contact the
+      Rectory office at 705-745-4681 or speak with a priest after mass.
 
   -
     title: Baptism
@@ -52,25 +50,33 @@ sacraments:
       The typical practice in the Diocese of Peterborough is for children to
       receive this Sacrament in Grade 7 or older.
 
+      The Sacramental Preparation Program is scheduled through the Church to
+      the Schools. A letter is sent home in June with students who will be
+      entering the grade for which a Sacrament is available.
+      Another letter is sent in September, with all dates and information for
+      parents.
+
+      The table below shows the sessions that progressed through the 2017-18
+      school year. These will be updated in the coming months for the 2018-19
+      school year.
+
       # Dates in preparation for Confirmation
 
-      Occasion        | Date              | Time
-      --------------  | ----------------- | --------
+      Occasion       | Date              | Time
+      -------------- | ----------------- | --------
       Parent/Child Information Night | September 7, 2017 | 7:00 PM
-      1st Session     | September 12, 2017 | 7:00 - 8:30 PM
-      2nd Session     | October 3, 2017    | 7:00 - 8:30 PM
-      3rd Session     | October 17, 2017   | 7:00 - 8:30 PM
-      4th Session     | November 14, 2017  | 7:00 - 8:30 PM
-      5th Session     | December 5, 2017   | 7:00 - 8:30 PM
-      6th Session     | January 30, 2018   | 7:00 - 8:30 PM
-      7th Session     | February 6, 2018   | 7:00 - 8:30 PM
-      8th Session     | February 27, 2018  | 7:00 - 8:30 PM
-      9th Session     | March 20, 2018     | 7:00 - 8:30 PM
-      10th Session    | April 17, 2018     | 7:00 - 8:30 PM
-      Retreat Day     | April 28, 2018     | 10:00 AM - 2:00 PM
-      First Communion | May 20, 2018       | 10:00 AM
-
-      NOTE: Retreat Day location to be announced.
+      1st Session    | September 12, 2017 | 7:00 - 8:30 PM
+      2nd Session    | October 3, 2017    | 7:00 - 8:30 PM
+      3rd Session    | October 17, 2017   | 7:00 - 8:30 PM
+      4th Session    | November 14, 2017  | 7:00 - 8:30 PM
+      5th Session    | December 5, 2017   | 7:00 - 8:30 PM
+      6th Session    | January 30, 2018   | 7:00 - 8:30 PM
+      7th Session    | February 6, 2018   | 7:00 - 8:30 PM
+      8th Session    | February 27, 2018  | 7:00 - 8:30 PM
+      9th Session    | March 20, 2018     | 7:00 - 8:30 PM
+      10th Session   | April 17, 2018     | 7:00 - 8:30 PM
+      Retreat Day    | April 28, 2018     | 10:00 AM - 2:00 PM
+      Confirmation   | May 20, 2018       | 10:00 AM
 
   -
     title: First Reconciliation and First Communion
