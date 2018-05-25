@@ -53,9 +53,9 @@ navbar:
       mnemonic: sacraments
       link: /sacraments.html
     -
-      title: History
-      mnemonic: history
-      link: /history.html
+      title: About&nbsp;us
+      mnemonic: about
+      link: /about.html
   external:
     -
       title: Donate at Canada&nbsp;Helps
