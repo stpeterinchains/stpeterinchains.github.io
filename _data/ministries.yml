@@ -21,27 +21,6 @@ ministries:
         email: engbar2@gmail.com
 
   -
-    title: EMHC
-    descriptive: |
-      Extraordinary Ministers of Holy Communion (EMHC) are properly
-      formed, instructed, and commissioned male of female laypersons. These
-      ministers are appointed for a given parish community to aid in the
-      distribution of Holy Communion at Mass and to the sick and homebound when
-      ordinary ministers of Holy Communion are unavailable.
-
-      If you are interested in becoming a Minister of Holy Communion,
-      please speak to one of the priests after mass or contact one of our
-      ministry leaders, below.
-    image: emhc.jpg
-    contacts:
-      -
-        name: Mary Porter
-        phone: 705-740-0452
-      -
-        name: Kerrie Magnus
-        email: stpetersyouthmass@gmail.com
-
-  -
     title: Ministry of Lectors
     descriptive: >
       If you have ever considered becoming a lector and/or commentator, now is
@@ -54,24 +33,6 @@ ministries:
       -
         name: Kerrie Magnus
         email: stpetersyouthmass@gmail.com
-
-  -
-    title: Hospitality
-    descriptive: |
-      The minister of hospitality (or greeter) is a relatively new role for
-      Catholics. As part of our efforts to build up the community of
-      Saint Peter-in-Chains, and under the direction of our pastor, the
-      Cathedral will soon be asking our ushers to expand their role to include
-      a hospitality ministry.
-
-      If you are interested in being a part of this ministry, please call the
-      Cathedral Office to speak to Kathy for details.
-    image: hospitality.jpg
-    contacts:
-      -
-        name: Kathy Romard
-        title: Cathedral Office
-        phone: 705-745-4681
 
   -
     title: CAST
@@ -105,6 +66,45 @@ ministries:
         email: siobhaindoyle@hotmail.com
 
   -
+    title: Hospitality
+    descriptive: |
+      The minister of hospitality (or greeter) is a relatively new role for
+      Catholics. As part of our efforts to build up the community of
+      Saint Peter-in-Chains, under the direction of our pastor, the
+      Cathedral will soon be asking our ushers to expand their role to
+      include a hospitality ministry.
+
+      If you are interested in being a part of this ministry, please call the
+      Cathedral Office to speak to Kathy for details.
+    image: hospitality.jpg
+    contacts:
+      -
+        name: Kathy Romard
+        title: Cathedral Office
+        phone: 705-745-4681
+
+  -
+    title: EMHC
+    descriptive: |
+      Extraordinary Ministers of Holy Communion (EMHC) are properly
+      formed, instructed, and commissioned male of female laypersons. These
+      ministers are appointed for a given parish community to aid in the
+      distribution of Holy Communion at Mass and to the sick and homebound when
+      ordinary ministers of Holy Communion are unavailable.
+
+      If you are interested in becoming a Minister of Holy Communion,
+      please speak to one of the priests after mass or contact one of our
+      ministry leaders, below.
+    image: emhc.jpg
+    contacts:
+      -
+        name: Mary Porter
+        phone: 705-740-0452
+      -
+        name: Kerrie Magnus
+        email: stpetersyouthmass@gmail.com
+
+  -
     title: Parish Knights of Columbus
     descriptive:
     image: koc.jpg
@@ -114,6 +114,14 @@ ministries:
         title: Grand Knight
         phone: 705-742-4374
         email: mikeandtrudy@sympatico.ca
+
+  -
+    title: Catholic Women's League
+    descriptive:
+    image: cwl.jpg
+    contacts:
+      -
+        email: 38pocwl@gmail.com
 
   -
     title: Legion of Mary
