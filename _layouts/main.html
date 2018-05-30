@@ -131,7 +131,7 @@
           {% if item.mail %}
             <dd><a href="mailto:{{ item.mail }}">{{ item.mail }}</a></dd>
           {% elsif item.link %}
-            <dd><a href="{{ item.link }}">{{ item.link }}</a></dd>
+            <dd><a target="_blank" href="{{ item.link }}">{{ item.link }}</a></dd>
           {% else %}
             <dd>{{ item.text }}</dd>
           {% endif %}
@@ -148,8 +148,8 @@
 
 <div id="colophon">
   <p id="colophon-copyright">Copyright&nbsp;&copy;&nbsp;2018 Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains</p>
-  <p id="colophon-license">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-  <p id="colophon-attribution"><a href="https://www.facebook.com/sdohtem/" target="_blank">Made</a>&nbsp;with&nbsp;<span id="colophon-attribution-cross">&#x271D;</span><span id="colophon-attribution-heart">&#x2764;</span> in&nbsp;Peterborough</p>
+  <p id="colophon-license">This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+  <p id="colophon-attribution"><a target="_blank" href="https://www.facebook.com/sdohtem/">Made</a>&nbsp;with&nbsp;<span id="colophon-attribution-cross">&#x271D;</span><span id="colophon-attribution-heart">&#x2764;</span> in&nbsp;Peterborough</p>
 </div>
 
 </footer>
