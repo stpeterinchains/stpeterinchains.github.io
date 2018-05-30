@@ -27,7 +27,7 @@ history_images_path:   "/images/history/"
 
 # Build
 
-#url: "https://stpeterspeterborough.ca"
+url: "https://stpeterspeterborough.ca"
 #baseurl: ""
 
 timezone: America/Toronto
