@@ -13,6 +13,18 @@ issues:
     months:
 
       -
+        month: June
+        bulletins:
+          -
+            date: 3
+            title: Corpus Christi Sunday
+            link: https://drive.google.com/file/d/1-N5Sgv4XhBMMmmpI4uUsZxmWz8CmW5X1/view
+            inserts:
+              -
+                title: Adoration of the Blessed Sacrament
+                link: https://drive.google.com/file/d/0B8BxcxHuPDl-Zk16ZDZzSDl6Q2s/view
+
+      -
         month: May
         bulletins:
           -
