@@ -58,7 +58,7 @@
 
 <section id="welcome">
   <h1>{{ welcome.title }}</h1>
-  <p>{{ welcome.message }}</p>
+  <div class="markdown">{{ welcome.message | markdownify }}</div>
 </section>
 
 {% endif %}
