@@ -28,9 +28,7 @@
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: 'Open Sans', sans-serif; }
 
-section.page-container {
-  margin: 0 5%;
-}
+section.page-container { margin: 0 5%; }
 
 h1.page-title {
   margin: 0;
@@ -40,7 +38,6 @@ h1.page-title {
 
 div.page-descriptive {
   margin: 1rem 0 2rem 0;
-  font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
 
@@ -88,7 +85,7 @@ div.markdown td {
 
 @media screen and (min-width: 48rem) {
   h1.page-title { font-size: 1.75rem; }
-  div.page-descriptive { font-size: 1rem; }
+  div.page-descriptive > p { font-size: 1rem; }
 }
 
 /* @media screen and (min-width: 80rem) { */

@@ -17,7 +17,7 @@ open_graph_description: >
 
 <section id="bulletins" class="page-container">
   <h1 class="page-title">{{ bulletins.title }}</h1>
-  <div class="page-descriptive markdown">{{ bulletins.descriptive }}</div>
+  <div class="page-descriptive markdown">{{ bulletins.descriptive | markdownify }}</div>
   {% for year in bulletins.issues %}
   <section class="bulletins-year">
     <h1>{{ year.year }}</h1>
