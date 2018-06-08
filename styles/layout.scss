@@ -64,7 +64,7 @@ div.markdown em { font-style: italic; }
 div.markdown strong { font-weight: 600; }
 
 div.markdown > table {
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   border-collapse: collapse;
 }
 
@@ -74,14 +74,8 @@ div.markdown th, div.markdown td {
   font-size: 0.9rem;
 }
 
-div.markdown th {
-  font-weight: 400;
-  text-decoration: underline;
-}
-
-div.markdown td {
-  font-weight: 300;
-}
+div.markdown th { font-weight: 400; text-decoration: underline; }
+div.markdown td { font-weight: 300; }
 
 @media screen and (min-width: 48rem) {
   h1.page-title { font-size: 1.75rem; }
