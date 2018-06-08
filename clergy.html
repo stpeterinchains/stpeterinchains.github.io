@@ -15,7 +15,7 @@ open_graph_description: >
 
 <section id="clergy" class="page-container">
   <h1 class="page-title">{{ clergy.title }}</h1>
-  <div class="page-descriptive markdown">{{ clergy.descriptive }}</div>
+  <div class="page-descriptive markdown">{{ clergy.descriptive | markdownify }}</div>
   {% for member in clergy.clergy %}
   <section class="clergy-member">
     <div class="pure-g">

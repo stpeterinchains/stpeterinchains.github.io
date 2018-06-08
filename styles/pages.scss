@@ -306,8 +306,9 @@ h2.clergy-member-text-position {
 }
 
 div.clergy-member-text-bio { margin: 0.5rem 0; }
+div.clergy-member-text-bio a { font-weight: 400; color: #333; }
 
-div.clergy-member-text-contact { margin-top: 0.5rem; }
+div.clergy-member-text-contact { margin-top: 1rem; }
 
 div.clergy-member-text-contact > a {
   margin-right: 1rem;
