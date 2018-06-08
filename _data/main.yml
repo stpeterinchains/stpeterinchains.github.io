@@ -15,15 +15,14 @@ welcome:
 slideshow:
   -
     image: cathedral-exterior-interior.jpg
-    caption: The Cathedral of <span style="color:#ff6">Saint&nbsp;Peter&ndash;in&ndash;Chains</span>
+    caption: The Cathedral of **Saint Peter&ndash;in&ndash;Chains**
   -
     image: mural.jpg
-    caption: The Great Mural of <span style="color:#ff6">The Last Supper</span>
+    caption: The Great Mural of **The Last Supper**
   -
     image: teamwork.jpg
     caption: >
-      March 30, 2018: <span style="color:#ff6">The Passion of Our Lord</span><br>
-      Team effort wins the day!
+      March 30, 2018: **The Passion of Our Lord**
 
 navbar:
   internal:

@@ -47,13 +47,11 @@ p.page-descriptive {
 div.markdown > h1 {
   margin: 1rem 0 0 0;
   font-weight: 400; font-size: 0.9rem;
-  /* color: #666; */
 }
 
 div.markdown > h2 {
   margin: 0.5rem 0 0 0;
   font-weight: 400; font-size: 0.9rem;
-  /* color: #999; */
 }
 
 div.markdown > p {
@@ -225,16 +223,21 @@ div.slideshow-slide { display: none; }
 
 div.slideshow-slide > img { width: 100%; }
 
-div.slideshow-slide > span {
+div.slideshow-slide > div {
   box-sizing: border-box;
   position: absolute; bottom: 20%; left: 5%;
   border-radius: 5px;
   padding: 0.25rem 1rem;
   background-color: rgba(0,0,0,0.2);
-  font-weight: 600; font-size: 1rem;
   text-overflow: clip;
-  color: white; text-shadow: 0 0 3px black;
+  text-shadow: 0 0 3px black; color: white;
 }
+
+div.slideshow-slide > div > p { margin-top: 0; font-weight: 600; font-size: 1rem; }
+div.slideshow-slide > div a { color: #ccc; }
+div.slideshow-slide > div a:hover { color: white; }
+div.slideshow-slide > div em {}
+div.slideshow-slide > div strong { font-weight: 600; color: #ff6; }
 
 div.slideshow-effect { animation-name: slideshow-effect; animation-duration: 1s; }
 @keyframes slideshow-effect { from {opacity: 0.5} to {opacity: 1} }
@@ -288,7 +291,8 @@ span.slideshow-pause-inactive { background-color: #ccc; }
 span.slideshow-pause-active { background-color: #666; }
 
 @media screen and (min-width: 35.5rem) {
-  div.slideshow-slide > span { font-size: 1.5rem; bottom: 15%; }
+  div.slideshow-slide > div { bottom: 15%; }
+  div.slideshow-slide > div > p { font-size: 1.5rem; }
 }
 
 
