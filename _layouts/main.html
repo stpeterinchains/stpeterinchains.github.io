@@ -57,8 +57,8 @@
 {% assign welcome = site.data.main.welcome %}
 
 <section id="welcome">
-  <h1>{{ welcome.title }}</h1>
-  <div class="markdown">{{ welcome.message | markdownify }}</div>
+  <h1 id="welcome-title">{{ welcome.title }}</h1>
+  <div id="welcome-message" class="markdown">{{ welcome.message | markdownify }}</div>
 </section>
 
 {% endif %}

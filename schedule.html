@@ -21,7 +21,7 @@ open_graph_description: >
   <section class="schedule-occasion">
     <h1 class="schedule-occasion-title">{{ occasion.title }}</h1>
     {% if occasion.start %}<h2 class="schedule-occasion-start">{{ occasion.start }}</h2>{% endif %}
-    {% if occasion.descriptive %}<p class="schedule-occasion-descriptive">{{ occasion.descriptive }}</p>{% endif %}
+    {% if occasion.descriptive %}<div class="schedule-occasion-descriptive markdown">{{ occasion.descriptive | markdownify }}</div>{% endif %}
     <div class="pure-g">
       {% for event in occasion.events %}
       <div class="schedule-event pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 pure-u-xl-1-4"><section>
@@ -31,7 +31,7 @@ open_graph_description: >
         {% else %}
         <h1 class="schedule-event-title-without-image">{{ event.title }}</h1>
         {% endif %}
-        {% if event.descriptive %}<p class="schedule-event-descriptive">{{ event.descriptive }}</p>{% endif %}
+        {% if event.descriptive %}<div class="schedule-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
         {% for day in event.days %}
         <div class="schedule-event-day">{{ day.day | replace: '--', '&ndash;' }}</div>
         {% for time in day.times %}

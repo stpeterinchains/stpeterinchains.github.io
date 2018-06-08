@@ -154,15 +154,15 @@ span.index-schedule-time {
 #call-to-action-message a:hover { color: skyblue; }
 
 @media screen and (min-width: 48rem) {
-  #call-to-action-message { font-size: 1rem; }
+  #call-to-action-message > p { font-size: 1rem; }
 }
 
 @media screen and (min-width: 64rem) {
-  #call-to-action-message { font-size: 1.1rem; }
+  #call-to-action-message > p { font-size: 1.1rem; }
 }
 
 @media screen and (min-width: 80rem) {
-  #call-to-action-message { margin-left: 15%; margin-right: 15%; }
+  #call-to-action-message > p { margin-left: 15%; margin-right: 15%; }
 }
 
 
@@ -182,11 +182,12 @@ h2.schedule-occasion-start {
   color: #333;
 }
 
-p.schedule-occasion-descriptive {
+div.schedule-occasion-descriptive {
   margin: 0.5rem 0 0 0;
-  font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
+
+div.schedule-occasion-descriptive a { font-weight: 400; color: #333; }
 
 section.schedule-occasion > div.pure-g > div { box-sizing: border-box; }
 
@@ -198,11 +199,12 @@ h1.schedule-event-title-with-image, h1.schedule-event-title-without-image {
   color: #333;
 }
 
-p.schedule-event-descriptive {
+div.schedule-event-descriptive {
   margin: 0; margin-right: 10%;
-  font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
+
+div.schedule-event-descriptive a { font-weight: 400; color: #333; }
 
 div.schedule-event-day {
   margin: 0.25rem 0 0 1rem;

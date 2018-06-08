@@ -61,6 +61,8 @@ div.markdown > p {
   font-weight: 300; font-size: 0.9rem;
 }
 
+div.markdown em { font-style: italic; }
+div.markdown strong { font-weight: 600; }
 div.markdown a { text-decoration: none; }
 div.markdown a:hover { color: skyblue; }
 
@@ -89,10 +91,10 @@ div.markdown td {
   div.page-descriptive { font-size: 1rem; }
 }
 
-@media screen and (min-width: 64rem) {
-  div.markdown > p, div.markdown > h1, div.markdown > h2 { font-size: 1rem; }
-  div.markdown > h1, div.markdown > h2, div.markdown th, div.markdown td { font-size: 1rem; }
-}
+/* @media screen and (min-width: 80rem) { */
+/*   div.markdown > p, div.markdown > h1, div.markdown > h2, */
+/*     div.markdown th, div.markdown td { font-size: 1rem; } */
+/* } */
 
 
 
@@ -190,24 +192,25 @@ div.markdown td {
   background-color: #c33;
 }
 
-#welcome > h1 {
+#welcome-title {
   margin: 0 5%;
   font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
   color: white; text-shadow: -1px 1px 2px #333;
 }
 
-#welcome > div {
+#welcome-message {
   margin: 0.5rem 5% 0 5%;
-  font-weight: 300; font-size: 1rem;
   color: rgba(255,255,255,0.75);
 }
 
-#welcome > div em { color: white; font-style: normal; }
-#welcome > div strong { font-weight: 400; color: white; }
+#welcome-message > p { font-size: 1rem; }
 
-@media screen and (min-width: 48rem) { #welcome > div { margin: 0.5rem 10%; } }
-@media screen and (min-width: 64rem) { #welcome > div { margin: 0.5rem 15%; } }
-@media screen and (min-width: 80rem) { #welcome > div { margin: 0.5rem 20%; } }
+#welcome-message em { color: white; font-style: normal; }
+#welcome-message strong { font-weight: 400; color: white; }
+
+@media screen and (min-width: 48rem) { #welcome-message { margin: 0.5rem 10%; } }
+@media screen and (min-width: 64rem) { #welcome-message { margin: 0.5rem 15%; } }
+@media screen and (min-width: 80rem) { #welcome-message { margin: 0.5rem 20%; } }
 
 
 /* SECTION: SLIDESHOW */
@@ -239,8 +242,7 @@ div.slideshow-slide > div {
 div.slideshow-slide > div > p { margin-top: 0; font-weight: 600; font-size: 1rem; }
 div.slideshow-slide > div a { color: #ccc; }
 div.slideshow-slide > div a:hover { color: white; }
-div.slideshow-slide > div em {}
-div.slideshow-slide > div strong { font-weight: 600; color: #ff6; }
+div.slideshow-slide > div strong { color: #ff6; }
 
 div.slideshow-effect { animation-name: slideshow-effect; animation-duration: 1s; }
 @keyframes slideshow-effect { from {opacity: 0.5} to {opacity: 1} }

@@ -1,13 +1,11 @@
 ---
 
 title: Schedule
-descriptive: |
+descriptive: >
   Our parish holds daily and weekly masses, devotions, confessions,
   and other faith events. We also feature many special events
   throughout the liturgical year.
 
-  This is a second paragraph.
-  And [this](http://example.com) is a link.
 occasions:
 
 
@@ -23,9 +21,9 @@ occasions:
         image: weekend-mass.jpg
         homepage: true
         descriptive: >
-          Join us for our signature Sunday morning masses.
+          Join us for our Sunday morning masses.
           For those who prefer an anticipated mass, join us for the
-          Saturday Vigil.
+          Saturday Vigil. This is a [link](example.com).
         days:
           -
             day: Sunday Morning
