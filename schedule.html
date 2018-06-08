@@ -16,7 +16,7 @@ open_graph_description: >
 
 <section id="schedule" class="page-container">
   <h1 class="page-title">{{ schedule.title }}</h1>
-  <p class="page-descriptive">{{ schedule.descriptive }}</p>
+  <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
   {% for occasion in schedule.occasions %}
   <section class="schedule-occasion">
     <h1 class="schedule-occasion-title">{{ occasion.title }}</h1>

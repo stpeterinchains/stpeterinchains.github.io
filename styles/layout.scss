@@ -38,11 +38,13 @@ h1.page-title {
   color: black; text-shadow: -1px 1px 2px #ccc;
 }
 
-p.page-descriptive {
+div.page-descriptive {
   margin: 1rem 0 2rem 0;
   font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
+
+div.page-descriptive a { font-weight: 400; color: #333; }
 
 div.markdown > h1 {
   margin: 1rem 0 0 0;
@@ -60,6 +62,7 @@ div.markdown > p {
 }
 
 div.markdown a { text-decoration: none; }
+div.markdown a:hover { color: skyblue; }
 
 div.markdown > table {
   margin-bottom: 0.5rem;
@@ -83,7 +86,7 @@ div.markdown td {
 
 @media screen and (min-width: 48rem) {
   h1.page-title { font-size: 1.75rem; }
-  p.page-descriptive { font-size: 1rem; }
+  div.page-descriptive { font-size: 1rem; }
 }
 
 @media screen and (min-width: 64rem) {
