@@ -58,10 +58,10 @@ div.markdown > p {
   font-weight: 300; font-size: 0.9rem;
 }
 
+div.markdown a { font-weight: 400; text-decoration: none; color: #333; }
+div.markdown a:hover { color: skyblue; }
 div.markdown em { font-style: italic; }
 div.markdown strong { font-weight: 600; }
-div.markdown a { text-decoration: none; }
-div.markdown a:hover { color: skyblue; }
 
 div.markdown > table {
   margin-bottom: 0.5rem;

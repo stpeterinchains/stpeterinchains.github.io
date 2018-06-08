@@ -187,8 +187,6 @@ div.schedule-occasion-descriptive {
   color: #666;
 }
 
-div.schedule-occasion-descriptive a { font-weight: 400; color: #333; }
-
 section.schedule-occasion > div.pure-g > div { box-sizing: border-box; }
 
 img.schedule-event-image { display: none; }
@@ -203,8 +201,6 @@ div.schedule-event-descriptive {
   margin: 0; margin-right: 10%;
   color: #666;
 }
-
-div.schedule-event-descriptive a { font-weight: 400; color: #333; }
 
 div.schedule-event-day {
   margin: 0.25rem 0 0 1rem;
@@ -306,7 +302,6 @@ h2.clergy-member-text-position {
 }
 
 div.clergy-member-text-bio { margin: 0.5rem 0; }
-div.clergy-member-text-bio a { font-weight: 400; color: #333; }
 
 div.clergy-member-text-contact { margin-top: 1rem; }
 
@@ -414,7 +409,7 @@ div.ministries-ministry-text-phone > span { padding-left: 1rem; color: #999; }
 
 @media screen and (min-width: 64rem) {
   h1.ministries-ministry-text-title { font-size: 1rem; }
-  div.ministries-ministry-text-descriptive > p { font-size: 1rem; }
+  /* div.ministries-ministry-text-descriptive > p { font-size: 1rem; } */
   div.ministries-ministry-text-name { font-size: 1rem; }
   div.ministries-ministry-text-title { font-size: 1rem; }
   div.ministries-ministry-text-method { font-size: 1rem; }
