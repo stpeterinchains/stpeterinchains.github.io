@@ -44,12 +44,6 @@ p.page-descriptive {
   color: #666;
 }
 
-div.markdown > p {
-  margin: 0.5rem 0 0 0;
-  font-weight: 300; font-size: 0.9rem;
-  /* color: #666; */
-}
-
 div.markdown > h1 {
   margin: 1rem 0 0 0;
   font-weight: 400; font-size: 0.9rem;
@@ -61,6 +55,13 @@ div.markdown > h2 {
   font-weight: 400; font-size: 0.9rem;
   /* color: #999; */
 }
+
+div.markdown > p {
+  margin: 0.5rem 0 0 0;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+div.markdown a { text-decoration: none; }
 
 div.markdown > table {
   margin-bottom: 0.5rem;
@@ -76,12 +77,10 @@ div.markdown th, div.markdown td {
 div.markdown th {
   font-weight: 400;
   text-decoration: underline;
-  color: #333;
 }
 
 div.markdown td {
   font-weight: 300;
-  color: #666;
 }
 
 @media screen and (min-width: 48rem) {

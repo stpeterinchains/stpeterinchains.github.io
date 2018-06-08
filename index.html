@@ -68,5 +68,5 @@ open_graph_description: >
 
 <section id="call-to-action">
   <iframe src="https://www.youtube.com/embed/{{ cta.video_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <div id="call-to-action-message">{{ cta.message }}</div>
+  <div id="call-to-action-message" class="markdown">{{ cta.message | markdownify }}</div>
 </section>
