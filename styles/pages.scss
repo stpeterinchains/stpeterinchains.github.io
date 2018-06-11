@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-#index-schedule > h1 {
+#index-schedule-title {
   margin: 0 5%; padding-bottom: 0.25rem;
   border-bottom: 2px solid #eee;
   font-weight: 400; font-size: 0.9rem;
@@ -62,14 +62,14 @@ span.index-schedule-time {
 #index-schedule-more > a:hover { color: skyblue; }
 
 @media screen and (min-width: 48rem) {
-  #index-schedule > h1 { font-size: 1rem; }
+  #index-schedule-title { font-size: 1rem; }
   div.index-schedule-occasion { font-size: 1rem; }
   div.index-schedule-event { font-size: 1rem; }
   #index-schedule-more > a { font-size: 1rem; }
 }
 
 @media screen and (min-width: 64rem) {
-  #index-schedule > h1 { margin: 0 10%; font-size: 1.1rem; }
+  #index-schedule-title { margin: 0 10%; font-size: 1.1rem; }
   div.index-schedule-occasion { font-size: 1.1rem; }
   div.index-schedule-event { padding-top: 0.75rem; font-size: 1.1rem; }
   span.index-schedule-days-times { display: inline; }
@@ -77,10 +77,56 @@ span.index-schedule-time {
 }
 
 
+/* SECTION: OPENER */
+
+#opener { margin: 3rem 10% 0 10%; }
+
+#opener-title {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  font-weight: 400; font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+}
+
+div.opener-item { margin-bottom: 3rem; }
+
+div.opener-item-patch {
+  width: 7rem; height: 7rem; line-height: 7rem;
+  margin: 0 auto 1rem auto;
+  background-color: #eee;
+  box-shadow: -2px 2px 5px #ccc;
+  border-radius: 50%;
+  text-align: center;
+  color: #666;
+}
+
+div.opener-item-patch-blurb { display: inline-block; vertical-align: middle; line-height: normal; }
+div.opener-item-patch-blurb p { font-weight: 400; font-size: 0.9rem; margin: 0; position: relative; top: -0.25rem; line-height: 1rem; }
+div.opener-item-patch-blurb em { font-weight: 400; font-size: 1rem; font-style: normal; }
+div.opener-item-patch-blurb strong { font-weight: 600; font-size: 1.2rem; }
+
+div.opener-item-text { margin: 0.5rem 5% 0 5%; color: #666; }
+div.opener-item-text em { font-style: normal; color: #c33; }
+
+@media screen and (min-width: 48rem) {
+  #opener { margin-left: 0; margin-right: 0; }
+  div.opener-item-patch { margin-bottom: 2rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  div.opener-item-patch { width: 8rem; height: 8rem; line-height: 8rem; }
+  div.opener-item-patch-blurb p { font-size: 1rem; line-height: 1.1rem; }
+  div.opener-item-patch-blurb em { font-size: 1.1rem; }
+  div.opener-item-patch-blurb strong { font-size: 1.3rem; }
+  div.opener-item-text p { font-size: 1rem; }
+}
+
+
 /* SECTION: SOCIAL MEDIA */
 
 #social {
-  margin: 3rem 5% 0 5%;
+  margin: 0 5% 1rem 5%;
   text-align: center;
 }
 
@@ -116,7 +162,7 @@ span.index-schedule-time {
 
 #formed {
   display: block;
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
   text-align: center; text-decoration: none;
   color: #666;
 }

@@ -18,7 +18,7 @@ open_graph_description: >
 {% assign schedule = site.data.schedule %}
 
 <section id="index-schedule">
-  <h1>{{ schedule.title }}</h1>
+  <h1 id="index-schedule-title">{{ schedule.title }}</h1>
   {% for occasion in schedule.occasions %}
   {% if occasion.homepage %}<div class="index-schedule-occasion">{{ occasion.title }}</div>{% endif %}
   {% for event in occasion.events %}
@@ -38,6 +38,21 @@ open_graph_description: >
   {% endfor %}
   {% endfor %}
   <div id="index-schedule-more"><a href="{{ '/schedule.html' | relative_url }}">More</a></div>
+</section>
+
+<!-- OPENER -->
+
+{% assign opener = site.data.index.opener %}
+
+<section id="opener">
+  <div class="pure-g">
+    {% for item in opener %}
+    <div class="opener-item pure-u-1 pure-u-md-1-3"><section>
+      <div class="opener-item-patch"><div class="opener-item-patch-blurb">{{ item.patch | markdownify }}</div></div>
+      <div class="opener-item-text markdown">{{ item.text | markdownify }}</div>
+    </section></div>
+    {% endfor %}
+  </div>
 </section>
 
 <!-- SOCIAL MEDIA & MAP -->

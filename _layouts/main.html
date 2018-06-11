@@ -72,7 +72,7 @@
   <div id="slideshow-container">
     {% for slide in slideshow %}
     <div class="slideshow-slide slideshow-effect">
-      <img src="{{ slide.image | prepend: site.slideshow_path | relative_url }}">
+      <img src="{{ slide.image | prepend: site.slideshow_images_path | relative_url }}">
       <div class="markdown">{{ slide.caption | markdownify }}</div>
     </div>
     {% endfor %}
