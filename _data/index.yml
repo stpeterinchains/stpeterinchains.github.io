@@ -9,15 +9,14 @@ opener:
       **Mission**
     text: |
       **Our Parish has a simple mission:**
-      To know *Christ* and give glory to *God*.
+      To know *Christ*, and to give glory to *God*.
       We welcome all people to our community of worship, service,
       and&nbsp;evangelization.
 
       Whether you've been a Christian your entire life, or
-      you're seeking an introduction to Christianity and the Catholic faith,
-      our welcoming, faith-centric community is a place to learn and
-      experience. **Discover the difference *Christ* can make in
-      your&nbsp;life.**
+      you're interested to learn about Christianity and the Catholic faith,
+      our welcoming, faith-centric community is a place to discover and
+      experience.
 
   -
     patch: |
@@ -27,16 +26,14 @@ opener:
 
       Future
     text: |
-      The iconic Cathedral of Saint Peter-in-Chains is an historic
-      Roman Catholic parish
+      The centre of our Parish is the iconic
+      Cathedral of Saint Peter-in-Chains, an historic Roman Catholic church
       [located in the heart of Peterborough](https://goo.gl/maps/Vz73TcvLW8P2).
-      The Cathedral has stood since 1837, and stands today as a centre of
-      Christian ministry and service to the community at large.
 
-      The 180 year history of this remarkable church is emblematic of our
-      Christian heritage, bridging yesterday and today.
-      Come, see what the contemporary Catholic experience is all
-      about, in the beauty of an historic cathedral.
+      This remarkable church, which has stood for over 180 years, is emblematic
+      of our Christian heritage, a bridge between yesterday and today.
+      Come, see what the contemporary Catholic experience is all about,
+      in the beauty of an historic cathedral.
 
   -
     patch: |
@@ -51,12 +48,12 @@ opener:
       known in the community for their devotion to
       Catholic faith and principles.
 
-      If you
-      are seeking *Jesus&nbsp;Christ* in your life,
+      If you are seeking *Christ* in your life,
       have questions about the Catholic faith, or
-      are curious about becoming part of a faith community,
-      our priests invite questions and welcome dialogue.
-      They are caring, knowledgeable, and always willing to help.
+      are interested in becoming part of a faith community,
+      speak to one of our priests.
+      They invite your questions, welcome dialogue,
+      and are always willing to help!
 
   -
     patch: |
@@ -66,22 +63,18 @@ opener:
 
       **new?**
     text: |
-      New to *Christ*, curious about the Catholic faith, or simply new to the
-      Peterborough area?
+      Are you seeking *Christ*, curious about the Catholic faith,
+      or simply new to the Peterborough area?
 
       As a Catholic faith community, we're here to spread the gospel of
       *Jesus&nbsp;Christ*.
       We believe there's no better way to live this life than in the moral
       principles of the Christian faith.
 
-      Come, attend a mass or other faith event.
-      There's always something scheduled&mdash;daily, weekly, and
-      throughout the year.
-
-      Check out the [Schedule](/schedule.html),
-      our weekly [Bulletin](/bulletins.html), or
-      the Contacts section below.
-      You can also check us out on social media!
+      Attend a mass or other faith event. Talk to a priest. Meet other in our
+      community! Check out the [Schedule](/schedule.html),
+      our weekly [Bulletin](/bulletins.html), or the Contacts section below.
+      You can also find us on social media!
 
   -
     patch: |
@@ -93,7 +86,6 @@ opener:
       Many contribute their time, energy, and talent to ministry
       through music, hospitality, and other ways.
 
-      Are you being called to serve in Christian ministry?
       Consider becoming a volunteer. Whether you have a musical talent, would
       enjoy speaking, are gifted in hospitality, have professional knowledge,
       or simply want to give back by assisting during masses and other
@@ -104,11 +96,11 @@ opener:
     patch: Fundraising
     text: |
       The Cathedral was constructed in 1837 and is easily one of the most
-      iconic and recognizable buildings in Peterborough.
+      iconic and recognizable buildings in the
+      [City of Peterborough](http://www.peterborough.ca).
       In addition to the regular operational expenses of a living,
       breathing faith community, funding the ongoing maintenance of an
-      historic, 180-year-old building is a major operational challenge for
-      our Parish.
+      historic building is a major operational challenge for our Parish.
 
       Help ensure that our children will know and enjoy this beautiful
       Cathedral in the years and decades to come.
