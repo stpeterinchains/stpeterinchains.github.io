@@ -1,111 +1,115 @@
 ---
 
 opener:
+  title: Saint Peter&#x2011;in&#x2011;Chains. Who we are.
+  title: Historic cathedral. Contemporary experience.
+  title: >
+    Join us for a contemporary Christian experience
+    in the beauty of an historic&nbsp;cathedral
+  items:
 
-  -
-    patch: |
-      The
+    -
+      color: white
+      background: darkcyan
+      patch: |
+        The
 
-      **Mission**
-    text: |
-      **Our Parish has a simple mission:**
-      To know *Christ*, and to give glory to *God*.
-      We welcome all people to our community of worship, service,
-      and&nbsp;evangelization.
+        **Mission**
+      text: |
+        **Our Parish has a simple mission:**
+        To know *Christ*, and to give glory to *God*.
+        We welcome all people to our community of worship, service,
+        and&nbsp;evangelization.
 
-      Whether you've been a Christian your entire life, or
-      you're interested to learn about Christianity and the Catholic faith,
-      our welcoming, faith-centric community is a place to discover and
-      experience.
+        Whether you've been a Christian your entire life, or
+        you're interested to learn about Christianity and the Catholic faith,
+        our welcoming, faith-centric community is a place to discover and
+        experience.
 
-  -
-    patch: |
-      Past
+    -
+      color: white
+      background: purple
+      patch: |
+        Past
 
-      **Present**
+        **Present**
 
-      Future
-    text: |
-      The centre of our Parish is the iconic
-      Cathedral of Saint Peter-in-Chains, an historic Roman Catholic church
-      [located in the heart of Peterborough](https://goo.gl/maps/Vz73TcvLW8P2).
+        Future
+      text: |
+        The centre of our Parish is the iconic
+        Cathedral of Saint Peter-in-Chains, an historic Roman Catholic church
+        [located in the heart of Peterborough](https://goo.gl/maps/Vz73TcvLW8P2).
 
-      This remarkable church, which has stood for over 180 years, is emblematic
-      of our Christian heritage, a bridge between yesterday and today.
-      Come, see what the contemporary Catholic experience is all about,
-      in the beauty of an historic cathedral.
+        This remarkable church, which has stood for over 180 years, is emblematic
+        of our Christian heritage, a bridge between yesterday and today.
+        Come, see what the contemporary Catholic experience is all about,
+        in the beauty of an historic cathedral.
 
-  -
-    patch: |
-      Knowledge
+    -
+      color: white
+      background: skyblue
+      patch: |
+        Knowledge
 
-      **Faith**
+        **Faith**
 
-      Service
-    text: |
-      Our Parish is blessed to have an
-      [extraordinary team of faith leaders](/clergy.html),
-      known in the community for their devotion to
-      Catholic faith and principles.
+        Service
+      text: |
+        Our Parish is blessed to have an
+        [extraordinary team of faith leaders](/clergy.html),
+        known in the community for their devotion to
+        Catholic faith and principles.
 
-      If you are seeking *Christ* in your life,
-      have questions about the Catholic faith, or
-      are interested in becoming part of a faith community,
-      speak to one of our priests.
-      They invite your questions, welcome dialogue,
-      and are always willing to help!
+        If you are seeking *Christ* in your life,
+        have questions about the Catholic faith, or
+        are interested in becoming part of a faith community,
+        speak to one of our priests.
+        They invite your questions, welcome dialogue,
+        and are always willing to help!
 
-  -
-    patch: |
-      Are
+    -
+      title: New to the Cathedral?
+      text: |
+        Are you seeking *Christ*, curious about the Catholic faith,
+        or simply new to the Peterborough area?
 
-      *you*
+        As a Catholic faith community, we're here to spread the gospel of
+        *Jesus&nbsp;Christ*.
+        We believe there's no better way to live this life than in the moral
+        principles of the Christian faith.
 
-      **new?**
-    text: |
-      Are you seeking *Christ*, curious about the Catholic faith,
-      or simply new to the Peterborough area?
+        Attend a mass or other faith event. Talk to a priest. Meet other in our
+        community! Check out the [Schedule](/schedule.html),
+        our weekly [Bulletin](/bulletins.html), or the Contacts section below.
+        You can also find us on social media!
 
-      As a Catholic faith community, we're here to spread the gospel of
-      *Jesus&nbsp;Christ*.
-      We believe there's no better way to live this life than in the moral
-      principles of the Christian faith.
+    -
+      title: Become a volunteer
+      text: |
+        Our parish is a vibrant community of Christians, just like you.
+        Many contribute their time, energy, and talent to ministry
+        through music, hospitality, and other ways.
 
-      Attend a mass or other faith event. Talk to a priest. Meet other in our
-      community! Check out the [Schedule](/schedule.html),
-      our weekly [Bulletin](/bulletins.html), or the Contacts section below.
-      You can also find us on social media!
+        Consider becoming a volunteer. Whether you have a musical talent, would
+        enjoy speaking, are gifted in hospitality, have professional knowledge,
+        or simply want to give back by assisting during masses and other
+        events, there's a place in our Parish where you can help.
+        See the [Ministries](/ministries.html) page to learn more.
 
-  -
-    patch: |
-      Volunteer
+    -
+      title: Fundraising
+      text: |
+        The Cathedral was constructed in 1837 and is easily one of the most
+        iconic and recognizable buildings in the
+        [City of Peterborough](http://www.peterborough.ca).
+        In addition to the regular operational expenses of a living,
+        breathing faith community, funding the ongoing maintenance of an
+        historic building is a major operational challenge for our Parish.
 
-      **Ministry**
-    text: |
-      Our parish is a vibrant community of Christians, just like you.
-      Many contribute their time, energy, and talent to ministry
-      through music, hospitality, and other ways.
-
-      Consider becoming a volunteer. Whether you have a musical talent, would
-      enjoy speaking, are gifted in hospitality, have professional knowledge,
-      or simply want to give back by assisting during masses and other
-      events, there's a place in our Parish where you can help.
-      See the [Ministries](/ministries.html) page to learn more.
-
-  -
-    patch: Fundraising
-    text: |
-      The Cathedral was constructed in 1837 and is easily one of the most
-      iconic and recognizable buildings in the
-      [City of Peterborough](http://www.peterborough.ca).
-      In addition to the regular operational expenses of a living,
-      breathing faith community, funding the ongoing maintenance of an
-      historic building is a major operational challenge for our Parish.
-
-      Help ensure that our children will know and enjoy this beautiful
-      Cathedral in the years and decades to come.
-      Please consider regular donations, or
-      [donate&nbsp;online](https://www.canadahelps.org/en/charities/cathedral-of-st-peter-in-chains/).
+        Help ensure that our children will know and enjoy this beautiful
+        Cathedral in the years and decades to come.
+        Please consider regular donations, or
+        [donate&nbsp;online](https://www.canadahelps.org/en/charities/cathedral-of-st-peter-in-chains/).
 
 social:
   message: Join us on social media, and in the real world
