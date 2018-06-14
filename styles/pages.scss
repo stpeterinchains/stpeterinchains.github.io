@@ -77,20 +77,20 @@ span.index-schedule-time {
 }
 
 
-/* SECTION: OPENER */
+/* SECTION: EXPOSITION */
 
-#opener { margin: 3rem 10% 0 10%; }
+#exposition { margin: 3rem 10% 0 10%; }
 
-#opener-title {
+#exposition-title {
   margin: 0 auto 2rem auto;
   font-weight: 600; font-size: 1.1rem;
   text-align: center;
   color: #333;
 }
 
-div.opener-item { margin-bottom: 3rem; }
+div.exposition-item { margin-bottom: 3rem; }
 
-div.opener-item-patch {
+div.exposition-item-patch {
   width: 7rem; height: 7rem; line-height: 7rem;
   margin: 0 auto 1rem auto;
   background-color: #eee;
@@ -99,34 +99,34 @@ div.opener-item-patch {
   color: #666;
 }
 
-div.opener-item-patch-blurb { display: inline-block; vertical-align: middle; line-height: normal; }
-div.opener-item-patch-blurb p { font-weight: 400; font-size: 0.9rem; margin: 0; position: relative; top: -0.25rem; line-height: 1rem; }
-div.opener-item-patch-blurb em { font-weight: 400; font-size: 1rem; font-style: normal; }
-div.opener-item-patch-blurb strong { font-weight: 600; font-size: 1.2rem; }
+div.exposition-item-patch-blurb { display: inline-block; vertical-align: middle; line-height: normal; }
+div.exposition-item-patch-blurb p { font-weight: 400; font-size: 0.9rem; margin: 0; position: relative; top: -0.25rem; line-height: 1rem; }
+div.exposition-item-patch-blurb em { font-weight: 400; font-size: 1rem; font-style: normal; }
+div.exposition-item-patch-blurb strong { font-weight: 600; font-size: 1.2rem; }
 
-div.opener-item-title {
+div.exposition-item-title {
   margin: 0 auto 0.5rem auto;
   font-weight: 400; font-size: 1rem;
   color: #333;
 }
 
-div.opener-item-text { margin: 0.5rem 5% 0 0; color: #666; }
-div.opener-item:nth-of-type(3n) div.opener-item-text { margin-right: 0; }
-div.opener-item-text em { font-style: normal; color: #c33; }
+div.exposition-item-text { margin: 0.5rem 5% 0 0; color: #666; }
+div.exposition-item:nth-of-type(3n) div.exposition-item-text { margin-right: 0; }
+div.exposition-item-text em { font-style: normal; color: #c33; }
 
 @media screen and (min-width: 48rem) {
-  #opener { margin-left: 0; margin-right: 0; }
-  div.opener-item-patch { margin-bottom: 2rem; }
+  #exposition { margin-left: 0; margin-right: 0; }
+  div.exposition-item-patch { margin-bottom: 2rem; }
 }
 
 @media screen and (min-width: 64rem) {
-  #opener-title { font-size: 1.2rem; }
-  div.opener-item-patch { width: 8rem; height: 8rem; line-height: 8rem; }
-  div.opener-item-patch-blurb p { font-size: 1rem; line-height: 1.1rem; }
-  div.opener-item-patch-blurb em { font-size: 1.1rem; }
-  div.opener-item-patch-blurb strong { font-size: 1.3rem; }
-  div.opener-item-title { font-size: 1.1rem; }
-  div.opener-item-text p { margin-top: 0.5rem; font-size: 1rem; }
+  #exposition-title { font-size: 1.2rem; }
+  div.exposition-item-patch { width: 8rem; height: 8rem; line-height: 8rem; }
+  div.exposition-item-patch-blurb p { font-size: 1rem; line-height: 1.1rem; }
+  div.exposition-item-patch-blurb em { font-size: 1.1rem; }
+  div.exposition-item-patch-blurb strong { font-size: 1.3rem; }
+  div.exposition-item-title { font-size: 1.1rem; }
+  div.exposition-item-text p { margin-top: 0.5rem; font-size: 1rem; }
 }
 
 

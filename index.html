@@ -40,25 +40,25 @@ open_graph_description: >
   <div id="index-schedule-more"><a href="{{ '/schedule.html' | relative_url }}">More</a></div>
 </section>
 
-<!-- OPENER -->
+<!-- EXPOSITION -->
 
-{% assign opener = site.data.index.opener %}
+{% assign exposition = site.data.index.exposition %}
 
-<section id="opener">
-  <h1 id="opener-title">{{ opener.title }}</h1>
+<section id="exposition">
+  <h1 id="exposition-title">{{ exposition.title }}</h1>
   <div class="pure-g">
-    {% for item in opener.items %}
+    {% for item in exposition.items %}
     {% assign combined_style = '' %}
     {% if item.color %}{% capture color_style %}color:{{item.color}}{% endcapture %}{% assign combined_style = combined_style | append: color_style %}{% endif %}
     {% if item.background %}{% capture background_style %};background-color:{{item.background}}{% endcapture %}{% assign combined_style = combined_style | append: background_style %}{% endif %}
     {% if item.shadow %}{% capture shadow_style %};box-shadow:-2px 2px 5px {{item.shadow}}{% endcapture %}{% assign combined_style = combined_style | append: shadow_style %}{% endif %}
-    <div class="opener-item pure-u-1 pure-u-md-1-3"><section>
+    <div class="exposition-item pure-u-1 pure-u-md-1-3"><section>
       {% if item.patch %}
-      <div class="opener-item-patch" style="{{ combined_style }}"><div class="opener-item-patch-blurb">{{ item.patch | markdownify }}</div></div>
+      <div class="exposition-item-patch" style="{{ combined_style }}"><div class="exposition-item-patch-blurb">{{ item.patch | markdownify }}</div></div>
       {% else %}
-      <div class="opener-item-title">{{ item.title }}</div>
+      <div class="exposition-item-title">{{ item.title }}</div>
       {% endif %}
-      <div class="opener-item-text markdown">{{ item.text | markdownify }}</div>
+      <div class="exposition-item-text markdown">{{ item.text | markdownify }}</div>
     </section></div>
     {% endfor %}
   </div>
