@@ -15,7 +15,7 @@ welcome:
 slideshow:
   -
     image: cathedral-exterior-interior.jpg
-    caption: The Cathedral of **Saint Peter&ndash;in&ndash;Chains**
+    caption: The Cathedral of **Saint&nbsp;Peter&#x2011;in&#x2011;Chains**
   -
     image: mural.jpg
     caption: The Great Mural of **The Last Supper**

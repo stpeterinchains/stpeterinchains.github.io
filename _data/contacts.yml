@@ -1,7 +1,7 @@
 ---
 
 -
-  - section: St Peter&ndash;in&ndash;Chains Parish
+  - section: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Parish
     subsections:
       - subsection: Leadership
         items:
@@ -29,11 +29,11 @@
               411 Reid St<br>
               Peterborough, ON<br>
               K9J 6Y8
-      - subsection: St Peter-in-Chains Fundraising Committee
+      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising Committee
         items:
           - item: E-mail
             mail: payitforwardspic@gmail.com
-      - subsection: St Peter-in-Chains Perpetual Fund
+      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Perpetual Fund
         items:
           - item: President
             text: Mary Catherine Masciangelo
@@ -68,7 +68,7 @@
             mail: chancery@peterboroughdiocese.org
 
 -
-  - section: St Teresa Elementary School
+  - section: Saint Teresa Elementary School
     subsections:
       - subsection:
         items:
@@ -76,7 +76,7 @@
             text: 705-745-0332
             item: Web
             link: http://stteresa.pvnccdsb.on.ca/
-  - section: St Peter Secondary School
+  - section: Saint Peter Secondary School
     subsections:
       - subsection:
         items:
@@ -84,7 +84,7 @@
             text: 705-745-1358
             item: Web
             link: http://stteresa.pvnccdsb.on.ca/
-  - section: St Peter's Cemetery Office
+  - section: Saint Peter's Cemetery Office
     subsections:
       - subsection:
         items:
@@ -104,7 +104,7 @@
             text: Bob Blakely
           - item: Phone
             text: 705-875-0404
-  - section: St Vincent de Paul
+  - section: Saint Vincent de Paul
     subsections:
       - subsection: Food Pantry
         items:
