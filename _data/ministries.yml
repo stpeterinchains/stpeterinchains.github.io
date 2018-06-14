@@ -34,9 +34,6 @@ ministries:
     image: lectors.jpg
     contacts:
       -
-        name: Mary Porter
-        phone: 705-740-0452
-      -
         name: Kerrie Magnus
         email: stpetersyouthmass@gmail.com
 
@@ -106,9 +103,6 @@ ministries:
       ministry leaders, below.
     image: emhc.jpg
     contacts:
-      -
-        name: Mary Porter
-        phone: 705-740-0452
       -
         name: Kerrie Magnus
         email: stpetersyouthmass@gmail.com
