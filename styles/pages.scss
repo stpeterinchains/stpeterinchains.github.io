@@ -305,14 +305,9 @@ a.bulletins-bulletin-issue {
   color: #333;
 }
 
-span.bulletins-bulletin-latest {
-  margin-left: 0.25rem;
-  padding: 0.1rem 0.4rem;
-  background-color: #eee;
-  color: #333;
-}
+a.bulletins-bulletin-latest { color: #c33; }
 
-div.bulletins-bulletin > div > div {
+div.bulletins-bulletin-insert-label {
   margin: 0.15rem 0 0 3rem;
   font-weight: 400; font-size: 0.8rem;
   color: #999;

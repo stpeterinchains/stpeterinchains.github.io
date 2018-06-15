@@ -13,7 +13,7 @@ open_graph_description: >
 ---
 
 {% assign bulletins = site.data.bulletins %}
-{% assign tagged_latest = false %}
+{% assign latest = false %}
 
 <section id="bulletins" class="page-container">
   <h1 class="page-title">{{ bulletins.title }}</h1>
@@ -27,15 +27,13 @@ open_graph_description: >
       <div class="pure-g">
         {% for bulletin in month.bulletins %}
         <div class="bulletins-bulletin pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3">
-          <a target="_blank" class="bulletins-bulletin-issue" href="{% if bulletin.link %}{{ bulletin.link }}{% else %}javascript:void(0){% endif%}">
+          <a target="_blank"
+              class="bulletins-bulletin-issue{% if latest == false %} bulletins-bulletin-latest{% assign latest = true %}{% endif %}"
+              href="{% if bulletin.link %}{{ bulletin.link }}{% else %}javascript:void(0){% endif%}">
             {{ month.month }}&nbsp;{{ bulletin.date }}&nbsp;&ndash; {{ bulletin.title }}
-            {% if tagged_latest == false %}
-            <span class="bulletins-bulletin-latest">Latest</span>
-            {% assign tagged_latest = true %}
-            {% endif %}
           </a>
-          <div>
-            {% if bulletin.inserts %}<div>Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</div>{% endif %}
+        <div>
+            {% if bulletin.inserts %}<div class="bulletins-bulletin-insert-label">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</div>{% endif %}
             {% for insert in bulletin.inserts %}
             <a target="_blank" class="bulletins-bulletin-insert" href="{% if insert.link %}{{ insert.link }}{% else %}javascript:void(0){% endif %}">{{ insert.title }}</a>
             {% endfor %}
