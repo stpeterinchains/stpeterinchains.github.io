@@ -16,6 +16,10 @@ issues:
         month: June
         bulletins:
           -
+            date: 24
+            title: Nativity of Saint John the Baptist
+            link: https://drive.google.com/file/d/1-dIe868FZzBdwY6RqJIHCOPtN6u5ambH/view
+          -
             date: 17
             title: Eleventh Sunday in Ordinary Time
             link: https://drive.google.com/file/d/1-bsq-lPHQxx7JCVf43N81QFLScGMG-CM/view
@@ -37,7 +41,7 @@ issues:
         bulletins:
           -
             date: 27
-            title: The Most Holy Trinity
+            title: Most Holy Trinity
             link: https://drive.google.com/file/d/1-6tjj6gbpdb47gXy6gtjb-mrcq1jDXQq/view
           -
             date: 20
@@ -177,5 +181,5 @@ issues:
             link: https://drive.google.com/file/d/1ePfSMppVzgxfGB5nEMpaayEgkga7Zk7b/view
           -
             date: 7
-            title: The Epiphany of the Lord
+            title: Epiphany of the Lord
             link: https://drive.google.com/file/d/1e8Q1oRtehs9A-gFD26iFUk4vU8UMb1Uy/view
