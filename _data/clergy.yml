@@ -51,10 +51,11 @@ clergy:
         link: rector@stpeterspeterborough.ca
 
   -
-    last_name: Smullen
-    first_name: Damian
+    last_name: Rathinaswamy
+    first_name: John
     title: Father
-    position: Vice&ndash;Rector
+    position: Vice Rector
+    image: fr-rathinaswamy-portrait.jpg
     bio:
     contact:
       -
@@ -62,11 +63,11 @@ clergy:
         link: vicerector@stpeterspeterborough.ca
 
   -
-    last_name: Rathinaswamy
-    first_name: John
+    last_name: Villas
+    first_name: Roy
     title: Father
-    position: Associate&nbsp;Pastor
-    image: fr-rathinaswamy-portrait.jpg
+    position: Associate Pastor
+    image: fr-villas-portrait.jpg
     bio:
     contact:
       -
