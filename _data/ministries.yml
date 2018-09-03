@@ -122,11 +122,18 @@ ministries:
   -
     title: Catholic Women's League
     anchor: cwl
-    descriptive:
+    descriptive: |
+      The Parish Catholic Women's League invites women to fellowship.
+
+      Please join us on social media to learn more!
+
+      [Twitter](https://twitter.com/cathedralin)
     image: cwl.jpg
     contacts:
       -
-        email: 38pocwl@gmail.com
+        name: Debra Primeau
+        title: Leader
+        email: dprimeau2@cogeco.ca
 
   -
     title: Legion of Mary
