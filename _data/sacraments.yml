@@ -13,6 +13,121 @@ descriptive: |
 sacraments:
 
   -
+    title: Baptism
+    anchor: baptism
+    image: baptism.jpg
+    form: Baptismal-Application-Form.pdf
+    headline: Children's Baptism
+    text: |
+      To arrange an occasion for your child's Baptism, please contact the
+      Rectory office with your completed application form.
+
+  -
+    title: First Reconciliation and First Communion
+    anchor: reconciliation-communion
+    image: first-communion.jpg
+    form: Registration-Form-Reconciliation1st-Communion.pdf
+    headline: Preparation for First Reconciliation and First Communion
+    text: |
+      Children in Grade 2 or higher are invited to begin preparations to make
+      their First&nbsp;Reconciliation (Confession) and to receive their
+      First&nbsp;Holy&nbsp;Communion.
+
+      Sessions for students will be held throughout the school year in
+      preparation for these Holy Sacraments. Please see session dates below.
+
+      Parents are invited to attend the Parent Information Night, on
+      September&nbsp;11,&nbsp;2018, at 7:00&nbsp;PM, in the
+      Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains, to register and
+      to receive information packages for the
+      *Sacramental&nbsp;Preparation&nbsp;Program*, covering both
+      First&nbsp;Reconciliation/First&nbsp;Communion preparation and
+      Confirmation preparation.
+
+      For more information, please see the
+      [First&nbsp;Reconciliation and First&nbsp;Communion&nbsp;Letter](/forms/First Reconciliation and First Communion Letter.pdf)&nbsp;[PDF].
+
+      Note: For locations below, Columbus Hall is the smaller hall across from
+      Bishop Doyle Hall. Side entrance off parking lot.
+
+      # First Reconciliation (Confession) Preparation Schedule
+
+      Event          | Date               | Time     | Location
+      -----          | ----               | ----     | --------
+      1st Session    | September 22, 2018 | 10:00 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      2nd Session    | October 20, 2018   | 10:00 AM | Columbus Hall
+      3rd Session    | November 10, 2018  | 10:00 AM | Bishop Doyle Hall
+      4th Session    | December 1, 2018   | 10:00 AM | Columbus Hall
+      Reconciliation | January 12, 2019   | 10:00 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+
+      # First Communion Preparation Schedule
+
+      Event                   | Date             | Time     | Location
+      -----                   | ----             | ----     | --------
+      1st Session             | February 9, 2019 | 10:00 AM | Bishop Doyle Hall
+      2nd Session             | March 2, 2019    | 10:00 AM | Bishop Doyle Hall
+      3rd Session             | April 6, 2019    | 10:00 AM | Bishop Doyle Hall
+      4th Session/Retreat Day | May 4, 2019      | 10:00 AM&ndash;2:00 PM | Columbus Hall
+      First Communion         | May 12, 2019     | 10:30 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+
+  -
+    title: Confirmation
+    anchor: confirmation
+    image: confirmation.jpg
+    form:
+    headline: Preparation for Confirmation
+    text: |
+      Is your son or daughter ready to receive the Sacrament of Confirmation?
+      The practice in the Diocese of Peterborough is for children to receive
+      this Sacrament in Grade 7.
+
+      Sessions for students and parents will be held throughout the school year
+      in preparation for this Holy Sacrament. Please see session dates below.
+
+      Parents are invited to attend the Parent Information Night, on
+      September&nbsp;11,&nbsp;2018, at 7:00&nbsp;PM, in the
+      Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains, to register and
+      to receive information packages for the
+      *Sacramental&nbsp;Preparation&nbsp;Program*, covering both
+      First&nbsp;Reconciliation/First&nbsp;Communion preparation and
+      Confirmation preparation.
+
+      For more information, please see the
+      [Confirmation&nbsp;Letter](/forms/Confirmation Letter.pdf)&nbsp;[PDF].
+
+      Student sessions will be held in Bishop Doyle Hall.
+      Parent sessions, along with final Confirmation ceremony, will be held in
+      the Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains.
+
+      # Confirmation Preparation Schedule (for Students and Parents)
+
+      Event         | Date              | Time
+      -----         | ----              | ----
+      1st Session   | October 2, 2018   | 6:30&ndash;8:00 PM
+      2nd Session   | October 16, 2018  | 6:30&ndash;8:00 PM
+      3rd Session   | November 6, 2018  | 6:30&ndash;8:00 PM
+      4th Session   | November 16, 2018 | 6:30&ndash;8:00 PM
+      5th Session   | December 4, 2018  | 6:30&ndash;8:00 PM
+      6th Session   | January 15, 2019  | 6:30&ndash;8:00 PM
+      7th Session   | February 12, 2019 | 6:30&ndash;8:00 PM
+      8th Session   | March 12, 2019    | 6:30&ndash;8:00 PM
+      9th Session   | April 9, 2019     | 6:30&ndash;8:00 PM
+      10th Session  | May 7, 2019       | 6:30&ndash;8:00 PM
+      Confirmation  | June 9, 2019      | 10:30 AM
+
+      Small reception to follow Confirmation.
+
+  -
+    title: Marriage
+    anchor: marriage
+    image: marriage.jpg
+    form: Baptismal-Application-Form.pdf
+    headline: The Sacrament of Marriage
+    text: |
+      Please make an appointment through the office a minimum of 12 months
+      prior to your planned date of marriage.
+
+  -
     title: RCIA &ndash; Rite of Christian Initiation of Adults
     anchor: rcia
     image: rcia.jpg
@@ -29,96 +144,3 @@ sacraments:
       Please watch for more information here and in our bulletin.
       For more information, please contact the
       Rectory office at 705-745-4681 or speak with a priest after mass.
-
-  -
-    title: Baptism
-    anchor: baptism
-    image: baptism.jpg
-    form: Baptismal-Application-Form.pdf
-    headline: Children's baptism
-    text: |
-      To arrange an occasion for your child's baptism, please contact the
-      Rectory office with your completed application form.
-
-  -
-    title: Confirmation
-    anchor: confirmation
-    image: confirmation.jpg
-    form:
-    headline: Preparation for Confirmation
-    text: |
-      The typical practice in the Diocese of Peterborough is for children to
-      receive this Sacrament in Grade 7 or older.
-
-      The Sacramental Preparation Program is scheduled through the Church to
-      the Schools. A letter is sent home in June with students who will be
-      entering the grade for which a Sacrament is available.
-      Another letter is sent in September, with all dates and information for
-      parents.
-
-      The table below shows the sessions that progressed through the 2017-18
-      school year. These will be updated in the coming months for the 2018-19
-      school year.
-
-      # Dates in preparation for Confirmation
-
-      Occasion       | Date              | Time
-      -------------- | ----------------- | --------
-      Parent/Child Information Night | September 7, 2017 | 7:00 PM
-      1st Session    | September 12, 2017 | 7:00&ndash;8:30 PM
-      2nd Session    | October 3, 2017    | 7:00&ndash;8:30 PM
-      3rd Session    | October 17, 2017   | 7:00&ndash;8:30 PM
-      4th Session    | November 14, 2017  | 7:00&ndash;8:30 PM
-      5th Session    | December 5, 2017   | 7:00&ndash;8:30 PM
-      6th Session    | January 30, 2018   | 7:00&ndash;8:30 PM
-      7th Session    | February 6, 2018   | 7:00&ndash;8:30 PM
-      8th Session    | February 27, 2018  | 7:00&ndash;8:30 PM
-      9th Session    | March 20, 2018     | 7:00&ndash;8:30 PM
-      10th Session   | April 17, 2018     | 7:00&ndash;8:30 PM
-      Retreat Day    | April 28, 2018     | 10:00 AM&ndash;2:00 PM
-      Confirmation   | May 20, 2018       | 10:00 AM
-
-  -
-    title: First Reconciliation and First Communion
-    anchor: reconciliation-communion
-    image: first-communion.jpg
-    form: Registration-Form-Reconciliation1st-Communion.pdf
-    headline: Preparation for First Reconciliation and First Communion
-    text: |
-      Please attend the Parent/Child Information Night on September 7
-      at 7:00 PM in the Cathedral to learn about these crucial rites within the
-      Catholic Church.
-
-      # Dates for First Reconciliation
-
-      Occasion       | Date               | Time     | Location
-      -------------- | ------------------ | -------- | --------
-      1st Session    | September 16, 2017 | 10:00 AM | Columbus Hall
-      2nd Session    | October 21, 2017   | 10:00 AM | Bishop Doyle Hall
-      3rd Session    | November 11, 2017  | 10:00 AM | Bishop Doyle Hall
-      4th Session    | December 9, 2017   | 10:00 AM | Columbus Hall
-      Reconciliation | January 13, 2018   | 10:00 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-
-      Note: Columbus Hall is the smaller hall across from Bishop Doyle Hall.
-      Side entrance off parking lot.
-
-      # Dates for First Communion
-
-      Occasion        | Date              | Time     | Location
-      --------------  | ----------------- | -------- | --------
-      1st Session     | February 10, 2018 | 10:00 AM | Bishop Doyle Hall
-      2nd Session     | March 10, 2018    | 10:00 AM | Bishop Doyle Hall
-      3rd Session     | April 14, 2018    | 10:00 AM | Bishop Doyle Hall
-      4th Session     | May 12, 2018      | 10:00 AM | Bishop Doyle Hall
-      Retreat Day     | June 2, 2018      | 10:00 AM&ndash;2:00 PM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-      First Communion | June 3, 2018      | 10:30 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-
-  -
-    title: Marriage
-    anchor: marriage
-    image: marriage.jpg
-    form: Baptismal-Application-Form.pdf
-    headline: The Sacrament of Marriage
-    text: |
-      Please make an appointment through the office a minimum of 12 months
-      prior to your planned date of marriage.
