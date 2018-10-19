@@ -13,6 +13,22 @@ issues:
     months:
 
       -
+        month: October
+        bulletins:
+          -
+            date: 21
+            title: Twenty-Ninth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/11PFFKk20wpD04Rp3lN4B2wUO2AYwVxAz/view
+            inserts:
+              -
+                title: Regilding of the Sacred Vessels
+                link: https://drive.google.com/file/d/11Ug_jRaZ_5BE4kmQKcg3Oiu9dvLr0gM6/view
+          -
+            date: 7 and 14
+            title: Twenty-Seventh and Twenty-Eighth Sundays in Ordinary Time
+            link: https://drive.google.com/file/d/11LPZYNO_IzOeFAx7p12Fd2vyhyeV9cu3/view
+
+      -
         month: September
         bulletins:
           -
