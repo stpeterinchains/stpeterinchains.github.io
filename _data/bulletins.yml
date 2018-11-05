@@ -13,8 +13,24 @@ issues:
     months:
 
       -
+        month: November
+        bulletins:
+          -
+            date: 4
+            title: Thirty-First Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/11ar5bc4WSwy_1EyZuc61QO0snWWWZymA/view
+            inserts:
+              -
+                title: Schedule for November 2018<br>100th&nbsp;Anniversary of the 1918&nbsp;Armistice Ending World&nbsp;War&nbsp;I
+                link: https://drive.google.com/file/d/11pSXCd_1men8Dxw6bPm2njjiihmMgQ2y/view
+
+      -
         month: October
         bulletins:
+          -
+            date: 28
+            title: Thirtieth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/11VvvbJ5YoWn-rfwuceFjG2AMU3wMLWbp/view
           -
             date: 21
             title: Twenty-Ninth Sunday in Ordinary Time
