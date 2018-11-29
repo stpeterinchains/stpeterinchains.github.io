@@ -187,35 +187,37 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
 }
 
 
-/* SECTION: CALL TO ACTION */
+/* SECTION: VIDEO */
 
-#call-to-action {
+#video {
   margin-top: 3rem;
   text-align: center;
 }
 
-#call-to-action > iframe { width: 240px; height: 135px; }
-@media screen and (min-width: 48rem) { #call-to-action > iframe { width: 560px; height: 315px; } }
+#video > iframe { width: 240px; height: 135px; }
+@media screen and (min-width: 48rem) {
+  #video > iframe { width: 560px; height: 315px; }
+}
 
-#call-to-action-message {
+#video-description {
   margin: 0.5rem 10%;
   font-weight: 300; font-size: 0.9rem;
   color: #666;
 }
 
-#call-to-action-message a { font-weight: 400; color: #333; }
-#call-to-action-message a:hover { color: skyblue; }
+#video-description a { font-weight: 400; color: #333; }
+#video-description a:hover { color: skyblue; }
 
 @media screen and (min-width: 48rem) {
-  #call-to-action-message > p { font-size: 1rem; }
+  #video-description > p { font-size: 1rem; }
 }
 
 @media screen and (min-width: 64rem) {
-  #call-to-action-message > p { font-size: 1.1rem; }
+  #video-description > p { font-size: 1.1rem; }
 }
 
 @media screen and (min-width: 80rem) {
-  #call-to-action-message > p { margin-left: 15%; margin-right: 15%; }
+  #video-description > p { margin-left: 15%; margin-right: 15%; }
 }
 
 

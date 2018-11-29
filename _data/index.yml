@@ -123,16 +123,13 @@ social:
       logo: google-maps-logo.png
       link: https://goo.gl/maps/Vz73TcvLW8P2
 
-call_to_action:
-  video_id: m5-So5T9Mdc
-  message: |
-    *"God only has children. God does not have grandchildren...<br>
-    Each and every generation must be won&nbsp;over&nbsp;to&nbsp;Christ."*
-
-    From a lecture featuring [Fr&nbsp;Thomas&nbsp;Lynch](/clergy.html) on
-    the 1968 encyclical by Pope&nbsp;Paul&nbsp;VI, entitled
-    [*Humanae&nbsp;Vitae*](https://en.wikipedia.org/wiki/Humanae_vitae).
-    For&nbsp;more, see the official YouTube&nbsp;channel of
-    [Priests&nbsp;for&nbsp;Life&nbsp;Canada](https://www.youtube.com/user/PriestsForLifeCanada/videos).
+video:
+  id: Z8FQvfdpcV8
+  offset: 110
+  description: >
+    A televised Mass celebrated by
+    **Fr&nbsp;Thomas&nbsp;Lynch**<br>
+    at the Archdiocese&nbsp;of&nbsp;Toronto,
+    April&nbsp;29,&nbsp;2018.
 
 formed_access_code: MT9YZ7

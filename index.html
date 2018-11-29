@@ -86,11 +86,11 @@ open_graph_description: >
   <div>Parishioners register on the site using Access&nbsp;Code&nbsp;<strong>{{ access_code }}</strong></div>
 </a>
 
-<!-- CALL TO ACTION -->
+<!-- VIDEO -->
 
-{% assign cta = site.data.index.call_to_action %}
+{% assign video = site.data.index.video %}
 
-<section id="call-to-action">
-  <iframe src="https://www.youtube.com/embed/{{ cta.video_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <div id="call-to-action-message" class="markdown">{{ cta.message | markdownify }}</div>
+<section id="video">
+  <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+  <div id="video-description" class="markdown">{{ video.description | markdownify }}</div>
 </section>
