@@ -78,10 +78,10 @@
             text: 705-745-5123
           - item: Fax
             text: 705-745-2555
-          - item: Web
-            link: https://www.peterboroughdiocese.org/
           - item: E-mail
             mail: chancery@peterboroughdiocese.org
+          - item: Web
+            link: https://www.peterboroughdiocese.org/
 
 -
   - section: Saint Teresa Elementary School
