@@ -6,11 +6,17 @@
       - subsection: Leadership
         items:
           - item: Fr Thomas Lynch, Rector
-            mail: rector@stpeterspeterborough.ca
-          - item: Fr Damien Smullen, Vice-Rector
-            mail: vicerector@stpeterspeterborough.ca
-          - item: Fr John Rathinaswamy, Associate&nbsp;Pastor
-            mail: associate@stpeterspeterborough.ca
+            mail: frtomlynch@peterboroughdiocese.org
+          - item: Fr John Rathinaswamy, Vice-Rector
+            mail: frjohnrathinaswamy@peterboroughdiocese.org
+          - item: Fr Roy Villas, Associate Pastor
+            mail: frroyvillas@peterboroughdiocese.org
+          - item: Rev Dcn Bill Radigan, Permanent Deacon
+            mail: billradigan@peterboroughdiocese.org
+          - item: Fr Clair Hickson, Resident Priest
+            mail: revhickson@peterboroughdiocese.org
+          - item: Fr Andrew Begin, Champlain of Seniors
+            mail: frandrewbegin@peterboroughdiocese.org
       - subsection: Office
         items:
           - item: Office Administrator
@@ -24,9 +30,14 @@
               Monday&nbsp;-&nbsp;Thursday: 9:00&nbsp;AM&nbsp;-&nbsp;12:30&nbsp;PM<br>
               Monday&nbsp;-&nbsp;Thursday: 1:30&nbsp;PM&nbsp;-&nbsp;5:00&nbsp;PM<br>
               Friday,&nbsp;Saturday,&nbsp;Sunday: Closed
-          - item: Address
+          - item: Physical address
             text: |
               411 Reid St<br>
+              Peterborough, ON<br>
+              K9H 4G7
+          - item: Mailing address
+            text: |
+              PO Box 175<br>
               Peterborough, ON<br>
               K9J 6Y8
       - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising Committee
@@ -36,9 +47,9 @@
       - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Perpetual Fund
         items:
           - item: President
-            text: Mary Catherine Masciangelo
+            text: Ranald Pearson
           - item: E-mail
-            mail: the4masciangelos@yahoo.ca
+            mail: ranaldpearson@gmail.com
 
 -
   - section: Peterborough Diocese
@@ -47,15 +58,20 @@
         items:
           - item: Most Rev Daniel Miehm
             text: Bishop
-          - item: Fr Joseph J. Moran
+          - item: Fr Joseph Devereaux
+            text: Chancellor, Spiritual and Temporal Affairs
+          - item: Fr Joseph J Moran
             text: Vicar General
       - subsection: Office
         items:
-          - item: Address
+          - item: Physical address
             text: |
-              Peterborough Diocese<br>
-              Chancery Office<br>
-              350 Hunter St W, PO Box 175<br>
+              350 Hunter St W<br>
+              Peterborough, ON<br>
+              K9H 2M4
+          - item: Mailing address
+            text: |
+              PO Box 175<br>
               Peterborough, ON<br>
               K9J 6Y8
           - item: Phone
@@ -63,7 +79,7 @@
           - item: Fax
             text: 705-745-2555
           - item: Web
-            link: https://www.peterboroughdiocese.org
+            link: https://www.peterboroughdiocese.org/
           - item: E-mail
             mail: chancery@peterboroughdiocese.org
 
@@ -94,7 +110,9 @@
             text: 705-742-0344
           - item: E-mail
             mail: stpeterscemetery@bellnet.ca
-  - section: Hall Rentals
+  - section: >
+      Hall Rentals<br>
+      Ernest J Wolf Council 798
     subsections:
       - subsection:
         items:
