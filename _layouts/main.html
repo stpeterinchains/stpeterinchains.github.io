@@ -104,7 +104,7 @@
         {% if page.mnemonic == link.mnemonic %}
         <a class="navbar-current">{{ link.title }}</a>
         {% else %}
-        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        <a {% unless link.mnemonic %}target="_blank" {% endunless %}href="{{ link.url | relative_url }}">{{ link.title }}</a>
         {% endif %}
         {% endfor %}
       </nav>

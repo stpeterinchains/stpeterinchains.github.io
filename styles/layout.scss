@@ -324,7 +324,9 @@ nav.navbar-group:first-child > a:hover { color: skyblue; }
 nav.navbar-group > a.navbar-current { color: #333; }
 nav.navbar-group > a.navbar-current:hover { color: #333; }
 
-nav.navbar-group:nth-child(2) > a:first-of-type { font-weight: 600; }
+nav.navbar-group:nth-child(2) > a:first-of-type {
+  font-weight: 400; color: #399;
+}
 nav.navbar-group:nth-child(2) > a:first-of-type:hover { color: #6cc; }
 
 @media screen and (min-width: 48rem) {
@@ -343,7 +345,8 @@ nav.navbar-group:nth-child(2) > a:first-of-type:hover { color: #6cc; }
 
   h1.navbar-group-title {
     display: block; margin: 0 0 0.5rem 0; padding: 0 10%;
-    font-weight: 400; font-size: 0.9rem;
+    font-weight: 400; font-size: 0.9rem; font-variant: small-caps;
+    letter-spacing: 0.1rem;
     color: #999;
   }
 
@@ -355,11 +358,12 @@ nav.navbar-group:nth-child(2) > a:first-of-type:hover { color: #6cc; }
 
   nav.navbar-group:first-child > a { font-size: 1rem; }
 
-  nav.navbar-group:nth-child(2) > a:first-of-type {
+  nav.navbar-group > a.navbar-current {
     padding: 0.25rem 10%;
-    background-color: #eee; color: #333;
-    font-weight: 400;
+    background-color: #eee;
   }
+
+  nav.navbar-group:nth-child(2) > a:first-of-type {}
   nav.navbar-group:nth-child(2) > a:first-of-type:hover {}
 }
 
