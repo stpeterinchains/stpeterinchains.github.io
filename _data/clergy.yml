@@ -26,8 +26,11 @@ clergy:
         platform: Website
         link: https://www.peterboroughdiocese.org/en/about-us/bishop.aspx
       -
+        platform: Newsletter
+        link: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
+      -
         platform: E&ndash;mail
-        link: BishopMiehm@peterboroughdiocese.org
+        link: bishopmiehm@peterboroughdiocese.org
 
   -
     last_name: Lynch
@@ -48,7 +51,7 @@ clergy:
         link: https://www.youtube.com/user/PriestsForLifeCanada/videos
       -
         platform: E&ndash;mail
-        link: rector@stpeterspeterborough.ca
+        link: frtomlynch@peterboroughdiocese.org
 
   -
     last_name: Rathinaswamy
@@ -60,7 +63,7 @@ clergy:
     contact:
       -
         platform: E&ndash;mail
-        link: vicerector@stpeterspeterborough.ca
+        link: frjohnrathinaswamy@peterboroughdiocese.org
 
   -
     last_name: Villas
@@ -72,4 +75,16 @@ clergy:
     contact:
       -
         platform: E&ndash;mail
-        link: associate@stpeterspeterborough.ca
+        link: frroyvillas@peterboroughdiocese.org
+
+  -
+    last_name: Radigan
+    first_name: Bill
+    title: Deacon
+    position: Permanent Deacon
+    image: dc-radigan-portrait.jpg
+    bio:
+    contact:
+      -
+        platform: E&ndash;mail
+        link: billradigan@peterboroughdiocese.org
