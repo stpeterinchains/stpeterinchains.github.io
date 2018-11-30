@@ -21,54 +21,71 @@ slideshow:
     caption: The Great Mural of **The Last Supper**
   -
     image: teamwork.jpg
-    caption: >
-      March 30, 2018: **The Passion of Our Lord**
+    caption: March 30, 2018&#x3A; **The Passion of Our Lord**
 
 navbar:
-  internal:
-    -
-      title: Home
-      mnemonic: index
-      link: /
-    -
-      title: Schedule
-      mnemonic: schedule
-      link: /schedule.html
-    -
-      title: Bulletins
-      mnemonic: bulletins
-      link: /bulletins.html
-    -
-      title: Clergy
-      mnemonic: clergy
-      link: /clergy.html
-    -
-      title: Ministries
-      mnemonic: ministries
-      link: /ministries.html
-    -
-      title: Sacraments
-      mnemonic: sacraments
-      link: /sacraments.html
-  external:
-    -
-      title: Donate at Canada&nbsp;Helps
-      link: https://www.canadahelps.org/en/charities/cathedral-of-st-peter-in-chains/
-    -
-      title: Peterborough Diocese
-      link: https://www.peterboroughdiocese.org/en/index.aspx
-    -
-      title: Peterborough Vocations
-      link: https://www.ptbovocations.ca/en/index.aspx
-    -
-      title: From the Vineyard
-      link: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
-    -
-      title: The Catholic Herald
-      link: https://www.peterboroughdiocese.org/en/about-us/magazine.aspx
-    -
-      title: Canadian Conference of Catholic Bishops
-      link: http://www.cccb.ca/site/
-    -
-      title: The Vatican
-      link: http://w2.vatican.va/content/vatican/en.html
+  -
+    links:
+      -
+        title: Home
+        mnemonic: index
+        url: /
+      -
+        title: Schedule
+        mnemonic: schedule
+        url: /schedule.html
+      -
+        title: Bulletins
+        mnemonic: bulletins
+        url: /bulletins.html
+      -
+        title: Clergy
+        mnemonic: clergy
+        url: /clergy.html
+      -
+        title: Ministries
+        mnemonic: ministries
+        url: /ministries.html
+      -
+        title: Sacraments
+        mnemonic: sacraments
+        url: /sacraments.html
+  -
+    title: Giving
+    links:
+      -
+        title: Donate Now
+        url: https://www.canadahelps.org/en/charities/cathedral-of-st-peter-in-chains/
+      -
+        title: Cathedral Perpetual&nbsp;Fund
+        url: javascript:void(0)
+      -
+        title: Saint Vincent de Paul
+        url: http://ssvp.on.ca/en/index.php
+  -
+    title: Publications
+    links:
+      -
+        title: From the Vineyard
+        url: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
+      -
+        title: The Catholic Herald
+        url: https://www.peterboroughdiocese.org/en/about-us/magazine.aspx
+  -
+    title: Institutions
+    links:
+      -
+        title: Peterborough Diocese
+        url: https://www.peterboroughdiocese.org/en/index.aspx
+      -
+        title: Peterborough Vocations
+        url: https://www.ptbovocations.ca/en/index.aspx
+      -
+        title: Assembly of Catholic Bishops of Ontario
+        url: http://acbo.on.ca/
+      -
+        title: Canadian Conference of Catholic Bishops
+        url: http://www.cccb.ca/site/
+      -
+        title: The Vatican
+        url: http://w2.vatican.va/content/vatican/en.html

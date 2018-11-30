@@ -300,78 +300,73 @@ span.slideshow-pause-active { background-color: #666; }
 
 #content { padding: 0 2%; }
 
-#navbar { margin-bottom: 2rem; }
+#navbar { margin: 2rem 0; }
 
-#navbar-internal {
-  padding: 1rem 5% 0.5rem 5%;
-  text-align: center;
+nav.navbar-group { margin: 0 5% 0.5rem 5%; text-align: center; }
+nav.navbar-group:first-child {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
 }
 
-#navbar-internal > a {
-  padding-right: 0.5rem;
-  font-weight: 300; font-size: 0.9rem;
-  text-decoration: none;
-  cursor: default;
-  color: #999;
-}
+h1.navbar-group-title { display: none; }
 
-#navbar-internal > a:last-of-type { padding-right: 0; }
-#navbar-internal > a:hover { color: skyblue; }
-
-#navbar-internal > a.navbar-internal-current { color: #333; }
-
-#navbar-external {
-  padding: 0.5rem 5% 0 5%;
-  border-top: 2px solid #eee;
-  text-align: center; line-height: 1.5rem;
-}
-
-#navbar-external > a {
-  padding-right: 1rem;
-  font-weight: 300; font-size: 0.9rem;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: default;
+nav.navbar-group > a {
+  margin-right: 1rem;
+  font-weight: 300; font-size: 0.8rem; text-decoration: none;
+  cursor: default; white-space: nowrap;
   color: #333;
 }
+nav.navbar-group > a:last-of-type { margin-right: 0; }
+nav.navbar-group > a:hover { color: skyblue; }
 
-#navbar-external > a:last-of-type { padding-right: 0; }
-#navbar-external > a:hover { color: skyblue; }
+nav.navbar-group:first-child > a { font-size: 0.9rem; color: #999; }
+nav.navbar-group:first-child > a:hover { color: skyblue; }
+nav.navbar-group > a.navbar-current { color: #333; }
+nav.navbar-group > a.navbar-current:hover { color: #333; }
+
+nav.navbar-group:nth-child(2) > a:first-of-type { font-weight: 600; }
+nav.navbar-group:nth-child(2) > a:first-of-type:hover { color: #6cc; }
 
 @media screen and (min-width: 48rem) {
   #main { margin-top: 2rem; }
 
   #content { border-left: 2px solid #eee; }
 
-  #navbar-internal {
-    padding: 0 10%;
+  #navbar { margin: 0; }
+
+  nav.navbar-group {
+    margin: 0 0 1.5rem 0; padding: 0 0 1.5rem 0;
+    border-bottom: 2px solid #eee;
     text-align: right;
   }
+  nav.navbar-group:first-child { padding-bottom: 1.5rem; }
 
-  #navbar-internal > a {
-    display: block;
-    padding: 0 0 0.5rem 0;
-    font-size: 1rem;
+  h1.navbar-group-title {
+    display: block; margin: 0 0 0.5rem 0; padding: 0 10%;
+    font-weight: 400; font-size: 0.9rem;
+    color: #999;
   }
 
-  #navbar-internal > a:last-of-type { padding-bottom: 0; }
-
-  #navbar-external {
-    margin-top: 0.5rem; padding: 0.5rem 10% 0 10%;
-    text-align: right; line-height: normal;
+  nav.navbar-group > a {
+    display: block; margin: 0 0 0.25rem 0; padding: 0 10%;
+    font-size: 0.9rem; white-space: normal;
   }
+  nav.navbar-group > a:last-of-type { margin-bottom: 0; }
 
-  #navbar-external > a {
-    display: block;
-    padding: 0 0 0.75rem 0;
-    font-size: 1rem;
-    white-space: normal;
+  nav.navbar-group:first-child > a { font-size: 1rem; }
+
+  nav.navbar-group:nth-child(2) > a:first-of-type {
+    padding: 0.25rem 10%;
+    background-color: #eee; color: #333;
+    font-weight: 400;
   }
+  nav.navbar-group:nth-child(2) > a:first-of-type:hover {}
 }
 
 @media screen and (min-width: 64rem) {
-  #navbar-internal > a { font-size: 1.1rem; }
-  #navbar-external > a { font-size: 1.1rem; }
+  h1.navbar-group-title { font-size: 1rem; }
+  nav.navbar-group > a { margin-bottom: 0.5rem; font-size: 1rem; }
+  nav.navbar-group:first-child > a { font-size: 1.1rem; }
 }
 
 
