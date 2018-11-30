@@ -13,6 +13,21 @@ issues:
     months:
 
       -
+        month: December
+        bulletins:
+          -
+            date: 2
+            title: First Sunday of Advent
+            link: https://drive.google.com/file/d/12_aKgwiCEa7eY0kFwnehDVP_Z6GZRBbf/view
+            inserts:
+              -
+                title: Day of Grace<br>Filipino Simbang Gabi 2018
+                link: https://drive.google.com/file/d/12aBG_0xoswN7NBJgdXml8wzKBHJa8Q1K/view
+              -
+                title: Schedule for December 2018
+                link: https://drive.google.com/file/d/12_bMmqkaWMXByCYIVp7WKnF8Yw-zUFLV/view
+
+      -
         month: November
         bulletins:
           -
