@@ -1,11 +1,18 @@
 ---
 
 title: Ministries
-descriptive: >
+descriptive: |
   The ministries form a vital part of our parish and are essential to
   the function and execution of every mass. Are you interested in becoming a
   volunteer? See below for information on the many ways your talents or
   interests can benefit the entire parish.
+
+  *If you wish to become a voluneer, please note that all volunteers must go
+  through a volunteer screening process.
+  Please contact the respective ministry head to indicate your interest in
+  volunteering, and an appointment will be set up with the
+  Screening&nbsp;Committee.
+  They will be pleased to contact you.*
 
 ministries:
 
@@ -38,36 +45,23 @@ ministries:
         email: stpetersyouthmass@gmail.com
 
   -
-    title: CAST
-    anchor: cast
+    title: Cathedral Altar Servers
+    anchor: cas
     descriptive: |
-      The Cathedral Altar Servers Team (CAST) was started in January 2015 as a
-      means to unite young people and families around the beautiful ministry of
-      serving at the altar.
+      Students from Grade 3 onward are invited to become Altar Servers.
+      Altar Servers are prepared in the art of serving the altar for masses
+      and other liturgical celebrations. We are always happy to welcome new
+      Servers.
 
-      Students from Grade 3 onward are invited to join. The CAST meets
-      regularly for training sessions followed by fun social time.
-
-      In 2016, the growing number of members encouraged CAST to be divided
-      into two age groups, Seniors and Juniors. All CAST members are prepared
-      in the art of serving the altar for masses and other liturgical
-      celebrations.
-
-      We are always happy to welcome new CAST members, so please join!
-      If you would like more information or if you would like to join, please
-      see below for contact information.
-    image: cast.jpg
+      If you would like more information, or if you would like to join,
+      please see below for contact information.
+    image: cast.png
     contacts:
       -
-        name: Jennifer Scriver
-        title: Junior Leader
-        phone:
-        email: jmahoney15@sympatico.ca
-      -
-        name: Siobhain Doyle
-        title: Senior Leader
-        phone:
-        email: siobhaindoyle@hotmail.com
+        name: Kathy Romard
+        title: Office
+        phone: 705-745-4681
+        email: office@stpeterspeterborough.ca
 
   -
     title: Hospitality
@@ -84,9 +78,25 @@ ministries:
     image: hospitality.jpg
     contacts:
       -
-        name: Kathy Romard
-        title: Cathedral Office
-        phone: 705-745-4681
+        name: Dn Bill Radigan
+        title: Permanent Deacon
+        email: billradigan@peterboroughdiocese.org
+
+  -
+    title: Youth Ministry
+    anchor: youth
+    descriptive: |
+      The Cathedral is a thriving family, of young and old. For our many
+      young people, from childhood to young adult, the Youth Ministry is here
+      to engage.
+
+      For information, please get in touch with Jacob, our Youth Director.
+    image:
+    contacts:
+      -
+        name: Jacob Sullivan
+        title: Youth Director
+        email:
 
   -
     title: EMHC
@@ -125,15 +135,16 @@ ministries:
     descriptive: |
       The Parish Catholic Women's League invites women to fellowship.
 
-      Please join us on social media to learn more!
+      Please follow us on Twitter to learn more!
 
       [Twitter](https://twitter.com/cathedralin)
     image: cwl.jpg
     contacts:
       -
-        name: Debra Primeau
-        title: Leader
-        email: dprimeau2@cogeco.ca
+        name: Merina Csercsics
+        title: President
+        email: heneratha@gmail.com
+        phone: 705-559-7698
 
   -
     title: Legion of Mary
