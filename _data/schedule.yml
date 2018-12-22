@@ -4,7 +4,7 @@ title: Schedule
 descriptive: >
   Our parish holds daily and weekly masses, devotions, confessions,
   and other faith events. We also feature many special events
-  throughout the liturgical year.
+  throughout the liturgical&nbsp;year.
 
 occasions:
 
@@ -12,14 +12,14 @@ occasions:
   -
     title: The Octave of Christmas
     descriptive: |
-      Join us during these eight days as we celebrate
-      the birth of our Lord&nbsp;and&nbsp;Saviour, **Jesus&nbsp;Christ**.
-      As a special bi-annual&nbsp;event,
-      the Midnight&nbsp;Mass on Christmas&nbsp;Eve
-      will be televised on Cogeco&nbsp;Cable.
+      Join us as we celebrate the birth of our
+      Lord&nbsp;and&nbsp;Saviour, **Jesus&nbsp;Christ**.
+      As a special bi-annual&nbsp;event, the Christmas&nbsp;Midnight&nbsp;Mass
+      will be televised on Cogeco&nbsp;Cable. Be sure to arrive early to ensure
+      seating for this popular event.
 
-      Please note that mass times during the Octave&nbsp;of&nbsp;Christmas
-      supercede our Regular&nbsp;Schedule.
+      Please note that mass times during The&nbsp;Octave&nbsp;of&nbsp;Christmas
+      supersede our Regular&nbsp;Schedule.
     events:
       -
         title: Monday December 24
@@ -31,7 +31,7 @@ occasions:
             times:
               - 7:30 AM
           -
-            day: Christmas Eve Daytime Mass
+            day: Christmas Eve Mass
             times:
               - 4:00 PM
               - 8:00 PM
@@ -41,7 +41,7 @@ occasions:
         homepage: true
         days:
           -
-            day: Christmas Eve Midnight Mass
+            day: Christmas Midnight Mass
             special: true
             times:
               - 12:00 AM
@@ -78,7 +78,7 @@ occasions:
               - 9:00 AM
       -
         title: Saturday December 29
-        descriptive: Fifth Day Within the Octave&nbsp;of&nbsp;Christmas
+        descriptive: Fifth Day Within The&nbsp;Octave&nbsp;of&nbsp;Christmas
         homepage: true
         days:
           -
@@ -95,16 +95,13 @@ occasions:
         homepage: true
         days:
           -
-            day: Daily Mass
+            day: Sunday Mass
             times:
-              - 9:00 AM
-          -
-            day: Saturday Vigil
-            times:
-              - 5:00 PM
+              - 8:30 AM
+              - 10:30 AM
       -
         title: Monday December 31
-        descriptive: Seventh Day Within the Octave&nbsp;of&nbsp;Christmas
+        descriptive: Seventh Day Within The&nbsp;Octave&nbsp;of&nbsp;Christmas
         homepage: true
         days:
           -
@@ -130,8 +127,8 @@ occasions:
   -
     title: The Season of Christmas
     descriptive: |
-      Please note that mass times during the Season&nbsp;of&nbsp;Christmas
-      supercede our Regular&nbsp;Schedule.
+      Please note that mass times during The&nbsp;Season&nbsp;of&nbsp;Christmas
+      supersede our Regular&nbsp;Schedule.
     events:
       -
         title: Wednesday January 2
@@ -144,7 +141,7 @@ occasions:
               - 9:00 AM
       -
         title: Thursday January 3
-        descriptive: Second Day Within the Season&nbsp;of&nbsp;Christmas
+        descriptive: Second Day Within The&nbsp;Season&nbsp;of&nbsp;Christmas
         homepage: false
         days:
           -
@@ -184,6 +181,13 @@ occasions:
             times:
               - 8:30 AM
               - 10:30 AM
+      -
+        title: Monday January 7 through Sunday January 13
+        descriptive: |
+          Remainder of The&nbsp;Season&nbsp;of&nbsp;Christmas
+
+          Mass times return to our Regular&nbsp;Schedule.
+        homepage: false
 
 
   -
@@ -191,7 +195,7 @@ occasions:
     descriptive: >
       Join us for masses and other faith events scheduled daily and weekly.
       Note that events belonging to special periods during the year may
-      supercede or supplement the regular schedule.
+      supersede or supplement the regular schedule.
     events:
       -
         title: Sunday Mass
