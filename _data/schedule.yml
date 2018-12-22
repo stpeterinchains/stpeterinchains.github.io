@@ -10,6 +10,183 @@ occasions:
 
 
   -
+    title: The Octave of Christmas
+    descriptive: |
+      Join us during these eight days as we celebrate
+      the birth of our Lord&nbsp;and&nbsp;Saviour, **Jesus&nbsp;Christ**.
+      As a special bi-annual&nbsp;event,
+      the Midnight&nbsp;Mass on Christmas&nbsp;Eve
+      will be televised on Cogeco&nbsp;Cable.
+
+      Please note that mass times during the Octave&nbsp;of&nbsp;Christmas
+      supercede our Regular&nbsp;Schedule.
+    events:
+      -
+        title: Monday December 24
+        descriptive: Vigil of the Nativity
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 7:30 AM
+          -
+            day: Christmas Eve Daytime Mass
+            times:
+              - 4:00 PM
+              - 8:00 PM
+      -
+        title: Tuesday December 25
+        descriptive: The Nativity of the Lord
+        homepage: true
+        days:
+          -
+            day: Christmas Eve Midnight Mass
+            special: true
+            times:
+              - 12:00 AM
+          -
+            day: Christmas Day Mass
+            times:
+              - 10:00 AM
+      -
+        title: Wednesday December 26
+        descriptive: Saint Stephen
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+      -
+        title: Thursday December 27
+        descriptive: Saint John
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+      -
+        title: Friday December 28
+        descriptive: The Holy Innocents
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+      -
+        title: Saturday December 29
+        descriptive: Fifth Day Within the Octave&nbsp;of&nbsp;Christmas
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+          -
+            day: Saturday Vigil
+            times:
+              - 5:00 PM
+      -
+        title: Sunday December 30
+        descriptive: The Holy Family of Jesus,&nbsp;Mary,&nbsp;and&nbsp;Joseph
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+          -
+            day: Saturday Vigil
+            times:
+              - 5:00 PM
+      -
+        title: Monday December 31
+        descriptive: Seventh Day Within the Octave&nbsp;of&nbsp;Christmas
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+          -
+            day: New Year's Eve Mass
+            special: true
+            times:
+              - 5:00 PM
+      -
+        title: Tuesday January 1
+        descriptive: The Solemnity of Mary, The&nbsp;Holy&nbsp;Mother&nbsp;of&nbsp;God
+        homepage: true
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+
+
+  -
+    title: The Season of Christmas
+    descriptive: |
+      Please note that mass times during the Season&nbsp;of&nbsp;Christmas
+      supercede our Regular&nbsp;Schedule.
+    events:
+      -
+        title: Wednesday January 2
+        descriptive: Saints Basil&nbsp;the&nbsp;Great and Gregory&nbsp;Nazianzen
+        homepage: false
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+      -
+        title: Thursday January 3
+        descriptive: Second Day Within the Season&nbsp;of&nbsp;Christmas
+        homepage: false
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+      -
+        title: Friday January 4
+        descriptive: First Friday
+        homepage: false
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 7:30 AM
+              - 12:10 PM
+      -
+        title: Saturday January 5
+        descriptive: First Saturday
+        homepage: false
+        days:
+          -
+            day: Daily Mass
+            times:
+              - 9:00 AM
+          -
+            day: Saturday Vigil
+            times:
+              - 5:00 PM
+      -
+        title: Sunday January 6
+        descriptive: Epiphany of the Lord
+        homepage: false
+        days:
+          -
+            day: Sunday Mass
+            times:
+              - 8:30 AM
+              - 10:30 AM
+
+
+  -
     title: Regular Schedule
     descriptive: >
       Join us for masses and other faith events scheduled daily and weekly.
@@ -19,7 +196,7 @@ occasions:
       -
         title: Sunday Mass
         image: weekend-mass.jpg
-        homepage: true
+        homepage: false
         descriptive: >
           Join us for our Sunday morning masses.
           For those who prefer an anticipated mass, join us for the
@@ -37,7 +214,7 @@ occasions:
       -
         title: Weekday Mass
         image: weekday-mass.jpg
-        homepage: true
+        homepage: false
         descriptive: >
           For parishioners who wish to begin or punctuate their busy schedules
           in faith and praise, join us weekdays for our morning or mid-day
@@ -55,7 +232,7 @@ occasions:
       -
         title: Confessions
         image: confessions.jpg
-        homepage: true
+        homepage: false
         descriptive:
         days:
           -

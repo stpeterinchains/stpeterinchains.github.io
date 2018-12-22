@@ -33,9 +33,9 @@ open_graph_description: >
         {% endif %}
         {% if event.descriptive %}<div class="schedule-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
         {% for day in event.days %}
-        <div class="schedule-event-day">{{ day.day | replace: '--', '&ndash;' }}</div>
+        <div class="schedule-event-day"{% if day.special %} style="color:#c33"{% endif %}>{{ day.day | replace: '--', '&ndash;' }}</div>
         {% for time in day.times %}
-        <div class="schedule-event-time">{{ time | replace: '--', '&ndash;' }}</div>
+        <div class="schedule-event-time"{% if day.special %} style="color:#c99"{% endif %}>{{ time | replace: '--', '&ndash;' }}</div>
         {% endfor %}
         {% endfor %}
       </section></div>

@@ -27,9 +27,9 @@ open_graph_description: >
     <span class="index-schedule-title">{{ event.title }}</span>
     {% for day in event.days %}
     <span class="index-schedule-days-times">
-      <span class="index-schedule-day">{{ day.day | replace: '--', '&ndash;' }}</span>
+      <span class="index-schedule-day"{% if day.special %} style="color:#c33"{% endif %}>{{ day.day | replace: '--', '&ndash;' }}</span>
       {% for time in day.times %}
-      <span class="index-schedule-time">{{ time | replace: '--', '&ndash;' }}</span>
+      <span class="index-schedule-time"{% if day.special %} style="color:#c99"{% endif %}>{{ time | replace: '--', '&ndash;' }}</span>
       {% endfor %}
     </span>
     {% endfor %}
