@@ -26,7 +26,7 @@ occasions:
       -
         title: Monday December 24
         descriptive: Vigil of the Nativity
-        homepage: true
+        homepage: false
         days:
           -
             day: Daily Mass
@@ -40,7 +40,7 @@ occasions:
       -
         title: Tuesday December 25
         descriptive: The Nativity of the Lord
-        homepage: true
+        homepage: false
         days:
           -
             day: Christmas Midnight Mass
@@ -54,7 +54,7 @@ occasions:
       -
         title: Wednesday December 26
         descriptive: Saint Stephen
-        homepage: true
+        homepage: false
         days:
           -
             day: Daily Mass
@@ -63,7 +63,7 @@ occasions:
       -
         title: Thursday December 27
         descriptive: Saint John
-        homepage: true
+        homepage: false
         days:
           -
             day: Daily Mass
@@ -72,7 +72,7 @@ occasions:
       -
         title: Friday December 28
         descriptive: The Holy Innocents
-        homepage: true
+        homepage: false
         days:
           -
             day: Daily Mass
@@ -135,7 +135,7 @@ occasions:
       -
         title: Wednesday January 2
         descriptive: Saints Basil&nbsp;the&nbsp;Great and Gregory&nbsp;Nazianzen
-        homepage: false
+        homepage: true
         days:
           -
             day: Daily Mass
@@ -144,7 +144,7 @@ occasions:
       -
         title: Thursday January 3
         descriptive: Second Day Within The&nbsp;Season&nbsp;of&nbsp;Christmas
-        homepage: false
+        homepage: true
         days:
           -
             day: Daily Mass
@@ -153,7 +153,7 @@ occasions:
       -
         title: Friday January 4
         descriptive: First Friday
-        homepage: false
+        homepage: true
         days:
           -
             day: Daily Mass
@@ -163,7 +163,7 @@ occasions:
       -
         title: Saturday January 5
         descriptive: First Saturday
-        homepage: false
+        homepage: true
         days:
           -
             day: Daily Mass
@@ -176,7 +176,7 @@ occasions:
       -
         title: Sunday January 6
         descriptive: Epiphany of the Lord
-        homepage: false
+        homepage: true
         days:
           -
             day: Sunday Mass
@@ -185,11 +185,12 @@ occasions:
               - 10:30 AM
       -
         title: Monday January 7 through Sunday January 13
+        homepage: true
         descriptive: |
           Remainder of The&nbsp;Season&nbsp;of&nbsp;Christmas
-
-          Mass times return to our Regular&nbsp;Schedule.
-        homepage: false
+        days:
+          -
+            day: Regular&nbsp;Schedule resumes
 
 
   -
