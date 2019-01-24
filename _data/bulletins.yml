@@ -3,8 +3,8 @@
 title: Bulletins
 descriptive: >
   The weekly Bulletin covers the life of our parish.
-  If you missed your copy of any of the printed Bulletin, find links below to
-  current and past&nbsp;Bulletins.
+  If you missed your copy of any of the printed Bulletins,
+  find links below to the current Bulletin as well as to past Bulletins.
 
 issues:
 
@@ -15,6 +15,10 @@ issues:
       -
         month: January
         bulletins:
+          -
+            date: 27
+            title: Third Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/13RJ1p5w5-Nf3HXr9m2NwjUqrzN90_Y9R/view
           -
             date: 20
             title: >
