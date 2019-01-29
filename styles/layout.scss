@@ -324,10 +324,10 @@ nav.navbar-group:first-child > a:hover { color: skyblue; }
 nav.navbar-group > a.navbar-current { color: #333; }
 nav.navbar-group > a.navbar-current:hover { color: #333; }
 
-nav.navbar-group:nth-child(2) > a:first-of-type {
-  font-weight: 400; color: #399;
-}
-nav.navbar-group:nth-child(2) > a:first-of-type:hover { color: #6cc; }
+nav.navbar-group:nth-child(2) > a { color: #399; }
+nav.navbar-group:nth-child(2) > a:hover { color: #6cc; }
+nav.navbar-group:nth-child(2) > a:first-of-type { font-weight: 400; }
+nav.navbar-group:nth-child(2) > a:first-of-type:hover {}
 
 @media screen and (min-width: 48rem) {
   #main { margin-top: 2rem; }
