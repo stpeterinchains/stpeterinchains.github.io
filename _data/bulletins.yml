@@ -13,6 +13,20 @@ issues:
     months:
 
       -
+        month: February
+        bulletins:
+          -
+            date: 3
+            title: >
+              Feast Day of St Blaise<br>
+              Fourth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/13T9VCTJ-Chs2ZVRweQCIkzPGvCAz5b9N/view
+            inserts:
+              -
+                title: Schedule for February 2019
+                link: https://drive.google.com/file/d/13Rl0dAvTmJDLSz78mqUheoJHQrFhL8o9/view
+
+      -
         month: January
         bulletins:
           -
