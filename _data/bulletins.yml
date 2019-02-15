@@ -16,6 +16,16 @@ issues:
         month: February
         bulletins:
           -
+            date: 17
+            title: Sixth Sunday in Ordinary Time
+            link: https://drive.google.com/file/d/13VYuTUbKaQp2JfqUqUna2d8uVj72f3MF/view
+          -
+            date: 10
+            title: >
+              Fifth Sunday in Ordinary Time<br>
+              No bulletin this week
+            link: javascript:void()
+          -
             date: 3
             title: >
               Feast Day of St Blaise<br>
