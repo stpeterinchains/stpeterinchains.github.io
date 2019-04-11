@@ -2,15 +2,27 @@
 
 title: Bulletins
 descriptive: >
-  The weekly Bulletin covers the life of our parish.
-  If you missed your copy of any of the printed Bulletins,
-  find links below to the current Bulletin as well as to past Bulletins.
+  The weekly Bulletin covers the life of our&nbsp;parish.
+  If you missed your copy of this week&apos;s printed&nbsp;Bulletin,
+  find links below to the current as&nbsp;well&nbsp;as to past&nbsp;Bulletins.
 
 issues:
 
   -
     year: 2019
     months:
+
+      -
+        month: April
+        bulletins:
+          -
+            date: 14
+            title: Palm Sunday of the Passion&nbsp;of&nbsp;the&nbsp;Lord
+            link: https://drive.google.com/file/d/14Z5XHMVTpvB9wdDLOvhRAa9awIJ6sRKc/view
+          -
+            date: 7
+            title: Fifth Sunday in Lent
+            link: https://drive.google.com/file/d/14JYHTj3YJ9qwLcwhRP73uBbU-rbHEgs2/view
 
       -
         month: March
