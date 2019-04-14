@@ -14,33 +14,53 @@ open_graph_description: >
 
 {% assign schedule = site.data.schedule %}
 
-<section id="schedule" class="page-container">
+<section id="schedule2" class="page-container">
   <h1 class="page-title">{{ schedule.title }}</h1>
   <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
-  {% for occasion in schedule.occasions %}
-  <section class="schedule-occasion">
-    <h1 class="schedule-occasion-title">{{ occasion.title }}</h1>
-    {% if occasion.start %}<h2 class="schedule-occasion-start">{{ occasion.start }}</h2>{% endif %}
-    {% if occasion.descriptive %}<div class="schedule-occasion-descriptive markdown">{{ occasion.descriptive | markdownify }}</div>{% endif %}
-    <div class="pure-g">
-      {% for event in occasion.events %}
-      <div class="schedule-event pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3 pure-u-xl-1-4"><section>
-        {% if event.image  %}
-        <img class="schedule-event-image" src="{{ event.image | prepend: site.schedule_images_path | relative_url }}">
-        <h1 class="schedule-event-title-with-image">{{ event.title }}</h1>
-        {% else %}
-        <h1 class="schedule-event-title-without-image">{{ event.title }}</h1>
-        {% endif %}
-        {% if event.descriptive %}<div class="schedule-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
-        {% for day in event.days %}
-        <div class="schedule-event-day"{% if day.special %} style="color:#c33"{% endif %}>{{ day.day | replace: '--', '&ndash;' }}</div>
-        {% for time in day.times %}
-        <div class="schedule-event-time"{% if day.special %} style="color:#c99"{% endif %}>{{ time | replace: '--', '&ndash;' }}</div>
-        {% endfor %}
-        {% endfor %}
-      </section></div>
-      {% endfor %}
-    </div>
-  </section>
+  <div id="schedule2-calendar">
+  {% for diem in schedule.calendar %}
+    {% assign dayOfMonth = diem.date | date: '%d' %}
+    {% if dayOfMonth <= "07" %}
+      {% assign isFirstWeek = true %}
+    {% else %}
+      {% assign isFirstWeek = false %}
+    {% endif %}
+    {% if diem.specials %}
+      {% assign events = diem.recurring | concat: diem.specials | sort: 'ordinal' %}
+    {% else %}
+      {% assign events = diem.recurring | sort: 'ordinal' %}
+    {% endif %}
+    <ul class="schedule2-diem-container" id="schedule2-diem-{{ diem.date | date: '%Y%m%d' }}">
+      <li class="schedule2-diem">
+        <h1 class="schedule2-diem-heading">
+          <span class="schedule2-diem-dayofweek">{{ diem.date | date: '%A' }}</span>
+          <span class="schedule2-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
+          {% if diem.celebration %}<span class="schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
+          {% if diem.season %}<span class="schedule2-diem-season" style="{% if diem.season.color %}color: {{ diem.season.color }}; {% endif %}{% if diem.season.bgcolor %}background-color: {{ diem.season.bgcolor }}{% endif %}">{{ diem.season.title }}</span>{% endif %}
+        </h1>
+        {% if diem.note %}<h2 class="schedule2-diem-note"><span>{{ diem.note }}</span></h2>{% endif %}
+        <ul class="schedule2-event-container">
+          {% for event in events %}
+          {% unless diem.exclusions contains event.mnemonic %}
+          {% if event.reparatory != true or isFirstWeek == true %}
+          <li class="schedule2-event">
+            <h1 class="schedule2-event-heading">
+              {% if event.mnemonic %}{% assign event_class = 'schedule2-event-recurring' %}{% else %}{% assign event_class = 'schedule2-event-special' %}{% endif %}
+              <span class="schedule2-event-title {{ event_class }}"{% if event.color %} style="color: {{ event.color }}"{% endif %}>{{ event.title }}</span>
+              <span class="schedule2-event-time">{{ event.time }}</span>
+              {% if event.location %}<span class="schedule2-event-location">{{ event.location }}</span>{% endif %}
+            </h1>
+            {% if event.descriptive %}<div class="schedule2-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
+          </li>
+          {% endif %}
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
   {% endfor %}
+  </div>
 </section>
+
+<script src="{{ 'schedule.js' | prepend: site.scripts_path | relative_url }}"></script>
+<script>trimSchedule('schedule')</script>

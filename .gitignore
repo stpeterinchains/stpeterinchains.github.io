@@ -1,7 +1,9 @@
 **/.DS_Store
-.jekyll-metadata
-.vscode
+**/node_modules
+**/package-lock.json
 Gemfile.lock
+.jekyll-metadata
+_site
+.vscode
 media
 temp
-_site

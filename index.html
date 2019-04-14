@@ -13,32 +13,59 @@ open_graph_description: >
   Join our loving faith community today!
 ---
 
-<!-- SCHEDULE -->
+<!-- SCHEDULE2 -->
 
 {% assign schedule = site.data.schedule %}
 
-<section id="index-schedule">
-  <h1 id="index-schedule-title">{{ schedule.title }}</h1>
-  {% for occasion in schedule.occasions %}
-  {% if occasion.homepage %}<div class="index-schedule-occasion">{{ occasion.title }}</div>{% endif %}
-  {% for event in occasion.events %}
-  {% if event.homepage %}
-  <div class="index-schedule-event">
-    <span class="index-schedule-title">{{ event.title }}</span>
-    {% for day in event.days %}
-    <span class="index-schedule-days-times">
-      <span class="index-schedule-day"{% if day.special %} style="color:#c33"{% endif %}>{{ day.day | replace: '--', '&ndash;' }}</span>
-      {% for time in day.times %}
-      <span class="index-schedule-time"{% if day.special %} style="color:#c99"{% endif %}>{{ time | replace: '--', '&ndash;' }}</span>
-      {% endfor %}
-    </span>
-    {% endfor %}
+<section id="index-schedule2">
+  <h1 id="index-schedule2-title">{{ schedule.title }}</h1>
+  <div id="index-schedule2-calendar">
+  {% for diem in schedule.calendar %}
+    {% assign dayOfMonth = diem.date | date: '%d' %}
+    {% if dayOfMonth <= "07" %}
+      {% assign isFirstWeek = true %}
+    {% else %}
+      {% assign isFirstWeek = false %}
+    {% endif %}
+    {% if diem.specials %}
+      {% assign events = diem.recurring | concat: diem.specials | sort: 'ordinal' %}
+    {% else %}
+      {% assign events = diem.recurring | sort: 'ordinal' %}
+    {% endif %}
+    <ul class="index-schedule2-diem-container" id="index-schedule2-diem-{{ diem.date | date: '%Y%m%d' }}">
+      <li class="index-schedule2-diem">
+        <h1 class="index-schedule2-diem-day">
+          <span class="index-schedule2-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
+          {% if diem.celebration %}
+          <span class="index-schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>
+          {% else %}
+          <span class="index-schedule2-diem-dayofweek">{{ diem.date | date: '%A' }}</span>
+          {% endif %}
+        </h1>
+        <ul class="index-schedule2-event-container">
+          {% for event in events %}
+          {% unless diem.exclusions contains event.mnemonic %}
+          {% if event.reparatory != true or isFirstWeek == true %}
+          <li class="index-schedule2-event-item">
+            {% if event.mnemonic %}{% assign event_class = 'index-schedule2-event-recurring' %}{% else %}{% assign event_class = 'index-schedule2-event-special' %}{% endif %}
+            <span class="index-schedule2-event-title {{ event_class }}"{% if event.color %} style="color: {{ event.color }}"{% endif %}>{{ event.title }}</span>
+            <span class="index-schedule2-event-time">{{ event.time }}</span>
+            {% if event.location %}<span class="index-schedule2-event-location">{{ event.location }}</span>{% endif %}
+            {% if event.descriptive %}<div class="index-schedule2-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
+          </li>
+          {% endif %}
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  {% endfor %}
   </div>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-  <div id="index-schedule-more"><a href="{{ '/schedule.html' | relative_url }}">More&hellip;</a></div>
+  <div id="index-schedule2-more"><a href="{{ '/schedule.html' | relative_url }}">Full schedule&hellip;</a></div>
 </section>
+
+<script src="{{ 'schedule.js' | prepend: site.scripts_path | relative_url }}"></script>
+<script>trimSchedule('index')</script>
 
 <!-- EXPOSITION -->
 

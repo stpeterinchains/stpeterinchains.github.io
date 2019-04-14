@@ -2,101 +2,353 @@
 
 title: Schedule
 descriptive: >
-  Our parish holds daily and weekly masses, devotions, confessions,
+  Our parish holds daily and weekly mass, confessions, devotions,
   and other faith events. We also feature many special events
-  throughout the liturgical&nbsp;year.
+  throughout the Liturgical&nbsp;year.
 
-occasions:
-
-  -
-    title: Regular Schedule
+recurring:
+  weekday_mass: &weekday_mass
+    mnemonic: weekday_mass
+    color: "#933"
+    title: Weekday Mass
     descriptive: >
-      Join us for masses and other faith events scheduled daily and weekly.
-      Note that events belonging to special periods during the year may
-      supersede or supplement the regular schedule.
-    events:
-      -
-        title: Sunday Mass
-        image: weekend-mass.jpg
-        homepage: true
-        descriptive: >
-          Join us for our Sunday morning masses.
-          For those who prefer an anticipated mass, join us for the
-          Saturday Vigil.
-        days:
-          -
-            day: Sunday Morning
-            times:
-              - 8:30 AM
-              - 10:30 AM
-          -
-            day: Saturday Vigil
-            times:
-              - 5:00 PM
-      -
-        title: Weekday Mass
-        image: weekday-mass.jpg
-        homepage: true
-        descriptive: >
-          For parishioners who wish to begin or punctuate their busy schedules
-          in faith and praise, join us weekdays for our morning or mid-day
-          masses, as well as on Saturday mornings.
-        days:
-          -
-            day: Monday--Friday
-            times:
-              - 7:30 AM
-              - 12:10 PM
-          -
-            day: Saturday
-            times:
-              - 9:00 AM
-      -
-        title: Confessions
-        image: confessions.jpg
-        homepage: true
-        descriptive:
-        days:
-          -
-            day: Saturday
-            times:
-              - 3:45 PM--4:45 PM
-          -
-            day: First Friday
-            times:
-              - 7:00 AM--7:30 AM
-              - 11:00 AM--12:00 PM
-      -
-        title: Devotion:&nbsp;Mother of Perpetual&nbsp;Help
-        image: mother-of-perpetual-help.jpg
-        homepage: true
-        descriptive:
-        days:
-          -
-            day: Saturday
-            times:
-              - 8:30 AM
-      -
-        title: Devotion:&nbsp;Exposition of the Blessed&nbsp;Sacrament
-        image: exposition-blessed-sacrament.jpg
-        homepage: true
-        descriptive:
-        days:
-          -
-            day: First Friday
-            times:
-              - 7:30 AM--12:00 PM
-          -
-            day: First Saturday
-            times:
-              - 8:00 AM--9:00 AM
-      -
-        title: Anointing of the Sick
-        image: anointing-sick.jpg
-        homepage: true
-        descriptive: >
-        days:
-          -
-            day: First Saturday
-            times:
-              - 9:00 AM
+      For parishioners who begin or punctuate their day in faith and praise.
+    time: 7:30 AM, 12:10 PM
+    ordinal: "0730"
+  weekday_mass_saturday: &weekday_mass_saturday
+    mnemonic: weekday_mass_saturday
+    color: "#933"
+    title: Saturday Morning Mass
+    descriptive: >
+      For parishioners who begin Saturday mornings in faith and praise.
+    time: 9:00 AM
+    ordinal: "0900"
+  saturday_vigil: &saturday_vigil
+    mnemonic: saturday_vigil
+    color: "#933"
+    title: Saturday Vigil
+    descriptive: >
+      For those who prefer an anticipated mass, join us early evening
+      for our Saturday Vigil.
+    time: 5:00 PM
+    ordinal: "1700"
+  sunday_mass: &sunday_mass
+    mnemonic: sunday_mass
+    color: "#933"
+    title: Sunday Mass
+    descriptive: >
+      Join us for our signature mass, held twice each Sunday morning.
+    time: 8:30 AM, 10:30 AM
+    ordinal: "0830"
+  sacrament_reconciliation_friday: &sacrament_reconciliation_friday
+    mnemonic: sacrament_reconciliation_friday
+    title: Sacrament of Reconciliation (Confession)
+    time: 7:00-7:30 AM, 11:00 AM-12:00 PM
+    ordinal: "0700"
+    reparatory: true
+  sacrament_reconciliation_saturday: &sacrament_reconciliation_saturday
+    <<: *sacrament_reconciliation_friday
+    mnemonic: sacrament_reconciliation_saturday
+    time: 3:45-4:45 PM
+    ordinal: "1545"
+    reparatory: false
+  exposition_blessed_sacrament_friday: &exposition_blessed_sacrament_friday
+    mnemonic: exposition_blessed_sacrament_friday
+    title: "Devotion: Exposition of the Blessed Sacrament"
+    time: 7:30 AM-12:00 PM
+    ordinal: "0730"
+    reparatory: true
+  exposition_blessed_sacrament_saturday: &exposition_blessed_sacrament_saturday
+    mnemonic: exposition_blessed_sacrament_saturday
+    <<: *exposition_blessed_sacrament_friday
+    time: 8:00-9:00 AM
+    ordinal: "0800"
+  mother_perpetual_help: &mother_perpetual_help
+    mnemonic: mother_perpetual_help
+    title: "Devotion: Mother of Perpetual Help"
+    time: 8:30 AM
+    ordinal: "0830"
+  anointing_sick: &anointing_sick
+    mnemonic: anointing_sick
+    title: Anointing of the Sick
+    time: 9:00 AM
+    ordinal: "0900"
+    reparatory: true
+  edge: &edge
+    mnemonic: edge
+    title: Edge Youth Group
+    time: 6:30-8:00 PM
+    ordinal: "1830"
+  lifeteen: &lifeteen
+    mnemonic: lifeteen
+    title: Lifeteen
+    location: Bishop Doyle Hall
+    time: 6:30-8:00 PM
+    ordinal: "1830"
+
+weekly:
+  monday: &monday
+    - *weekday_mass
+    - *edge
+  tuesday: &tuesday
+    - *weekday_mass
+  wednesday: &wednesday
+    - *weekday_mass
+  thursday: &thursday
+    - *weekday_mass
+  friday: &friday
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday: &saturday
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday: &sunday
+    - *sunday_mass
+    - *lifeteen
+
+season:
+  lent: &lent
+    title: Season of Lent
+    short: Lent
+    color: white
+    bgcolor: "#dac"
+  easter: &easter
+    title: Easter Triduum
+    short: Easter
+    bgcolor: yellow
+    color: black
+  easter_octave: &easter_octave
+    title: Easter Octave
+    bgcolor: "#ffc"
+    color: black
+
+celebration:
+  holy_week: &holy_week
+    color: white
+    bgcolor: purple
+  maundy_thursday: &maundy_thursday
+    title: Maundy Thursday
+    color: black
+    bgcolor: gold
+  good_friday: &good_friday
+    title: Good Friday
+    color: white
+    bgcolor: "#c33"
+  black_saturday: &black_saturday
+    title: Black Saturday
+    color: white
+    bgcolor: "#666"
+  easter_sunday: &easter_sunday
+    title: Resurrection Sunday
+    color: white
+    bgcolor: "#c33"
+
+calendar:
+  - date: 2019-04-01
+    season: *lent
+    recurring: *monday
+  - date: 2019-04-02
+    season: *lent
+    recurring: *tuesday
+  - date: 2019-04-03
+    season: *lent
+    recurring: *wednesday
+  - date: 2019-04-04
+    season: *lent
+    recurring: *thursday
+  - date: 2019-04-05
+    season: *lent
+    recurring: *friday
+  - date: 2019-04-06
+    season: *lent
+    recurring: *saturday
+    specials:
+      - title: Day of Grace and Reconciliation
+        time: 8:00 AM
+        ordinal: "0700"
+  - date: 2019-04-07
+    season: *lent
+    recurring: *sunday
+  - date: 2019-04-08
+    season: *lent
+    recurring: *monday
+  - date: 2019-04-09
+    season: *lent
+    recurring: *tuesday
+  - date: 2019-04-10
+    season: *lent
+    recurring: *wednesday
+  - date: 2019-04-11
+    season: *lent
+    recurring: *thursday
+  - date: 2019-04-12
+    season: *lent
+    recurring: *friday
+  - date: 2019-04-13
+    season: *lent
+    recurring: *saturday
+  - date: 2019-04-14
+    note: Holy Week begins
+    season: *lent
+    celebration:
+      <<: *holy_week
+      title: Palm Sunday
+      color: white
+      bgcolor: "#c33"
+    recurring: *sunday
+    exclusions: [ sunday_mass]
+    specials:
+      - <<: *sunday_mass
+        mnemonic: sunday_mass_nix
+        title: Special Sunday Mass
+        descriptive: Join us for mass on this Palm Sunday.
+  - date: 2019-04-15
+    season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Monday
+    recurring: *monday
+    exclusions: [ weekday_mass, edge ]
+    specials:
+      - title: Adoration and Holy Hour
+        descriptive: |
+          You are invited to come to spend an hour (or&nbsp;less) in quiet
+          reflection of our&nbsp;Lord.
+
+          Concelebrated by Bishop&nbsp;Miehm and the Clergy of the&nbsp;parish.
+        time: 4:00 PM
+        ordinal: "1600"
+      - title: Chrism Mass
+        descriptive: |
+          The Bishop, joined by the Clergy of the Diocese, gather at the
+          Cathedral to celebrate Chrism&nbsp;Mass, where they renew their vows in
+          unity with their Bishop in the service of&nbsp;Christ.
+
+          The Bishop consecrates the three holy&nbsp;oils&mdash;the oil of
+          catechumens, the oil of the infirm, and the holy&nbsp;chrism&mdash;used to
+          administer the sacraments throughout the&nbsp;year.
+
+        time: 7:00 PM
+        ordinal: "1900"
+      - <<: *edge
+        mnemonic: edge_nix
+        time: Cancelled
+        ordinal: "2300"
+  - date: 2019-04-16
+    season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Tuesday
+    recurring: *tuesday
+    specials:
+      - title: Office of Tenebrae
+        descriptive: |
+          *Tenebrae* is Latin for shadows or darkness. Join&nbsp;us for this
+          unforgettable service of music, song, chants, and lessons in the
+          spirit of the darkness of the&nbsp;Crucifixion, which preceded the
+          light of the&nbsp;Resurrection.
+
+          Candles are extinguished to enshroud the church in darkness.
+          At conclusion, with a *strepitus* (or great noise) symbolizing
+          the earthquake that accompanied the death&nbsp;of&nbsp;Christ,
+          parishioners then rise and leave in&nbsp;silence.
+        color: red
+        time: 7:30 PM
+        ordinal: "1930"
+  - date: 2019-04-17
+    season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Wednesday
+    recurring: *wednesday
+  - date: 2019-04-18
+    season: *lent
+    celebration: *maundy_thursday
+    recurring: *thursday
+    exclusions: [ weekday_mass ]
+    specials:
+      - title: Last Supper
+        time: 7:00 PM
+        ordinal: "1900"
+  - date: 2019-04-19
+    season: *easter
+    celebration: *good_friday
+    recurring: *friday
+    exclusions: [ weekday_mass, sacrament_reconciliation_friday, exposition_blessed_sacrament_friday ]
+    specials:
+      - title: Way of the Cross
+        time: 10:00 AM
+        ordinal: "1000"
+      - title: Veneration of the Cross
+        time: 3:00 PM
+        ordinal: "1500"
+  - date: 2019-04-20
+    season: *easter
+    celebration: *black_saturday
+    recurring: *saturday
+    exclusions: [ weekday_mass_saturday, saturday_vigil, sacrament_reconciliation_saturday, exposition_blessed_sacrament_saturday, mother_perpetual_help ]
+    specials:
+      - title: Easter Vigil
+        time: 8:00 PM
+        ordinal: "2000"
+  - date: 2019-04-21
+    season: *easter
+    celebration: *easter_sunday
+    recurring: *sunday
+    exclusions: [ sunday_mass, lifeteen ]
+    specials:
+      - <<: *sunday_mass
+        mnemonic: sunday_mass_nix
+        title: Special Sunday Mass
+        descriptive: Join us for mass on this Resurrection Sunday.
+      - <<: *lifeteen
+        mnemonic: lifeteen_nix
+        location:
+        time: Cancelled
+  - date: 2019-04-22
+    note: Office closed
+    season: *easter_octave
+    title: Easter Monday
+    specials:
+      - <<: *weekday_mass
+        descriptive: Celebrated by Fr Roy.
+        time: 9:00 AM
+        ordinal: "0900"
+      - <<: *edge
+        time: Cancelled
+  - date: 2019-04-23
+    season: *easter_octave
+    note: Office closed
+    specials:
+      - <<: *weekday_mass
+        descriptive: Celebrated by Fr John.
+        time: 9:00 AM
+        ordinal: "0900"
+  - date: 2019-04-24
+    note: &easter_week_note Office open, staff off during week
+    season: *easter_octave
+    recurring: *wednesday
+  - date: 2019-04-25
+    note: *easter_week_note
+    season: *easter_octave
+    recurring: *thursday
+  - date: 2019-04-26
+    note: *easter_week_note
+    season: *easter_octave
+    recurring: *friday
+  - date: 2019-04-27
+    season: *easter_octave
+    recurring: *saturday
+  - date: 2019-04-28
+    season: *easter_octave
+    recurring: *sunday
+  - date: 2019-04-29
+    note: Season of Easter begins
+    recurring: *monday
+  - date: 2019-04-30
+    recurring: *tuesday
