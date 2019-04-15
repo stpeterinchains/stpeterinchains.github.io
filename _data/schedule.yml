@@ -217,7 +217,7 @@ calendar:
     specials:
       - title: Adoration and Holy Hour
         descriptive: |
-          You are invited to come to spend an hour (or&nbsp;less) in quiet
+          You are invited to spend an hour (or&nbsp;less) in quiet
           reflection of our&nbsp;Lord.
 
           Concelebrated by Bishop&nbsp;Miehm and the Clergy of the&nbsp;parish.
@@ -226,12 +226,12 @@ calendar:
       - title: Chrism Mass
         descriptive: >
           Bishop Miehm and the Clergy of the Diocese gather at the Cathedral to
-          celebrate Chrism&nbsp;Mass, to renew their vows in the service Christ.
-          The&nbsp;Bishop will also consecrates the three holy&nbsp;oils&mdash;the
-          oil of catechumens, the oil of the infirm, and the
-          holy&nbsp;chrism&mdash;used to administer the sacraments throughout
-          the&nbsp;year.
-
+          celebrate Chrism&nbsp;Mass in the renewal of their vows in the
+          service of&nbsp;**Christ**.
+          The&nbsp;Bishop will also consecrates the three
+          holy&nbsp;oils&mdash;the oil of catechumens, the oil of the infirm,
+          and the holy&nbsp;chrism&mdash;each used to administer the
+          Holy&nbsp;Sacraments throughout the&nbsp;year.
         time: 7:00 PM
         ordinal: "1900"
       - <<: *edge
@@ -245,18 +245,21 @@ calendar:
       title: Holy Tuesday
     recurring: *tuesday
     specials:
-      - title: Office of Tenebrae
+      - title: The Liturgy of Tenebrae
         descriptive: |
           *Tenebrae* is Latin for shadows or darkness. Join&nbsp;us for this
           unforgettable service of music, song, chants, and lessons in the
           spirit of the darkness of the&nbsp;Crucifixion, which preceded the
           light of the&nbsp;Resurrection.
 
-          At conclusion, as candles are extinguished to enshroud the church in
-          darkness, with a *strepitus* (or great noise) symbolizing
+          Candles are gradually extinguished during the service.
+          As the final candle is extinguished to enshroud the church in
+          darkness, and with a *strepitus* (or great noise) symbolizing
           the earthquake that accompanied the death&nbsp;of&nbsp;Christ,
-          parishioners rise and leave in&nbsp;silence.
-        color: red
+          parishioners will rise and leave in&nbsp;silence.
+
+          It is recommended that parishioners arrive early to ensure
+          seating for this special event.
         time: 7:30 PM
         ordinal: "1930"
   - date: 2019-04-17
