@@ -224,14 +224,13 @@ calendar:
         time: 4:00 PM
         ordinal: "1600"
       - title: Chrism Mass
-        descriptive: |
-          The Bishop, joined by the Clergy of the Diocese, gather at the
-          Cathedral to celebrate Chrism&nbsp;Mass, where they renew their vows in
-          unity with their Bishop in the service of&nbsp;Christ.
-
-          The Bishop consecrates the three holy&nbsp;oils&mdash;the oil of
-          catechumens, the oil of the infirm, and the holy&nbsp;chrism&mdash;used to
-          administer the sacraments throughout the&nbsp;year.
+        descriptive: >
+          Bishop Miehm and the Clergy of the Diocese gather at the Cathedral to
+          celebrate Chrism&nbsp;Mass, to renew their vows in the service Christ.
+          The&nbsp;Bishop will also consecrates the three holy&nbsp;oils&mdash;the
+          oil of catechumens, the oil of the infirm, and the
+          holy&nbsp;chrism&mdash;used to administer the sacraments throughout
+          the&nbsp;year.
 
         time: 7:00 PM
         ordinal: "1900"
@@ -253,10 +252,10 @@ calendar:
           spirit of the darkness of the&nbsp;Crucifixion, which preceded the
           light of the&nbsp;Resurrection.
 
-          Candles are extinguished to enshroud the church in darkness.
-          At conclusion, with a *strepitus* (or great noise) symbolizing
+          At conclusion, as candles are extinguished to enshroud the church in
+          darkness, with a *strepitus* (or great noise) symbolizing
           the earthquake that accompanied the death&nbsp;of&nbsp;Christ,
-          parishioners then rise and leave in&nbsp;silence.
+          parishioners rise and leave in&nbsp;silence.
         color: red
         time: 7:30 PM
         ordinal: "1930"
