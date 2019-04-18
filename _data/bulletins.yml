@@ -16,6 +16,14 @@ issues:
         month: April
         bulletins:
           -
+            date: 21 and 28
+            title: Easter Sunday and Divine&nbsp;Mercy&nbsp;Sunday
+            link: https://drive.google.com/file/d/14btY-d26K8pwN_jfHa6Gt_I113cLtSOj/view
+            inserts:
+              -
+                title: Easter Message 2019 from&nbsp;Bishop&nbsp;Miehm
+                link: https://drive.google.com/file/d/14fVjEvlvfzSP9JWFbu8dCQRBCnIaqNCl/view
+          -
             date: 14
             title: Palm Sunday of the Passion&nbsp;of&nbsp;the&nbsp;Lord
             link: https://drive.google.com/file/d/14Z5XHMVTpvB9wdDLOvhRAa9awIJ6sRKc/view
@@ -23,6 +31,10 @@ issues:
             date: 7
             title: Fifth Sunday in Lent
             link: https://drive.google.com/file/d/14JYHTj3YJ9qwLcwhRP73uBbU-rbHEgs2/view
+            inserts:
+              -
+                title: April 2019 Calendar
+                link: https://drive.google.com/file/d/14M8wvaROToy9h1KYnAbv1GpzXDelKUei/view
 
       -
         month: March
