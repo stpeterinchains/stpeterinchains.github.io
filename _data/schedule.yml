@@ -292,8 +292,8 @@ calendar:
     specials:
       - title: Way of the Cross
         descriptive: |
-          Held each year on Good Friday, join us for this extraordinary outdoor
-          live re-enactment of the Stations&nbsp;of&nbsp;the&nbsp;Cross along
+          Held each year on *Good Friday*, join us for this extraordinary outdoor
+          live re-enactment of the **Stations&nbsp;of&nbsp;the&nbsp;Cross** along
           the streets of Downtown&nbsp;Peterborough. Please see the
           official [Way&nbsp;of&nbsp;the&nbsp;Cross](https://wotc.ca/) website
           for details.
@@ -302,13 +302,13 @@ calendar:
           weather on Good Friday this year, please be advised that the event
           may be presented in its entirety *inside* the
           Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains.
-          Please arrive early to ensure seating for this popular&nbsp;event.
+          Please arrive early for this popular&nbsp;event.
         time: 10:00 AM
         ordinal: "1000"
       - title: Veneration of the Cross
         descriptive: >
-          Join us for this special Good friday event, which commemorates the
-          crucifixion of Jesus&nbsp;Christ.
+          Join us for this special *Good&nbsp;Friday* event, which commemorates
+          the crucifixion of Jesus&nbsp;Christ.
         time: 3:00 PM
         ordinal: "1500"
   - date: 2019-04-20
