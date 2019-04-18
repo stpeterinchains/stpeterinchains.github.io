@@ -244,6 +244,13 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
 
 /*** PAGE: SCHEDULE ***/
 
+#schedule2-calendar-upcoming-container > h1 {
+  margin: 0; padding: 0 0 0.25rem 0;
+  border-bottom: 2px solid #eee;
+  font-size: 1rem; font-weight: 400;
+  color: #333;
+}
+
 ul.schedule2-diem-container {
   margin: 0; padding: 0;
   list-style-type: none;
@@ -270,16 +277,7 @@ h1.schedule2-diem-heading {
     color: #333;
   }
 
-  span.schedule2-diem-celebration {
-    margin-left: 0.5rem;
-    padding: 0.2rem 0.75rem; background-color: #eee;
-    border-radius: 11px;
-    font-weight: 300; font-size: 0.8rem;
-    color: #333;
-    white-space: nowrap;
-  }
-
-  span.schedule2-diem-season {
+  span.schedule2-diem-celebration, span.schedule2-diem-season {
     margin-left: 0.5rem;
     padding: 0.2rem 0.5rem; background-color: #eee;
     border-radius: 11px;
@@ -287,6 +285,9 @@ h1.schedule2-diem-heading {
     color: #333;
     white-space: nowrap;
   }
+
+  span.schedule2-diem-celebration,
+  span.schedule2-diem-season { display: none; }
 
 h2.schedule2-diem-note {
   margin: 0.75rem 0 0 1.5rem; padding: 0;
@@ -323,6 +324,7 @@ h1.schedule2-event-heading {
     padding-left: 0.5rem;
     font-weight: 400; font-size: 0.8rem;
     color: #393;
+    white-space: nowrap;
   }
 
 div.schedule2-event-descriptive > p {
@@ -336,10 +338,17 @@ div.schedule2-event-descriptive > p strong { font-weight: 600; }
 div.schedule2-event-descriptive > p a { font-weight: 400; text-decoration: underline; }
 div.schedule2-event-descriptive > p a:hover { color: skyblue; }
 
-@media screen and (min-width: 35.5rem) {}
-@media screen and (min-width: 48rem) {}
-@media screen and (min-width: 64rem) {}
-@media screen and (min-width: 80rem) {}
+#schedule2-calendar-recent-container > h1 {
+  margin: 2rem 0 0 0; padding: 0 0 0.25rem 0;
+  border-bottom: 2px solid #eee;
+  font-size: 1rem; font-weight: 400;
+  color: #333;
+}
+
+@media screen and (min-width: 35.5rem) {
+  span.schedule2-diem-celebration,
+  span.schedule2-diem-season { display: inline; }
+}
 
 
 

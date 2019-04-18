@@ -254,9 +254,9 @@ calendar:
 
           Candles are gradually extinguished during the service.
           As the final candle is extinguished to enshroud the church in
-          darkness, and with a *strepitus* (or great noise) symbolizing
-          the earthquake that accompanied the death&nbsp;of&nbsp;Christ,
-          parishioners will rise and leave in&nbsp;silence.
+          darkness, the *strepitus* (or great noise) will be heard, symbolizing
+          the earthquake that accompanied the death&nbsp;of&nbsp;Christ.
+          Parishioners will then rise and leave in&nbsp;silence.
 
           It is recommended that parishioners arrive early to ensure
           seating for this special event.
@@ -311,7 +311,7 @@ calendar:
       - <<: *lifeteen
         mnemonic: lifeteen_nix
         location:
-        time: Cancelled
+        time: Cancelled, returns following Sunday
   - date: 2019-04-22
     note: Office closed
     season: *easter_octave
@@ -322,7 +322,7 @@ calendar:
         time: 9:00 AM
         ordinal: "0900"
       - <<: *edge
-        time: Cancelled
+        time: Cancelled, returns following Monday
   - date: 2019-04-23
     season: *easter_octave
     note: Office closed
@@ -332,7 +332,7 @@ calendar:
         time: 9:00 AM
         ordinal: "0900"
   - date: 2019-04-24
-    note: &easter_week_note Office open, staff off during week
+    note: &easter_week_note Office open, staff on vacation
     season: *easter_octave
     recurring: *wednesday
   - date: 2019-04-25
