@@ -276,7 +276,7 @@ calendar:
     specials:
       - title: Last Supper
         descriptive: >
-          *Holy Thursday* is the commemoration of the Last&nbsp;Supper of
+          Holy Thursday is the commemoration of the Last&nbsp;Supper of
           Our&nbsp;Lord, when He established the Sacrament of
           Holy&nbsp;Communion prior to his arrest and&nbsp;crucifixion.
           Join us for this special Holy&nbsp;Mass, followed by the
@@ -291,22 +291,22 @@ calendar:
     specials:
       - title: Way of the Cross
         descriptive: |
-          Held each year on *Good Friday*, join us for this extraordinary,
-          live re-enactment of the Stations&nbsp;of&nbsp;the&nbsp;Cross along
-          the streets of Downtown&nbsp;Peterborough. Please see the
-          official [Way&nbsp;of&nbsp;the&nbsp;Cross](https://wotc.ca/) website
+          Join us for this extraordinary,
+          live re-enactment of the Stations&nbsp;of&nbsp;the&nbsp;Cross.
+          Please see the official
+          [Way&nbsp;of&nbsp;the&nbsp;Cross](https://wotc.ca/) website
           for details.
 
           **Weather advisory**&#x2003;Due to the possibility of inclement
-          weather on Good Friday this year, please be advised that the event
-          may be presented in its entirety *inside* the Cathedral&nbsp;of
-          Saint&nbsp;Peter-in-Chains.
+          weather this year, please be advised that the event
+          may be presented in its entirety inside the Cathedral&nbsp;of
+          Saint&nbsp;Peter&#x2011;in&#x2011;Chains.
           Please arrive early for this popular&nbsp;event.
         time: 10:00 AM
         ordinal: "1000"
       - title: Veneration of the Cross
         descriptive: >
-          Join us for this special *Good&nbsp;Friday* event, which commemorates
+          Join us for this special Good&nbsp;Friday event, which commemorates
           the crucifixion of&nbsp;Christ.
         time: 3:00 PM
         ordinal: "1500"
@@ -317,8 +317,9 @@ calendar:
     exclusions: [ weekday_mass_saturday, saturday_vigil, sacrament_reconciliation_saturday, exposition_blessed_sacrament_saturday, mother_perpetual_help ]
     specials:
       - title: Easter Vigil
-        descriptive: >
+        descriptive: |
           Join us for the first celebration of the Resurrection.
+
           During this special service, we welcome adult
           catechumens who will be received into the&nbsp;Church.
         time: 8:00 PM
