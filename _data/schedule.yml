@@ -337,7 +337,7 @@ calendar:
       - <<: *lifeteen
         mnemonic: lifeteen_nix
         location:
-        time: Cancelled, returns following Sunday
+        time: Cancelled
   - date: 2019-04-22
     note: Office closed
     season: *easter_octave
@@ -348,7 +348,7 @@ calendar:
         time: 9:00 AM
         ordinal: "0900"
       - <<: *edge
-        time: Cancelled, returns following Monday
+        time: Cancelled
   - date: 2019-04-23
     season: *easter_octave
     note: Office closed
