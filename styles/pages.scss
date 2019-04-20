@@ -87,10 +87,14 @@ li.index-schedule2-event-item { margin: 0.25rem 0 0 0; padding: 0; }
 #index-schedule2-more { margin-top: 2rem; }
 
 #index-schedule2-more > a {
-  font-weight: 400; font-size: 1.1rem;
+  display: block;
+  font-weight: 300; font-size: 1.1rem;
   text-decoration: none;
-  color: #333;
+  color: #999;
+  white-space: nowrap;
 }
+
+#index-schedule2-more > a:last-child { margin-top: 0.5rem; }
 
 #index-schedule2-more > a:hover { color: skyblue; }
 
@@ -99,6 +103,8 @@ li.index-schedule2-event-item { margin: 0.25rem 0 0 0; padding: 0; }
   span.index-schedule2-diem-celebration,
   span.index-schedule2-event-time,
   span.index-schedule2-event-location { display: inline; font-size: 0.9rem; }
+  #index-schedule2-more > a { display: inline; }
+  #index-schedule2-more > a:last-child { margin-left: 2rem; }
 }
 
 @media screen and (min-width: 64rem) {

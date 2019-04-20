@@ -18,7 +18,7 @@ open_graph_description: >
   <h1 class="page-title">{{ schedule.title }}</h1>
   <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
   <section id="schedule2-calendar-upcoming-container">
-    <h1>{{ schedule.subtitle.upcoming }}</h1>
+    <h1 id="upcoming-events">{{ schedule.subtitle.upcoming }}</h1>
     <div id="schedule2-calendar-upcoming">
       {% for diem in schedule.calendar %}
       {% assign dayOfMonth = diem.date | date: '%d' %}
@@ -64,7 +64,7 @@ open_graph_description: >
     </div>
   </section>
   <section id="schedule2-calendar-recent-container">
-    <h1>{{ schedule.subtitle.past }}</h1>
+    <h1 id="past-events">{{ schedule.subtitle.past }}</h1>
     <div id="schedule2-calendar-recent"></div>
   </section>
 </section>

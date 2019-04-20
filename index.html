@@ -58,7 +58,10 @@ open_graph_description: >
     </ul>
   {% endfor %}
   </div>
-  <div id="index-schedule2-more"><a href="{{ '/schedule.html' | relative_url }}">Full schedule&hellip;</a></div>
+  <div id="index-schedule2-more">
+    <a href="{{ '/schedule.html' | relative_url }}">Full schedule</a>
+    <a href="{{ '/schedule.html#past-events' | relative_url }}">Past events</a>
+  </div>
 </section>
 
 <script src="{{ 'schedule.js' | prepend: site.scripts_path | relative_url }}"></script>
