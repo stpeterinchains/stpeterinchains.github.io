@@ -18,7 +18,7 @@ open_graph_description: >
 {% assign schedule = site.data.schedule %}
 
 <section id="index-schedule2">
-  <h1 id="index-schedule2-title">{{ schedule.title }}</h1>
+  <h1 id="index-schedule2-title">{{ schedule.subtitle.upcoming }}</h1>
   <div id="index-schedule2-calendar">
   {% for diem in schedule.calendar %}
     {% assign dayOfMonth = diem.date | date: '%d' %}
@@ -35,12 +35,9 @@ open_graph_description: >
     <ul class="index-schedule2-diem-container" id="index-schedule2-diem-{{ diem.date | date: '%Y%m%d' }}">
       <li class="index-schedule2-diem">
         <h1 class="index-schedule2-diem-day">
-          <span class="index-schedule2-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
-          {% if diem.celebration %}
-          <span class="index-schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>
-          {% else %}
           <span class="index-schedule2-diem-dayofweek">{{ diem.date | date: '%A' }}</span>
-          {% endif %}
+          <span class="index-schedule2-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
+          {% if diem.celebration %}<span class="index-schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
         </h1>
         <ul class="index-schedule2-event-container">
           {% for event in events %}

@@ -18,7 +18,7 @@ open_graph_description: >
   <h1 class="page-title">{{ schedule.title }}</h1>
   <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
   <section id="schedule2-calendar-upcoming-container">
-    <h1>Upcoming events</h1>
+    <h1>{{ schedule.subtitle.upcoming }}</h1>
     <div id="schedule2-calendar-upcoming">
       {% for diem in schedule.calendar %}
       {% assign dayOfMonth = diem.date | date: '%d' %}
@@ -40,7 +40,7 @@ open_graph_description: >
             {% if diem.celebration %}<span class="schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
             {% if diem.season %}<span class="schedule2-diem-season" style="{% if diem.season.color %}color: {{ diem.season.color }}; {% endif %}{% if diem.season.bgcolor %}background-color: {{ diem.season.bgcolor }}{% endif %}">{{ diem.season.title }}</span>{% endif %}
           </h1>
-          {% if diem.note %}<h2 class="schedule2-diem-note"><span>{{ diem.note }}</span></h2>{% endif %}
+          {% if diem.note %}<h2 class="schedule2-diem-note">{{ diem.note }}</h2>{% endif %}
           <ul class="schedule2-event-container">
             {% for event in events %}
             {% unless diem.exclusions contains event.mnemonic %}
@@ -64,7 +64,7 @@ open_graph_description: >
     </div>
   </section>
   <section id="schedule2-calendar-recent-container">
-    <h1>Past events</h1>
+    <h1>{{ schedule.subtitle.past }}</h1>
     <div id="schedule2-calendar-recent"></div>
   </section>
 </section>

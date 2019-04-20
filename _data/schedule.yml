@@ -5,6 +5,9 @@ descriptive: >
   Our parish holds daily and weekly mass, confessions, devotions,
   and other faith events. We also feature many special events
   throughout the Liturgical&nbsp;year.
+subtitle:
+  upcoming: Upcoming events
+  past: Past events
 
 recurring:
   weekday_mass: &weekday_mass
@@ -193,7 +196,6 @@ calendar:
     season: *lent
     recurring: *saturday
   - date: 2019-04-14
-    note: Holy Week begins
     season: *lent
     celebration:
       <<: *holy_week
@@ -300,7 +302,7 @@ calendar:
           **Weather advisory**&#x2003;Due to the possibility of inclement
           weather this year, please be advised that the event
           may be presented in its entirety inside the Cathedral&nbsp;of
-          Saint&nbsp;Peter&#x2011;in&#x2011;Chains.
+          Saint&nbsp;Peter-in-Chains.
           Please arrive early for this popular&nbsp;event.
         time: 10:00 AM
         ordinal: "1000"
@@ -318,10 +320,15 @@ calendar:
     specials:
       - title: Easter Vigil
         descriptive: |
-          Join us for the first celebration of the Resurrection.
+          Please join us for one of the most beautiful
+          liturgies in the Roman&nbsp;Catholic&nbsp;Church, the
+          Easter&nbsp;Vigil, historically the first celebration of
+          the&nbsp;Resurrection, held on the eve of the&nbsp;Resurrection,
+          marking the beginning&nbsp;of&nbsp;Easter.
 
-          During this special service, we welcome adult
-          catechumens who will be received into the&nbsp;Church.
+          All are welcome to attend.
+          Please arrive early to ensure seating for this special event.
+          Please note duration is typically two to three&nbsp;hours.
         time: 8:00 PM
         ordinal: "2000"
   - date: 2019-04-21
@@ -332,14 +339,21 @@ calendar:
     specials:
       - <<: *sunday_mass
         mnemonic: sunday_mass_nix
-        title: Special Sunday Mass
-        descriptive: Join us for mass on this Resurrection Sunday.
+        title: Easter Sunday Mass
+        descriptive: |
+          Join us for mass on this Resurrection&nbsp;Sunday as we celebrate
+          Christ&apos;s&nbsp;resurrection and the fulfilment of
+          God&apos;s promise&nbsp;to&nbsp;mankind.
+
+          We mark the last day of the Easter&nbsp;Triduum,
+          the end of Holy&nbsp;Week, the end of Lent,
+          and the beginning of the Season&nbsp;of&nbsp;Easter.
       - <<: *lifeteen
         mnemonic: lifeteen_nix
         location:
         time: Cancelled
   - date: 2019-04-22
-    note: Office closed
+    note: Office closed.
     season: *easter_octave
     title: Easter Monday
     specials:
@@ -351,14 +365,14 @@ calendar:
         time: Cancelled
   - date: 2019-04-23
     season: *easter_octave
-    note: Office closed
+    note: Office closed.
     specials:
       - <<: *weekday_mass
         descriptive: Celebrated by Fr John.
         time: 9:00 AM
         ordinal: "0900"
   - date: 2019-04-24
-    note: &easter_week_note Office open, staff on vacation
+    note: &easter_week_note Office open, staff on vacation.
     season: *easter_octave
     recurring: *wednesday
   - date: 2019-04-25
