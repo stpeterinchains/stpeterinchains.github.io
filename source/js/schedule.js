@@ -1,17 +1,25 @@
 const
-  _todayDate =
-    () => {
+  _pad =
+    number => {
+
+      'use strict';
+
+      return (number < 10 ? '0' : '') + number.toString();
+    },
+
+  _getFormattedDate =
+    existingDate => {
 
       'use strict';
 
       const
-        today      = new Date,
-        todayYear  = today.getFullYear(),
-        todayMonth = (today.getMonth() + 1).toString().padStart(2, '0'),
-        todayDay   = today.getDate().toString().padStart(2, '0'),
-        todayDate  = `${todayYear}${todayMonth}${todayDay}`;
+        date          = existingDate || new Date,
+        year          = date.getFullYear(),
+        month         = _pad(date.getMonth() + 1),
+        day           = _pad(date.getDate()),
+        formattedDate = `${year}${month}${day}`;
 
-      return { today, todayDate };
+      return { date, formattedDate };
     },
 
   trimSchedule =
@@ -21,13 +29,13 @@ const
 
       const
         upcomingCalendarID      = 'schedule2-calendar-upcoming',
-        recentCalendarID        = 'schedule2-calendar-recent',
+        pastCalendarID          = 'schedule2-calendar-past',
         targetIDPrefix          = 'schedule2-diem-',
         upcomingCalendarElement = document.getElementById(upcomingCalendarID),
-        recentCalendarElement   = document.getElementById(recentCalendarID),
+        pastCalendarElement     = document.getElementById(pastCalendarID),
         targetElements          = upcomingCalendarElement.children,
         targetIDDateOffset      = targetIDPrefix.length,
-        { todayDate }           = _todayDate();
+        { formattedDate : todayDate } = _getFormattedDate();
 
       let
         targetElement,
@@ -39,7 +47,7 @@ const
           targetElement.id.substring(targetIDDateOffset) < todayDate )
 
         headElement =
-          recentCalendarElement.insertBefore(targetElement, headElement);
+          pastCalendarElement.insertBefore(targetElement, headElement);
 
       /* eslint-enable no-cond-assign */
     },
@@ -56,8 +64,8 @@ const
         calendarElement    = document.getElementById(calendarID),
         targetElements     = calendarElement.children,
         targetIDDateOffset = targetIDPrefix.length,
-        { today,
-          todayDate, }     = _todayDate();
+        { date          : today,
+          formattedDate : todayDate, } = _getFormattedDate();
 
       let
         targetElement,
@@ -67,15 +75,12 @@ const
       while (targetElement = targetElements[targetOffset]) {
 
         const
+          targetDate  = targetElement.id.substring(targetIDDateOffset),
           future      = new Date(
             today.getFullYear(),
             today.getMonth(),
             today.getDate() + offsetDays),
-          futureYear  = future.getFullYear(),
-          futureMonth = (future.getMonth() + 1).toString().padStart(2, '0'),
-          futureDay   = future.getDate().toString().padStart(2, '0'),
-          futureDate  = `${futureYear}${futureMonth}${futureDay}`,
-          targetDate  = targetElement.id.substring(targetIDDateOffset);
+          { formattedDate : futureDate } = _getFormattedDate(future);
 
         if (targetDate < todayDate || targetDate >= futureDate)
           calendarElement.removeChild(targetElement);
