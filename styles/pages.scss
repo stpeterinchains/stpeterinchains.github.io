@@ -6,59 +6,69 @@
 /*** PAGE: INDEX ***/
 
 
-/* SECTION: SCHEDULE2 */
+/* SECTION: SCHEDULE */
 
-#index-schedule2 { text-align: center; }
+#index-schedule { text-align: center; }
 
-#index-schedule2-title {
+#index-schedule-title {
   margin: 0 5%; padding-bottom: 0.25rem;
   border-bottom: 2px solid #eee;
   font-weight: 400; font-size: 0.9rem; font-size: 1.1rem;
   color: #333;
 }
 
-#index-schedule2-calendar {}
-
-ul.index-schedule2-diem-container {
-  margin: 1.5rem 0 0 0; padding: 0;
-  list-style-type: none;
+ul.index-schedule-diem-list {
+  margin: 2rem 0 0 0; padding: 0;
+  list-style: none;
   font-size: 1rem;
 }
 
-li.index-schedule2-diem { margin: 0; padding: 0; }
-
-h1.index-schedule2-diem-day {
-  margin: 0; padding: 0;
+h1.index-schedule-diem-day {
+  margin: 0;
   font-size: 0.9rem; font-weight: 300;
-  color: #666;
+  color: #333;
 }
 
-  span.index-schedule2-diem-formatteddate {}
-
-  span.index-schedule2-diem-dayofweek {
+  span.index-schedule-diem-dayofweek-celebration {
     margin-right: 0.5rem;
     font-size: 0.8rem;
   }
 
-  span.index-schedule2-diem-celebration {
+  span.index-schedule-diem-dayofweek {
+    margin-right: 0.5rem; padding: 0.25rem 0.75rem;
+    background-color: #eee;
+    border-radius: 11px;
+    font-size: 0.9rem;
+  }
+
+  span.index-schedule-diem-formatteddate { font-weight: 400; }
+
+  span.index-schedule-diem-celebration {
     display: none;
     margin-left: 0.5rem; padding: 0.2rem 0.5rem;
     background-color: #eee; border-radius: 11px;
   }
 
-ul.index-schedule2-event-container {
+h2.index-schedule-diem-note {
+  margin: 0.5rem 0 0 0;
+  font-weight: 600; font-size: 0.8rem;
+  color: #333;
+}
+
+ul.index-schedule-event-list {
   margin: 0; padding: 0;
-  list-style-type: none;
+  list-style: none;
   font-size: 1rem;
 }
 
-li.index-schedule2-event-item { margin: 0.25rem 0 0 0; padding: 0; }
+li.index-schedule-event-item { margin: 0.25rem 0 0 0; }
 
-  span.index-schedule2-event-title { font-weight: 400; color: #333; }
-  span.index-schedule2-event-recurring { font-weight: 400; }
-  span.index-schedule2-event-special { font-weight: 600; }
+  span.index-schedule-event-title { font-weight: 400; color: #333; }
+  span.index-schedule-event-recurring { font-weight: 400; }
+  span.index-schedule-event-special { font-weight: 600; }
 
-  span.index-schedule2-event-time {
+  span.index-schedule-event-time,
+  span.index-schedule-event-location {
     display: block;
     margin-left: 0.5rem;
     font-weight: 300;
@@ -66,27 +76,17 @@ li.index-schedule2-event-item { margin: 0.25rem 0 0 0; padding: 0; }
     white-space: nowrap;
   }
 
-  span.index-schedule2-event-location {
-    display: block;
-    margin-left: 0.5rem;
-    font-weight: 300;
-    color: #393;
-    white-space: nowrap;
+  span.index-schedule-event-location { color: #393; }
+
+  div.index-schedule-event-descriptive > p {
+    margin: 0.15rem 5% 0 5%;
+    font-size: 0.8rem;
+    color: #333;
   }
 
-  div.index-schedule2-event-descriptive > p {
-    margin: 0 5% 0.15rem 5%; padding: 0;
-    font-size: 0.8rem; color: #333;
-  }
+#index-schedule-more { margin-top: 2rem; }
 
-  div.index-schedule2-event-descriptive > em {}
-  div.index-schedule2-event-descriptive > strong {}
-  div.index-schedule2-event-descriptive > a {}
-  div.index-schedule2-event-descriptive > a:hover {}
-
-#index-schedule2-more { margin-top: 2rem; }
-
-#index-schedule2-more > a {
+#index-schedule-more > a {
   display: block;
   font-weight: 300; font-size: 1.1rem;
   text-decoration: none;
@@ -94,27 +94,27 @@ li.index-schedule2-event-item { margin: 0.25rem 0 0 0; padding: 0; }
   white-space: nowrap;
 }
 
-#index-schedule2-more > a:last-child { margin-top: 0.5rem; }
+#index-schedule-more > a:last-child { margin-top: 0.5rem; }
 
-#index-schedule2-more > a:hover { color: skyblue; }
+#index-schedule-more > a:hover { color: skyblue; }
 
 @media screen and (min-width: 35.5rem) {
-  li.index-schedule2-event-item { margin-top: 0.5rem; }
-  span.index-schedule2-diem-celebration,
-  span.index-schedule2-event-time,
-  span.index-schedule2-event-location { display: inline; font-size: 0.9rem; }
-  #index-schedule2-more > a { display: inline; }
-  #index-schedule2-more > a:last-child { margin-left: 2rem; }
+  li.index-schedule-event-item { margin-top: 0.75rem; }
+  span.index-schedule-diem-celebration,
+  span.index-schedule-event-time,
+  span.index-schedule-event-location { display: inline; font-size: 0.9rem; }
+  #index-schedule-more > a { display: inline; }
+  #index-schedule-more > a:last-child { margin-left: 2rem; }
 }
 
 @media screen and (min-width: 64rem) {
-  div.index-schedule2-event-descriptive > p {
+  div.index-schedule-event-descriptive > p {
     margin-left: 10%; margin-right: 10%;
   }
 }
 
 @media screen and (min-width: 80rem) {
-  div.index-schedule2-event-descriptive > p {
+  div.index-schedule-event-descriptive > p {
     margin-left: 15%; margin-right: 15%;
   }
 }
@@ -269,40 +269,40 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
 
 /*** PAGE: SCHEDULE ***/
 
-#schedule2-calendar-upcoming-container > h1 {
+#schedule-calendar-upcoming > h1 {
   margin: 0; padding: 0 0 0.25rem 0;
   border-bottom: 2px solid #eee;
   font-size: 1rem; font-weight: 400;
   color: #333;
 }
 
-ul.schedule2-diem-container {
+ul.schedule-diem-list {
   margin: 0; padding: 0;
-  list-style-type: none;
+  list-style: none;
   font-size: 1rem;
 }
 
-li.schedule2-diem {
+li.schedule-diem-item {
   margin: 0; padding: 0;
 }
 
-h1.schedule2-diem-heading {
+h1.schedule-diem-heading {
   margin: 2rem 0 0 0; padding: 0 0 0.1rem 0;
   font-weight: 300; font-size: 0.9rem;
 }
 
-  span.schedule2-diem-dayofweek {
+  span.schedule-diem-dayofweek {
     font-weight: 300; font-size: 0.75rem;
     color: #666;
   }
 
-  span.schedule2-diem-formatteddate {
+  span.schedule-diem-formatteddate {
     margin-left: 0.25rem;
     font-weight: 400;
     color: #333;
   }
 
-  span.schedule2-diem-celebration, span.schedule2-diem-season {
+  span.schedule-diem-celebration, span.schedule-diem-season {
     margin-left: 0.5rem;
     padding: 0.2rem 0.5rem; background-color: #eee;
     border-radius: 11px;
@@ -311,60 +311,60 @@ h1.schedule2-diem-heading {
     white-space: nowrap;
   }
 
-  span.schedule2-diem-celebration,
-  span.schedule2-diem-season { display: none; }
+  span.schedule-diem-celebration,
+  span.schedule-diem-season { display: none; }
 
-h2.schedule2-diem-note {
+h2.schedule-diem-note {
   margin: 0.2rem 0 0 2rem; padding: 0;
   font-weight: 600; font-size: 0.8rem;
   color: #333;
 }
 
-h2.schedule2-diem-note > span {
+h2.schedule-diem-note > span {
   padding: 0.2rem 0.5rem;
   background-color: #eee; border-radius: 11px;
   color: #333;
   white-space: nowrap;
 }
 
-ul.schedule2-event-container { margin: 0 0 0 2rem; padding: 0; }
+ul.schedule-event-list { margin: 0 0 0 2rem; padding: 0; }
 
-li.schedule2-event { margin: 0; padding: 0; list-style-type: none; }
+li.schedule-event-item { margin: 0; padding: 0; list-style: none; }
 
-h1.schedule2-event-heading {
+h1.schedule-event-heading {
   margin: 0.75rem 0 0 0; padding: 0;
   font-weight: 300; font-size: 0.9rem;
 }
 
-  span.schedule2-event-title { color: #333; }
-  span.schedule2-event-recurring { font-weight: 400; }
-  span.schedule2-event-special { font-weight: 600; }
+  span.schedule-event-title { color: #333; }
+  span.schedule-event-recurring { font-weight: 400; }
+  span.schedule-event-special { font-weight: 600; }
 
-  span.schedule2-event-time {
+  span.schedule-event-time {
     display: block;
     font-size: 0.75rem;
     color: #666;
   }
 
-  span.schedule2-event-location {
+  span.schedule-event-location {
     display: block;
     font-weight: 400; font-size: 0.8rem;
     color: #393;
     white-space: nowrap;
   }
 
-div.schedule2-event-descriptive > p {
+div.schedule-event-descriptive > p {
   margin: 0.25rem 0 0 2rem; padding: 0;
   font-size: 0.8rem;
   color: #333;
 }
 
-div.schedule2-event-descriptive > p em {}
-div.schedule2-event-descriptive > p strong { font-weight: 600; }
-div.schedule2-event-descriptive > p a { font-weight: 400; text-decoration: underline; }
-div.schedule2-event-descriptive > p a:hover { color: skyblue; }
+div.schedule-event-descriptive > p em {}
+div.schedule-event-descriptive > p strong { font-weight: 600; }
+div.schedule-event-descriptive > p a { font-weight: 400; text-decoration: underline; }
+div.schedule-event-descriptive > p a:hover { color: skyblue; }
 
-#schedule2-calendar-past-container > h1 {
+#schedule-calendar-past > h1 {
   margin: 2rem 0 0 0; padding: 0 0 0.25rem 0;
   border-bottom: 2px solid #eee;
   font-size: 1rem; font-weight: 400;
@@ -372,10 +372,10 @@ div.schedule2-event-descriptive > p a:hover { color: skyblue; }
 }
 
 @media screen and (min-width: 35.5rem) {
-  span.schedule2-event-time,
-  span.schedule2-event-location { display: inline; margin-left: 0.5rem; }
-  span.schedule2-diem-celebration,
-  span.schedule2-diem-season { display: inline; }
+  span.schedule-event-time,
+  span.schedule-event-location { display: inline; margin-left: 0.5rem; }
+  span.schedule-diem-celebration,
+  span.schedule-diem-season { display: inline; }
 }
 
 

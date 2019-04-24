@@ -22,50 +22,20 @@ const
       return { date, formattedDate };
     },
 
-  trimSchedule =
-    () => {
-
-      'use strict';
-
-      const
-        upcomingCalendarID      = 'schedule2-calendar-upcoming',
-        pastCalendarID          = 'schedule2-calendar-past',
-        targetIDPrefix          = 'schedule2-diem-',
-        upcomingCalendarElement = document.getElementById(upcomingCalendarID),
-        pastCalendarElement     = document.getElementById(pastCalendarID),
-        targetElements          = upcomingCalendarElement.children,
-        targetIDDateOffset      = targetIDPrefix.length,
-        { formattedDate : todayDate } = _getFormattedDate();
-
-      let
-        targetElement,
-        headElement = null;
-
-      /* eslint-disable no-cond-assign */
-      while
-        ( (targetElement = targetElements[0]) &&
-          targetElement.id.substring(targetIDDateOffset) < todayDate )
-
-        headElement =
-          pastCalendarElement.insertBefore(targetElement, headElement);
-
-      /* eslint-enable no-cond-assign */
-    },
-
   trimIndexSchedule =
     () => {
 
       'use strict';
 
       const
-        offsetDays         = 3,
-        calendarID         = 'index-schedule2-calendar',
-        targetIDPrefix     = 'index-schedule2-diem-',
-        calendarElement    = document.getElementById(calendarID),
-        targetElements     = calendarElement.children,
-        targetIDDateOffset = targetIDPrefix.length,
+        calendarID          = 'index-schedule-calendar',
+        calendarElement     = document.getElementById(calendarID),
+        targetElements      = calendarElement.children,
+        targetDateAttribute = 'diem',
         { date          : today,
-          formattedDate : todayDate, } = _getFormattedDate();
+          formattedDate : todayDate, } = _getFormattedDate(),
+        currentDayOfWeek    = today.getDay(),
+        daysToShow          = [ 4, 5, 4, 3, 4, 3, 5 ];
 
       let
         targetElement,
@@ -75,11 +45,12 @@ const
       while (targetElement = targetElements[targetOffset]) {
 
         const
-          targetDate  = targetElement.id.substring(targetIDDateOffset),
-          future      = new Date(
+          // targetDate1  = targetElement.id.substring(targetIDDateOffset),
+          targetDate = targetElement.dataset[targetDateAttribute],
+          future     = new Date(
             today.getFullYear(),
             today.getMonth(),
-            today.getDate() + offsetDays),
+            today.getDate() + daysToShow[currentDayOfWeek]),
           { formattedDate : futureDate } = _getFormattedDate(future);
 
         if (targetDate < todayDate || targetDate >= futureDate)
@@ -91,7 +62,7 @@ const
       if (targetElements.length === 0) {
 
         const
-          scheduleContainerID        = 'index-schedule2',
+          scheduleContainerID        = 'index-schedule',
           expositionContainerID      = 'exposition',
           scheduleContainerElement   =
             document.getElementById(scheduleContainerID),
@@ -101,4 +72,33 @@ const
         scheduleContainerElement.style.display     = 'none';
         expositionContainerElement.style.marginTop = 0;
       }
+    },
+
+  trimSchedule =
+    () => {
+
+      'use strict';
+
+      const
+        upcomingCalendarID      = 'schedule-calendar-upcoming-container',
+        upcomingCalendarElement = document.getElementById(upcomingCalendarID),
+        pastCalendarID          = 'schedule-calendar-past-container',
+        pastCalendarElement     = document.getElementById(pastCalendarID),
+        targetElements          = upcomingCalendarElement.children,
+        targetDateAttribute     = 'diem',
+        { formattedDate : todayDate } = _getFormattedDate();
+
+      let
+        targetElement,
+        headElement = null;
+
+      /* eslint-disable no-cond-assign */
+      while
+        ( (targetElement = targetElements[0]) &&
+          targetElement.dataset[targetDateAttribute] < todayDate )
+
+        headElement =
+          pastCalendarElement.insertBefore(targetElement, headElement);
+
+      /* eslint-enable no-cond-assign */
     };

@@ -14,12 +14,12 @@ open_graph_description: >
 
 {% assign schedule = site.data.schedule %}
 
-<section id="schedule2" class="page-container">
+<section id="schedule" class="page-container">
   <h1 class="page-title">{{ schedule.title }}</h1>
   <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
-  <section id="schedule2-calendar-upcoming-container">
+  <section id="schedule-calendar-upcoming">
     <h1 id="upcoming-events">{{ schedule.subtitle.upcoming }}</h1>
-    <div id="schedule2-calendar-upcoming">
+    <div id="schedule-calendar-upcoming-container">
       {% for diem in schedule.calendar %}
       {% assign dayOfMonth = diem.date | date: '%d' %}
       {% if dayOfMonth <= "07" %}
@@ -32,27 +32,27 @@ open_graph_description: >
       {% else %}
         {% assign events = diem.recurring | sort: 'ordinal' %}
       {% endif %}
-      <ul class="schedule2-diem-container" id="schedule2-diem-{{ diem.date | date: '%Y%m%d' }}">
-        <li class="schedule2-diem">
-          <h1 class="schedule2-diem-heading">
-            <span class="schedule2-diem-dayofweek">{{ diem.date | date: '%A' }}</span>
-            <span class="schedule2-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
-            {% if diem.celebration %}<span class="schedule2-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
-            {% if diem.season %}<span class="schedule2-diem-season" style="{% if diem.season.color %}color: {{ diem.season.color }}; {% endif %}{% if diem.season.bgcolor %}background-color: {{ diem.season.bgcolor }}{% endif %}">{{ diem.season.title }}</span>{% endif %}
+      <ul class="schedule-diem-list" data-diem="{{ diem.date | date: '%Y%m%d' }}">
+        <li class="schedule-diem-item">
+          <h1 class="schedule-diem-heading">
+            <span class="schedule-diem-dayofweek">{{ diem.date | date: '%A' }}</span>
+            <span class="schedule-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
+            {% if diem.celebration %}<span class="schedule-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
+            {% if diem.season %}<span class="schedule-diem-season" style="{% if diem.season.color %}color: {{ diem.season.color }}; {% endif %}{% if diem.season.bgcolor %}background-color: {{ diem.season.bgcolor }}{% endif %}">{{ diem.season.title }}</span>{% endif %}
           </h1>
-          {% if diem.note %}<h2 class="schedule2-diem-note">{{ diem.note }}</h2>{% endif %}
-          <ul class="schedule2-event-container">
+          {% if diem.note %}<h2 class="schedule-diem-note">{{ diem.note }}</h2>{% endif %}
+          <ul class="schedule-event-list">
             {% for event in events %}
             {% unless diem.exclusions contains event.mnemonic %}
             {% if event.reparatory != true or isFirstWeek == true %}
-            <li class="schedule2-event">
-              <h1 class="schedule2-event-heading">
-                {% if event.mnemonic %}{% assign event_class = 'schedule2-event-recurring' %}{% else %}{% assign event_class = 'schedule2-event-special' %}{% endif %}
-                <span class="schedule2-event-title {{ event_class }}"{% if event.color %} style="color: {{ event.color }}"{% endif %}>{{ event.title }}</span>
-                <span class="schedule2-event-time">{{ event.time }}</span>
-                {% if event.location %}<span class="schedule2-event-location">{{ event.location }}</span>{% endif %}
+            <li class="schedule-event-item">
+              <h1 class="schedule-event-heading">
+                {% if event.mnemonic %}{% assign event_class = 'schedule-event-recurring' %}{% else %}{% assign event_class = 'schedule-event-special' %}{% endif %}
+                <span class="schedule-event-title {{ event_class }}"{% if event.color %} style="color: {{ event.color }}"{% endif %}>{{ event.title }}</span>
+                <span class="schedule-event-time">{{ event.time }}</span>
+                {% if event.location %}<span class="schedule-event-location">{{ event.location }}</span>{% endif %}
               </h1>
-              {% if event.descriptive %}<div class="schedule2-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
+              {% if event.descriptive %}<div class="schedule-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
             </li>
             {% endif %}
             {% endunless %}
@@ -63,9 +63,9 @@ open_graph_description: >
       {% endfor %}
     </div>
   </section>
-  <section id="schedule2-calendar-past-container">
+  <section id="schedule-calendar-past">
     <h1 id="past-events">{{ schedule.subtitle.past }}</h1>
-    <div id="schedule2-calendar-past"></div>
+    <div id="schedule-calendar-past-container"></div>
   </section>
 </section>
 
