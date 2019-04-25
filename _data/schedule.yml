@@ -389,8 +389,97 @@ calendar:
   - date: 2019-04-28
     season: *easter_octave
     recurring: *sunday
+    specials:
+      - title: Hour of Reparation and Divine Mercy
+        descriptive: >
+          The annual *Divine Mercy* service will be dedicated this year to
+          Reparation for sexual abuse within the&nbsp;Church.
+        time: 2:30 PM
+        ordinal: "1430"
   - date: 2019-04-29
     note: Season of Easter begins
     recurring: *monday
   - date: 2019-04-30
     recurring: *tuesday
+  - date: 2019-05-01
+    recurring: *wednesday
+  - date: 2019-05-02
+    recurring: *thursday
+  - date: 2019-05-03
+    recurring: *friday
+  - date: 2019-05-04
+    recurring: *saturday
+  - date: 2019-05-05
+    recurring: *sunday
+  - date: 2019-05-06
+    recurring: *monday
+  - date: 2019-05-07
+    recurring: *tuesday
+  - date: 2019-05-08
+    recurring: *wednesday
+  - date: 2019-05-09
+    recurring: *thursday
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: prolife_mass
+        title: Third Annual Pro-Life Mass
+        descriptive: >
+          Please attend this holy mass as part of the day-long excursion to
+          attend the March&nbsp;For&nbsp;Life in&nbsp;Ottawa.
+        time: 7:30 AM
+        ordinal: "0730"
+      - title: March For Life
+        descriptive: |
+          **Peterborough Pro-Life** invites you to join the
+          **March&nbsp;For&nbsp;Life** demonstration in&nbsp;Ottawa.
+
+          Please see the
+          [Bulletin](https://drive.google.com/file/d/14btY-d26K8pwN_jfHa6Gt_I113cLtSOj/view)
+          for details.
+        time: 8:15 AM
+        ordinal: "0815"
+  - date: 2019-05-10
+    recurring: *friday
+  - date: 2019-05-11
+    recurring: *saturday
+  - date: 2019-05-12
+    recurring: *sunday
+  - date: 2019-05-13
+    recurring: *monday
+  - date: 2019-05-14
+    recurring: *tuesday
+  - date: 2019-05-15
+    recurring: *wednesday
+  - date: 2019-05-16
+    recurring: *thursday
+  - date: 2019-05-17
+    recurring: *friday
+  - date: 2019-05-18
+    recurring: *saturday
+  - date: 2019-05-19
+    recurring: *sunday
+  - date: 2019-05-20
+    recurring: *monday
+  - date: 2019-05-21
+    recurring: *tuesday
+  - date: 2019-05-22
+    recurring: *wednesday
+  - date: 2019-05-23
+    recurring: *thursday
+  - date: 2019-05-24
+    recurring: *friday
+  - date: 2019-05-25
+    recurring: *saturday
+  - date: 2019-05-26
+    recurring: *sunday
+  - date: 2019-05-27
+    recurring: *monday
+  - date: 2019-05-28
+    recurring: *tuesday
+  - date: 2019-05-29
+    recurring: *wednesday
+  - date: 2019-05-30
+    recurring: *thursday
+  - date: 2019-05-31
+    recurring: *friday
