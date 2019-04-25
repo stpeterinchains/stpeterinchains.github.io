@@ -1,0 +1,11 @@
+{ "name"            : "cathedral-stpeterinchains-calendar",
+  "description"     : "Base calendar data generator for the website of the Cathedral of Saint Peter-in-Chains",
+  "version"         : "0.1.0",
+  "private"         : true,
+  "engines"         :
+    { "node"        : "~11.14",
+      "npm"         : "~6.9" },
+  "devDependencies" :
+    { "js-joda"     : "~1.10" },
+  "scripts"         :
+    { "lint"        : "eslint calendar.js" } }

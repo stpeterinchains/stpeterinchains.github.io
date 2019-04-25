@@ -3,7 +3,7 @@ url: https://stpeterspeterborough.ca
 future: true
 strict_front_matter: true
 timezone: America/Toronto
-exclude: [ "source", "media", "temp" ]
+exclude: [ "source", "util", "media", "temp" ]
 
 styles_path:           /styles/
 scripts_path:          /scripts/
