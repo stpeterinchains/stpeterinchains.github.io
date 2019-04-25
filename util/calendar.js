@@ -29,7 +29,7 @@ const
             firstDate.monthValue(),
             firstDate.lengthOfMonth()),
   totalDays                  = firstDate.until(lastDate, DAYS),
-  ymdFormat                  = DateTimeFormatter.ofPattern('yyyy/MM/dd');
+  ymdFormat                  = DateTimeFormatter.ofPattern('yyyy-MM-dd');
 
 writeln(`${calendarProperty}:`);
 
