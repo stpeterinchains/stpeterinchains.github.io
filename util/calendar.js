@@ -2,14 +2,13 @@
 
 const
   { log : writeln } = console,
-  { argv }          = process,
   [ , ,
     firstArgument,
-    lastArgument, ] = argv;
+    lastArgument, ] = process.argv;
 
 if (! firstArgument) {
 
-  writeln('Usage: node chrono.js [ <first-date> [ <last-date> ] ]');
+  writeln('Usage: node calendar.js [ <first-date> [ <last-date> ] ]');
   writeln('Date format: YYYY-MM-DD');
   return;
 }
@@ -21,15 +20,14 @@ const
   calendarProperty           = 'calendar',
   dateProperty               = 'date',
   recurringProperty          = 'recurring',
-  today                      = LocalDate.now(),
   firstDate                  = LocalDate.parse(firstArgument),
   lastDate                   =
     lastArgument ?
           LocalDate.parse(lastArgument) :
           LocalDate.of(
-            today.year(),
-            today.monthValue(),
-            today.lengthOfMonth()),
+            firstDate.year(),
+            firstDate.monthValue(),
+            firstDate.lengthOfMonth()),
   totalDays                  = firstDate.until(lastDate, DAYS),
   ymdFormat                  = DateTimeFormatter.ofPattern('yyyy/MM/dd');
 
