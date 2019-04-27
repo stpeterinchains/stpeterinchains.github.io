@@ -29,6 +29,8 @@ h1.index-schedule-diem-day {
   color: #333;
 }
 
+  span.index-schedule-diem-mark { display: none; }
+
   span.index-schedule-diem-dayofweek-celebration {
     margin-right: 0.5rem;
     font-size: 0.8rem;
@@ -103,6 +105,14 @@ li.index-schedule-event-item { margin: 0.25rem 0 0 0; }
   span.index-schedule-diem-celebration,
   span.index-schedule-event-time,
   span.index-schedule-event-location { display: inline; font-size: 0.9rem; }
+
+  span.index-schedule-diem-mark {
+    display: inline;
+    margin-right: 0.75rem;
+    font-weight: 400;
+    color: #c33;
+  }
+
   #index-schedule-more > a { display: inline; }
   #index-schedule-more > a:last-child { margin-left: 2rem; }
 }

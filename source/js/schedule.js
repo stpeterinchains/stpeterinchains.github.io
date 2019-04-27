@@ -35,7 +35,7 @@ const
         { date          : today,
           formattedDate : todayDate, } = _getFormattedDate(),
         currentDayOfWeek    = today.getDay(),
-        daysToShow          = [ 4, 5, 4, 3, 4, 3, 5 ];
+        daysToShow          = [ 3, 5, 4, 5, 4, 3, 4 ];
 
       let
         targetElement,
@@ -45,7 +45,6 @@ const
       while (targetElement = targetElements[targetOffset]) {
 
         const
-          // targetDate1  = targetElement.id.substring(targetIDDateOffset),
           targetDate = targetElement.dataset[targetDateAttribute],
           future     = new Date(
             today.getFullYear(),
@@ -71,6 +70,22 @@ const
 
         scheduleContainerElement.style.display     = 'none';
         expositionContainerElement.style.marginTop = 0;
+      }
+
+      else {
+
+        const
+          firstHeading    =
+            calendarElement.
+                  getElementsByClassName('index-schedule-diem-day')[0],
+          firstChild      = firstHeading.children[0],
+          markElement     = document.createElement('span'),
+          markTextElement = document.createTextNode('Today');
+
+        markElement.className = 'index-schedule-diem-mark';
+        markElement.appendChild(markTextElement);
+
+        firstHeading.insertBefore(markElement, firstChild);
       }
     },
 
@@ -99,6 +114,5 @@ const
 
         headElement =
           pastCalendarElement.insertBefore(targetElement, headElement);
-
       /* eslint-enable no-cond-assign */
     };
