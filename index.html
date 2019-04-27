@@ -20,7 +20,12 @@ open_graph_description: >
 <section id="index-schedule">
   <h1 id="index-schedule-title">{{ schedule.subtitle.upcoming }}</h1>
   <div id="index-schedule-calendar">
+    {% assign earliest = site.time | date: '%Y-%m-%d' %}
+    {% assign daysForward = schedule.select.index.days_forward | times: 86400 %}
+    {% assign latest = earliest | date: '%s' | plus: daysForward | date: '%Y-%m-%d' %}
     {% for diem in schedule.calendar %}
+    {% assign diemDate = diem.date | date: '%Y-%m-%d' %}
+    {% if earliest <= diemDate and diemDate <= latest %}
     {% assign dayOfMonth = diem.date | date: '%d' %}
     {% if dayOfMonth <= "07" %}
       {% assign isFirstWeek = true %}
@@ -57,6 +62,7 @@ open_graph_description: >
         </ul>
       </li>
     </ul>
+    {% endif %}
     {% endfor %}
   </div>
   <div id="index-schedule-more">

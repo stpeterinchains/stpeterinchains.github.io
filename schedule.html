@@ -20,7 +20,10 @@ open_graph_description: >
   <section id="schedule-calendar-upcoming">
     <h1 id="upcoming-events">{{ schedule.subtitle.upcoming }}</h1>
     <div id="schedule-calendar-upcoming-container">
+      {% assign earliest = schedule.select.schedule.earliest %}
+      {% assign latest = schedule.select.schedule.latest %}
       {% for diem in schedule.calendar %}
+      {% if earliest <= diem.date and diem.date <= latest %}
       {% assign dayOfMonth = diem.date | date: '%d' %}
       {% if dayOfMonth <= "07" %}
         {% assign isFirstWeek = true %}
@@ -60,6 +63,7 @@ open_graph_description: >
           </ul>
         </li>
       </ul>
+      {% endif %}
       {% endfor %}
     </div>
   </section>

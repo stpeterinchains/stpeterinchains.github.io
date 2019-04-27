@@ -9,6 +9,13 @@ subtitle:
   upcoming: Upcoming events
   past: Past events
 
+select:
+  index:
+    days_forward: 15
+  schedule:
+    earliest: 2019-04-14
+    latest:   2019-05-12
+
 recurring:
   weekday_mass: &weekday_mass
     mnemonic: weekday_mass
