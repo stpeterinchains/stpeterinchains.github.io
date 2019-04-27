@@ -2,12 +2,17 @@
 
 title: Schedule
 descriptive: >
-  Our parish holds daily and weekly mass, confessions, devotions,
+  Our parish holds daily and weekly mass, as well as confessions, devotions,
   and other faith events. We also feature many special events
   throughout the Liturgical&nbsp;year.
-subtitle:
-  upcoming: Upcoming events
-  past: Past events
+
+sections:
+  upcoming:
+    anchor: schedule-upcoming-events
+    title: Upcoming events
+  past:
+    anchor: schedule-past-events
+    title: Past events
 
 select:
   index:

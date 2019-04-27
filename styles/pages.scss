@@ -279,6 +279,22 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
 
 /*** PAGE: SCHEDULE ***/
 
+#schedule-links {
+  margin: 4rem 0;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+#schedule-links-heading {
+  margin-bottom: 0.5rem; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  color: #666;
+}
+
+div.schedule-links-link { margin: 0 0 0.25rem 1rem; }
+div.schedule-links-link > a { text-decoration: none; color: #333; }
+div.schedule-links-link > a:last-of-type { padding-right: 0; }
+div.schedule-links-link > a:hover { color: skyblue; }
+
 #schedule-calendar-upcoming > h1 {
   margin: 0; padding: 0 0 0.25rem 0;
   border-bottom: 2px solid #eee;
@@ -386,6 +402,10 @@ div.schedule-event-descriptive > p a:hover { color: skyblue; }
   span.schedule-event-location { display: inline; margin-left: 0.5rem; }
   span.schedule-diem-celebration,
   span.schedule-diem-season { display: inline; }
+}
+
+@media screen and (min-width: 64rem) {
+  #schedule-links { font-size: 1rem; }
 }
 
 
@@ -566,8 +586,8 @@ div.ministries-ministry-text-phone > span { padding-left: 1rem; color: #999; }
 }
 
 @media screen and (min-width: 64rem) {
+  #ministries-links { font-size: 1rem; }
   h1.ministries-ministry-text-title { font-size: 1rem; }
-  /* div.ministries-ministry-text-descriptive > p { font-size: 1rem; } */
   div.ministries-ministry-text-name { font-size: 1rem; }
   div.ministries-ministry-text-title { font-size: 1rem; }
   div.ministries-ministry-text-method { font-size: 1rem; }

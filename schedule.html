@@ -17,8 +17,13 @@ open_graph_description: >
 <section id="schedule" class="page-container">
   <h1 class="page-title">{{ schedule.title }}</h1>
   <div class="page-descriptive markdown">{{ schedule.descriptive | markdownify }}</div>
+  <div id="schedule-links">
+    <div id="schedule-links-heading">On this page</div>
+    <div class="schedule-links-link"><a href="#{{ schedule.sections.upcoming.anchor }}">{{ schedule.sections.upcoming.title }}</a></div>
+    <div class="schedule-links-link"><a href="#{{ schedule.sections.past.anchor }}">{{ schedule.sections.past.title }}</a></div>
+  </div>
   <section id="schedule-calendar-upcoming">
-    <h1 id="upcoming-events">{{ schedule.subtitle.upcoming }}</h1>
+    <h1 id="{{ schedule.sections.upcoming.anchor }}">{{ schedule.sections.upcoming.title }}</h1>
     <div id="schedule-calendar-upcoming-container">
       {% assign earliest = schedule.select.schedule.earliest %}
       {% assign latest = schedule.select.schedule.latest %}
@@ -68,7 +73,7 @@ open_graph_description: >
     </div>
   </section>
   <section id="schedule-calendar-past">
-    <h1 id="past-events">{{ schedule.subtitle.past }}</h1>
+    <h1 id="{{ schedule.sections.past.anchor }}">{{ schedule.sections.past.title }}</h1>
     <div id="schedule-calendar-past-container"></div>
   </section>
 </section>
