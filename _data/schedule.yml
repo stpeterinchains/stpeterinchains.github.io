@@ -27,7 +27,8 @@ recurring:
     color: "#933"
     title: Weekday Mass
     descriptive: >
-      For parishioners who begin or punctuate their day in faith and praise.
+      For parishioners who begin or punctuate their day in
+      faith&nbsp;and&nbsp;praise.
     time: 7:30 AM, 12:10 PM
     ordinal: "0730"
   weekday_mass_saturday: &weekday_mass_saturday
@@ -35,7 +36,8 @@ recurring:
     color: "#933"
     title: Saturday Morning Mass
     descriptive: >
-      For parishioners who begin Saturday mornings in faith and praise.
+      For parishioners who begin their Saturday mornings in
+      faith&nbsp;and&nbsp;praise.
     time: 9:00 AM
     ordinal: "0900"
   saturday_vigil: &saturday_vigil
@@ -44,7 +46,7 @@ recurring:
     title: Saturday Vigil
     descriptive: >
       For those who prefer an anticipated mass, join us early evening
-      for our Saturday Vigil.
+      for our Saturday&nbsp;Vigil.
     time: 5:00 PM
     ordinal: "1700"
   sunday_mass: &sunday_mass
@@ -52,7 +54,7 @@ recurring:
     color: "#933"
     title: Sunday Mass
     descriptive: >
-      Join us for our signature mass, held twice each Sunday morning.
+      Join us for our signature mass, held twice each Sunday&nbsp;morning.
     time: 8:30 AM, 10:30 AM
     ordinal: "0830"
   sacrament_reconciliation_friday: &sacrament_reconciliation_friday
@@ -220,7 +222,7 @@ calendar:
       - <<: *sunday_mass
         mnemonic: sunday_mass_nix
         title: Special Sunday Mass
-        descriptive: Join us for mass on this Palm Sunday.
+        descriptive: Join us for mass on this Palm&nbsp;Sunday.
   - date: 2019-04-15
     season: *lent
     celebration:
@@ -273,7 +275,7 @@ calendar:
           Parishioners will then rise and leave in&nbsp;silence.
 
           It is recommended that parishioners arrive early to ensure
-          seating for this special event.
+          seating for this special&nbsp;event.
         time: 7:30 PM
         ordinal: "1930"
   - date: 2019-04-17
@@ -294,7 +296,7 @@ calendar:
           Our&nbsp;Lord, when He established the Sacrament of
           Holy&nbsp;Communion prior to his arrest and&nbsp;crucifixion.
           Join us for this special Holy&nbsp;Mass, followed by the
-          adoration of the Blessed Sacrament in repose.
+          adoration of the Blessed&nbsp;Sacrament in&nbsp;repose.
         time: 7:00 PM
         ordinal: "1900"
   - date: 2019-04-19
@@ -309,7 +311,7 @@ calendar:
           live re-enactment of the Stations&nbsp;of&nbsp;the&nbsp;Cross.
           Please see the official
           [Way&nbsp;of&nbsp;the&nbsp;Cross](https://wotc.ca/) website
-          for details.
+          for&nbsp;details.
 
           **Weather advisory**&#x2003;Due to the possibility of inclement
           weather this year, please be advised that the event
@@ -437,18 +439,22 @@ calendar:
         mnemonic: prolife_mass
         title: Third Annual Pro-Life Mass
         descriptive: >
-          Please attend this holy mass as part of the day-long excursion to
-          attend the March&nbsp;For&nbsp;Life in&nbsp;Ottawa.
+          You are invited to attend this holy mass in preparation for the
+          day-long excursion to attend the
+          [March&nbsp;For&nbsp;Life](https://marchforlife.ca)
+          event in&nbsp;Ottawa.
         time: 7:30 AM
         ordinal: "0730"
       - title: March For Life
         descriptive: |
-          **Peterborough Pro-Life** invites you to join the
-          **March&nbsp;For&nbsp;Life** demonstration in&nbsp;Ottawa.
+          [Peterborough ProLife](https://peterboroughprolife.ca)
+          invites you to join the
+          [March&nbsp;For&nbsp;Life](https://marchforlife.ca)
+          event on&nbsp;Parliament&nbsp;Hill in&nbsp;Ottawa.
 
-          Please see the
+          Please see our
           [Bulletin](https://drive.google.com/file/d/14btY-d26K8pwN_jfHa6Gt_I113cLtSOj/view)
-          for details.
+          for sign-up information.
         time: 8:15 AM
         ordinal: "0815"
   - date: 2019-05-10
