@@ -420,7 +420,15 @@ calendar:
   - date: 2019-05-02
     recurring: *thursday
   - date: 2019-05-03
-    recurring: *friday
+    specials:
+      - color: red
+        title: Cancellation Notice
+        descriptive: >
+          Please note that our regularly scheduled **Weekday&nbsp;Mass** and
+          **First&nbsp;Friday** events are&nbsp;cancelled for the
+          morning&nbsp;of&nbsp;May&nbsp;3.
+        time: Morning
+        ordinal: "0700"
   - date: 2019-05-04
     recurring: *saturday
   - date: 2019-05-05
