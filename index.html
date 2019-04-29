@@ -18,7 +18,7 @@ open_graph_description: >
 {% assign schedule = site.data.schedule %}
 
 <section id="index-schedule">
-  <h1 id="index-schedule-title">{{ schedule.subtitle.upcoming }}</h1>
+  <h1 id="index-schedule-title">{{ schedule.sections.upcoming.title }}</h1>
   <div id="index-schedule-calendar">
     {% assign earliest = site.time | date: '%Y-%m-%d' %}
     {% assign daysForward = schedule.select.index.days_forward | times: 86400 %}
