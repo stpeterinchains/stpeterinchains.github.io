@@ -13,6 +13,14 @@ issues:
     months:
 
       -
+        month: May
+        bulletins:
+          -
+            date: 5
+            title: Third Sunday of Easter
+            link: https://drive.google.com/file/d/14hRy_fER0xp8u-kbXpAvjd2VzsUAdGQw/view
+
+      -
         month: April
         bulletins:
           -
