@@ -20,8 +20,69 @@ slideshow:
     image: mural.jpg
     caption: The Great Mural of **The Last Supper**
   -
-    image: teamwork.jpg
-    caption: March 30, 2018&#x3A; **The Passion of Our Lord**
+    image: way-of-the-cross-2019.jpg
+    caption: |
+      April 19, 2019
+
+      *Good Friday*
+
+      **Way of the Cross**
+  -
+    image: good-friday1-2019.jpg
+    caption: |
+      April 19, 2019
+
+      *Good Friday*
+
+      **Veneration of the Cross**
+  -
+    image: good-friday2-2019.jpg
+    caption: |
+      April 19, 2019
+
+      *Good Friday*
+
+      **Veneration of the Cross**
+  -
+    image: good-friday3-2019.jpg
+    caption: |
+      April 19, 2019
+
+      *Good Friday*
+
+      **Veneration of the Cross**
+  -
+    image: easter-vigil1-2019.jpg
+    caption: |
+      April 20, 2019
+
+      *Holy Saturday*
+
+      **Easter Vigil**
+  -
+    image: easter-vigil2-2019.jpg
+    caption: |
+      April 20, 2019
+
+      *Holy Saturday*
+
+      **Easter Vigil**
+  -
+    image: easter-vigil3-2019.jpg
+    caption: |
+      April 20, 2019
+
+      *Holy Saturday*
+
+      **Easter Vigil**
+  -
+    image: easter-vigil4-2019.jpg
+    caption: |
+      April 20, 2019
+
+      *Holy Saturday*
+
+      **Easter Vigil**
 
 navbar:
   -
