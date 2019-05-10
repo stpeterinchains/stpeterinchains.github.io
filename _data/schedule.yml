@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2019-04-14
-    latest:   2019-05-12
+    latest:   2019-05-31
 
 recurring:
   weekday_mass: &weekday_mass
@@ -91,14 +91,32 @@ recurring:
     time: 9:00 AM
     ordinal: "0900"
     reparatory: true
-  edge: &edge
-    mnemonic: edge
-    title: Edge Youth Group
-    time: 6:30-8:00 PM
-    ordinal: "1830"
+  legion_of_mary: &legion_of_mary
+    mnemonic: legion_of_mary
+    title: Legion of Mary
+    time: 2:00-4:00 PM
+    ordinal: "1400"
+  reflections: &reflections
+    mnemonic: reflections
+    title: Reflections on Scripture
+    location: Parish Boardroom (Rectory Office)
+    time: 10:00-11:00 AM
+    ordinal: "1000"
   lifeteen: &lifeteen
     mnemonic: lifeteen
     title: Lifeteen
+    descriptive: >
+      For young adults in Grades 9 through 12, Lifeteen includes dinner, games,
+      a&nbsp;talk, as well as a time for fellowship and&nbsp;sharing.
+    location: Bishop Doyle Hall
+    time: 6:00-8:00 PM
+    ordinal: "1800"
+  edge: &edge
+    mnemonic: edge
+    title: Edge
+    descriptive: >
+      For young people in Grades 6 through 8, Edge is a time for fellowship and
+      sharing, along with games and&nbsp;snacks.
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
@@ -109,8 +127,10 @@ weekly:
     - *edge
   tuesday: &tuesday
     - *weekday_mass
+    - *legion_of_mary
   wednesday: &wednesday
     - *weekday_mass
+    - *reflections
   thursday: &thursday
     - *weekday_mass
   friday: &friday
@@ -473,6 +493,22 @@ calendar:
     recurring: *sunday
   - date: 2019-05-13
     recurring: *monday
+    specials:
+      - title: Fatal Flaws
+        color: red
+        descriptive: |
+          Please attend this showing of the documentary film
+          [Fatal Flaws](https://youtu.be/89YQubAyRrI) to learn
+          more about the troubling issue of doctor-assisted suicide and its
+          rise Europe and North&nbsp;America.
+
+          Dr Anthony Petrasek, a surgeon at PRHC, will be available following
+          the film for discussion and to answer questions.
+
+          Refreshments will be&nbsp;served.
+        location: St Anne's Church Hall
+        time: Showing follows 6:00 PM Mass
+        ordinal: "1800"
   - date: 2019-05-14
     recurring: *tuesday
   - date: 2019-05-15
@@ -485,8 +521,10 @@ calendar:
     recurring: *saturday
   - date: 2019-05-19
     recurring: *sunday
+    exclusions: [ lifeteen ]
   - date: 2019-05-20
     recurring: *monday
+    exclusions: [ edge ]
   - date: 2019-05-21
     recurring: *tuesday
   - date: 2019-05-22
@@ -499,8 +537,10 @@ calendar:
     recurring: *saturday
   - date: 2019-05-26
     recurring: *sunday
+    exclusions: [ lifeteen ]
   - date: 2019-05-27
     recurring: *monday
+    exclusions: [ edge ]
   - date: 2019-05-28
     recurring: *tuesday
   - date: 2019-05-29
