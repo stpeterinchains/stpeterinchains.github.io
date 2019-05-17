@@ -523,6 +523,7 @@ calendar:
     recurring: *sunday
     exclusions: [ lifeteen ]
   - date: 2019-05-20
+    note: Office closed.
     recurring: *monday
     exclusions: [ edge ]
   - date: 2019-05-21
@@ -549,3 +550,141 @@ calendar:
     recurring: *thursday
   - date: 2019-05-31
     recurring: *friday
+
+  - date: 2019-06-01
+    recurring: *saturday
+  - date: 2019-06-02
+    recurring: *sunday
+    specials:
+      - title: St Paul&apos;s Norwood 150th&nbsp;Anniversary
+        descriptive: |
+          Mass will be celebrated by Bishop&nbsp;Miehm.
+
+          Lunch will follow at the Community&nbsp;Centre Millenium&nbsp;Room.
+          Tickets must be purchased in&nbsp;advance.
+
+          Please see the
+          (Bulletin)[https://drive.google.com/file/d/14l6JpWgmVYryVbuxuFasVIVrUA9lRyQi/view]
+          for&nbsp;information.
+        location: St Paul&apos;s in Norwood
+        time: 10:00 AM
+        ordinal: "1000"
+  - date: 2019-06-03
+    recurring: *monday
+  - date: 2019-06-04
+    recurring: *tuesday
+  - date: 2019-06-05
+    recurring: *wednesday
+  - date: 2019-06-06
+    recurring: *thursday
+  - date: 2019-06-07
+    recurring: *friday
+  - date: 2019-06-08
+    recurring: *saturday
+  - date: 2019-06-09
+    recurring: *sunday
+  - date: 2019-06-10
+    recurring: *monday
+  - date: 2019-06-11
+    recurring: *tuesday
+  - date: 2019-06-12
+    recurring: *wednesday
+  - date: 2019-06-13
+    recurring: *thursday
+  - date: 2019-06-14
+    recurring: *friday
+  - date: 2019-06-15
+    recurring: *saturday
+  - date: 2019-06-16
+    recurring: *sunday
+  - date: 2019-06-17
+    recurring: *monday
+  - date: 2019-06-18
+    recurring: *tuesday
+  - date: 2019-06-19
+    recurring: *wednesday
+  - date: 2019-06-20
+    recurring: *thursday
+  - date: 2019-06-21
+    recurring: *friday
+  - date: 2019-06-22
+    recurring: *saturday
+  - date: 2019-06-23
+    recurring: *sunday
+  - date: 2019-06-24
+    recurring: *monday
+  - date: 2019-06-25
+    recurring: *tuesday
+  - date: 2019-06-26
+    recurring: *wednesday
+  - date: 2019-06-27
+    recurring: *thursday
+  - date: 2019-06-28
+    recurring: *friday
+  - date: 2019-06-29
+    recurring: *saturday
+  - date: 2019-06-30
+    recurring: *sunday
+
+  - date: 2019-07-01
+    recurring: *monday
+  - date: 2019-07-02
+    recurring: *tuesday
+  - date: 2019-07-03
+    recurring: *wednesday
+  - date: 2019-07-04
+    recurring: *thursday
+  - date: 2019-07-05
+    recurring: *friday
+  - date: 2019-07-06
+    recurring: *saturday
+  - date: 2019-07-07
+    recurring: *sunday
+  - date: 2019-07-08
+    recurring: *monday
+  - date: 2019-07-09
+    recurring: *tuesday
+  - date: 2019-07-10
+    recurring: *wednesday
+  - date: 2019-07-11
+    recurring: *thursday
+  - date: 2019-07-12
+    recurring: *friday
+  - date: 2019-07-13
+    recurring: *saturday
+  - date: 2019-07-14
+    recurring: *sunday
+  - date: 2019-07-15
+    recurring: *monday
+  - date: 2019-07-16
+    recurring: *tuesday
+  - date: 2019-07-17
+    recurring: *wednesday
+  - date: 2019-07-18
+    recurring: *thursday
+  - date: 2019-07-19
+    recurring: *friday
+  - date: 2019-07-20
+    recurring: *saturday
+  - date: 2019-07-21
+    recurring: *sunday
+  - date: 2019-07-22
+    recurring: *monday
+  - date: 2019-07-23
+    recurring: *tuesday
+  - date: 2019-07-24
+    recurring: *wednesday
+  - date: 2019-07-25
+    recurring: *thursday
+  - date: 2019-07-26
+    recurring: *friday
+  - date: 2019-07-27
+    recurring: *saturday
+  - date: 2019-07-28
+    recurring: *sunday
+  - date: 2019-07-29
+    recurring: *monday
+  - date: 2019-07-30
+    recurring: *tuesday
+  - date: 2019-07-31
+    recurring: *wednesday
