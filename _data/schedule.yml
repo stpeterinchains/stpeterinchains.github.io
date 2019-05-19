@@ -524,7 +524,10 @@ calendar:
     exclusions: [ lifeteen ]
   - date: 2019-05-20
     note: Office closed.
-    recurring: *monday
+    recurring:
+      - <<: *weekday_mass
+        time: 9:00 AM
+        ordinal: "0900"
     exclusions: [ edge ]
   - date: 2019-05-21
     recurring: *tuesday
