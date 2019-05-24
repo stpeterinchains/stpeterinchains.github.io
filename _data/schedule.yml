@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2019-04-14
-    latest:   2019-05-31
+    latest:   2019-06-15
 
 recurring:
   weekday_mass: &weekday_mass
@@ -124,7 +124,7 @@ recurring:
 weekly:
   monday: &monday
     - *weekday_mass
-    - *edge
+    # - *edge
   tuesday: &tuesday
     - *weekday_mass
     - *legion_of_mary
@@ -146,7 +146,7 @@ weekly:
     - *mother_perpetual_help
   sunday: &sunday
     - *sunday_mass
-    - *lifeteen
+    # - *lifeteen
 
 season:
   lent: &lent
@@ -567,21 +567,40 @@ calendar:
           Tickets must be purchased in&nbsp;advance.
 
           Please see the
-          (Bulletin)[https://drive.google.com/file/d/14l6JpWgmVYryVbuxuFasVIVrUA9lRyQi/view]
+          [Bulletin](https://drive.google.com/file/d/14l6JpWgmVYryVbuxuFasVIVrUA9lRyQi/view)
           for&nbsp;information.
         location: St Paul&apos;s in Norwood
         time: 10:00 AM
         ordinal: "1000"
   - date: 2019-06-03
+    note: &retreat_2019 Priests attending 2019 Priest Retreat.
     recurring: *monday
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_retreat
+        descriptive: |
+          This Monday morning Mass will be the only one
+          scheduled this&nbsp;week.
+
+          Regular Mass schedule resumes&nbsp;Saturday.
+        time: 7:30 AM
   - date: 2019-06-04
+    note: *retreat_2019
     recurring: *tuesday
+    exclusions: [ weekday_mass ]
   - date: 2019-06-05
+    note: *retreat_2019
     recurring: *wednesday
+    exclusions: [ weekday_mass ]
   - date: 2019-06-06
+    note: *retreat_2019
     recurring: *thursday
+    exclusions: [ weekday_mass ]
   - date: 2019-06-07
+    note: *retreat_2019
     recurring: *friday
+    exclusions: [ weekday_mass, sacrament_reconciliation_friday, exposition_blessed_sacrament_friday ]
   - date: 2019-06-08
     recurring: *saturday
   - date: 2019-06-09
