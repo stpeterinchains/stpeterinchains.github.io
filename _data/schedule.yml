@@ -569,7 +569,7 @@ calendar:
           Please see the
           [Bulletin](https://drive.google.com/file/d/14l6JpWgmVYryVbuxuFasVIVrUA9lRyQi/view)
           for&nbsp;information.
-        location: St Paul&apos;s in Norwood
+        location: St&nbsp;Paul&apos;s in&nbsp;Norwood
         time: 10:00 AM
         ordinal: "1000"
   - date: 2019-06-03
@@ -580,10 +580,13 @@ calendar:
       - <<: *weekday_mass
         mnemonic: weekday_mass_retreat
         descriptive: |
-          This Monday morning Mass will be the only one
-          scheduled this&nbsp;week.
 
-          Regular Mass schedule resumes&nbsp;Saturday.
+          Please join us for the intentions of Fr&nbsp;Tom&nbsp;Lynch,
+          in honour of the 35th&nbsp;anniversary of his&nbsp;ordination.
+
+          **Please note that this Monday morning Mass is the only one
+          scheduled this&nbsp;week. Regular Mass schedule
+          resumes&nbsp;Saturday.**
         time: 7:30 AM
   - date: 2019-06-04
     note: *retreat_2019
