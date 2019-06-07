@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2019-04-14
-    latest:   2019-06-15
+    latest:   2019-06-30
 
 recurring:
   weekday_mass: &weekday_mass
@@ -636,6 +636,17 @@ calendar:
     recurring: *saturday
   - date: 2019-06-23
     recurring: *sunday
+    specials:
+      - title: Parish Picnic
+        descriptive: |
+          To be held on the church lawn immediately following
+          10:30&nbsp;AM&nbsp;Mass. Everyone is welcome. Please bring lawn
+          chairs and your favourite salad or&nbsp;dessert!
+
+          Volunteers needed for preparation and setup.
+          Please speak to a priest if you can&nbsp;help!
+        time: 11:30 AM
+        ordinal: "1130"
   - date: 2019-06-24
     recurring: *monday
   - date: 2019-06-25
