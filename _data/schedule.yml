@@ -632,6 +632,11 @@ calendar:
     recurring: *thursday
   - date: 2019-06-21
     recurring: *friday
+    specials:
+      - title: Opus Dei Mass
+        descriptive: Anniversary in honour of St&nbsp;Josemaria&nbsp;Escriva.
+        time: 7:00 PM
+        ordinal: "1900"
   - date: 2019-06-22
     recurring: *saturday
   - date: 2019-06-23
