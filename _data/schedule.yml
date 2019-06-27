@@ -18,8 +18,8 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2019-04-14
-    latest:   2019-06-30
+    earliest: 2019-06-01
+    latest:   2019-08-31
 
 recurring:
   weekday_mass: &weekday_mass
@@ -45,7 +45,7 @@ recurring:
     color: "#933"
     title: Saturday Vigil
     descriptive: >
-      For those who prefer an anticipated mass, join us early evening
+      For those who prefer an anticipated Mass, join us early evening
       for our Saturday&nbsp;Vigil.
     time: 5:00 PM
     ordinal: "1700"
@@ -54,7 +54,7 @@ recurring:
     color: "#933"
     title: Sunday Mass
     descriptive: >
-      Join us for our signature mass, held twice each Sunday&nbsp;morning.
+      Join us for our signature Mass, held twice each Sunday&nbsp;morning.
     time: 8:30 AM, 10:30 AM
     ordinal: "0830"
   sacrament_reconciliation_friday: &sacrament_reconciliation_friday
@@ -96,6 +96,7 @@ recurring:
     title: Legion of Mary
     time: 2:00-4:00 PM
     ordinal: "1400"
+    location: Parish Boardroom (Rectory Office)
   reflections: &reflections
     mnemonic: reflections
     title: Reflections on Scripture
@@ -120,11 +121,21 @@ recurring:
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
+weekday_mass_summer_mw: &weekday_mass_summer_mw
+  <<: *weekday_mass
+  mnemonic: weekday_mass_summer_mw
+  time: 12:10 PM
+  ordinal: "1210"
+weekday_mass_summer_ttf: &weekday_mass_summer_ttf
+  <<: *weekday_mass
+  mnemonic: weekday_mass_summer_ttf
+  time: 7:30 AM
+  ordinal: "0730"
 
 weekly:
   monday: &monday
     - *weekday_mass
-    # - *edge
+    - *edge
   tuesday: &tuesday
     - *weekday_mass
     - *legion_of_mary
@@ -146,7 +157,30 @@ weekly:
     - *mother_perpetual_help
   sunday: &sunday
     - *sunday_mass
-    # - *lifeteen
+    - *lifeteen
+  monday_summer: &monday_summer
+    - *weekday_mass_summer_mw
+    - *edge
+  tuesday_summer: &tuesday_summer
+    - *weekday_mass_summer_ttf
+  wednesday_summer: &wednesday_summer
+    - *weekday_mass_summer_mw
+    - *legion_of_mary
+  thursday_summer: &thursday_summer
+    - *weekday_mass_summer_ttf
+  friday_summer: &friday_summer
+    - *weekday_mass_summer_ttf
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_summer: &saturday_summer
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_summer: &sunday_summer
+    - *sunday_mass
 
 season:
   lent: &lent
@@ -186,378 +220,11 @@ celebration:
     bgcolor: "#c33"
 
 calendar:
-  - date: 2019-04-01
-    season: *lent
-    recurring: *monday
-  - date: 2019-04-02
-    season: *lent
-    recurring: *tuesday
-  - date: 2019-04-03
-    season: *lent
-    recurring: *wednesday
-  - date: 2019-04-04
-    season: *lent
-    recurring: *thursday
-  - date: 2019-04-05
-    season: *lent
-    recurring: *friday
-  - date: 2019-04-06
-    season: *lent
-    recurring: *saturday
-    specials:
-      - title: Day of Grace and Reconciliation
-        time: 8:00 AM
-        ordinal: "0700"
-  - date: 2019-04-07
-    season: *lent
-    recurring: *sunday
-  - date: 2019-04-08
-    season: *lent
-    recurring: *monday
-  - date: 2019-04-09
-    season: *lent
-    recurring: *tuesday
-  - date: 2019-04-10
-    season: *lent
-    recurring: *wednesday
-  - date: 2019-04-11
-    season: *lent
-    recurring: *thursday
-  - date: 2019-04-12
-    season: *lent
-    recurring: *friday
-  - date: 2019-04-13
-    season: *lent
-    recurring: *saturday
-  - date: 2019-04-14
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Palm Sunday
-      color: white
-      bgcolor: "#c33"
-    recurring: *sunday
-    exclusions: [ sunday_mass]
-    specials:
-      - <<: *sunday_mass
-        mnemonic: sunday_mass_nix
-        title: Special Sunday Mass
-        descriptive: Join us for mass on this Palm&nbsp;Sunday.
-  - date: 2019-04-15
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Monday
-    recurring: *monday
-    exclusions: [ weekday_mass, edge ]
-    specials:
-      - title: Adoration and Holy Hour
-        descriptive: |
-          You are invited to spend an hour (or&nbsp;less) in quiet
-          reflection of our&nbsp;Lord.
-
-          Concelebrated by Bishop&nbsp;Miehm and the Clergy of the&nbsp;parish.
-        time: 4:00 PM
-        ordinal: "1600"
-      - title: Chrism Mass
-        descriptive: >
-          Bishop Miehm and the Clergy of the Diocese gather at the Cathedral to
-          celebrate Chrism&nbsp;Mass in the renewal of their vows in the
-          service of&nbsp;**Christ**.
-          The&nbsp;Bishop will also consecrates the three
-          holy&nbsp;oils&mdash;the oil of catechumens, the oil of the infirm,
-          and the holy&nbsp;chrism&mdash;each used to administer the
-          Holy&nbsp;Sacraments throughout the&nbsp;year.
-        time: 7:00 PM
-        ordinal: "1900"
-      - <<: *edge
-        mnemonic: edge_nix
-        time: Cancelled
-        ordinal: "2300"
-  - date: 2019-04-16
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Tuesday
-    recurring: *tuesday
-    specials:
-      - title: The Liturgy of Tenebrae
-        descriptive: |
-          *Tenebrae* is Latin for shadows or darkness. Join&nbsp;us for this
-          unforgettable service of music, song, chants, and lessons in the
-          spirit of the darkness of the&nbsp;Crucifixion, which preceded the
-          light of the&nbsp;Resurrection.
-
-          Candles are gradually extinguished during the service.
-          As the final candle is extinguished to enshroud the church in
-          darkness, the *strepitus* (or great noise) will be heard, symbolizing
-          the earthquake that accompanied the death&nbsp;of&nbsp;Christ.
-          Parishioners will then rise and leave in&nbsp;silence.
-
-          It is recommended that parishioners arrive early to ensure
-          seating for this special&nbsp;event.
-        time: 7:30 PM
-        ordinal: "1930"
-  - date: 2019-04-17
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Wednesday
-    recurring: *wednesday
-  - date: 2019-04-18
-    season: *lent
-    celebration: *maundy_thursday
-    recurring: *thursday
-    exclusions: [ weekday_mass ]
-    specials:
-      - title: Last Supper
-        descriptive: >
-          Holy Thursday is the commemoration of the Last&nbsp;Supper of
-          Our&nbsp;Lord, when He established the Sacrament of
-          Holy&nbsp;Communion prior to his arrest and&nbsp;crucifixion.
-          Join us for this special Holy&nbsp;Mass, followed by the
-          adoration of the Blessed&nbsp;Sacrament in&nbsp;repose.
-        time: 7:00 PM
-        ordinal: "1900"
-  - date: 2019-04-19
-    season: *easter
-    celebration: *good_friday
-    recurring: *friday
-    exclusions: [ weekday_mass, sacrament_reconciliation_friday, exposition_blessed_sacrament_friday ]
-    specials:
-      - title: Way of the Cross
-        descriptive: |
-          Join us for this extraordinary,
-          live re-enactment of the Stations&nbsp;of&nbsp;the&nbsp;Cross.
-          Please see the official
-          [Way&nbsp;of&nbsp;the&nbsp;Cross](https://wotc.ca/) website
-          for&nbsp;details.
-
-          **Weather advisory**&#x2003;Due to the possibility of inclement
-          weather this year, please be advised that the event
-          may be presented in its entirety inside the Cathedral&nbsp;of
-          Saint&nbsp;Peter-in-Chains.
-          Please arrive early for this popular&nbsp;event.
-        time: 10:00 AM
-        ordinal: "1000"
-      - title: Veneration of the Cross
-        descriptive: >
-          Join us for this special Good&nbsp;Friday event, which commemorates
-          the crucifixion of&nbsp;Christ.
-        time: 3:00 PM
-        ordinal: "1500"
-  - date: 2019-04-20
-    season: *easter
-    celebration: *black_saturday
-    recurring: *saturday
-    exclusions: [ weekday_mass_saturday, saturday_vigil, sacrament_reconciliation_saturday, exposition_blessed_sacrament_saturday, mother_perpetual_help ]
-    specials:
-      - title: Easter Vigil
-        descriptive: |
-          Please join us for one of the most beautiful
-          liturgies in the Roman&nbsp;Catholic&nbsp;Church, the
-          Easter&nbsp;Vigil, historically the first celebration of
-          the&nbsp;Resurrection, held on the eve of the&nbsp;Resurrection,
-          marking the beginning&nbsp;of&nbsp;Easter.
-
-          All are welcome to attend.
-          Please arrive early to ensure seating for this special event.
-          Please note duration is typically two to three&nbsp;hours.
-        time: 8:00 PM
-        ordinal: "2000"
-  - date: 2019-04-21
-    season: *easter
-    celebration: *easter_sunday
-    recurring: *sunday
-    exclusions: [ sunday_mass, lifeteen ]
-    specials:
-      - <<: *sunday_mass
-        mnemonic: sunday_mass_nix
-        title: Easter Sunday Mass
-        descriptive: |
-          Join us for mass on this Resurrection&nbsp;Sunday as we celebrate
-          Christ&apos;s&nbsp;resurrection and the fulfilment of
-          God&apos;s promise&nbsp;to&nbsp;mankind.
-
-          We mark the last day of the Easter&nbsp;Triduum,
-          the end of Holy&nbsp;Week, the end of Lent,
-          and the beginning of the Season&nbsp;of&nbsp;Easter.
-      - <<: *lifeteen
-        mnemonic: lifeteen_nix
-        location:
-        time: Cancelled
-  - date: 2019-04-22
-    note: Office closed.
-    season: *easter_octave
-    title: Easter Monday
-    specials:
-      - <<: *weekday_mass
-        descriptive: Celebrated by Fr Roy.
-        time: 9:00 AM
-        ordinal: "0900"
-      - <<: *edge
-        time: Cancelled
-  - date: 2019-04-23
-    season: *easter_octave
-    note: Office closed.
-    specials:
-      - <<: *weekday_mass
-        descriptive: Celebrated by Fr John.
-        time: 9:00 AM
-        ordinal: "0900"
-  - date: 2019-04-24
-    note: &easter_week_note Office open, staff on vacation.
-    season: *easter_octave
-    recurring: *wednesday
-  - date: 2019-04-25
-    note: *easter_week_note
-    season: *easter_octave
-    recurring: *thursday
-  - date: 2019-04-26
-    note: *easter_week_note
-    season: *easter_octave
-    recurring: *friday
-  - date: 2019-04-27
-    season: *easter_octave
-    recurring: *saturday
-  - date: 2019-04-28
-    season: *easter_octave
-    recurring: *sunday
-    specials:
-      - title: Hour of Reparation and Divine Mercy
-        descriptive: >
-          The annual *Divine Mercy* service will be dedicated this year to
-          Reparation for sexual abuse within the&nbsp;Church.
-        time: 2:30 PM
-        ordinal: "1430"
-  - date: 2019-04-29
-    note: Season of Easter begins
-    recurring: *monday
-  - date: 2019-04-30
-    recurring: *tuesday
-  - date: 2019-05-01
-    recurring: *wednesday
-  - date: 2019-05-02
-    recurring: *thursday
-  - date: 2019-05-03
-    specials:
-      - color: red
-        title: Cancellation Notice
-        descriptive: >
-          Please note that our regularly scheduled **Weekday&nbsp;Mass** and
-          **First&nbsp;Friday** events are&nbsp;cancelled for the
-          morning&nbsp;of&nbsp;May&nbsp;3.
-        time: Morning
-        ordinal: "0700"
-  - date: 2019-05-04
-    recurring: *saturday
-  - date: 2019-05-05
-    recurring: *sunday
-  - date: 2019-05-06
-    recurring: *monday
-  - date: 2019-05-07
-    recurring: *tuesday
-  - date: 2019-05-08
-    recurring: *wednesday
-  - date: 2019-05-09
-    recurring: *thursday
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: prolife_mass
-        title: Third Annual Pro-Life Mass
-        descriptive: >
-          You are invited to attend this holy mass in preparation for the
-          day-long excursion to attend the
-          [March&nbsp;For&nbsp;Life](https://marchforlife.ca)
-          event in&nbsp;Ottawa.
-        time: 7:30 AM
-        ordinal: "0730"
-      - title: March For Life
-        descriptive: |
-          [Peterborough ProLife](https://peterboroughprolife.ca)
-          invites you to join the
-          [March&nbsp;For&nbsp;Life](https://marchforlife.ca)
-          event on&nbsp;Parliament&nbsp;Hill in&nbsp;Ottawa.
-
-          Please see our
-          [Bulletin](https://drive.google.com/file/d/14btY-d26K8pwN_jfHa6Gt_I113cLtSOj/view)
-          for sign-up information.
-        time: 8:15 AM
-        ordinal: "0815"
-  - date: 2019-05-10
-    recurring: *friday
-  - date: 2019-05-11
-    recurring: *saturday
-  - date: 2019-05-12
-    recurring: *sunday
-  - date: 2019-05-13
-    recurring: *monday
-    specials:
-      - title: Fatal Flaws
-        color: red
-        descriptive: |
-          Please attend this showing of the documentary film
-          [Fatal Flaws](https://youtu.be/89YQubAyRrI) to learn
-          more about the troubling issue of doctor-assisted suicide and its
-          rise Europe and North&nbsp;America.
-
-          Dr Anthony Petrasek, a surgeon at PRHC, will be available following
-          the film for discussion and to answer questions.
-
-          Refreshments will be&nbsp;served.
-        location: St Anne's Church Hall
-        time: Showing follows 6:00 PM Mass
-        ordinal: "1800"
-  - date: 2019-05-14
-    recurring: *tuesday
-  - date: 2019-05-15
-    recurring: *wednesday
-  - date: 2019-05-16
-    recurring: *thursday
-  - date: 2019-05-17
-    recurring: *friday
-  - date: 2019-05-18
-    recurring: *saturday
-  - date: 2019-05-19
-    recurring: *sunday
-    exclusions: [ lifeteen ]
-  - date: 2019-05-20
-    note: Office closed.
-    recurring:
-      - <<: *weekday_mass
-        time: 9:00 AM
-        ordinal: "0900"
-    exclusions: [ edge ]
-  - date: 2019-05-21
-    recurring: *tuesday
-  - date: 2019-05-22
-    recurring: *wednesday
-  - date: 2019-05-23
-    recurring: *thursday
-  - date: 2019-05-24
-    recurring: *friday
-  - date: 2019-05-25
-    recurring: *saturday
-  - date: 2019-05-26
-    recurring: *sunday
-    exclusions: [ lifeteen ]
-  - date: 2019-05-27
-    recurring: *monday
-    exclusions: [ edge ]
-  - date: 2019-05-28
-    recurring: *tuesday
-  - date: 2019-05-29
-    recurring: *wednesday
-  - date: 2019-05-30
-    recurring: *thursday
-  - date: 2019-05-31
-    recurring: *friday
-
   - date: 2019-06-01
     recurring: *saturday
   - date: 2019-06-02
     recurring: *sunday
+    exclusions: [ lifeteen ]
     specials:
       - title: St Paul&apos;s Norwood 150th&nbsp;Anniversary
         descriptive: |
@@ -575,7 +242,7 @@ calendar:
   - date: 2019-06-03
     note: &retreat_2019 Priests attending 2019 Priest Retreat.
     recurring: *monday
-    exclusions: [ weekday_mass ]
+    exclusions: [ weekday_mass, edge ]
     specials:
       - <<: *weekday_mass
         mnemonic: weekday_mass_retreat
@@ -608,8 +275,10 @@ calendar:
     recurring: *saturday
   - date: 2019-06-09
     recurring: *sunday
+    exclusions: [ lifeteen ]
   - date: 2019-06-10
     recurring: *monday
+    exclusions: [ edge ]
   - date: 2019-06-11
     recurring: *tuesday
   - date: 2019-06-12
@@ -622,8 +291,10 @@ calendar:
     recurring: *saturday
   - date: 2019-06-16
     recurring: *sunday
+    exclusions: [ lifeteen ]
   - date: 2019-06-17
     recurring: *monday
+    exclusions: [ edge ]
   - date: 2019-06-18
     recurring: *tuesday
   - date: 2019-06-19
@@ -641,6 +312,7 @@ calendar:
     recurring: *saturday
   - date: 2019-06-23
     recurring: *sunday
+    exclusions: [ lifeteen ]
     specials:
       - title: Parish Picnic
         descriptive: |
@@ -654,6 +326,7 @@ calendar:
         ordinal: "1130"
   - date: 2019-06-24
     recurring: *monday
+    exclusions: [ edge ]
   - date: 2019-06-25
     recurring: *tuesday
   - date: 2019-06-26
@@ -666,66 +339,138 @@ calendar:
     recurring: *saturday
   - date: 2019-06-30
     recurring: *sunday
+    exclusions: [ lifeteen ]
 
   - date: 2019-07-01
-    recurring: *monday
+    recurring: *monday_summer
+    exclusions: [ weekday_mass_summer_mw, edge ]
+    note: >
+      &#x1F1E8;&#x1F1E6; No Masses scheduled for Canada Day. Office closed.
   - date: 2019-07-02
-    recurring: *tuesday
+    recurring: *tuesday_summer
   - date: 2019-07-03
-    recurring: *wednesday
+    recurring: *wednesday_summer
   - date: 2019-07-04
-    recurring: *thursday
+    recurring: *thursday_summer
   - date: 2019-07-05
-    recurring: *friday
+    recurring: *friday_summer
+    exclusions: [ sacrament_reconciliation_friday, exposition_blessed_sacrament_friday ]
+    specials:
+      - title: The Benediction
+        time: 8:00 AM
+        ordinal: "0800"
   - date: 2019-07-06
-    recurring: *saturday
+    recurring: *saturday_summer
   - date: 2019-07-07
-    recurring: *sunday
+    recurring: *sunday_summer
   - date: 2019-07-08
-    recurring: *monday
+    recurring: *monday_summer
   - date: 2019-07-09
-    recurring: *tuesday
+    recurring: *tuesday_summer
   - date: 2019-07-10
-    recurring: *wednesday
+    recurring: *wednesday_summer
   - date: 2019-07-11
-    recurring: *thursday
+    recurring: *thursday_summer
   - date: 2019-07-12
-    recurring: *friday
+    recurring: *friday_summer
   - date: 2019-07-13
-    recurring: *saturday
+    recurring: *saturday_summer
   - date: 2019-07-14
-    recurring: *sunday
+    recurring: *sunday_summer
   - date: 2019-07-15
-    recurring: *monday
+    recurring: *monday_summer
   - date: 2019-07-16
-    recurring: *tuesday
+    recurring: *tuesday_summer
   - date: 2019-07-17
-    recurring: *wednesday
+    recurring: *wednesday_summer
   - date: 2019-07-18
-    recurring: *thursday
+    recurring: *thursday_summer
   - date: 2019-07-19
-    recurring: *friday
+    recurring: *friday_summer
   - date: 2019-07-20
-    recurring: *saturday
+    recurring: *saturday_summer
   - date: 2019-07-21
-    recurring: *sunday
+    recurring: *sunday_summer
   - date: 2019-07-22
-    recurring: *monday
+    recurring: *monday_summer
   - date: 2019-07-23
-    recurring: *tuesday
+    recurring: *tuesday_summer
   - date: 2019-07-24
-    recurring: *wednesday
+    recurring: *wednesday_summer
   - date: 2019-07-25
-    recurring: *thursday
+    recurring: *thursday_summer
   - date: 2019-07-26
-    recurring: *friday
+    recurring: *friday_summer
   - date: 2019-07-27
-    recurring: *saturday
+    recurring: *saturday_summer
   - date: 2019-07-28
-    recurring: *sunday
+    recurring: *sunday_summer
   - date: 2019-07-29
-    recurring: *monday
+    recurring: *monday_summer
   - date: 2019-07-30
-    recurring: *tuesday
+    recurring: *tuesday_summer
   - date: 2019-07-31
-    recurring: *wednesday
+    recurring: *wednesday_summer
+
+  - date: 2019-08-01
+    recurring: *thursday_summer
+  - date: 2019-08-02
+    recurring: *friday_summer
+  - date: 2019-08-03
+    recurring: *saturday_summer
+  - date: 2019-08-04
+    recurring: *sunday_summer
+  - date: 2019-08-05
+    recurring: *monday_summer
+  - date: 2019-08-06
+    recurring: *tuesday_summer
+  - date: 2019-08-07
+    recurring: *wednesday_summer
+  - date: 2019-08-08
+    recurring: *thursday_summer
+  - date: 2019-08-09
+    recurring: *friday_summer
+  - date: 2019-08-10
+    recurring: *saturday_summer
+  - date: 2019-08-11
+    recurring: *sunday_summer
+  - date: 2019-08-12
+    recurring: *monday_summer
+  - date: 2019-08-13
+    recurring: *tuesday_summer
+  - date: 2019-08-14
+    recurring: *wednesday_summer
+  - date: 2019-08-15
+    recurring: *thursday_summer
+  - date: 2019-08-16
+    recurring: *friday_summer
+  - date: 2019-08-17
+    recurring: *saturday_summer
+  - date: 2019-08-18
+    recurring: *sunday_summer
+  - date: 2019-08-19
+    recurring: *monday_summer
+  - date: 2019-08-20
+    recurring: *tuesday_summer
+  - date: 2019-08-21
+    recurring: *wednesday_summer
+  - date: 2019-08-22
+    recurring: *thursday_summer
+  - date: 2019-08-23
+    recurring: *friday_summer
+  - date: 2019-08-24
+    recurring: *saturday_summer
+  - date: 2019-08-25
+    recurring: *sunday_summer
+  - date: 2019-08-26
+    recurring: *monday_summer
+  - date: 2019-08-27
+    recurring: *tuesday_summer
+  - date: 2019-08-28
+    recurring: *wednesday_summer
+  - date: 2019-08-29
+    recurring: *thursday_summer
+  - date: 2019-08-30
+    recurring: *friday_summer
+  - date: 2019-08-31
+    recurring: *saturday_summer
