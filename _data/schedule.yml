@@ -379,6 +379,7 @@ calendar:
     recurring: *sunday_summer
   - date: 2019-07-15
     recurring: *monday_summer
+    exclusions: [ edge ]
   - date: 2019-07-16
     recurring: *tuesday_summer
   - date: 2019-07-17
@@ -407,6 +408,7 @@ calendar:
     recurring: *sunday_summer
   - date: 2019-07-29
     recurring: *monday_summer
+    exclusions: [ edge ]
   - date: 2019-07-30
     recurring: *tuesday_summer
   - date: 2019-07-31
