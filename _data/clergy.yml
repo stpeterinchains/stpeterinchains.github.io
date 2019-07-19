@@ -54,22 +54,10 @@ clergy:
         link: frtomlynch@peterboroughdiocese.org
 
   -
-    last_name: Rathinaswamy
-    first_name: John
-    title: Father
-    position: Vice Rector
-    image: fr-rathinaswamy-portrait.jpg
-    bio:
-    contact:
-      -
-        platform: E&ndash;mail
-        link: frjohnrathinaswamy@peterboroughdiocese.org
-
-  -
     last_name: Villas
     first_name: Roy
     title: Father
-    position: Associate Pastor
+    position: Vice Rector
     image: fr-villas-portrait.jpg
     bio:
     contact:

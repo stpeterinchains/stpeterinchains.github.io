@@ -16,8 +16,16 @@ issues:
         month: July
         bulletins:
           -
+            date: 21 and 28
+            title: Sixteenth and Seventeenth&nbsp;Sundays in&nbsp;Ordinary&nbsp;Time
+            link: https://drive.google.com/file/d/15XCB9s6bsnLj9j5b84VBBFVuy4c6fkFr/view
+            inserts:
+              -
+                title: August 2019 Calendar
+                link: https://drive.google.com/file/d/15R_iw0e5so0jYTDXiyS2IcztM9jcO-Pm/view
+          -
             date: 7 and 14
-            title: Fourteenth and Fifteenth Sundays in&nbsp;Ordinary&nbsp;Time
+            title: Fourteenth and Fifteenth&nbsp;Sundays in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/15HzEvVWomAcDOgaNXy61I_0t1qsp0XZ6/view
 
       -
