@@ -121,16 +121,16 @@ recurring:
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
-weekday_mass_summer_mw: &weekday_mass_summer_mw
-  <<: *weekday_mass
-  mnemonic: weekday_mass_summer_mw
-  time: 12:10 PM
-  ordinal: "1210"
-weekday_mass_summer_ttf: &weekday_mass_summer_ttf
-  <<: *weekday_mass
-  mnemonic: weekday_mass_summer_ttf
-  time: 7:30 AM
-  ordinal: "0730"
+  weekday_mass_summer_mw: &weekday_mass_summer_mw
+    <<: *weekday_mass
+    mnemonic: weekday_mass_summer_mw
+    time: 12:10 PM
+    ordinal: "1210"
+  weekday_mass_summer_ttf: &weekday_mass_summer_ttf
+    <<: *weekday_mass
+    mnemonic: weekday_mass_summer_ttf
+    time: 7:30 AM
+    ordinal: "0730"
 
 weekly:
   monday: &monday
@@ -418,12 +418,18 @@ calendar:
     recurring: *thursday_summer
   - date: 2019-08-02
     recurring: *friday_summer
+    specials:
+      - title: The Benediction
+        time: 8:00 AM
+        ordinal: "0800"
   - date: 2019-08-03
     recurring: *saturday_summer
   - date: 2019-08-04
     recurring: *sunday_summer
   - date: 2019-08-05
     recurring: *monday_summer
+    exclusions: [ edge ]
+    note: Civic Holiday. Office closed.
   - date: 2019-08-06
     recurring: *tuesday_summer
   - date: 2019-08-07
@@ -450,8 +456,20 @@ calendar:
     recurring: *saturday_summer
   - date: 2019-08-18
     recurring: *sunday_summer
+    specials:
+      - title: 2019 Vianney Fair
+        descriptive: |
+          Please visit the
+          [Peterborough Vocations](https://www.ptbovocations.ca/en/events/vianney-fair.aspx)
+          website for more information.
+
+          Mass to be celebrated by Bishop Miehm.
+        location: 2097 Heritage Line, Peterborough
+        time: 1:00 PM to 7:00 PM
+        ordinal: "1300"
   - date: 2019-08-19
     recurring: *monday_summer
+    exclusions: [ edge ]
   - date: 2019-08-20
     recurring: *tuesday_summer
   - date: 2019-08-21
