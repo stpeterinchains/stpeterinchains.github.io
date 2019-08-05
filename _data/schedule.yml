@@ -428,8 +428,8 @@ calendar:
     recurring: *sunday_summer
   - date: 2019-08-05
     recurring: *monday_summer
-    exclusions: [ edge ]
-    note: Civic Holiday. Office closed.
+    exclusions: [ weekday_mass_summer_mw, edge ]
+    note: "Civic Holiday: No Mass schedule today. Office closed."
   - date: 2019-08-06
     recurring: *tuesday_summer
   - date: 2019-08-07
