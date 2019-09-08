@@ -13,8 +13,24 @@ issues:
     months:
 
       -
+        month: September
+        bulletins:
+          -
+            date: 8
+            title: Twenty-Third Sunday in&nbsp;Ordinary&nbsp;Time (hardcopy&nbsp;only)
+            link: javascript:void()
+          -
+            date: 1
+            title: Twenty-Second Sunday in&nbsp;Ordinary&nbsp;Time (hardcopy&nbsp;only)
+            link: javascript:void()
+
+      -
         month: August
         bulletins:
+          -
+            date: 25
+            title: Twenty-First Sunday in&nbsp;Ordinary&nbsp;Time (hardcopy&nbsp;only)
+            link: javascript:void()
           -
             date: 4 and 11
             title: Eighteenth and Nineteenth&nbsp;Sundays in&nbsp;Ordinary&nbsp;Time
@@ -41,7 +57,7 @@ issues:
         bulletins:
           -
             date: 30
-            title: Thirteenth Sunday in Ordinary Time
+            title: Thirteenth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/15Eh-e0ei7QmdArLAkX7kJ1SwWv_EM8lW/view
             inserts:
               -
@@ -136,7 +152,7 @@ issues:
             link: https://drive.google.com/file/d/14BCP1wT3tMY2Om520IARXwHFPU-r-TGz/view
           -
             date: 3
-            title: Eighth Sunday in Ordinary Time
+            title: Eighth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13_OUKTL77neWplaag1n9HtbxqgF8Yrwv/view
 
       -
@@ -144,23 +160,23 @@ issues:
         bulletins:
           -
             date: 24
-            title: Seventh Sunday in Ordinary Time
+            title: Seventh Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13Wm8_46bKq9mj3o8yeCM5gUnfi7SmM3O/view
           -
             date: 17
-            title: Sixth Sunday in Ordinary Time
+            title: Sixth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13VYuTUbKaQp2JfqUqUna2d8uVj72f3MF/view
           -
             date: 10
             title: >
-              Fifth Sunday in Ordinary Time<br>
+              Fifth Sunday in&nbsp;Ordinary&nbsp;Time<br>
               No bulletin this week
             link: javascript:void()
           -
             date: 3
             title: >
               Feast Day of St Blaise<br>
-              Fourth Sunday in Ordinary Time
+              Fourth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13T9VCTJ-Chs2ZVRweQCIkzPGvCAz5b9N/view
             inserts:
               -
@@ -172,13 +188,13 @@ issues:
         bulletins:
           -
             date: 27
-            title: Third Sunday in Ordinary Time
+            title: Third Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13RJ1p5w5-Nf3HXr9m2NwjUqrzN90_Y9R/view
           -
             date: 20
             title: >
               Ecumenical Sunday<br>
-              Second Sunday in Ordinary Time
+              Second Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/13N6tN60pXzPBGrm-JrtuLA_U0i_yISrN/view
           -
             date: 13
@@ -241,11 +257,11 @@ issues:
             link: https://drive.google.com/file/d/12UVSpDu8-5NU_Bfrqxr8yKHdUDgzA-gi/view
           -
             date: 18
-            title: Thirty-Third Sunday in Ordinary Time
+            title: Thirty-Third Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/12RvFst5AVh0wejZ18TRTMJpXgSb1HBwb/view
           -
             date: 11
-            title: Thirty-Second Sunday in Ordinary Time
+            title: Thirty-Second Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11wIlIeNYOcQ2ibnoVJneIatPcNR9aY6L/view
             inserts:
               -
@@ -256,7 +272,7 @@ issues:
                 link: https://drive.google.com/file/d/128_JUSBTR-eOTukMcRIVKznpd28wjz8d/view
           -
             date: 4
-            title: Thirty-First Sunday in Ordinary Time
+            title: Thirty-First Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11ar5bc4WSwy_1EyZuc61QO0snWWWZymA/view
             inserts:
               -
@@ -268,11 +284,11 @@ issues:
         bulletins:
           -
             date: 28
-            title: Thirtieth Sunday in Ordinary Time
+            title: Thirtieth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11VvvbJ5YoWn-rfwuceFjG2AMU3wMLWbp/view
           -
             date: 21
-            title: Twenty-Ninth Sunday in Ordinary Time
+            title: Twenty-Ninth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11PFFKk20wpD04Rp3lN4B2wUO2AYwVxAz/view
             inserts:
               -
@@ -280,7 +296,7 @@ issues:
                 link: https://drive.google.com/file/d/11Ug_jRaZ_5BE4kmQKcg3Oiu9dvLr0gM6/view
           -
             date: 7 and 14
-            title: Twenty-Seventh and Twenty-Eighth Sundays in Ordinary Time
+            title: Twenty-Seventh and Twenty-Eighth Sundays in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11LPZYNO_IzOeFAx7p12Fd2vyhyeV9cu3/view
 
       -
@@ -288,15 +304,15 @@ issues:
         bulletins:
           -
             date: 30
-            title: Twenty-Sixth Sunday in Ordinary Time
+            title: Twenty-Sixth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11KPTCY1OJYma3TiHZPMSKWSiiVnn1_E6/view
           -
             date: 23
-            title: Twenty-Fifth Sunday in Ordinary Time
+            title: Twenty-Fifth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/11HmdwuuyjQGECjJmn1IK0Uga8C4oPUix/view
           -
             date: 16
-            title: Twenty-Fourth Sunday in Ordinary Time
+            title: Twenty-Fourth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1192imv1bwwU-Cl97LgqKYhvXvrSOotah/view
             inserts:
               -
@@ -304,11 +320,11 @@ issues:
                 link: https://drive.google.com/file/d/1122A9wrudCliFhqPkmfPDEa656em7bDE/view
           -
             date: 9
-            title: Twenty-Third Sunday in Ordinary Time
+            title: Twenty-Third Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/111mk48zzD3qlCOvypvMvcQEcTJiehRJW/view
           -
             date: 2
-            title: Twenty-Second Sunday in Ordinary Time
+            title: Twenty-Second Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/10TjtFBmPAfdWUAqW5HBA7rSPfn-fPGnu/view
             inserts:
               -
@@ -320,7 +336,7 @@ issues:
         bulletins:
           -
             date: 12
-            title: Nineteenth Sunday in Ordinary Time
+            title: Nineteenth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/10Et70G4KMf9-VAl0y5vxf_Ffb37lkGh_/view
 
       -
@@ -328,19 +344,19 @@ issues:
         bulletins:
           -
             date: 29
-            title: Seventeenth Sunday in Ordinary Time
+            title: Seventeenth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/10ES_6Uc-UvnN6YGrz6r_RAUrOvIXHcTw/view
           -
             date: 15
-            title: Fifteenth Sunday in Ordinary Time
+            title: Fifteenth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/10Bbm8zDEGHiFcoLt0seAbvkyByWLhrqR/view
           -
             date: 1
-            title: Canada Day and Thirteenth&nbsp;Sunday in Ordinary&nbsp;Time
+            title: Canada Day and Thirteenth&nbsp;Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/106LwwF6GvTl6FBhU5WuX4nBF-Yd0Mxlp/view
             inserts:
               -
-                title: Special Collection for Campus&nbsp;Ministry<br>Prayer for Canada Day
+                title: Special Collection for Campus&nbsp;Ministry<br>Prayer for Canada&nbsp;Day
                 link: https://drive.google.com/file/d/1031uRUUoJdix9ZYAz0xAtG1hv68XXJyP/view
 
       -
@@ -352,11 +368,11 @@ issues:
             link: https://drive.google.com/file/d/1-dIe868FZzBdwY6RqJIHCOPtN6u5ambH/view
           -
             date: 17
-            title: Eleventh Sunday in Ordinary Time
+            title: Eleventh Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1-bsq-lPHQxx7JCVf43N81QFLScGMG-CM/view
           -
             date: 10
-            title: Tenth Sunday in Ordinary Time
+            title: Tenth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1-USPo-lyo7e3Raw3AIDA8M1aY26VXpnL/view
             inserts:
               -
@@ -476,7 +492,7 @@ issues:
             link: https://drive.google.com/file/d/1Sc51EcOYzvppwEFoNkSM697C_Bfxpaz0/view
           -
             date: 11
-            title: Sixth Sunday in Ordinary Time
+            title: Sixth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1ntrcyBcjlytdZDg_yUAn5MqqhS8TnlPN/view
             inserts:
               -
@@ -484,7 +500,7 @@ issues:
                 link: https://drive.google.com/file/d/1vzOL5yUNafjrOJCRf71RJFFEWjS2iEtL/view
           -
             date: 4
-            title: Fifth Sunday in Ordinary Time
+            title: Fifth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1VvZgXosoyMj__P_DPq9FIOU5vyPofNCC/view
 
       -
@@ -492,7 +508,7 @@ issues:
         bulletins:
           -
             date: 28
-            title: Fourth Sunday in Ordinary Time
+            title: Fourth Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1omw0u51TDAojcm6v42hcjjEprEcVh_1I/view
             inserts:
               -
@@ -500,7 +516,7 @@ issues:
                 link: https://drive.google.com/file/d/1omwkss921mjzyEYflnkR50B1nrzWjpmg/view
           -
             date: 21
-            title: Third Sunday in Ordinary Time
+            title: Third Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1qCWpvwKZp11FMk8NLsYZ7EZrf_Vj1E8G/view
             inserts:
               -
@@ -508,7 +524,7 @@ issues:
                 link: https://drive.google.com/file/d/1N1RaNWByqIkUeTkRRGoMLyvWlxKCyE33/view
           -
             date: 14
-            title: Second Sunday in Ordinary Time
+            title: Second Sunday in&nbsp;Ordinary&nbsp;Time
             link: https://drive.google.com/file/d/1ePfSMppVzgxfGB5nEMpaayEgkga7Zk7b/view
           -
             date: 7
