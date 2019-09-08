@@ -18,8 +18,8 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2019-06-01
-    latest:   2019-08-31
+    earliest: 2019-09-01
+    latest:   2019-10-31
 
 recurring:
   weekday_mass: &weekday_mass
@@ -121,21 +121,10 @@ recurring:
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
-  weekday_mass_summer_mw: &weekday_mass_summer_mw
-    <<: *weekday_mass
-    mnemonic: weekday_mass_summer_mw
-    time: 12:10 PM
-    ordinal: "1210"
-  weekday_mass_summer_ttf: &weekday_mass_summer_ttf
-    <<: *weekday_mass
-    mnemonic: weekday_mass_summer_ttf
-    time: 7:30 AM
-    ordinal: "0730"
 
 weekly:
   monday: &monday
     - *weekday_mass
-    - *edge
   tuesday: &tuesday
     - *weekday_mass
     - *legion_of_mary
@@ -156,30 +145,6 @@ weekly:
     - *anointing_sick
     - *mother_perpetual_help
   sunday: &sunday
-    - *sunday_mass
-    - *lifeteen
-  monday_summer: &monday_summer
-    - *weekday_mass_summer_mw
-    - *edge
-  tuesday_summer: &tuesday_summer
-    - *weekday_mass_summer_ttf
-  wednesday_summer: &wednesday_summer
-    - *weekday_mass_summer_mw
-    - *legion_of_mary
-  thursday_summer: &thursday_summer
-    - *weekday_mass_summer_ttf
-  friday_summer: &friday_summer
-    - *weekday_mass_summer_ttf
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_summer: &saturday_summer
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_summer: &sunday_summer
     - *sunday_mass
 
 season:
@@ -220,156 +185,127 @@ celebration:
     bgcolor: "#c33"
 
 calendar:
-  - date: 2019-07-01
-    recurring: *monday_summer
-    exclusions: [ weekday_mass_summer_mw, edge ]
-    note: >
-      &#x1F1E8;&#x1F1E6; No Masses scheduled for Canada Day. Office closed.
-  - date: 2019-07-02
-    recurring: *tuesday_summer
-  - date: 2019-07-03
-    recurring: *wednesday_summer
-  - date: 2019-07-04
-    recurring: *thursday_summer
-  - date: 2019-07-05
-    recurring: *friday_summer
-    exclusions: [ sacrament_reconciliation_friday, exposition_blessed_sacrament_friday ]
-    specials:
-      - title: The Benediction
-        time: 8:00 AM
-        ordinal: "0800"
-  - date: 2019-07-06
-    recurring: *saturday_summer
-  - date: 2019-07-07
-    recurring: *sunday_summer
-  - date: 2019-07-08
-    recurring: *monday_summer
-  - date: 2019-07-09
-    recurring: *tuesday_summer
-  - date: 2019-07-10
-    recurring: *wednesday_summer
-  - date: 2019-07-11
-    recurring: *thursday_summer
-  - date: 2019-07-12
-    recurring: *friday_summer
-  - date: 2019-07-13
-    recurring: *saturday_summer
-  - date: 2019-07-14
-    recurring: *sunday_summer
-  - date: 2019-07-15
-    recurring: *monday_summer
-    exclusions: [ edge ]
-  - date: 2019-07-16
-    recurring: *tuesday_summer
-  - date: 2019-07-17
-    recurring: *wednesday_summer
-  - date: 2019-07-18
-    recurring: *thursday_summer
-  - date: 2019-07-19
-    recurring: *friday_summer
-  - date: 2019-07-20
-    recurring: *saturday_summer
-  - date: 2019-07-21
-    recurring: *sunday_summer
-  - date: 2019-07-22
-    recurring: *monday_summer
-  - date: 2019-07-23
-    recurring: *tuesday_summer
-  - date: 2019-07-24
-    recurring: *wednesday_summer
-  - date: 2019-07-25
-    recurring: *thursday_summer
-  - date: 2019-07-26
-    recurring: *friday_summer
-  - date: 2019-07-27
-    recurring: *saturday_summer
-  - date: 2019-07-28
-    recurring: *sunday_summer
-  - date: 2019-07-29
-    recurring: *monday_summer
-    exclusions: [ edge ]
-  - date: 2019-07-30
-    recurring: *tuesday_summer
-  - date: 2019-07-31
-    recurring: *wednesday_summer
-
-  - date: 2019-08-01
-    recurring: *thursday_summer
-  - date: 2019-08-02
-    recurring: *friday_summer
-    specials:
-      - title: The Benediction
-        time: 8:00 AM
-        ordinal: "0800"
-  - date: 2019-08-03
-    recurring: *saturday_summer
-  - date: 2019-08-04
-    recurring: *sunday_summer
-  - date: 2019-08-05
-    recurring: *monday_summer
-    exclusions: [ weekday_mass_summer_mw, edge ]
-    note: "Civic Holiday: No Mass schedule today. Office closed."
-  - date: 2019-08-06
-    recurring: *tuesday_summer
-  - date: 2019-08-07
-    recurring: *wednesday_summer
-  - date: 2019-08-08
-    recurring: *thursday_summer
-  - date: 2019-08-09
-    recurring: *friday_summer
-  - date: 2019-08-10
-    recurring: *saturday_summer
-  - date: 2019-08-11
-    recurring: *sunday_summer
-  - date: 2019-08-12
-    recurring: *monday_summer
-  - date: 2019-08-13
-    recurring: *tuesday_summer
-  - date: 2019-08-14
-    recurring: *wednesday_summer
-  - date: 2019-08-15
-    recurring: *thursday_summer
-  - date: 2019-08-16
-    recurring: *friday_summer
-  - date: 2019-08-17
-    recurring: *saturday_summer
-  - date: 2019-08-18
-    recurring: *sunday_summer
-    specials:
-      - title: 2019 Vianney Fair
-        descriptive: |
-          Please visit the
-          [Peterborough Vocations](https://www.ptbovocations.ca/en/events/vianney-fair.aspx)
-          website for more information.
-
-          Mass to be celebrated by Bishop Miehm.
-        location: 2097 Heritage Line, Peterborough
-        time: 1:00 PM to 7:00 PM
-        ordinal: "1300"
-  - date: 2019-08-19
-    recurring: *monday_summer
-    exclusions: [ edge ]
-  - date: 2019-08-20
-    recurring: *tuesday_summer
-  - date: 2019-08-21
-    recurring: *wednesday_summer
-  - date: 2019-08-22
-    recurring: *thursday_summer
-  - date: 2019-08-23
-    recurring: *friday_summer
-  - date: 2019-08-24
-    recurring: *saturday_summer
-  - date: 2019-08-25
-    recurring: *sunday_summer
-  - date: 2019-08-26
-    recurring: *monday_summer
-  - date: 2019-08-27
-    recurring: *tuesday_summer
-  - date: 2019-08-28
-    recurring: *wednesday_summer
-  - date: 2019-08-29
-    recurring: *thursday_summer
-  - date: 2019-08-30
-    recurring: *friday_summer
-  - date: 2019-08-31
-    recurring: *saturday_summer
+  - date: 2019-09-01
+    recurring: *sunday
+  - date: 2019-09-02
+    recurring: *monday
+    exclusions: [ weekday_mass ]
+    note: "Labour Day: No Mass scheduled. Office closed."
+  - date: 2019-09-03
+    recurring: *tuesday
+  - date: 2019-09-04
+    recurring: *wednesday
+  - date: 2019-09-05
+    recurring: *thursday
+  - date: 2019-09-06
+    recurring: *friday
+  - date: 2019-09-07
+    recurring: *saturday
+  - date: 2019-09-08
+    recurring: *sunday
+  - date: 2019-09-09
+    recurring: *monday
+  - date: 2019-09-10
+    recurring: *tuesday
+  - date: 2019-09-11
+    recurring: *wednesday
+  - date: 2019-09-12
+    recurring: *thursday
+  - date: 2019-09-13
+    recurring: *friday
+  - date: 2019-09-14
+    recurring: *saturday
+  - date: 2019-09-15
+    recurring: *sunday
+  - date: 2019-09-16
+    recurring: *monday
+  - date: 2019-09-17
+    recurring: *tuesday
+  - date: 2019-09-18
+    recurring: *wednesday
+  - date: 2019-09-19
+    recurring: *thursday
+  - date: 2019-09-20
+    recurring: *friday
+  - date: 2019-09-21
+    recurring: *saturday
+  - date: 2019-09-22
+    recurring: *sunday
+  - date: 2019-09-23
+    recurring: *monday
+  - date: 2019-09-24
+    recurring: *tuesday
+  - date: 2019-09-25
+    recurring: *wednesday
+  - date: 2019-09-26
+    recurring: *thursday
+  - date: 2019-09-27
+    recurring: *friday
+  - date: 2019-09-28
+    recurring: *saturday
+  - date: 2019-09-29
+    recurring: *sunday
+  - date: 2019-09-30
+    recurring: *monday
+  - date: 2019-10-01
+    recurring: *tuesday
+  - date: 2019-10-02
+    recurring: *wednesday
+  - date: 2019-10-03
+    recurring: *thursday
+  - date: 2019-10-04
+    recurring: *friday
+  - date: 2019-10-05
+    recurring: *saturday
+  - date: 2019-10-06
+    recurring: *sunday
+  - date: 2019-10-07
+    recurring: *monday
+  - date: 2019-10-08
+    recurring: *tuesday
+  - date: 2019-10-09
+    recurring: *wednesday
+  - date: 2019-10-10
+    recurring: *thursday
+  - date: 2019-10-11
+    recurring: *friday
+  - date: 2019-10-12
+    recurring: *saturday
+  - date: 2019-10-13
+    recurring: *sunday
+  - date: 2019-10-14
+    recurring: *monday
+  - date: 2019-10-15
+    recurring: *tuesday
+  - date: 2019-10-16
+    recurring: *wednesday
+  - date: 2019-10-17
+    recurring: *thursday
+  - date: 2019-10-18
+    recurring: *friday
+  - date: 2019-10-19
+    recurring: *saturday
+  - date: 2019-10-20
+    recurring: *sunday
+  - date: 2019-10-21
+    recurring: *monday
+  - date: 2019-10-22
+    recurring: *tuesday
+  - date: 2019-10-23
+    recurring: *wednesday
+  - date: 2019-10-24
+    recurring: *thursday
+  - date: 2019-10-25
+    recurring: *friday
+  - date: 2019-10-26
+    recurring: *saturday
+  - date: 2019-10-27
+    recurring: *sunday
+  - date: 2019-10-28
+    recurring: *monday
+  - date: 2019-10-29
+    recurring: *tuesday
+  - date: 2019-10-30
+    recurring: *wednesday
+  - date: 2019-10-31
+    recurring: *thursday
