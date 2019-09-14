@@ -66,6 +66,18 @@ clergy:
         link: frroyvillas@peterboroughdiocese.org
 
   -
+    last_name: Umezika, SMMM
+    first_name: Innocent
+    title: Father
+    position: Associate Pastor
+    image: fr-umezika-portrait.jpg
+    bio:
+    contact:
+      -
+        platform: E&ndash;mail
+        link: frinnocentumezika@peterboroughdioces.org
+
+  -
     last_name: Radigan
     first_name: Bill
     title: Deacon
