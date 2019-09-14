@@ -110,8 +110,8 @@ recurring:
       For young adults in Grades 9 through 12, Lifeteen includes dinner, games,
       a&nbsp;talk, as well as a time for fellowship and&nbsp;sharing.
     location: Bishop Doyle Hall
-    time: 6:00-8:00 PM
-    ordinal: "1800"
+    time: 6:30-8:00 PM
+    ordinal: "1830"
   edge: &edge
     mnemonic: edge
     title: Edge
@@ -219,24 +219,95 @@ calendar:
     recurring: *sunday
   - date: 2019-09-16
     recurring: *monday
+    specials:
+      - <<: *edge
   - date: 2019-09-17
     recurring: *tuesday
+    specials:
+      - title: >
+          Parent Information Night for
+          First&nbsp;Reconciliation and First&nbsp;Communion
+        descriptive: |
+          Parents are invited to attend this important informational session as
+          the first step in their children&apos;s registration for the
+          Sacramental&nbsp;Preparation program for their
+          **First&nbsp;Communion** and **First&nbsp;Reconciliation** and
+          to prepare for their **Confirmation**.
+
+          Please note that there is a registration fee of $50 for the
+          Sacramental Preparation program, to offset the cost of materials.
+
+          An information package will be provided.
+        location: Cathedral
+        time: 6:00 PM
+        ordinal: "1800"
   - date: 2019-09-18
     recurring: *wednesday
   - date: 2019-09-19
     recurring: *thursday
   - date: 2019-09-20
     recurring: *friday
+    specials:
+      - title: Holy Men in Black
+        descriptive: |
+          Please join us for this very special evening of
+          musical (and possibly other) talent performed by our
+          priests from the&nbsp;Diocese!
+
+          No admission fee, but a freewill collection will be made
+          in support of our accessibility projects. For information, call the
+          Parish&nbsp;Office of Immaculate&nbsp;Conception
+          at&nbsp;705-742-5466.
+
+          **Pssst... Fr Tom will be singing!**
+        location: Immaculate Conception Church (386 Rogers St)
+        time: 7:00 PM
+        ordinal: "1900"
   - date: 2019-09-21
     recurring: *saturday
+    specials:
+      - &cmic
+        title: Catholic Missions in&nbsp;Canada
+        descriptive: |
+          Catholic Missions in Canada (CMIC) funds the work of missionaries
+          throughout Canada, including those serving in remote and high-needs
+          areas.
+
+          Fr David Reilander, president of CMIC, will be our guest speaker
+          during Mass this Saturday and&nbsp;Sunday.
+        ordinal: "0600"
   - date: 2019-09-22
     recurring: *sunday
+    specials:
+      - *cmic
+      - &syro_malabar_mass
+        title: Syro-Malabar Rite Mass
+        color: "#933"
+        time: 12:00 PM
+        ordinal: "1200"
   - date: 2019-09-23
     recurring: *monday
+    specials:
+      - <<: *lifeteen
   - date: 2019-09-24
     recurring: *tuesday
   - date: 2019-09-25
     recurring: *wednesday
+    specials:
+      - title: Rite of Christian&nbsp;Initiation for&nbsp;Adults (RCIA)
+        descriptive: |
+          For those interested in learned about the Catholic Faith, the
+          RCIA is a series of talks and discussions to help non-Catholics
+          learn about the Church and to discover the Christian faith.
+
+          Individuals or groups welcome, whether for an intent to join the
+          Church or for informational purposes.
+
+          Please contact our office for more information or check our
+          [website](sacraments.html#sacrament-rcia).
+        location: Parish Boardroom (Rectory Office)
+        time: 7:00-8:30 PM
+        ordinal: "1900"
   - date: 2019-09-26
     recurring: *thursday
   - date: 2019-09-27
@@ -247,6 +318,8 @@ calendar:
     recurring: *sunday
   - date: 2019-09-30
     recurring: *monday
+    specials:
+      - <<: *edge
   - date: 2019-10-01
     recurring: *tuesday
   - date: 2019-10-02
@@ -261,6 +334,8 @@ calendar:
     recurring: *sunday
   - date: 2019-10-07
     recurring: *monday
+    specials:
+      - <<: *lifeteen
   - date: 2019-10-08
     recurring: *tuesday
   - date: 2019-10-09
@@ -287,8 +362,12 @@ calendar:
     recurring: *saturday
   - date: 2019-10-20
     recurring: *sunday
+    specials:
+      - *syro_malabar_mass
   - date: 2019-10-21
     recurring: *monday
+    specials:
+      - <<: *lifeteen
   - date: 2019-10-22
     recurring: *tuesday
   - date: 2019-10-23
@@ -303,6 +382,8 @@ calendar:
     recurring: *sunday
   - date: 2019-10-28
     recurring: *monday
+    specials:
+      - <<: *edge
   - date: 2019-10-29
     recurring: *tuesday
   - date: 2019-10-30
