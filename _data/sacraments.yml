@@ -3,13 +3,16 @@
 title: Sacraments
 descriptive: |
   The Holy Sacraments of the Catholic Church represent the channels
-  by which grace is received by an individual who receives them.
+  through which an individual receives the graces each represents.
   Our parish offers classes for both children and adults in preparation for
-  receiving the Sacraments of Initiation into the Church, and of Matrimony.
-  Those interested are invited to complete the respective application
-  forms and to contact the Rectory office.
+  receiving the Sacraments of Initiation into the Church. For those considering
+  commitment in Matrimony, we provide spiritual instruction in preparation for
+  this sacred vocation.
 
-  # Sacramental Preparation for School-age Children
+  You are invited to complete the respective application forms and to contact
+  the Rectory Office.
+
+  # Sacramental Preparation for School-Age Children
 
   His Excellency, Bishop Daniel Miehm, Bishop of Peterborough, has brought the
   parishes of the Diocese together to offer a Sacramental Preparation Program
@@ -26,59 +29,54 @@ sacraments:
     form: Baptismal-Application-Form.pdf
     headline: Children's Baptism
     text: |
-      To arrange an occasion for your child's Baptism, please contact the
-      Rectory office with your completed application form.
+      To arrange a time and setting for your child's Baptism, please contact
+      the Rectory Office with your completed application form.
 
   -
     title: First Reconciliation and First Communion
     anchor: reconciliation-communion
     image: first-communion.jpg
     form: Registration-Form-Reconciliation1st-Communion.pdf
-    headline: Preparation for First Reconciliation and First Communion
+    headline: Preparation for First&nbsp;Reconciliation and First&nbsp;Communion
     text: |
-      Children in Grade 2 or higher are invited to begin preparations to make
-      their First&nbsp;Reconciliation (Confession) and to receive their
-      First&nbsp;Holy&nbsp;Communion.
-
+      Children in Grade 2 or higher are invited to begin the preparations
+      necessary to make their First&nbsp;Reconciliation (Confession) and to
+      receive their First&nbsp;Holy&nbsp;Communion.
       Sessions for students will be held throughout the school year in
       preparation for these Holy Sacraments. Please see session dates below.
 
-      Parents are invited to attend the Parent Information Night, on
-      September&nbsp;11,&nbsp;2018, at 7:00&nbsp;PM, in the
-      Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains, to register and
-      to receive information packages for the
-      *Sacramental&nbsp;Preparation&nbsp;Program*, covering both
-      First&nbsp;Reconciliation/First&nbsp;Communion preparation and
-      Confirmation preparation.
+      Parents are invited to attend the Parent Information Night on
+      September&nbsp;17,&nbsp;2019, at 6:00&nbsp;PM,
+      at the Cathedral&nbsp;of Saint&nbsp;Peter&#x2011;in&#x2011;Chains,
+      to register and to receive information packages for the
+      *Sacramental&nbsp;Preparation&nbsp;Program for
+      First&nbsp;Reconciliation and First&nbsp;Communion preparation*.
 
       For more information, please contact
       Mary&nbsp;Porter (Sacramental&nbsp;Coordinator) at **705-740-0452**.
       Also, please see the
-      [First&nbsp;Reconciliation and First&nbsp;Communion&nbsp;Letter](/forms/First Reconciliation and First Communion Letter.pdf)&nbsp;[PDF]
-      by Bishop&nbsp;Miehm.
+      [First&nbsp;Reconciliation and First&nbsp;Communion&nbsp;Letter](/forms/First Reconciliation and First Communion Letter.pdf)&nbsp;[PDF].
 
-      # First Reconciliation (Confession) Preparation Schedule
+      # Schedule for First Reconciliation Preparation
 
-      Event          | Date               | Time     | Location
-      -----          | ----               | ----     | --------
-      1st Session    | September 22, 2018 | 10:00 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-      2nd Session    | October 20, 2018   | 10:00 AM | Columbus Hall
-      3rd Session    | November 10, 2018  | 10:00 AM | Bishop Doyle Hall
-      4th Session    | December 1, 2018   | 10:00 AM | Columbus Hall
-      Reconciliation | January 12, 2019   | 10:00 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      Event                    | Date               | Time            | Location
+      -----                    | ----               | ----            | --------
+      Parent Information Night | September 17, 2019 | 6:00 PM         | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      1st Session              | October 5, 2019    | 10:00-11:15 AM  | Bishop Doyle Hall
+      2nd Session              | October 26, 2019   | 10:00-11:15 AM  | Bishop Doyle Hall
+      3rd Session              | November 16, 2019  | 10:00-11:15 AM  | Bishop Doyle Hall
+      4th Session              | December 30, 2019  | 10:00-11:15 AM  | Bishop Doyle Hall
+      First Reconciliation     | January 11, 2020   | To be announced | Bishop Doyle Hall
 
-      # First Communion Preparation Schedule
+      # Schedule for First Communion Preparation
 
-      Event                   | Date             | Time     | Location
-      -----                   | ----             | ----     | --------
-      1st Session             | February 9, 2019 | 10:00 AM | Bishop Doyle Hall
-      2nd Session             | March 2, 2019    | 10:00 AM | Bishop Doyle Hall
-      3rd Session             | April 6, 2019    | 10:00 AM | Bishop Doyle Hall
-      4th Session/Retreat Day | May 4, 2019      | 10:00 AM&ndash;2:00 PM | Columbus Hall
-      First Communion         | May 12, 2019     | 10:30 AM | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-
-      Note&#x3a; Columbus Hall is the smaller hall across from
-      Bishop Doyle Hall. Use side entrance off parking lot.
+      Event                   | Date              | Time             | Location
+      -----                   | ----              | ----             | --------
+      1st Session             | February 1, 2020  | 10:00-11:15 AM   | Bishop Doyle Hall
+      2nd Session             | February 29, 2020 | 10:00-11:15 AM   | Bishop Doyle Hall
+      3rd Session             | March 28, 2020    | 10:00-11:15 AM   | Bishop Doyle Hall
+      4th Session/Retreat Day | April 18, 2020    | 10:00 AM-1:00 PM | Bishop Doyle Hall
+      First Holy Communion    | April 26, 2020    | 10:30 AM         | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
 
   -
     title: Confirmation
@@ -90,46 +88,43 @@ sacraments:
       Is your son or daughter ready to receive the Sacrament of Confirmation?
       The practice in the Diocese of Peterborough is for children to receive
       this Sacrament in Grade 7.
-
       Sessions for students and parents will be held throughout the school year
-      in preparation for this Holy Sacrament. Please see session dates below.
+      in preparation for this Holy Sacrament. Please see our schedule below.
 
       Parents are invited to attend the Parent Information Night, on
-      September&nbsp;11,&nbsp;2018, at 7:00&nbsp;PM, in the
+      September&nbsp;10,&nbsp;2019, at 6:00&nbsp;PM, at the
       Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains, to register and
       to receive information packages for the
-      *Sacramental&nbsp;Preparation&nbsp;Program*, covering both
-      First&nbsp;Reconciliation/First&nbsp;Communion preparation and
-      Confirmation preparation.
+      *Sacramental&nbsp;Preparation&nbsp;Program for Confirmation preparation*.
 
       For more information regarding preparation, please contact
-      Mizzu&nbsp;Bodo (Sacramental&nbsp;Coordinator) at [youth@stpeterspeterborough.ca](youth@stpeterspeterborough.ca).
+      Mizzu&nbsp;Bodo (Sacramental&nbsp;Coordinator) at [youth@stpeterspeterborough.ca](mailto:youth@stpeterspeterborough.ca).
       Also, please see the
       [Confirmation&nbsp;Letter](/forms/Confirmation Letter.pdf)&nbsp;[PDF]
       and the
       [Confirmation&nbsp;Candidate&nbsp;Letter](/forms/Confirmation Candidate Letter.pdf)&nbsp;[PDF].
 
-      Student sessions will be held in Bishop Doyle Hall.
-      Parent sessions, along with final Confirmation ceremony, will be held in
-      the Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains.
+      # Schedule for Confirmation Preparation
 
-      # Confirmation Preparation Schedule (for Students and Parents)
-
-      Event         | Date              | Time
-      -----         | ----              | ----
-      1st Session   | October 2, 2018   | 6:30&ndash;8:00 PM
-      2nd Session   | October 16, 2018  | 6:30&ndash;8:00 PM
-      3rd Session   | November 6, 2018  | 6:30&ndash;8:00 PM
-      4th Session   | November 16, 2018 | 6:30&ndash;8:00 PM
-      5th Session   | December 4, 2018  | 6:30&ndash;8:00 PM
-      6th Session   | January 15, 2019  | 6:30&ndash;8:00 PM
-      7th Session   | February 12, 2019 | 6:30&ndash;8:00 PM
-      8th Session   | March 12, 2019    | 6:30&ndash;8:00 PM
-      9th Session   | April 9, 2019     | 6:30&ndash;8:00 PM
-      10th Session  | May 7, 2019       | 6:30&ndash;8:00 PM
-      Confirmation  | June 9, 2019      | 10:30 AM
-
-      A small reception will follow the Confirmation ceremony on June&nbsp;9.
+      Event                    | Date               | Time             | Location
+      -----                    | ----               | ----             | --------
+      Parent Information Night | September 10, 2019 | 6:00 PM          | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      1st Session              | September 24, 2019 | 6:30-8:00 PM     | Bishop Doyle Hall
+      2nd Session              | October 15, 2019   | 6:30-8:00 PM     | Bishop Doyle Hall
+      Rite of Welcoming        | October 27, 2019   | 10:30 AM         | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      3rd Session              | October 29, 2019   | 6:30-8:00 PM     | Bishop Doyle Hall
+      4th Session              | November 19, 2019  | 6:30-8:00 PM     | Bishop Doyle Hall
+      5th Session              | December 3, 2019   | 6:30-8:00 PM     | Bishop Doyle Hall
+      Christmas Cleanup        | December 21, 2019  | To be announced  | Bishop Doyle Hall
+      6th Session              | January 14, 2020   | 6:30-8:00 PM     | Bishop Doyle Hall
+      7th Session              | February 11, 2020  | 6:30-8:00 PM     | Bishop Doyle Hall
+      Rite of Enrollment       | March 1, 2019      | 10:30 AM         | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
+      8th Session              | March 3, 2020      | 6:30-8:00 PM     | Bishop Doyle Hall
+      Church Cleanup           | April 4, 2020      | To be announced  | Bishop Doyle Hall
+      9th Session              | April 21, 2020     | 6:30-8:00 PM     | Bishop Doyle Hall
+      10th Session             | May 12, 2020       | 6:30-8:00 PM     | Bishop Doyle Hall
+      Retreat Day              | May 22, 2020       | 10:00 AM-2:00 PM | Mount of St Joseph
+      Confirmation             | May 31, 2020       | 10:30 AM         | Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
 
   -
     title: Marriage
@@ -138,23 +133,23 @@ sacraments:
     form: Baptismal-Application-Form.pdf
     headline: The Sacrament of Marriage
     text: |
-      Please make an appointment through the office a minimum of 12 months
-      prior to your planned date of marriage.
+      Please make an appointment through the Rectory Office a minimum of
+      12&nbsp;months prior to your planned date of&nbsp;marriage.
 
   -
     title: RCIA &ndash; Rite of Christian Initiation of Adults
     anchor: rcia
     image: rcia.jpg
     form: RCIA-Application-Form.pdf
-    headline: RCIA sessions begin September 2018
+    headline: RCIA sessions begin September 2019
     text: |
       Is the Holy Spirit drawing you, a family member, or a friend toward the
-      Great Mystery known as the Catholic Church? If so, the
-      Rite of Christian Initiation of Adults (RCIA) may be for you!
-      The RCIA process focuses on all things spiritual and intellectual about
-      the Catholic Church.
+      Great Mystery known as the Catholic Church?
+      The Rite of Christian Initiation of Adults (RCIA) focuses on the
+      spiritual and intellectual aspects of the Catholic Church and
+      the Christian faith. The sessions are intended for those interested
+      in becoming members of the Church, as well as for those curious about the
+      Church and the Christian faith.
 
-      Our RCIA sessions will begin again in September, 2018.
-      Please watch for more information here and in our bulletin.
       For more information, please contact the
-      Rectory office at 705-745-4681 or speak with a priest after mass.
+      Rectory Office at **705-745-4681** or speak with a priest after Mass.
