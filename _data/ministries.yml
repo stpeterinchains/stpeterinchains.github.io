@@ -58,8 +58,8 @@ ministries:
     image: cast.png
     contacts:
       -
-        name: Kathy Romard
-        title: Office
+        name: Catherine Ward
+        title: Office Administrator
         phone: 705-745-4681
         email: office@stpeterspeterborough.ca
 
@@ -94,9 +94,9 @@ ministries:
     image:
     contacts:
       -
-        name: Jacob Sullivan
+        name: Fr Roy Villas
         title: Youth Director
-        email:
+        email: frroyvillas@peterboroughdiocese.org
 
   -
     title: EMHC
