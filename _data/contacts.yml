@@ -7,10 +7,10 @@
         items:
           - item: Fr Thomas Lynch, Rector
             mail: frtomlynch@peterboroughdiocese.org
-          - item: Fr John Rathinaswamy, Vice-Rector
-            mail: frjohnrathinaswamy@peterboroughdiocese.org
-          - item: Fr Roy Villas, Associate Pastor
+          - item: Fr Roy Villas, Vice-Rector
             mail: frroyvillas@peterboroughdiocese.org
+          - item: Fr Innocent Umezika (SMMM), Associate Pastor
+            mail: frinnocentumezika@peterboroughdioces.org
           - item: Dn Bill Radigan, Permanent Deacon
             mail: billradigan@peterboroughdiocese.org
           - item: Fr Clair Hickson, Resident Priest
@@ -20,15 +20,14 @@
       - subsection: Office
         items:
           - item: Office Administrator
-            text: Kathy Romard
+            text: Catherine Ward
           - item: Phone
             text: 705-745-4681
           - item: E-mail
             mail: office@stpeterspeterborough.ca
           - item: Hours
             text: |
-              Monday&nbsp;-&nbsp;Thursday: 9:00&nbsp;AM&nbsp;-&nbsp;12:30&nbsp;PM<br>
-              Monday&nbsp;-&nbsp;Thursday: 1:30&nbsp;PM&nbsp;-&nbsp;5:00&nbsp;PM<br>
+              Monday&nbsp;to&nbsp;Thursday: 9:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM<br>
               Friday,&nbsp;Saturday,&nbsp;Sunday: Closed
           - item: Physical address
             text: |
