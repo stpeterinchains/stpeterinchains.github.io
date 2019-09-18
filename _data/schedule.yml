@@ -207,6 +207,24 @@ calendar:
     recurring: *monday
   - date: 2019-09-10
     recurring: *tuesday
+    specials:
+      - title: >
+          Parent Information Night for&nbsp;Confirmation
+          Sacramental&nbsp;Preparation
+        descriptive: |
+          Parents are invited to attend this important informational session as
+          a first step in their children&apos;s registration for the
+          Sacramental&nbsp;Preparation program to prepare for
+          their&nbsp;**Confirmation**.
+
+          Please note that there is a registration fee of $50 for the
+          Sacramental Preparation program, to offset the cost
+          of&nbsp;materials.
+
+          An information package will be provided.
+        location: Cathedral
+        time: 6:00 PM
+        ordinal: "1800"
   - date: 2019-09-11
     recurring: *wednesday
   - date: 2019-09-12
@@ -225,8 +243,9 @@ calendar:
     recurring: *tuesday
     specials:
       - title: >
-          Parent Information Night for
-          First&nbsp;Reconciliation and First&nbsp;Communion
+          Parent Information Night
+          for First&nbsp;Reconciliation and First&nbsp;Communion
+          Sacramental&nbsp;Preparation
         descriptive: |
           Parents are invited to attend this important informational session as
           the first step in their children&apos;s registration for the
@@ -330,6 +349,28 @@ calendar:
     recurring: *friday
   - date: 2019-10-05
     recurring: *saturday
+    specials:
+      - title: Cathedral CWL Meeting
+        location: Parish Boardroom (Rectory Office)
+        time: 9:00 AM
+        ordinal: "0900"
+      - title: >
+          Movie Showing: Unplanned
+        descriptive: |
+          See the movie that has changed hearts, the movie secular Hollywood
+          does not want you to see.
+
+          To reserve a seat, call **705-772-1579** or email
+          [info@peterboroughprolife.ca](mailto:info@peterboroughprolife.ca).
+
+          The evening will include a light dinner, free of charge.
+          Your reservation will help us plan for food.
+
+          Showing sponsored by
+          [Peterborough PROLIFE](http://peterboroughprolife.ca).
+        location: St Alphonsis Parish Hall (810 Frank St)
+        time: 6:00-8:00 PM
+        ordinal: "1800"
   - date: 2019-10-06
     recurring: *sunday
   - date: 2019-10-07
@@ -368,6 +409,10 @@ calendar:
     recurring: *monday
     specials:
       - <<: *lifeteen
+      - title: Knights of Columbus Meeting
+        location: Bishop Doyle Hall
+        time: 7:00 PM
+        ordinal: "1900"
   - date: 2019-10-22
     recurring: *tuesday
   - date: 2019-10-23
