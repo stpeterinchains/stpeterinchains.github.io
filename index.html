@@ -67,7 +67,7 @@ open_graph_description: >
   </div>
   <div id="index-schedule-more">
     <a href="{{ '/schedule.html' | relative_url }}">Full schedule</a>
-    <a href="{{ '/schedule.html#past-events' | relative_url }}">Past events</a>
+    <a href="{{ '/schedule.html' | relative_url | append: '#' | append: schedule.sections.past.anchor }}">Past events</a>
   </div>
 </section>
 
