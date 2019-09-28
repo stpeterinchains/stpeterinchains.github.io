@@ -190,7 +190,7 @@ calendar:
   - date: 2019-09-02
     recurring: *monday
     exclusions: [ weekday_mass ]
-    note: "Labour Day: No Mass scheduled. Office closed."
+    note: "Labour Day. No Mass scheduled. Office closed."
   - date: 2019-09-03
     recurring: *tuesday
   - date: 2019-09-04
@@ -345,6 +345,21 @@ calendar:
     recurring: *wednesday
   - date: 2019-10-03
     recurring: *thursday
+    specials:
+      - title: Federal Election Debate
+        color: red
+        descriptive: |
+          The Archdiocese of Toronto will host a federal election debate at the
+          John&nbsp;Bassett&nbsp;Theatre in Toronto, to be live-streamed at
+          St&nbsp;Alphonsis Parish&nbsp;Hall in&nbsp;Peterborough.
+
+          Please call the St&nbsp;Alphonsis Parish&nbsp;Office at 705-745-8623
+          to register and ensure&nbsp;seating.
+
+          Doors open at 6:30&nbsp;PM. Debate begins at 7:30&nbsp;PM.
+        location: St Alphonsis Parish Hall (810 Frank St)
+        time: 6:30 PM
+        ordinal: "1830"
   - date: 2019-10-04
     recurring: *friday
   - date: 2019-10-05
@@ -373,6 +388,15 @@ calendar:
         ordinal: "1800"
   - date: 2019-10-06
     recurring: *sunday
+    specials:
+      - title: Life Chain
+        descriptive: >
+          Please join us for this silent demonstration at the corner of
+          Lansdowne St and Monaghan Rd in Peterborough to display signs
+          reminding passers-by of the significance of the pro-life bttle.
+        location: Lansdowne St and Monaghan Rd
+        time: 2:00-4:00 PM
+        ordinal: "1400"
   - date: 2019-10-07
     recurring: *monday
     specials:
@@ -390,7 +414,14 @@ calendar:
   - date: 2019-10-13
     recurring: *sunday
   - date: 2019-10-14
+    note: "Thanksgiving. Office closed."
     recurring: *monday
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_thanksgiving
+        time: 9:00 AM
+        ordinal: "0900"
   - date: 2019-10-15
     recurring: *tuesday
   - date: 2019-10-16
@@ -401,11 +432,18 @@ calendar:
     recurring: *friday
   - date: 2019-10-19
     recurring: *saturday
+    specials:
+      - title: Cursillo Movement
+        descriptive: See Bulletin for more information.
+        location: St Alphonsis Parish Hall (810 Frank St)
+        time: 1:00-2:30 PM
+        ordinal: "1300"
   - date: 2019-10-20
     recurring: *sunday
     specials:
       - *syro_malabar_mass
   - date: 2019-10-21
+    note: Election day.
     recurring: *monday
     specials:
       - <<: *lifeteen
