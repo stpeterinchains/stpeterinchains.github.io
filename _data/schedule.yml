@@ -409,6 +409,15 @@ calendar:
     recurring: *thursday
   - date: 2019-10-11
     recurring: *friday
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_20191011
+        descriptive: |
+          Please note the **12:10&nbsp;PM** Weekday&nbsp;Mass is cancelled for today.
+
+          Our normal weekday schedule resumes next&nbsp;week.
+        time: 07:30 AM
   - date: 2019-10-12
     recurring: *saturday
   - date: 2019-10-13
