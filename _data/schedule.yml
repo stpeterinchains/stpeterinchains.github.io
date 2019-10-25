@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2019-09-01
-    latest:   2019-10-31
+    latest:   2019-11-30
 
 recurring:
   weekday_mass: &weekday_mass
@@ -103,6 +103,18 @@ recurring:
     location: Parish Boardroom (Rectory Office)
     time: 10:00-11:00 AM
     ordinal: "1000"
+  cwl: &cwl
+    mnemonic: cwl
+    title: Cathedral CWL Meeting
+    location: Parish Boardroom (Rectory Office)
+    time: 9:00 AM
+    ordinal: "0900"
+  koc: &koc
+    mnemonic: koc
+    title: Knights of Columbus Meeting
+    location: Bishop Doyle Hall
+    time: 7:00 PM
+    ordinal: "1900"
   lifeteen: &lifeteen
     mnemonic: lifeteen
     title: Lifeteen
@@ -121,6 +133,30 @@ recurring:
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
+  first_reconciliation_prep: &first_reconciliation_prep
+    mnemonic: first_reconciliation_prep
+    title: First Reconciliation Preparation
+    location: Bishop Doyle Hall
+    time: 10:00-11:15 AM
+    ordinal: "1000"
+  first_communion_prep: &first_communion_prep
+    mnemonic: first_communion_prep
+    title: First Communion Preparation
+    location: Bishop Doyle Hall
+    time: 10:00-11:15 AM
+    ordinal: "1000"
+  confirmation_prep: &confirmation_prep
+    mnemonic: confirmation_prep
+    title: Confirmation Preparation
+    location: Bishop Doyle Hall
+    time: 6:30-8:00 PM
+    ordinal: "1830"
+  rcia: &rcia
+    mnemonic: rcia
+    title: Rite of Christian&nbsp;Initiation for&nbsp;Adults
+    location: Parish Boardroom (Rectory Office)
+    time: 7:00-8:30 PM
+    ordinal: "1900"
 
 weekly:
   monday: &monday
@@ -156,15 +192,27 @@ season:
   easter: &easter
     title: Easter Triduum
     short: Easter
+    color: black
     bgcolor: yellow
-    color: black
   easter_octave: &easter_octave
-    title: Easter Octave
-    bgcolor: "#ffc"
+    title: Octave of Easter
+    short: Easter Octave
     color: black
+    bgcolor: "#ffc"
+  advent: &advent
+    title: Season of Advent
+    short: Advent
+    color: black
+    bgcolor: "#fcf"
+  nativity_octave: &nativity_octave
+    title: Octave of the Nativity
+    short: Nativity Octave
+    color: black
+    bgcolor: "#ff6"
 
 celebration:
   holy_week: &holy_week
+    title: Holy Week
     color: white
     bgcolor: purple
   maundy_thursday: &maundy_thursday
@@ -183,6 +231,14 @@ celebration:
     title: Resurrection Sunday
     color: white
     bgcolor: "#c33"
+  vigil_nativity: &vigil_nativity
+    title: Vigil of the Nativity
+    color: white
+    bgcolor: red
+  nativity: &nativity
+    title: Nativity of the Lord
+    color: white
+    bgcolor: red
 
 calendar:
   - date: 2019-09-01
@@ -279,7 +335,7 @@ calendar:
           at&nbsp;705-742-5466.
 
           **Pssst... Fr Tom will be singing!**
-        location: Immaculate Conception Church (386 Rogers St)
+        location: Immaculate Conception (386 Rogers St)
         time: 7:00 PM
         ordinal: "1900"
   - date: 2019-09-21
@@ -310,6 +366,8 @@ calendar:
       - <<: *lifeteen
   - date: 2019-09-24
     recurring: *tuesday
+    specials:
+      - <<: *confirmation_prep
   - date: 2019-09-25
     recurring: *wednesday
     specials:
@@ -365,10 +423,8 @@ calendar:
   - date: 2019-10-05
     recurring: *saturday
     specials:
-      - title: Cathedral CWL Meeting
-        location: Parish Boardroom (Rectory Office)
-        time: 9:00 AM
-        ordinal: "0900"
+      - <<: *cwl
+      - <<: *first_reconciliation_prep
       - title: >
           Movie Showing: Unplanned
         descriptive: |
@@ -423,7 +479,7 @@ calendar:
   - date: 2019-10-13
     recurring: *sunday
   - date: 2019-10-14
-    note: "Thanksgiving. Office closed."
+    note: Thanksgiving. Office closed.
     recurring: *monday
     exclusions: [ weekday_mass ]
     specials:
@@ -433,8 +489,12 @@ calendar:
         ordinal: "0900"
   - date: 2019-10-15
     recurring: *tuesday
+    specials:
+      - <<: *confirmation_prep
   - date: 2019-10-16
     recurring: *wednesday
+    specials:
+      - <<: *rcia
   - date: 2019-10-17
     recurring: *thursday
   - date: 2019-10-18
@@ -452,24 +512,47 @@ calendar:
     specials:
       - *syro_malabar_mass
   - date: 2019-10-21
-    note: Election day.
+    note: Election day. Office closed.
     recurring: *monday
     specials:
       - <<: *lifeteen
-      - title: Knights of Columbus Meeting
-        location: Bishop Doyle Hall
-        time: 7:00 PM
-        ordinal: "1900"
+      - <<: *koc
   - date: 2019-10-22
     recurring: *tuesday
   - date: 2019-10-23
     recurring: *wednesday
+    specials:
+      - <<: *rcia
   - date: 2019-10-24
     recurring: *thursday
   - date: 2019-10-25
     recurring: *friday
   - date: 2019-10-26
     recurring: *saturday
+    specials:
+      - <<: *first_reconciliation_prep
+      - title: Altar Server Appreciation
+        descriptive: |
+          All altar servers are invited to our annual Altar Server Appreciation
+          with Bishop Miehm.
+
+          Come for Mass, lunch, Altar Server Jeopardy, and dodgeball!
+
+          [Click here](https://www.ptbovocations.ca/servers) or
+          call 705-874-1871 for details.
+        location: St Alphonsis
+        time: 11:00 AM-3:00 PM
+        ordinal: "1100"
+      - title: Polish Dinner
+        descriptive: |
+          Come and enjoy a fantastic feast of roast pork, mashed potatoes,
+          mixed vegetables, perogies, and delicious Polish&nbsp;cakes!
+
+          Adult tickets are $15, children under 12 are $8, and children under 5 are
+          free. Call 705-742-5466 to&nbsp;reserve.
+        location: Immaculate Conception (386 Rogers St)
+        time: 6:00 PM
+        ordinal: "1800"
   - date: 2019-10-27
     recurring: *sunday
   - date: 2019-10-28
@@ -478,7 +561,214 @@ calendar:
       - <<: *edge
   - date: 2019-10-29
     recurring: *tuesday
+    specials:
+      - <<: *confirmation_prep
   - date: 2019-10-30
     recurring: *wednesday
   - date: 2019-10-31
     recurring: *thursday
+  - date: 2019-11-01
+    recurring: *friday
+  - date: 2019-11-02
+    recurring: *saturday
+    specials:
+      - title: All Saints Day Party
+        descriptive: |
+          The Parish Vocations Teams for St&nbsp;Joseph&nbsp;(Douro),
+          St&nbsp;Paul&nbsp;(Norwood), Our&nbsp;Lady of Mt&nbsp;Carmel&nbsp;(Hastings),
+          and Our&nbsp;Lady of Assumption&nbsp;(Otonabee)
+          invite everyone to their annual All&nbsp;Saints&nbsp;Day&nbsp;Party.
+
+          There will be a Saints costume contest, games, prizes, plus pizza and&nbsp;sundaes!
+
+          Please RSVP to 705-760-5411. See Bulletin for details.
+          Admission is&nbsp;free.
+        location: St Joseph Parish Hall (Douro)
+        time: 3:00-7:00 PM
+        ordinal: "1500"
+  - date: 2019-11-03
+    recurring: *sunday
+  - date: 2019-11-04
+    recurring: *monday
+  - date: 2019-11-05
+    recurring: *tuesday
+  - date: 2019-11-06
+    recurring: *wednesday
+  - date: 2019-11-07
+    recurring: *thursday
+  - date: 2019-11-08
+    recurring: *friday
+    specials:
+      - title: Carpenter&apos;s Cup Retreat
+        descriptive: |
+          The Carpenter&apos;s&nbsp;Cup&nbsp;Retreat invites young men of
+          high school age to a weekend of fellowship.
+          Listen to inspiring talks, and compete in accuracy
+          challenges (air rifles, archery) for a chance to win the&nbsp;Cup.
+
+          Registration is $50 for the weekend.
+          [Register here](www.ptbovocations.ca/carpenterscup)
+          or call&nbsp;705-874-1871.
+        location: John Paul II House (820 Frank St)
+        time: 6:00 PM
+        ordinal: "1800"
+  - date: 2019-11-09
+    recurring: *saturday
+    specials:
+      - title: Carpenter&apos;s Cup Retreat
+        location: John Paul II House (820 Frank St)
+        time: All day
+        ordinal: "0600"
+      - <<: *cwl
+  - date: 2019-11-10
+    recurring: *sunday
+    specials:
+      - title: Carpenter&apos;s Cup Retreat
+        location: John Paul II House (820 Frank St)
+        time: Morning until 1:00 PM
+        ordinal: "0600"
+  - date: 2019-11-11
+    recurring: *monday
+  - date: 2019-11-12
+    recurring: *tuesday
+  - date: 2019-11-13
+    recurring: *wednesday
+  - date: 2019-11-14
+    recurring: *thursday
+  - date: 2019-11-15
+    recurring: *friday
+  - date: 2019-11-16
+    recurring: *saturday
+    specials:
+      - <<: *first_reconciliation_prep
+  - date: 2019-11-17
+    recurring: *sunday
+  - date: 2019-11-18
+    recurring: *monday
+    specials:
+      - <<: *koc
+  - date: 2019-11-19
+    recurring: *tuesday
+    specials:
+      - <<: *confirmation_prep
+  - date: 2019-11-20
+    recurring: *wednesday
+  - date: 2019-11-21
+    recurring: *thursday
+  - date: 2019-11-22
+    recurring: *friday
+  - date: 2019-11-23
+    recurring: *saturday
+  - date: 2019-11-24
+    recurring: *sunday
+  - date: 2019-11-25
+    recurring: *monday
+  - date: 2019-11-26
+    recurring: *tuesday
+  - date: 2019-11-27
+    recurring: *wednesday
+  - date: 2019-11-28
+    recurring: *thursday
+  - date: 2019-11-29
+    recurring: *friday
+  - date: 2019-11-30
+    recurring: *saturday
+  - date: 2019-12-01
+    season: *advent
+    recurring: *sunday
+  - date: 2019-12-02
+    season: *advent
+    recurring: *monday
+  - date: 2019-12-03
+    season: *advent
+    recurring: *tuesday
+    specials:
+      - <<: *confirmation_prep
+  - date: 2019-12-04
+    season: *advent
+    recurring: *wednesday
+  - date: 2019-12-05
+    season: *advent
+    recurring: *thursday
+  - date: 2019-12-06
+    season: *advent
+    recurring: *friday
+  - date: 2019-12-07
+    season: *advent
+    recurring: *saturday
+  - date: 2019-12-08
+    season: *advent
+    recurring: *sunday
+  - date: 2019-12-09
+    season: *advent
+    recurring: *monday
+  - date: 2019-12-10
+    season: *advent
+    recurring: *tuesday
+  - date: 2019-12-11
+    season: *advent
+    recurring: *wednesday
+  - date: 2019-12-12
+    season: *advent
+    recurring: *thursday
+  - date: 2019-12-13
+    season: *advent
+    recurring: *friday
+  - date: 2019-12-14
+    season: *advent
+    recurring: *saturday
+  - date: 2019-12-15
+    season: *advent
+    recurring: *sunday
+  - date: 2019-12-16
+    season: *advent
+    recurring: *monday
+  - date: 2019-12-17
+    season: *advent
+    recurring: *tuesday
+  - date: 2019-12-18
+    season: *advent
+    recurring: *wednesday
+  - date: 2019-12-19
+    season: *advent
+    recurring: *thursday
+  - date: 2019-12-20
+    season: *advent
+    recurring: *friday
+  - date: 2019-12-21
+    season: *advent
+    recurring: *saturday
+  - date: 2019-12-22
+    season: *advent
+    recurring: *sunday
+  - date: 2019-12-23
+    season: *advent
+    recurring: *monday
+  - date: 2019-12-24
+    season: *nativity_octave
+    celebration: *vigil_nativity
+    recurring: *tuesday
+  - date: 2019-12-25
+    season: *nativity_octave
+    celebration: *nativity
+    recurring: *wednesday
+  - date: 2019-12-26
+    season: *nativity_octave
+    recurring: *thursday
+  - date: 2019-12-27
+    season: *nativity_octave
+    recurring: *friday
+  - date: 2019-12-28
+    season: *nativity_octave
+    recurring: *saturday
+  - date: 2019-12-29
+    season: *nativity_octave
+    recurring: *sunday
+  - date: 2019-12-30
+    season: *nativity_octave
+    recurring: *monday
+    specials:
+      - <<: *first_reconciliation_prep
+  - date: 2019-12-31
+    season: *nativity_octave
+    recurring: *tuesday
