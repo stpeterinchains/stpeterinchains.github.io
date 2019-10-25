@@ -135,19 +135,19 @@ recurring:
     ordinal: "1830"
   first_reconciliation_prep: &first_reconciliation_prep
     mnemonic: first_reconciliation_prep
-    title: First Reconciliation Preparation
+    title: First Reconciliation Preparation Class
     location: Bishop Doyle Hall
     time: 10:00-11:15 AM
     ordinal: "1000"
   first_communion_prep: &first_communion_prep
     mnemonic: first_communion_prep
-    title: First Communion Preparation
+    title: First Communion Preparation Class
     location: Bishop Doyle Hall
     time: 10:00-11:15 AM
     ordinal: "1000"
   confirmation_prep: &confirmation_prep
     mnemonic: confirmation_prep
-    title: Confirmation Preparation
+    title: Confirmation Preparation Class
     location: Bishop Doyle Hall
     time: 6:30-8:00 PM
     ordinal: "1830"
@@ -182,6 +182,54 @@ weekly:
     - *mother_perpetual_help
   sunday: &sunday
     - *sunday_mass
+  monday_november: &monday_november
+    - *weekday_mass
+  tuesday_november: &tuesday_november
+    - *weekday_mass
+  wednesday_november: &wednesday_november
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_november: &thursday_november
+    - *weekday_mass
+  friday_november: &friday_november
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_november: &saturday_november
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_november: &sunday_november
+    - *sunday_mass
+  monday_december: &monday_december
+    - *weekday_mass
+  tuesday_december: &tuesday_december
+    - *weekday_mass
+  wednesday_december: &wednesday_december
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_december: &thursday_december
+    - *weekday_mass
+  friday_december: &friday_december
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_december: &saturday_december
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_december: &sunday_december
+    - *sunday_mass
+
+
 
 season:
   lent: &lent
@@ -470,10 +518,10 @@ calendar:
       - <<: *weekday_mass
         mnemonic: weekday_mass_20191011
         descriptive: |
-          Please note the **12:10&nbsp;PM** Weekday&nbsp;Mass is cancelled for today.
+          Please note the **12:10&nbsp;PM** Weekday&nbsp;Mass is cancelled for&nbsp;today.
 
           Our normal weekday schedule resumes next&nbsp;week.
-        time: 07:30 AM
+        time: 7:30 AM
   - date: 2019-10-12
     recurring: *saturday
   - date: 2019-10-13
@@ -568,9 +616,11 @@ calendar:
   - date: 2019-10-31
     recurring: *thursday
   - date: 2019-11-01
-    recurring: *friday
+    note: All Saints Day
+    recurring: *friday_november
   - date: 2019-11-02
-    recurring: *saturday
+    note: All Souls Day
+    recurring: *saturday_november
     specials:
       - title: All Saints Day Party
         descriptive: |
@@ -587,17 +637,25 @@ calendar:
         time: 3:00-7:00 PM
         ordinal: "1500"
   - date: 2019-11-03
-    recurring: *sunday
+    recurring: *sunday_november
+    specials:
+      - title: St Hubertus Latin Mass
+        time: 4:00 PM
+        ordinal: "1600"
   - date: 2019-11-04
-    recurring: *monday
+    recurring: *monday_november
+    specials:
+      - <<: *lifeteen
   - date: 2019-11-05
-    recurring: *tuesday
+    recurring: *tuesday_november
   - date: 2019-11-06
-    recurring: *wednesday
+    recurring: *wednesday_november
+    specials:
+      - <<: *rcia
   - date: 2019-11-07
-    recurring: *thursday
+    recurring: *thursday_november
   - date: 2019-11-08
-    recurring: *friday
+    recurring: *friday_november
     specials:
       - title: Carpenter&apos;s Cup Retreat
         descriptive: |
@@ -613,7 +671,7 @@ calendar:
         time: 6:00 PM
         ordinal: "1800"
   - date: 2019-11-09
-    recurring: *saturday
+    recurring: *saturday_november
     specials:
       - title: Carpenter&apos;s Cup Retreat
         location: John Paul II House (820 Frank St)
@@ -621,154 +679,191 @@ calendar:
         ordinal: "0600"
       - <<: *cwl
   - date: 2019-11-10
-    recurring: *sunday
+    recurring: *sunday_november
     specials:
       - title: Carpenter&apos;s Cup Retreat
         location: John Paul II House (820 Frank St)
         time: Morning until 1:00 PM
         ordinal: "0600"
   - date: 2019-11-11
-    recurring: *monday
+    note: Remembrance Day
+    recurring: *monday_november
+    specials:
+      - <<: *edge
   - date: 2019-11-12
-    recurring: *tuesday
+    recurring: *tuesday_november
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_20191112
+        descriptive:
+          Please note that only the **7:30&nbsp;AM** Weekday&nbsp;Mass is
+          scheduled today. Mass at **12:10&nbsp;PM** cancelled.
+        time: 7:30 PM
   - date: 2019-11-13
-    recurring: *wednesday
+    recurring: *wednesday_november
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_20191113
+        descriptive: Weekday&nbsp;Mass cancelled today.
+        time: Cancelled
+      - <<: *rcia
+        mnemonic: rcia_20191113
+        descriptive: RCIA cancelled today.
+        time: Cancelled
   - date: 2019-11-14
-    recurring: *thursday
+    recurring: *thursday_november
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_20191114
+        descriptive: Weekday&nbsp;Mass cancelled today.
+        time: Cancelled
   - date: 2019-11-15
-    recurring: *friday
+    recurring: *friday_november
   - date: 2019-11-16
-    recurring: *saturday
+    recurring: *saturday_november
     specials:
       - <<: *first_reconciliation_prep
   - date: 2019-11-17
-    recurring: *sunday
-  - date: 2019-11-18
-    recurring: *monday
+    recurring: *sunday_november
     specials:
+      - *syro_malabar_mass
+  - date: 2019-11-18
+    recurring: *monday_november
+    specials:
+      - <<: *lifeteen
       - <<: *koc
   - date: 2019-11-19
-    recurring: *tuesday
+    recurring: *tuesday_november
     specials:
       - <<: *confirmation_prep
   - date: 2019-11-20
-    recurring: *wednesday
+    recurring: *wednesday_november
+    specials:
+      - <<: *rcia
   - date: 2019-11-21
-    recurring: *thursday
+    recurring: *thursday_november
   - date: 2019-11-22
-    recurring: *friday
+    recurring: *friday_november
   - date: 2019-11-23
-    recurring: *saturday
+    recurring: *saturday_november
   - date: 2019-11-24
-    recurring: *sunday
+    note: Christ the King
+    recurring: *sunday_november
   - date: 2019-11-25
-    recurring: *monday
+    recurring: *monday_november
+    specials:
+      - <<: *edge
   - date: 2019-11-26
-    recurring: *tuesday
+    recurring: *tuesday_november
   - date: 2019-11-27
-    recurring: *wednesday
+    recurring: *wednesday_november
+    specials:
+      - <<: *rcia
   - date: 2019-11-28
-    recurring: *thursday
+    recurring: *thursday_november
   - date: 2019-11-29
-    recurring: *friday
+    recurring: *friday_november
   - date: 2019-11-30
-    recurring: *saturday
+    recurring: *saturday_november
   - date: 2019-12-01
     season: *advent
-    recurring: *sunday
+    recurring: *sunday_december
   - date: 2019-12-02
     season: *advent
-    recurring: *monday
+    recurring: *monday_december
   - date: 2019-12-03
     season: *advent
-    recurring: *tuesday
+    recurring: *tuesday_december
     specials:
       - <<: *confirmation_prep
   - date: 2019-12-04
     season: *advent
-    recurring: *wednesday
+    recurring: *wednesday_december
   - date: 2019-12-05
     season: *advent
-    recurring: *thursday
+    recurring: *thursday_december
   - date: 2019-12-06
     season: *advent
-    recurring: *friday
+    recurring: *friday_december
   - date: 2019-12-07
     season: *advent
-    recurring: *saturday
+    recurring: *saturday_december
   - date: 2019-12-08
     season: *advent
-    recurring: *sunday
+    recurring: *sunday_december
   - date: 2019-12-09
     season: *advent
-    recurring: *monday
+    recurring: *monday_december
   - date: 2019-12-10
     season: *advent
-    recurring: *tuesday
+    recurring: *tuesday_december
   - date: 2019-12-11
     season: *advent
-    recurring: *wednesday
+    recurring: *wednesday_december
   - date: 2019-12-12
     season: *advent
-    recurring: *thursday
+    recurring: *thursday_december
   - date: 2019-12-13
     season: *advent
-    recurring: *friday
+    recurring: *friday_december
   - date: 2019-12-14
     season: *advent
-    recurring: *saturday
+    recurring: *saturday_december
   - date: 2019-12-15
     season: *advent
-    recurring: *sunday
+    recurring: *sunday_december
   - date: 2019-12-16
     season: *advent
-    recurring: *monday
+    recurring: *monday_december
   - date: 2019-12-17
     season: *advent
-    recurring: *tuesday
+    recurring: *tuesday_december
   - date: 2019-12-18
     season: *advent
-    recurring: *wednesday
+    recurring: *wednesday_december
   - date: 2019-12-19
     season: *advent
-    recurring: *thursday
+    recurring: *thursday_december
   - date: 2019-12-20
     season: *advent
-    recurring: *friday
+    recurring: *friday_december
   - date: 2019-12-21
     season: *advent
-    recurring: *saturday
+    recurring: *saturday_december
   - date: 2019-12-22
     season: *advent
-    recurring: *sunday
+    recurring: *sunday_december
   - date: 2019-12-23
     season: *advent
-    recurring: *monday
+    recurring: *monday_december
   - date: 2019-12-24
     season: *nativity_octave
     celebration: *vigil_nativity
-    recurring: *tuesday
+    recurring: *tuesday_december
   - date: 2019-12-25
     season: *nativity_octave
     celebration: *nativity
-    recurring: *wednesday
+    recurring: *wednesday_december
   - date: 2019-12-26
     season: *nativity_octave
-    recurring: *thursday
+    recurring: *thursday_december
   - date: 2019-12-27
     season: *nativity_octave
-    recurring: *friday
+    recurring: *friday_december
   - date: 2019-12-28
     season: *nativity_octave
-    recurring: *saturday
+    recurring: *saturday_december
   - date: 2019-12-29
     season: *nativity_octave
-    recurring: *sunday
+    recurring: *sunday_december
   - date: 2019-12-30
     season: *nativity_octave
-    recurring: *monday
+    recurring: *monday_december
     specials:
       - <<: *first_reconciliation_prep
   - date: 2019-12-31
     season: *nativity_octave
-    recurring: *tuesday
+    recurring: *tuesday_december
