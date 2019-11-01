@@ -13,6 +13,18 @@ issues:
     months:
 
       -
+        month: November
+        bulletins:
+          -
+            date: 3
+            title: Thirty-First Sunday in&nbsp;Ordinary&nbsp;Time
+            link: https://drive.google.com/file/d/16PltOdGaeAeSEcZYhGF_eAYwyoZxWeY2/view
+            inserts:
+              -
+                title: Perpetual Fund Poster
+                link: https://drive.google.com/file/d/16ZGUhzRXUwbyEY989RFNY6rRCJrwc2n5/view
+
+      -
         month: October
         bulletins:
           -
