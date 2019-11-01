@@ -640,6 +640,13 @@ calendar:
     recurring: *sunday_november
     specials:
       - title: St Hubertus Latin Mass
+        descriptive: |
+          This Solemn High Mass, in honour of St&nbsp;Hubertus, patron saint of
+          hunters, will be celebrated by Fr&nbsp;Eric&nbsp;Mason.
+
+          A reception following the Mass will be held in the Rectory.
+          All are&nbsp;welcome.
+        color: "#933"
         time: 4:00 PM
         ordinal: "1600"
   - date: 2019-11-04
@@ -749,6 +756,11 @@ calendar:
     recurring: *friday_november
   - date: 2019-11-23
     recurring: *saturday_november
+    specials:
+      - title: CWL Christmas Bazaar
+        location: Bishop Doyle Hall
+        time: 10:00 AM-3:00 PM
+        ordinal: "1000"
   - date: 2019-11-24
     note: Christ the King
     recurring: *sunday_november
