@@ -1,0 +1,27 @@
+---
+mnemonic: legal
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Legal
+open_graph_title: >
+  The legal boilerplate for the website of
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  Our terms of use, privacy policy, and cookie policy.
+---
+
+{% assign legal = site.data.legal %}
+
+<section id="legal">
+  <h1 class="page-title">{{ legal.title }}</h1>
+  <div class="page-descriptive markdown">{{ legal.descriptive | markdownify }}</div>
+  {% for declaration in legal.declarations %}
+    <section>
+      <h1 class="legal-title">{{ declaration.title }}</h1>
+      <div class="legal-statement markdown">
+        {{ declaration.statement | markdownify }}
+      </div>
+    </section>
+  {% endfor %}
+</section>

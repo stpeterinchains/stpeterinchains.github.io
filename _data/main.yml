@@ -150,3 +150,17 @@ navbar:
       -
         title: The Vatican
         url: http://w2.vatican.va/content/vatican/en.html
+  -
+    title: Site
+    links:
+      -
+        title: Legal
+        url: /legal.html
+      -
+        title: License
+        url: http://creativecommons.org/licenses/by-nc-nd/4.0/
+      -
+        title: Source
+        url: https://github.com/stpeterinchains/stpeterinchains.github.io
+
+
