@@ -672,7 +672,7 @@ calendar:
           challenges (air rifles, archery) for a chance to win the&nbsp;Cup.
 
           Registration is $50 for the weekend.
-          [Register here](www.ptbovocations.ca/carpenterscup)
+          [Register here](https://www.ptbovocations.ca/carpenterscup)
           or call&nbsp;705-874-1871.
         location: John Paul II House (820 Frank St)
         time: 6:00 PM
@@ -691,7 +691,7 @@ calendar:
       - title: Carpenter&apos;s Cup Retreat
         location: John Paul II House (820 Frank St)
         time: Morning until 1:00 PM
-        ordinal: "0600"
+        ordinal: "1300"
   - date: 2019-11-11
     note: Remembrance Day
     recurring: *monday_november
@@ -704,7 +704,7 @@ calendar:
       - <<: *weekday_mass
         mnemonic: weekday_mass_20191112
         descriptive:
-          Please note that only the **7:30&nbsp;AM** Weekday&nbsp;Mass is
+          Please note only the **7:30&nbsp;AM** Weekday&nbsp;Mass is
           scheduled today. Mass at **12:10&nbsp;PM** cancelled.
         time: 7:30 PM
   - date: 2019-11-13
@@ -824,6 +824,8 @@ calendar:
   - date: 2019-12-14
     season: *advent
     recurring: *saturday_december
+    specials:
+      - <<: *cwl
   - date: 2019-12-15
     season: *advent
     recurring: *sunday_december
