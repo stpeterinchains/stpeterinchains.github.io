@@ -18,8 +18,8 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2019-09-01
-    latest:   2019-11-30
+    earliest: 2019-10-01
+    latest:   2019-12-31
 
 recurring:
   weekday_mass: &weekday_mass
@@ -764,6 +764,16 @@ calendar:
   - date: 2019-11-24
     note: Christ the King
     recurring: *sunday_november
+    specials:
+      - title: Chirstmas Turkey Dinner
+        descriptive: |
+          Join us for a delicious home cooked turkey supper with all the trimming.
+
+          Please call Jan at 705-868-6307 for tickets.
+          Adults,&nbsp;$18. Children (ages 6-10&nbsp;years), $8.
+        location: Sacred Heart Parish Hall (208 Romaine St)
+        time: 5:00 PM
+        ordinal: "1700"
   - date: 2019-11-25
     recurring: *monday_november
     specials:
@@ -780,6 +790,8 @@ calendar:
     recurring: *friday_november
   - date: 2019-11-30
     recurring: *saturday_november
+    specials:
+      - <<: *first_reconciliation_prep
   - date: 2019-12-01
     season: *advent
     recurring: *sunday_december
@@ -806,6 +818,22 @@ calendar:
   - date: 2019-12-08
     season: *advent
     recurring: *sunday_december
+    specials:
+      - title: >
+          Movie Showing: Unplanned
+        descriptive: |
+          See the movie that has changed hearts, the movie secular Hollywood
+          does not want you to see.
+
+          The movie will be shown in the Church Hall of
+          St&nbsp;Paul&nbsp;the&nbsp;Apostle in Lakefield. It will be featured
+          at no charge, but a free-will offering will be greatly accepted.
+          The evening will include light refreshments.
+
+          For information, contact the St&nbsp;Paul Parish&nbsp;Office at 705-652-3095.
+        location: St Paul the Apostle (Lakefield)
+        time: 6:30 PM
+        ordinal: "1830"
   - date: 2019-12-09
     season: *advent
     recurring: *monday_december
@@ -876,8 +904,6 @@ calendar:
   - date: 2019-12-30
     season: *nativity_octave
     recurring: *monday_december
-    specials:
-      - <<: *first_reconciliation_prep
   - date: 2019-12-31
     season: *nativity_octave
     recurring: *tuesday_december
