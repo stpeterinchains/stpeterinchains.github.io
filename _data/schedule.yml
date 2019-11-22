@@ -157,6 +157,12 @@ recurring:
     location: Parish Boardroom (Rectory Office)
     time: 7:00-8:30 PM
     ordinal: "1900"
+  choir_practice: &choir_practice
+    mnemonic: choir_practice
+    title: Cathedral Choir Practice
+    descriptive: All are welcome to join and participate.
+    time: 4:30 PM
+    ordinal: "1630"
 
 weekly:
   monday: &monday
@@ -209,6 +215,7 @@ weekly:
     - *weekday_mass
   tuesday_december: &tuesday_december
     - *weekday_mass
+    - *choir_practice
   wednesday_december: &wednesday_december
     - *weekday_mass
     - *reflections
@@ -765,12 +772,13 @@ calendar:
     note: Christ the King
     recurring: *sunday_november
     specials:
-      - title: Chirstmas Turkey Dinner
+      - *syro_malabar_mass
+      - title: Christmas Turkey Dinner
         descriptive: |
           Join us for a delicious home cooked turkey supper with all the trimming.
 
-          Please call Jan at 705-868-6307 for tickets.
-          Adults,&nbsp;$18. Children (ages 6-10&nbsp;years), $8.
+          For tickets, call Jan at 705-868-6307.
+          Adults $18. Children (ages 6-10&nbsp;years) $8.
         location: Sacred Heart Parish Hall (208 Romaine St)
         time: 5:00 PM
         ordinal: "1700"
@@ -780,6 +788,18 @@ calendar:
       - <<: *edge
   - date: 2019-11-26
     recurring: *tuesday_november
+    specials:
+      - title: Relic of Saint Peregrine
+        descriptive: |
+
+          Mass will be celebrated at 6:00 PM, followed by anointing of the sick
+          and blessings with the relic.
+
+          For those suffering from cancer and cancer survivors.
+          Please invite anyone who has been effected by cancer.
+        location: Immaculate Conception (356 Rogers St)
+        time: 6:00 PM
+        ordinal: "1800"
   - date: 2019-11-27
     recurring: *wednesday_november
     specials:
@@ -793,11 +813,34 @@ calendar:
     specials:
       - <<: *first_reconciliation_prep
   - date: 2019-12-01
+    note: First day of Advent
     season: *advent
     recurring: *sunday_december
+    specials:
+      - title: Knights of Columbus Christmas Party
+        descriptive: |
+          The Knights of Columbus Councils 798 and 9873 are holding their
+          annual Chistmas Party. Refreshments, music, and gifts for children.
+
+          Parents are asked to signup for their children in advance.
+          The party will start following 10:30 Mass.
+        location: Bishop Doyle Hall
+        time: 11:30 AM
+        ordinal: "1130"
+      - title: Third Annual Fashion Show
+        descriptive: |
+          Models will wear Alia 'n Tanjay apparel. Ladies invited!
+
+          Tickets $15. After the show, tickets are redeemable at the store
+          for 30% off purchases up to $100.
+        location: Immaculate Conception (356 Rogers St)
+        time: 2:00-4:00 PM
+        ordinal: "1400"
   - date: 2019-12-02
     season: *advent
     recurring: *monday_december
+    specials:
+      - <<: *lifeteen
   - date: 2019-12-03
     season: *advent
     recurring: *tuesday_december
