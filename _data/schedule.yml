@@ -160,7 +160,12 @@ recurring:
   choir_practice: &choir_practice
     mnemonic: choir_practice
     title: Cathedral Choir Practice
-    descriptive: All are welcome to join and participate.
+    descriptive: |
+      Christmas is coming, and the Choir is always looking for new members!
+      No previous experience or ability to read music required.
+
+      Just bring your enthusiasm and desire to sing.
+      Practice meets inside the Cathedral.
     time: 4:30 PM
     ordinal: "1630"
 
