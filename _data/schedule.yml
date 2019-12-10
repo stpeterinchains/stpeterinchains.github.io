@@ -249,58 +249,58 @@ weekly:
 
 season:
   lent: &lent
-    title: Season&nbsp;of&nbsp;Lent
+    title: Season of Lent
     short: Lent
     color: white
     bgcolor: "#dac"
   easter: &easter
-    title: Easter&nbsp;Triduum
+    title: Easter Triduum
     short: Easter
     color: black
     bgcolor: yellow
   easter_octave: &easter_octave
-    title: Octave&nbsp;of&nbsp;Easter
+    title: Octave of Easter
     short: Easter Octave
     color: black
     bgcolor: "#ffc"
   advent: &advent
-    title: Season&nbsp;of&nbsp;Advent
+    title: Season of Advent
     short: Advent
     color: black
     bgcolor: "#fcf"
   nativity_octave: &nativity_octave
-    title: Octave&nbsp;of&nbsp;the&nbsp;Nativity
+    title: Octave of the Nativity
     short: Nativity Octave
     color: black
     bgcolor: "#fc6"
 
 celebration:
   holy_week: &holy_week
-    title: Holy&nbsp;Week
+    title: Holy Week
     color: white
     bgcolor: purple
   maundy_thursday: &maundy_thursday
-    title: Maundy&nbsp;Thursday
+    title: Maundy Thursday
     color: black
     bgcolor: gold
   good_friday: &good_friday
-    title: Good&nbsp;Friday
+    title: Good Friday
     color: white
     bgcolor: "#c33"
   black_saturday: &black_saturday
-    title: Holy&nbsp;Saturday
+    title: Holy Saturday
     color: white
     bgcolor: "#666"
   easter_sunday: &easter_sunday
-    title: Resurrection&nbsp;Sunday
+    title: Resurrection Sunday
     color: white
     bgcolor: "#c33"
   vigil_nativity: &vigil_nativity
-    title: Vigil&nbsp;of&nbsp;the&nbsp;Nativity
+    title: Vigil of the Nativity
     color: white
     bgcolor: "#c33"
   nativity: &nativity
-    title: The&nbsp;Nativity&nbsp;of&nbsp;the&nbsp;Lord
+    title: Nativity of the Lord
     color: white
     bgcolor: "#c33"
   nativity_feast: &nativity_feast
@@ -585,7 +585,11 @@ calendar:
     season: *advent
     recurring: *wednesday_december
     specials:
-      - *rcia
+      - <<: *rcia
+        time: Cancelled
+        descriptive: >
+          Please note the RCIA meeting scheduled for this evening is cancelled.
+          Our regular RCIA meetings will resume in the new&nbsp;year.
   - date: 2019-12-12
     season: *advent
     recurring: *thursday_december
@@ -635,6 +639,7 @@ calendar:
     season: *advent
     recurring: *sunday_december
   - date: 2019-12-23
+    note: Office closes at 12:00 PM for the Christmas Holiday.
     season: *advent
     recurring: *monday_december
     specials:
@@ -645,6 +650,7 @@ calendar:
         time: 9:00 AM-9:00 PM
         ordinal: "0900"
   - date: 2019-12-24
+    note: Office closed.
     season: *nativity_octave
     celebration: *vigil_nativity
     recurring: *tuesday_december
@@ -672,6 +678,7 @@ calendar:
         time: 4:00 PM, 8:00 PM, Midnight
         ordinal: "1600"
   - date: 2019-12-25
+    note: Office closed.
     season: *nativity_octave
     celebration: *nativity
     recurring: *wednesday_december
@@ -690,11 +697,12 @@ calendar:
         time: 10:00 AM
         ordinal: "1000"
   - date: 2019-12-26
+    note: Office closed.
     note: Boxing Day
     season: *nativity_octave
     celebration:
       <<: *nativity_feast
-      title: Feast&nbsp;of&nbsp;Saint&nbsp;Stephen
+      title: Feast of Saint Stephen
     recurring: *thursday_december
     exclusions: [ weekday_mass ]
     specials:
@@ -708,10 +716,11 @@ calendar:
         time: 9:00 AM
         ordinal: "0900"
   - date: 2019-12-27
+    note: Office closed.
     season: *nativity_octave
     celebration:
       <<: *nativity_feast
-      title: Feast&nbsp;of&nbsp;Saint&nbsp;John
+      title: Feast of Saint John
     recurring: *friday_december
     exclusions: [ weekday_mass ]
     specials:
@@ -721,13 +730,13 @@ calendar:
     season: *nativity_octave
     celebration:
       <<: *nativity_feast
-      title: Feast&nbsp;of&nbsp;the&nbsp;Holy&nbsp;Innocents
+      title: Feast of the Holy Innocents
     recurring: *saturday_december
   - date: 2019-12-29
     season: *nativity_octave
     celebration:
       <<: *nativity_feast
-      title: Feast&nbsp;of&nbsp;the&nbsp;Holy&nbsp;Family
+      title: Feast of the Holy Family
     recurring: *sunday_december
   - date: 2019-12-30
     season: *nativity_octave
