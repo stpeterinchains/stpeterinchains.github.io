@@ -106,6 +106,9 @@ recurring:
   cwl: &cwl
     mnemonic: cwl
     title: Cathedral CWL Meeting
+    descriptive: >
+      We meet following Saturday morning Mass.
+      New members always welcome!
     location: Parish Boardroom (Rectory Office)
     time: 9:00 AM
     ordinal: "0900"
@@ -638,6 +641,14 @@ calendar:
   - date: 2019-12-22
     season: *advent
     recurring: *sunday_december
+    specials:
+      - title: Christmas Church Decoration
+        descriptive: |
+          Volunteers are invited to help decoration the Cathedral.
+
+          Lots to be done, but *many hands make light work!*
+        time: 4:00 PM
+        ordinal: "1600"
   - date: 2019-12-23
     note: Office closes at 12:00 PM for the Christmas Holiday.
     season: *advent
