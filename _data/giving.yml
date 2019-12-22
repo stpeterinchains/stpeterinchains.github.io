@@ -1,0 +1,47 @@
+---
+
+title: Ways to Give
+descriptive: |
+  In addition to the traditional offeratory during Holy&nbsp;Mass,
+  please consider supporting **The&nbsp;Cathedral** through electronic donations
+  using your mobile&nbsp;device or&nbsp;computer.
+
+provider:
+  name: Tithe.ly
+  logo: tithely-logo.png
+  link: https://get.tithe.ly
+
+online:
+  title: Give Online
+  descriptive: |
+    Click below to make a one-time donation to **The&nbsp;Cathedral** or
+    to signup as a regular donor.
+    As a registered users, you can make convenient one-time donations anytime,
+    or setup recurring&nbsp;donations.
+
+text:
+  title: Text to Give
+  descriptive: |
+    To get started, text the word **give** to
+
+    *855-937-0501*
+
+    You&apos;ll receive a reply with instructions to help get you setup.
+    After your mobile number is linked, you can make donations anytime simply
+    by texting the amount you wish to&nbsp;give.
+  number: 855-937-0501
+
+apps:
+  title: Giving Apps
+  descriptive: |
+    Donate using the Tithe.ly app for your **iOS** or **Android** device.
+
+    To get started, download the app for your device. Open the app to register.
+    Please be sure to select **The Cathedral of Saint Peter-in-Chains** as the
+    church you wish to support.
+  ios:
+    logo: apple-app-store-logo.png
+    link: https://itunes.apple.com/us/app/tithe-ly/id694740700?mt=8
+  android:
+    logo: google-play-logo.png
+    link: https://play.google.com/store/apps/details?id=ly.tithe.tithely

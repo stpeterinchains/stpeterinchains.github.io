@@ -1,16 +1,23 @@
 ---
 
-welcome:
-  title: >
-    Rediscover&nbsp;faith,
-    and&nbsp;a&nbsp;loving&nbsp;community
-  message: >
-    Whether you're a life-long&nbsp;Christian, curious about the
-    Catholic&nbsp;faith, or have heard the whisper of the *Holy&nbsp;Spirit*
-    in your life and want to know more about *Christ*&apos;s&nbsp;message,
-    our beautiful Cathedral is a welcoming&nbsp;place for&nbsp;everyone.
-    Come,&nbsp;attend a mass or one of our devotions or other faith events.
-    **Everyone&nbsp;is&nbsp;welcome.**
+site_source: &site_source
+  https://github.com/stpeterinchains/stpeterinchains.github.io
+
+banner:
+  heading:
+    diocese:
+      title: Roman Catholic Diocese of Peterborough
+      image: diocese-logo.png
+      link: https://www.peterboroughdiocese.org/en/index.aspx
+    stpeter:
+      title: Cathedral of Saint Peter-in-Chains
+      image: stpeter-logo.png
+      link: /
+    donate:
+      title: Donate
+      link: /giving.html
+  message:
+    title: Rediscover faith, and a loving community
 
 slideshow:
   -
@@ -112,11 +119,11 @@ navbar:
         mnemonic: sacraments
         url: /sacraments.html
   -
-    title: Donate
+    title: Giving
     links:
       -
         title: The Cathedral of Saint&nbsp;Peter&#x2011;in&#x2011;Chains
-        url: https://www.peterboroughdiocese.org/en/get-involved/donate.aspx
+        url: /giving.html
       -
         title: Cathedral Perpetual&nbsp;Fund
         url: https://cathedralperpetualfund.ca/
@@ -161,6 +168,4 @@ navbar:
         url: http://creativecommons.org/licenses/by-nc-nd/4.0/
       -
         title: Source
-        url: https://github.com/stpeterinchains/stpeterinchains.github.io
-
-
+        url: *site_source

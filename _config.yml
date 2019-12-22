@@ -10,7 +10,9 @@ scripts_path:          /scripts/
 forms_path:            /forms/
 documents_path:        /documents/
 images_path:           /images/
+banner_images_path:    /images/banner/
 slideshow_images_path: /images/slideshow/
+giving_images_path:    /images/giving/
 social_images_path:    /images/social/
 schedule_images_path:  /images/schedule/
 bulletin_images_path:  /images/bulletins/

@@ -109,112 +109,72 @@ div.markdown td { font-weight: 300; }
 {% endif %}
 
 
-
-/* SECTION: BANNER */
-
-#banner {
-  width: 100%;
-  padding: 0.5rem 0;
-  text-align: center;
-  background-color: #c33;
-}
-
-#banner-logo {
-  display: block;
-  height: 60px;
-  margin: 0 auto;
-}
-
-#banner-title > div:nth-child(1) {
-  position: relative; top: 0.85rem;
-  font-weight: 300; font-size: 1rem; letter-spacing: -0.05rem;
-  color: rgba(255,255,255,0.7); text-shadow: -1px 1px 2px #666;
-}
-
-#banner-title > div:nth-child(2) {
-  position: relative; top: 0.1rem;
-  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.1rem;
-  color: rgba(255,255,255,0.8); text-shadow: -1px 1px 2px #666;
-}
-
-#banner-title > div:nth-child(2) > span {
-  font-weight: 400; font-size: 2rem; letter-spacing: -0.1rem;
-  color: white; text-shadow: -1px 1px 2px #333;
-}
-
-#banner-title > div:nth-child(3) {
-  position: relative; top: -0.25rem;
-  font-weight: 300; font-size: 0.75rem;
-  color: rgba(255,255,255,0.7);
-}
-
-@media screen and (min-width: 35.5rem) {
-  #banner { height: 84px; }
-
-  #banner-logo {
-    display: inline;
-    height: 80px;
-    margin: 0 0.5rem 0 0;
-  }
-
-  #banner-title {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-  }
-
-  #banner-title > div:nth-child(1) { font-size: 0.85rem; }
-  #banner-title > div:nth-child(2) { font-size: 2rem; }
-  #banner-title > div:nth-child(2) > span { font-size: 2.5rem; }
-
-  #banner-title > div:nth-child(3) {
-    right: 2rem;
-    font-size: 0.65rem;
-    text-align: right;
-  }
-}
-
-
-/* SECTION: WELCOME */
-
-#welcome {
-  padding: 1rem 0;
-  text-align: center;
-  background-color: #c33;
-}
-
-#welcome-title {
-  margin: 0 5%;
-  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
-  color: white; text-shadow: -1px 1px 2px #333;
-}
-
-#welcome-message {
-  margin: 0.5rem 5% 0 5%;
-  color: rgba(255,255,255,0.75);
-}
-
-#welcome-message > p { font-size: 1rem; }
-
-#welcome-message em { color: white; font-style: normal; }
-#welcome-message strong { font-weight: 400; color: white; }
-
-@media screen and (min-width: 48rem) { #welcome-message { margin: 0.5rem 10%; } }
-@media screen and (min-width: 64rem) { #welcome-message { margin: 0.5rem 15%; } }
-@media screen and (min-width: 80rem) { #welcome-message { margin: 0.5rem 20%; } }
-
-
 /* SECTION: SLIDESHOW */
 
-#slideshow {
-  position: relative;
-  cursor: default;
+#slideshow { position: relative; cursor: default; }
+
+#slideshow-banner {
+  background: linear-gradient(to bottom, black, #444);
+  text-align: center;
 }
 
-#slideshow-container {
-  border-top: 5px solid black;
-  background-color: black;
+#slideshow-banner-heading { padding: 8px 0; }
+#slideshow-banner-heading-diocese {}
+#slideshow-banner-heading-diocese > img { height: 36px; }
+#slideshow-banner-heading-donate { position: absolute; top: 14px; right: 1rem; }
+#slideshow-banner-heading-donate:hover > button { border: 2px solid white; color: white; }
+#slideshow-banner-heading-donate > button {
+  background-color: transparent;
+  border: 2px solid bisque; border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-weight: 600; font-size: 10px; color: bisque;
 }
+
+#slideshow-banner-message {
+  line-height: 1;
+  font-weight: 300; font-size: 1rem; letter-spacing: -0.025rem;
+  color: #fcc;
+}
+
+#slideshow-banner-parish { padding: 8px 0 16px 0; line-height: 1; font-weight: 300; }
+#slideshow-banner-parish-name { font-size: 1.5rem; letter-spacing: -0.025rem; color: sandybrown; }
+#slideshow-banner-parish-location { padding-top: 0.1rem; font-size: 0.7rem; color: #ccc; }
+
+@media screen and (min-width: 35.5rem) {
+  #slideshow-banner-heading-donate > button { font-size: 11px; }
+  #slideshow-banner-message { font-size: 1.1rem; }
+  #slideshow-banner-parish-name { font-size: 1.6em; }
+  #slideshow-banner-parish-location { font-size: 0.8rem; }
+}
+
+@media screen and (min-width: 48rem) {
+  #slideshow-banner {
+    position: absolute; z-index: 1; width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,255), rgba(0,0,0,0));
+  }
+
+  #slideshow-banner-heading-diocese > img { height: 48px; }
+  #slideshow-banner-heading-donate { top: 16px; right: 1.5rem; }
+  #slideshow-banner-heading-donate > button { padding: 0.35rem 1.5rem; font-size: 12px; }
+  #slideshow-banner-message { font-size: 1.2rem; text-shadow: -2px 2px 2px black; }
+  #slideshow-banner-parish { font-weight: 400; }
+  #slideshow-banner-parish-name { font-size: 2rem; letter-spacing: -0.05rem; text-shadow: -2px 2px 2px black; }
+  #slideshow-banner-parish-location { padding-top: 0.2rem; font-size: 0.9rem; text-shadow: -2px 2px 2px black; }
+}
+
+@media screen and (min-width: 64rem) {
+  #slideshow-banner-message { font-size: 1.3rem; }
+  #slideshow-banner-parish-name { font-size: 2.1rem; }
+  #slideshow-banner-parish-location { padding-top: 0.3rem; font-size: 1rem; }
+}
+
+@media screen and (min-width: 80rem) {
+  #slideshow-banner-message { font-size: 1.4rem; }
+  #slideshow-banner-parish-name { font-size: 2.2rem; }
+  #slideshow-banner-parish-location { padding-top: 0.4rem; font-size: 1.1rem; }
+}
+
+#slideshow-container { background-color: black; }
 
 div.slideshow-slide { display: none; }
 
@@ -222,23 +182,25 @@ div.slideshow-slide > img { width: 100%; }
 
 div.slideshow-slide > div {
   box-sizing: border-box;
-  position: absolute; bottom: 20%; left: 5%;
+  position: absolute; bottom: 15%; left: 5%;
   border-radius: 5px;
   padding: 0.25rem 1rem;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   text-overflow: clip;
-  text-shadow: 0 0 3px black; color: white;
+  color: white; text-shadow: 0 0 3px black;
 }
 
-div.slideshow-slide > div > p { margin-top: 0; font-weight: 600; font-size: 1rem; }
+div.slideshow-slide > div > p { margin-top: 0; font-weight: 300; font-size: 0.9rem; line-height: 1.2; }
 div.slideshow-slide > div a { color: #ccc; }
 div.slideshow-slide > div a:hover { color: white; }
-div.slideshow-slide > div strong { color: #ff6; }
+div.slideshow-slide > div strong { font-weight: 400; color: sandybrown; }
+div.slideshow-slide > div em { font-style: normal; font-weight: 600; }
 
 div.slideshow-effect { animation-name: slideshow-effect; animation-duration: 1s; }
 @keyframes slideshow-effect { from {opacity: 0.5} to {opacity: 1} }
 
 #slideshow-previous, #slideshow-next {
+  display: none;
   box-sizing: border-box;
   position: absolute; top: 50%;
   margin-top: -2.5rem; padding: 0.5rem 1rem 1rem 1rem;
@@ -288,7 +250,67 @@ span.slideshow-pause-active { background-color: #666; }
 
 @media screen and (min-width: 35.5rem) {
   div.slideshow-slide > div { bottom: 15%; }
-  div.slideshow-slide > div > p { font-size: 1.5rem; }
+  div.slideshow-slide > div > p { font-size: 1rem; }
+}
+
+@media screen and (min-width: 48rem) {
+  #slideshow-previous, #slideshow-next { display: inline; }
+}
+
+
+/* SECTION: BANNER */
+
+#banner {
+  height: 48px; padding-top: 8px;
+  background: linear-gradient(to bottom, black, #666);
+  text-align: center;
+}
+
+#banner-diocese { display: none; }
+#banner-diocese > img { height: 36px; }
+
+#banner-parish {
+  display: inline-block; position: relative; vertical-align: top;
+  padding-top: 8px;
+  line-height: 1; font-weight: 400;
+  text-decoration: none;
+}
+
+#banner-parish-name { font-size: 0.75rem; letter-spacing: -0.02rem; color: sandybrown; }
+#banner-parish-location { padding-top: 0.2rem; font-size: 0.6rem; color: #ccc; }
+
+#banner-donate { display: none; }
+
+@media screen and (min-width: 35.5rem) {
+  #banner-diocese { display: inline-block; }
+  #banner-parish { padding-left: 0.5rem; }
+  #banner-donate { display: inline; position: absolute; top: 14px; right: 1rem; }
+  #banner-donate:hover > button { border: 2px solid white; color: white; }
+  #banner-donate > button {
+    background-color: transparent;
+    border: 2px solid bisque; border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600; font-size: 11px; color: bisque;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  #banner { height: 64px; }
+  #banner-parish { padding-left: 1rem; }
+  #banner-diocese > img { height: 48px; }
+  #banner-parish-name { font-size: 1rem; }
+  #banner-parish-location { font-size: 0.7rem; }
+  #banner-donate { top: 16px; right: 1.5rem; }
+  #banner-donate > button { padding: 0.35rem 1.5rem; font-size: 12px; }
+}
+
+@media screen and (min-width: 64rem) {
+  #banner-parish { padding: 6px 0 0 2rem; }
+  #banner-parish-name { font-size: 1.2rem; }
+  #banner-parish-location { font-size: 0.9rem; }
+}
+
+@media screen and (min-width: 80rem) {
 }
 
 

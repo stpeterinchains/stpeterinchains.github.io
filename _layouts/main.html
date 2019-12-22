@@ -40,35 +40,28 @@
 <div id="width-indicator"></div>
 {% endif %}
 
+<!-- SLIDESHOW -->
 <!-- BANNER -->
 
-<header id="banner">
-  <img id="banner-logo" src="{{ 'cathedral-logo.png' | prepend: site.images_path | relative_url }}">
-  <div id="banner-title">
-    <div>The&nbsp;Cathedral&nbsp;of</div>
-    <div>Saint <span>Peter&#x2011;in&#x2011;Chains</span></div>
-    <div>Peterborough,&nbsp;Ontario</div>
-  </div>
-</header>
-
-<!-- WELCOME -->
-
 {% if page.mnemonic == 'index' %}
-{% assign welcome = site.data.main.welcome %}
 
-<section id="welcome">
-  <h1 id="welcome-title">{{ welcome.title }}</h1>
-  <div id="welcome-message" class="markdown">{{ welcome.message | markdownify }}</div>
-</section>
-
-{% endif %}
-
-<!-- SLIDESHOW -->
-
-{% if page.mnemonic == 'index' %}
+{% assign banner = site.data.main.banner %}
 {% assign slideshow = site.data.main.slideshow %}
 
 <div id="slideshow">
+  <div id="slideshow-banner">
+    <div id="slideshow-banner-heading">
+      <a id="slideshow-banner-heading-diocese" href="{{ banner.heading.diocese.link }}"><img src="{{ banner.heading.diocese.image | prepend: site.banner_images_path | relative_url }}" alt="{{ banner.heading.diocese.title }}"></a>
+      <a id="slideshow-banner-heading-donate" href="{{ banner.heading.donate.link }}">
+        <button type="button">{{ banner.heading.donate.title }}</button>
+      </a>
+    </div>
+    <div id="slideshow-banner-message">{{ banner.message.title }}</div>
+    <div id="slideshow-banner-parish">
+      <div id="slideshow-banner-parish-name">The Cathedral of Saint Peter-in-Chains</div>
+      <div id="slideshow-banner-parish-location">Peterborough, Ontario</div>
+    </div>
+  </div>
   <div id="slideshow-container">
     {% for slide in slideshow %}
     <div class="slideshow-slide slideshow-effect">
@@ -86,6 +79,21 @@
     {% endfor %}
     <span id="slideshow-pause" class="slideshow-pause-inactive" onclick="slideshow.pause()"></span>
   </div>
+</div>
+
+{% else %}
+
+{% assign banner = site.data.main.banner %}
+
+<div id="banner">
+  <a id="banner-diocese" href="{{ banner.heading.diocese.link }}"><img src="{{ banner.heading.diocese.image | prepend: site.banner_images_path | relative_url }}" alt="{{ banner.heading.diocese.title }}"></a>
+  <a id="banner-parish" href="/">
+    <div id="banner-parish-name">The Cathedral of Saint Peter-in-Chains</div>
+    <div id="banner-parish-location">Peterborough, Ontario</div>
+  </a>
+  {% unless page.mnemonic == 'giving' %}
+  <a id="banner-donate" href="{{ banner.heading.donate.link }}"><button type="button">{{ banner.heading.donate.title }}</button></a>
+  {% endunless %}
 </div>
 
 {% endif %}
@@ -153,7 +161,7 @@
 <div id="colophon">
   <p id="colophon-copyright">Copyright&nbsp;&copy;&nbsp;2019 Cathedral&nbsp;of Saint&nbsp;Peter&#x2011;in&#x2011;Chains</p>
   <p id="colophon-license">This work is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-  <p id="colophon-attribution"><a target="_blank" href="https://github.com/stpeterinchains/stpeterinchains.github.io">Made</a>&nbsp;with&nbsp;<span id="colophon-attribution-cross">&#x271D;</span><span id="colophon-attribution-heart">&#x2764;</span> in&nbsp;Peterborough</p>
+  <p id="colophon-attribution"><a target="_blank" href="{{ site.data.main.site_source }}">Made</a>&nbsp;with&nbsp;<span id="colophon-attribution-cross">&#x271D;</span><span id="colophon-attribution-heart">&#x2764;</span> in&nbsp;Peterborough</p>
 </div>
 
 </footer>

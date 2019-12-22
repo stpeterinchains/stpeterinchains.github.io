@@ -1,0 +1,51 @@
+---
+mnemonic: giving
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Giving
+open_graph_title: >
+  Ways to Give to
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  Ways to give.
+---
+
+{% assign giving = site.data.giving %}
+
+<script src="https://kit.fontawesome.com/3911996586.js" crossorigin="anonymous"></script>
+
+<section id="giving">
+  <h1 class="page-title">{{ giving.title }}</h1>
+  <div class="page-descriptive markdown">{{ giving.descriptive | markdownify }}</div>
+  <div class="pure-g">
+    <div class="pure-u-1 pure-u-lg-1-3">
+      <section id="giving-online" class="giving-method">
+        <i class="fas fa-globe-americas fa-5x"></i>
+        <h1 class="giving-title">{{ giving.online.title }}</h1>
+        <div class="giving-descriptive markdown">{{ giving.online.descriptive | markdownify }}</div>
+        <button class="tithely-give-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">Give</button>
+        <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+        <script>var tw = create_tithely_widget();</script>
+      </section>
+    </div>
+    <div class="pure-u-1 pure-u-lg-1-3">
+      <section id="giving-text" class="giving-method">
+        <i class="fas fa-comment-dollar fa-5x"></i>
+        <h1 class="giving-title">{{ giving.text.title }}</h1>
+        <div class="giving-descriptive markdown">{{ giving.text.descriptive | markdownify }}</div>
+      </section>
+    </div>
+    <div class="pure-u-1 pure-u-lg-1-3">
+      <section id="giving-apps" class="giving-method">
+        <i class="fas fa-mobile-alt fa-5x"></i>
+        <h1 class="giving-title">{{ giving.apps.title }}</h1>
+        <div class="giving-descriptive markdown">{{ giving.apps.descriptive | markdownify }}</div>
+        <div id="giving-apps-stores">
+          <a href="{{ giving.apps.ios.link }}"><img src="{{ giving.apps.ios.logo | prepend: site.giving_images_path | relative_url }}" alt="Tithe.ly Giving App for iOS"></a>
+          <a href="{{ giving.apps.android.link }}"><img src="{{ giving.apps.android.logo | prepend: site.giving_images_path | relative_url }}" alt="Tithe.ly Giving App for Android"></a>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>

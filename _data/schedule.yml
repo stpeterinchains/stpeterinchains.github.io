@@ -628,6 +628,7 @@ calendar:
     season: *advent
     recurring: *friday_december
   - date: 2019-12-21
+    note: Winter Solstice
     season: *advent
     recurring: *saturday_december
     specials:
@@ -644,9 +645,9 @@ calendar:
     specials:
       - title: Christmas Church Decoration
         descriptive: |
-          Volunteers are invited to help decoration the Cathedral.
+          Volunteers are invited to help decorate the Cathedral.
 
-          Lots to be done, but *many hands make light work!*
+          *Lots to be done, but many hands make light work!*
         time: 4:00 PM
         ordinal: "1600"
   - date: 2019-12-23
@@ -674,19 +675,20 @@ calendar:
 
           Please note that our regular Weekday Mass held at 12:10&nbsp;PM is cancelled today.
         time: 7:30 AM
-      - title: Christmas Eve Masses
+      - title: Christmas Eve Mass
         descriptive: |
-          *Join us for our annual Christmas&nbsp;Eve&nbsp;Masses,
+          *Join us for our annual Christmas&nbsp;Eve&nbsp;Mass,
           as we celebrate the birth of **Jesus&nbsp;Christ**, our
           Lord&nbsp;and&nbsp;Saviour.*
 
-          These three special Masses will be held
-          at 4:00&nbsp;PM and 8:00&nbsp;PM, and at 12:00&nbsp;AM&nbsp;Midnight.
+          This special Mass will be held
+          at 4:00&nbsp;PM, 8:00&nbsp;PM, and 12:00&nbsp;AM&nbsp;Midnight.
+
           Be sure to arrive early to ensure seating for these popular&nbsp;events.
 
           **All&nbsp;are&nbsp;welcome!**
         color: "#c33"
-        time: 4:00 PM, 8:00 PM, Midnight
+        time: 4:00 PM, 8:00 PM, 12:00 AM Midnight
         ordinal: "1600"
   - date: 2019-12-25
     note: Office closed.
