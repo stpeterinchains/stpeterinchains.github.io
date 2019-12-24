@@ -18,7 +18,7 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2019-11-01
+    earliest: 2019-12-01
     latest:   2019-12-31
 
 recurring:
@@ -711,7 +711,6 @@ calendar:
         ordinal: "1000"
   - date: 2019-12-26
     note: Office closed.
-    note: Boxing Day
     season: *nativity_octave
     celebration:
       <<: *nativity_feast
@@ -752,10 +751,11 @@ calendar:
       title: Feast of the Holy Family
     recurring: *sunday_december
   - date: 2019-12-30
+    note: Office closed.
     season: *nativity_octave
     recurring: *monday_december
   - date: 2019-12-31
-    note: New Year&apos;s Eve
+    note: Office closed; re-opens January 2.
     season: *nativity_octave
     recurring: *tuesday_december
     exclusions: [ weekday_mass, choir_practice ]
