@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2019-12-01
-    latest:   2019-12-31
+    latest:   2020-02-29
 
 recurring:
   weekday_mass: &weekday_mass
@@ -249,6 +249,121 @@ weekly:
     - *mother_perpetual_help
   sunday_december: &sunday_december
     - *sunday_mass
+  monday_january: &monday_january
+    - *weekday_mass
+  tuesday_january: &tuesday_january
+    - *weekday_mass
+  wednesday_january: &wednesday_january
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_january: &thursday_january
+    - *weekday_mass
+  friday_january: &friday_january
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_january: &saturday_january
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_january: &sunday_january
+    - *sunday_mass
+  monday_february: &monday_february
+    - *weekday_mass
+  tuesday_february: &tuesday_february
+    - *weekday_mass
+  wednesday_february: &wednesday_february
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_february: &thursday_february
+    - *weekday_mass
+  friday_february: &friday_february
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_february: &saturday_february
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_february: &sunday_february
+    - *sunday_mass
+  monday_march: &monday_march
+    - *weekday_mass
+  tuesday_march: &tuesday_march
+    - *weekday_mass
+  wednesday_march: &wednesday_march
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_march: &thursday_march
+    - *weekday_mass
+  friday_march: &friday_march
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_march: &saturday_march
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_march: &sunday_march
+    - *sunday_mass
+  monday_april: &monday_april
+    - *weekday_mass
+  tuesday_april: &tuesday_april
+    - *weekday_mass
+  wednesday_april: &wednesday_april
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_april: &thursday_april
+    - *weekday_mass
+  friday_april: &friday_april
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_april: &saturday_april
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_april: &sunday_april
+    - *sunday_mass
+  monday_may: &monday_may
+    - *weekday_mass
+  tuesday_may: &tuesday_may
+    - *weekday_mass
+  wednesday_may: &wednesday_may
+    - *weekday_mass
+    - *reflections
+    - *legion_of_mary
+  thursday_may: &thursday_may
+    - *weekday_mass
+  friday_may: &friday_may
+    - *weekday_mass
+    - *sacrament_reconciliation_friday
+    - *exposition_blessed_sacrament_friday
+  saturday_may: &saturday_may
+    - *weekday_mass_saturday
+    - *saturday_vigil
+    - *exposition_blessed_sacrament_saturday
+    - *sacrament_reconciliation_saturday
+    - *anointing_sick
+    - *mother_perpetual_help
+  sunday_may: &sunday_may
+    - *sunday_mass
 
 season:
   lent: &lent
@@ -271,11 +386,16 @@ season:
     short: Advent
     color: black
     bgcolor: "#fcf"
-  nativity_octave: &nativity_octave
-    title: Octave of the Nativity
-    short: Nativity Octave
+  christmas_octave: &christmas_octave
+    title: Octave of Christmas
+    short: Christmas Octave
     color: black
     bgcolor: "#fc6"
+  christmas_season: &christmas_season
+    title: Season of Christmas
+    short: Christmas Octave
+    color: black
+    bgcolor: yellow
 
 celebration:
   holy_week: &holy_week
@@ -663,7 +783,7 @@ calendar:
         ordinal: "0900"
   - date: 2019-12-24
     note: Office closed.
-    season: *nativity_octave
+    season: *christmas_octave
     celebration: *vigil_nativity
     recurring: *tuesday_december
     exclusions: [ weekday_mass, choir_practice ]
@@ -692,7 +812,7 @@ calendar:
         ordinal: "1600"
   - date: 2019-12-25
     note: Office closed.
-    season: *nativity_octave
+    season: *christmas_octave
     celebration: *nativity
     recurring: *wednesday_december
     exclusions: [ weekday_mass, reflections, legion_of_mary ]
@@ -711,7 +831,7 @@ calendar:
         ordinal: "1000"
   - date: 2019-12-26
     note: Office closed.
-    season: *nativity_octave
+    season: *christmas_octave
     celebration:
       <<: *nativity_feast
       title: Feast of Saint Stephen
@@ -729,7 +849,7 @@ calendar:
         ordinal: "0900"
   - date: 2019-12-27
     note: Office closed.
-    season: *nativity_octave
+    season: *christmas_octave
     celebration:
       <<: *nativity_feast
       title: Feast of Saint John
@@ -739,24 +859,24 @@ calendar:
       - <<: *weekday_mass_20191226
         mnemonic: weekday_mass_20191227
   - date: 2019-12-28
-    season: *nativity_octave
+    season: *christmas_octave
     celebration:
       <<: *nativity_feast
       title: Feast of the Holy Innocents
     recurring: *saturday_december
   - date: 2019-12-29
-    season: *nativity_octave
+    season: *christmas_octave
     celebration:
       <<: *nativity_feast
       title: Feast of the Holy Family
     recurring: *sunday_december
   - date: 2019-12-30
     note: Office closed.
-    season: *nativity_octave
+    season: *christmas_octave
     recurring: *monday_december
   - date: 2019-12-31
-    note: Office closed; re-opens January 2.
-    season: *nativity_octave
+    note: Office closed.
+    season: *christmas_octave
     recurring: *tuesday_december
     exclusions: [ weekday_mass, choir_practice ]
     specials:
@@ -769,8 +889,9 @@ calendar:
         time: 7:30 AM
       - title: New Year&apos;s Eve Mass
         descriptive: |
-          Join us for our annual New&nbsp;Year&apos;s&nbsp;Eve&nbsp;Mass,
-          as we celebrate **Christ&nbsp;our&nbsp;Saviour** as we embark on a new year and a new decade.
+          Join us for our annual New&nbsp;Year&apos;s&nbsp;Eve&nbsp;Mass.
+
+          We celebrate **Christ&nbsp;our&nbsp;Saviour**, as we embark on a new year and a new decade.
 
           Please arrive early to ensure seating for this popular&nbsp;event.
 
@@ -778,3 +899,374 @@ calendar:
         color: "#c33"
         time: 5:00 PM
         ordinal: "1700"
+  - date: 2020-01-01
+    note: Office closed; re-opens January 2.
+    season: *christmas_octave
+    recurring: *wednesday_january
+  - date: 2020-01-02
+    season: *christmas_season
+    recurring: *thursday_january
+  - date: 2020-01-03
+    season: *christmas_season
+    recurring: *friday_january
+  - date: 2020-01-04
+    season: *christmas_season
+    recurring: *saturday_january
+  - date: 2020-01-05
+    season: *christmas_season
+    recurring: *sunday_january
+  - date: 2020-01-06
+    season: *christmas_season
+    recurring: *monday_january
+  - date: 2020-01-07
+    season: *christmas_season
+    recurring: *tuesday_january
+  - date: 2020-01-08
+    season: *christmas_season
+    recurring: *wednesday_january
+  - date: 2020-01-09
+    season: *christmas_season
+    recurring: *thursday_january
+  - date: 2020-01-10
+    season: *christmas_season
+    recurring: *friday_january
+  - date: 2020-01-11
+    season: *christmas_season
+    recurring: *saturday_january
+    specials:
+      - <<: *first_reconciliation_prep
+        descriptive: >
+          Students complete their First Reconciliation.
+        time: To be announced
+        ordinal: "1400"
+  - date: 2020-01-12
+    season: *christmas_season
+    recurring: *sunday_january
+  - date: 2020-01-13
+    recurring: *monday_january
+  - date: 2020-01-14
+    recurring: *tuesday_january
+    specials:
+      - *confirmation_prep
+  - date: 2020-01-15
+    recurring: *wednesday_january
+  - date: 2020-01-16
+    recurring: *thursday_january
+  - date: 2020-01-17
+    recurring: *friday_january
+  - date: 2020-01-18
+    recurring: *saturday_january
+  - date: 2020-01-19
+    recurring: *sunday_january
+  - date: 2020-01-20
+    recurring: *monday_january
+  - date: 2020-01-21
+    recurring: *tuesday_january
+  - date: 2020-01-22
+    recurring: *wednesday_january
+  - date: 2020-01-23
+    recurring: *thursday_january
+  - date: 2020-01-24
+    recurring: *friday_january
+  - date: 2020-01-25
+    recurring: *saturday_january
+  - date: 2020-01-26
+    recurring: *sunday_january
+  - date: 2020-01-27
+    recurring: *monday_january
+  - date: 2020-01-28
+    recurring: *tuesday_january
+  - date: 2020-01-29
+    recurring: *wednesday_january
+  - date: 2020-01-30
+    recurring: *thursday_january
+  - date: 2020-01-31
+    recurring: *friday_january
+  - date: 2020-02-01
+    recurring: *saturday_february
+    specials:
+      - *first_communion_prep
+  - date: 2020-02-02
+    recurring: *sunday_february
+  - date: 2020-02-03
+    recurring: *monday_february
+  - date: 2020-02-04
+    recurring: *tuesday_february
+  - date: 2020-02-05
+    recurring: *wednesday_february
+  - date: 2020-02-06
+    recurring: *thursday_february
+  - date: 2020-02-07
+    recurring: *friday_february
+  - date: 2020-02-08
+    recurring: *saturday_february
+  - date: 2020-02-09
+    recurring: *sunday_february
+  - date: 2020-02-10
+    recurring: *monday_february
+  - date: 2020-02-11
+    recurring: *tuesday_february
+    specials:
+      - *confirmation_prep
+  - date: 2020-02-12
+    recurring: *wednesday_february
+  - date: 2020-02-13
+    recurring: *thursday_february
+  - date: 2020-02-14
+    recurring: *friday_february
+  - date: 2020-02-15
+    recurring: *saturday_february
+  - date: 2020-02-16
+    recurring: *sunday_february
+  - date: 2020-02-17
+    recurring: *monday_february
+  - date: 2020-02-18
+    recurring: *tuesday_february
+  - date: 2020-02-19
+    recurring: *wednesday_february
+  - date: 2020-02-20
+    recurring: *thursday_february
+  - date: 2020-02-21
+    recurring: *friday_february
+  - date: 2020-02-22
+    recurring: *saturday_february
+  - date: 2020-02-23
+    recurring: *sunday_february
+  - date: 2020-02-24
+    recurring: *monday_february
+  - date: 2020-02-25
+    recurring: *tuesday_february
+  - date: 2020-02-26
+    recurring: *wednesday_february
+  - date: 2020-02-27
+    recurring: *thursday_february
+  - date: 2020-02-28
+    recurring: *friday_february
+  - date: 2020-02-29
+    recurring: *saturday_february
+    specials:
+      - *first_communion_prep
+  - date: 2020-03-01
+    recurring: *sunday_march
+    specials:
+      - <<: *confirmation_prep
+        descriptive: Rite of Enrollment
+        time: 10:30 AM
+        ordinal: "1030"
+  - date: 2020-03-02
+    recurring: *monday_march
+  - date: 2020-03-03
+    recurring: *tuesday_march
+    specials:
+      - *confirmation_prep
+  - date: 2020-03-04
+    recurring: *wednesday_march
+  - date: 2020-03-05
+    recurring: *thursday_march
+  - date: 2020-03-06
+    recurring: *friday_march
+  - date: 2020-03-07
+    recurring: *saturday_march
+  - date: 2020-03-08
+    recurring: *sunday_march
+  - date: 2020-03-09
+    recurring: *monday_march
+  - date: 2020-03-10
+    recurring: *tuesday_march
+  - date: 2020-03-11
+    recurring: *wednesday_march
+  - date: 2020-03-12
+    recurring: *thursday_march
+  - date: 2020-03-13
+    recurring: *friday_march
+  - date: 2020-03-14
+    recurring: *saturday_march
+  - date: 2020-03-15
+    recurring: *sunday_march
+  - date: 2020-03-16
+    recurring: *monday_march
+  - date: 2020-03-17
+    recurring: *tuesday_march
+  - date: 2020-03-18
+    recurring: *wednesday_march
+  - date: 2020-03-19
+    recurring: *thursday_march
+  - date: 2020-03-20
+    recurring: *friday_march
+  - date: 2020-03-21
+    recurring: *saturday_march
+  - date: 2020-03-22
+    recurring: *sunday_march
+  - date: 2020-03-23
+    recurring: *monday_march
+  - date: 2020-03-24
+    recurring: *tuesday_march
+  - date: 2020-03-25
+    recurring: *wednesday_march
+  - date: 2020-03-26
+    recurring: *thursday_march
+  - date: 2020-03-27
+    recurring: *friday_march
+  - date: 2020-03-28
+    recurring: *saturday_march
+    specials:
+      - *first_communion_prep
+  - date: 2020-03-29
+    recurring: *sunday_march
+  - date: 2020-03-30
+    recurring: *monday_march
+  - date: 2020-03-31
+    recurring: *tuesday_march
+  - date: 2020-04-01
+    recurring: *wednesday_april
+  - date: 2020-04-02
+    recurring: *thursday_april
+  - date: 2020-04-03
+    recurring: *friday_april
+  - date: 2020-04-04
+    recurring: *saturday_april
+    specials:
+      - <<: *confirmation_prep
+        descriptive: Church cleanup.
+        time: To be announced
+        ordinal: "1400"
+  - date: 2020-04-05
+    recurring: *sunday_april
+  - date: 2020-04-06
+    recurring: *monday_april
+  - date: 2020-04-07
+    recurring: *tuesday_april
+  - date: 2020-04-08
+    recurring: *wednesday_april
+  - date: 2020-04-09
+    recurring: *thursday_april
+  - date: 2020-04-10
+    recurring: *friday_april
+  - date: 2020-04-11
+    recurring: *saturday_april
+  - date: 2020-04-12
+    recurring: *sunday_april
+  - date: 2020-04-13
+    recurring: *monday_april
+  - date: 2020-04-14
+    recurring: *tuesday_april
+  - date: 2020-04-15
+    recurring: *wednesday_april
+  - date: 2020-04-16
+    recurring: *thursday_april
+  - date: 2020-04-17
+    recurring: *friday_april
+  - date: 2020-04-18
+    recurring: *saturday_april
+    specials:
+      - <<: *first_communion_prep
+        descriptive: Session and Retreat Day.
+        time: 10:00 AM-1:00 PM
+  - date: 2020-04-19
+    recurring: *sunday_april
+  - date: 2020-04-20
+    recurring: *monday_april
+  - date: 2020-04-21
+    recurring: *tuesday_april
+    specials:
+      - *confirmation_prep
+  - date: 2020-04-22
+    recurring: *wednesday_april
+  - date: 2020-04-23
+    recurring: *thursday_april
+  - date: 2020-04-24
+    recurring: *friday_april
+  - date: 2020-04-25
+    recurring: *saturday_april
+  - date: 2020-04-26
+    recurring: *sunday_april
+  - date: 2020-04-27
+    recurring: *monday_april
+  - date: 2020-04-28
+    recurring: *tuesday_april
+    specials:
+      - <<: *first_communion_prep
+        descriptive: Students take their First Holy Communion.
+        location:
+        time: 10:30 AM
+        ordinal: "1030"
+  - date: 2020-04-29
+    recurring: *wednesday_april
+  - date: 2020-04-30
+    recurring: *thursday_april
+  - date: 2020-05-01
+    recurring: *friday_may
+  - date: 2020-05-02
+    recurring: *saturday_may
+  - date: 2020-05-03
+    recurring: *sunday_may
+  - date: 2020-05-04
+    recurring: *monday_may
+  - date: 2020-05-05
+    recurring: *tuesday_may
+  - date: 2020-05-06
+    recurring: *wednesday_may
+  - date: 2020-05-07
+    recurring: *thursday_may
+  - date: 2020-05-08
+    recurring: *friday_may
+  - date: 2020-05-09
+    recurring: *saturday_may
+  - date: 2020-05-10
+    recurring: *sunday_may
+  - date: 2020-05-11
+    recurring: *monday_may
+  - date: 2020-05-12
+    recurring: *tuesday_may
+    specials:
+      - *confirmation_prep
+  - date: 2020-05-13
+    recurring: *wednesday_may
+  - date: 2020-05-14
+    recurring: *thursday_may
+  - date: 2020-05-15
+    recurring: *friday_may
+  - date: 2020-05-16
+    recurring: *saturday_may
+  - date: 2020-05-17
+    recurring: *sunday_may
+  - date: 2020-05-18
+    recurring: *monday_may
+  - date: 2020-05-19
+    recurring: *tuesday_may
+  - date: 2020-05-20
+    recurring: *wednesday_may
+  - date: 2020-05-21
+    recurring: *thursday_may
+  - date: 2020-05-22
+    recurring: *friday_may
+    specials:
+      - <<: *confirmation_prep
+        descriptive: Retreat Day.
+        location: Mount St Joseph
+        time: 10:00 AM-2:00 PM
+        ordinal: "1000"
+  - date: 2020-05-23
+    recurring: *saturday_may
+  - date: 2020-05-24
+    recurring: *sunday_may
+  - date: 2020-05-25
+    recurring: *monday_may
+  - date: 2020-05-26
+    recurring: *tuesday_may
+  - date: 2020-05-27
+    recurring: *wednesday_may
+  - date: 2020-05-28
+    recurring: *thursday_may
+  - date: 2020-05-29
+    recurring: *friday_may
+  - date: 2020-05-30
+    recurring: *saturday_may
+  - date: 2020-05-31
+    recurring: *sunday_may
+    specials:
+      - <<: *confirmation_prep
+        descriptive: Confirmation.
+        location:
+        time: 10:30 AM
+        ordinal: "1030"
