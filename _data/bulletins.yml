@@ -9,12 +9,36 @@ descriptive: >
 issues:
 
   -
+    year: 2020
+    months:
+
+      -
+        month: January
+        bulletins:
+          -
+            date: 5
+            title: The Season of Christmas
+            link: https://drive.google.com/file/d/17D7IwfKdGB-UNSI108kaik-aYrfiI9dA/view
+            inserts:
+              -
+                title: January 2020 Calendar
+                link: https://drive.google.com/file/d/174xnuQyolzD36SK0bdSMSc__j1KqkFbu/view
+
+  -
     year: 2019
     months:
 
       -
         month: December
         bulletins:
+          -
+            date: 22
+            title: Fourth Sunday of Advent and The Octave of Christmas
+            link: https://drive.google.com/file/d/16zacsfbY4g_BtM3NjisisMq1hE4_IKWY/view
+            inserts:
+              -
+                title: Bulletin Supplement
+                link: https://drive.google.com/file/d/173K-RZDlLKPtlVutMwY5OtkX85FsiQp_/view
           -
             date: 15
             title: Third Sunday of Advent

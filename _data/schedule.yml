@@ -40,6 +40,20 @@ recurring:
       faith&nbsp;and&nbsp;praise.
     time: 9:00 AM
     ordinal: "0900"
+  weekday_mass_monday: &weekday_mass_monday
+    <<: *weekday_mass
+    mnemonic: weekday_mass_monday
+    descriptive: >
+      For parishioners who punctuate their day in faith&nbsp;and&nbsp;praise.
+    time: 12:10 PM
+    ordinal: "1210"
+  weekday_mass_friday: &weekday_mass_friday
+    <<: *weekday_mass
+    mnemonic: weekday_mass_friday
+    descriptive: >
+      For parishioners who begin their day in faith&nbsp;and&nbsp;praise.
+    time: 7:30 AM
+    ordinal: "0730"
   saturday_vigil: &saturday_vigil
     mnemonic: saturday_vigil
     color: "#933"
@@ -250,17 +264,18 @@ weekly:
   sunday_december: &sunday_december
     - *sunday_mass
   monday_january: &monday_january
-    - *weekday_mass
+    - *weekday_mass_monday
   tuesday_january: &tuesday_january
     - *weekday_mass
   wednesday_january: &wednesday_january
     - *weekday_mass
     - *reflections
     - *legion_of_mary
+    - *rcia
   thursday_january: &thursday_january
     - *weekday_mass
   friday_january: &friday_january
-    - *weekday_mass
+    - *weekday_mass_friday
     - *sacrament_reconciliation_friday
     - *exposition_blessed_sacrament_friday
   saturday_january: &saturday_january
@@ -903,12 +918,16 @@ calendar:
     note: Office closed; re-opens January 2.
     season: *christmas_octave
     recurring: *wednesday_january
+    exclusions: [ reflections, legion_of_mary, rcia ]
   - date: 2020-01-02
     season: *christmas_season
     recurring: *thursday_january
   - date: 2020-01-03
     season: *christmas_season
     recurring: *friday_january
+    exclusions: [ weekday_mass_friday ]
+    specials:
+      - *weekday_mass
   - date: 2020-01-04
     season: *christmas_season
     recurring: *saturday_january
@@ -934,6 +953,7 @@ calendar:
     season: *christmas_season
     recurring: *saturday_january
     specials:
+      - *cwl
       - <<: *first_reconciliation_prep
         descriptive: >
           Students complete their First Reconciliation.
@@ -960,6 +980,8 @@ calendar:
     recurring: *sunday_january
   - date: 2020-01-20
     recurring: *monday_january
+    specials:
+      - *koc
   - date: 2020-01-21
     recurring: *tuesday_january
   - date: 2020-01-22
