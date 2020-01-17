@@ -992,6 +992,16 @@ calendar:
     recurring: *friday_january
   - date: 2020-01-25
     recurring: *saturday_january
+    specials:
+      - title: Roast Beef Dinner
+        descriptive: |
+          Tickets $15 for adaults; $8 for children under 12.
+          Please call 705-742-5466 for details.
+
+          Dinner after 4:30 PM Mass.
+        location: Immaculate Conception (356 Rogers St)
+        time: 4:30 PM
+        ordinal: "1630"
   - date: 2020-01-26
     recurring: *sunday_january
   - date: 2020-01-27
@@ -1022,8 +1032,23 @@ calendar:
     recurring: *friday_february
   - date: 2020-02-08
     recurring: *saturday_february
+    specials:
+      - *cwl
   - date: 2020-02-09
     recurring: *sunday_february
+    exclusions: [ sunday_mass ]
+    specials:
+      - <<: *sunday_mass
+        mnemonic: sunday_mass_20200209
+        time: 8:30 AM
+      - title: White Mass
+        descriptive: >
+          Join us for this special, annual Mass to highlight the
+          critical role that health care providers play in our society and
+          to recognize the unique burdens these professionals bear.
+        color: "#c33"
+        time: 10:30 AM
+        ordinal: "1030"
   - date: 2020-02-10
     recurring: *monday_february
   - date: 2020-02-11
