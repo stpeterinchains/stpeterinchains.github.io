@@ -13,6 +13,21 @@ issues:
     months:
 
       -
+        month: February
+        bulletins:
+          -
+            date: 2
+            title: Presentation of the Lord
+            link: https://drive.google.com/file/d/1s0INx3eXyck7UCCj55rl-moDOxBHOtm7/view
+            inserts:
+              -
+                title: February 2020 Calendar
+                link: https://drive.google.com/file/d/1ZMkCr5sv9aAsHJrBLrva5Th7AFrA6nO7/view
+              -
+                title: CWL Valentine Tea Poster
+                link: https://drive.google.com/file/d/1hsVWCh4f6kBjy4jAASDqKrya7pR8S0KA/view
+
+      -
         month: January
         bulletins:
           -
