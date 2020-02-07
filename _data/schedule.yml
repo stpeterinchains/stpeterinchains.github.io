@@ -1096,6 +1096,16 @@ calendar:
     recurring: *tuesday_february
   - date: 2020-02-26
     recurring: *wednesday_february
+    exclusions: [ weekday_mass ]
+    specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_ashwednesday
+        title: Ash Wednesday Mass
+        descriptive: |
+          Join us for Ash Wednesday Mass at any of these four special times.
+
+          Please bring your palms from last year to produce the ash.
+        time: 7:30 AM, 9:30 AM, 12:10 PM, 7:00 PM
   - date: 2020-02-27
     recurring: *thursday_february
   - date: 2020-02-28
