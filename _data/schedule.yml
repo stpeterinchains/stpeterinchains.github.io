@@ -537,6 +537,7 @@ calendar:
   - date: 2020-02-16
     recurring: *sunday_february
   - date: 2020-02-17
+    note: Family Day
     recurring: *monday_february
     exclusions: [ weekday_mass_monday ]
     specials:
