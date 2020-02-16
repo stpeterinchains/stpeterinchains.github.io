@@ -540,7 +540,8 @@ calendar:
     recurring: *monday_february
     exclusions: [ weekday_mass_monday ]
     specials:
-      - <<: *weekday_mass_monday
+      - <<: *weekday_mass_friday
+        mnemonic: weekday_mass_monday_20200217
         time: 9:00 AM
         ordinal: "0900"
   - date: 2020-02-18
