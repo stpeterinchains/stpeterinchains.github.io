@@ -18,8 +18,8 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2019-12-01
-    latest:   2020-02-29
+    earliest: 2020-01-01
+    latest:   2020-03-31
 
 recurring:
   weekday_mass: &weekday_mass
@@ -198,76 +198,6 @@ recurring:
     ordinal: "1200"
 
 weekly:
-  monday: &monday
-    - *weekday_mass
-  tuesday: &tuesday
-    - *weekday_mass
-    - *legion_of_mary
-  wednesday: &wednesday
-    - *weekday_mass
-    - *reflections
-  thursday: &thursday
-    - *weekday_mass
-  friday: &friday
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday: &saturday
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday: &sunday
-    - *sunday_mass
-  monday_november: &monday_november
-    - *weekday_mass
-  tuesday_november: &tuesday_november
-    - *weekday_mass
-  wednesday_november: &wednesday_november
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_november: &thursday_november
-    - *weekday_mass
-  friday_november: &friday_november
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_november: &saturday_november
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_november: &sunday_november
-    - *sunday_mass
-  monday_december: &monday_december
-    - *weekday_mass
-  tuesday_december: &tuesday_december
-    - *weekday_mass
-    - *choir_practice
-  wednesday_december: &wednesday_december
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_december: &thursday_december
-    - *weekday_mass
-  friday_december: &friday_december
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_december: &saturday_december
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_december: &sunday_december
-    - *sunday_mass
   monday_january: &monday_january
     - *weekday_mass_monday
   tuesday_january: &tuesday_january
@@ -452,474 +382,6 @@ celebration:
     bgcolor: "#933"
 
 calendar:
-  - date: 2019-11-01
-    note: All Saints Day
-    recurring: *friday_november
-  - date: 2019-11-02
-    note: All Souls Day
-    recurring: *saturday_november
-    specials:
-      - title: All Saints Day Party
-        descriptive: |
-          The Parish Vocations Teams for St&nbsp;Joseph&nbsp;(Douro),
-          St&nbsp;Paul&nbsp;(Norwood), Our&nbsp;Lady of Mt&nbsp;Carmel&nbsp;(Hastings),
-          and Our&nbsp;Lady of Assumption&nbsp;(Otonabee)
-          invite everyone to their annual All&nbsp;Saints&nbsp;Day&nbsp;Party.
-
-          There will be a Saints costume contest, games, prizes, plus pizza and&nbsp;sundaes!
-
-          Please RSVP to 705-760-5411. See Bulletin for details.
-          Admission is&nbsp;free.
-        location: St Joseph Parish Hall (Douro)
-        time: 3:00-7:00 PM
-        ordinal: "1500"
-  - date: 2019-11-03
-    recurring: *sunday_november
-    specials:
-      - title: St Hubertus Latin Mass
-        descriptive: |
-          This Solemn High Mass, in honour of St&nbsp;Hubertus, patron saint of
-          hunters, will be celebrated by Fr&nbsp;Eric&nbsp;Mason.
-
-          A reception following the Mass will be held in the Rectory.
-          All are&nbsp;welcome.
-        color: "#933"
-        time: 4:00 PM
-        ordinal: "1600"
-  - date: 2019-11-04
-    recurring: *monday_november
-    specials:
-      - *lifeteen
-  - date: 2019-11-05
-    recurring: *tuesday_november
-  - date: 2019-11-06
-    recurring: *wednesday_november
-    specials:
-      - *rcia
-  - date: 2019-11-07
-    recurring: *thursday_november
-  - date: 2019-11-08
-    recurring: *friday_november
-    specials:
-      - title: Carpenter&apos;s Cup Retreat
-        descriptive: |
-          The Carpenter&apos;s&nbsp;Cup&nbsp;Retreat invites young men of
-          high school age to a weekend of fellowship.
-          Listen to inspiring talks, and compete in accuracy
-          challenges (air rifles, archery) for a chance to win the&nbsp;Cup.
-
-          Registration is $50 for the weekend.
-          [Register here](https://www.ptbovocations.ca/carpenterscup)
-          or call&nbsp;705-874-1871.
-        location: John Paul II House (820 Frank St)
-        time: 6:00 PM
-        ordinal: "1800"
-  - date: 2019-11-09
-    recurring: *saturday_november
-    specials:
-      - title: Carpenter&apos;s Cup Retreat
-        location: John Paul II House (820 Frank St)
-        time: All day
-        ordinal: "0600"
-      - *cwl
-  - date: 2019-11-10
-    recurring: *sunday_november
-    specials:
-      - title: Carpenter&apos;s Cup Retreat
-        location: John Paul II House (820 Frank St)
-        time: Morning until 1:00 PM
-        ordinal: "1300"
-  - date: 2019-11-11
-    note: Remembrance Day
-    recurring: *monday_november
-    specials:
-      - *edge
-  - date: 2019-11-12
-    recurring: *tuesday_november
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_20191112
-        descriptive:
-          Please note only the **7:30&nbsp;AM** Weekday&nbsp;Mass is
-          scheduled today. Mass at **12:10&nbsp;PM** cancelled.
-        time: 7:30 PM
-  - date: 2019-11-13
-    recurring: *wednesday_november
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_20191113
-        descriptive: Weekday&nbsp;Mass cancelled today.
-        time: Cancelled
-      - <<: *rcia
-        mnemonic: rcia_20191113
-        descriptive: RCIA cancelled today.
-        time: Cancelled
-  - date: 2019-11-14
-    recurring: *thursday_november
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_20191114
-        descriptive: Weekday&nbsp;Mass cancelled today.
-        time: Cancelled
-  - date: 2019-11-15
-    recurring: *friday_november
-  - date: 2019-11-16
-    recurring: *saturday_november
-    specials:
-      - *first_reconciliation_prep
-  - date: 2019-11-17
-    recurring: *sunday_november
-    specials:
-      - *syro_malabar_mass
-  - date: 2019-11-18
-    recurring: *monday_november
-    specials:
-      - *lifeteen
-      - *koc
-  - date: 2019-11-19
-    recurring: *tuesday_november
-    specials:
-      - *confirmation_prep
-  - date: 2019-11-20
-    recurring: *wednesday_november
-    specials:
-      - *rcia
-  - date: 2019-11-21
-    recurring: *thursday_november
-  - date: 2019-11-22
-    recurring: *friday_november
-  - date: 2019-11-23
-    recurring: *saturday_november
-    specials:
-      - title: CWL Christmas Bazaar
-        location: Bishop Doyle Hall
-        time: 10:00 AM-3:00 PM
-        ordinal: "1000"
-  - date: 2019-11-24
-    note: Christ the King
-    recurring: *sunday_november
-    specials:
-      - *syro_malabar_mass
-      - title: Christmas Turkey Dinner
-        descriptive: |
-          Join us for a delicious home cooked turkey supper with all the trimming.
-
-          For tickets, call Jan at 705-868-6307.
-          Adults $18. Children (ages 6-10&nbsp;years) $8.
-        location: Sacred Heart Parish Hall (208 Romaine St)
-        time: 5:00 PM
-        ordinal: "1700"
-  - date: 2019-11-25
-    recurring: *monday_november
-    specials:
-      - *edge
-  - date: 2019-11-26
-    recurring: *tuesday_november
-    specials:
-      - title: Relic of Saint Peregrine
-        descriptive: |
-
-          Mass will be celebrated at 6:00 PM, followed by anointing of the sick
-          and blessings with the relic.
-
-          For those suffering from cancer and cancer survivors.
-          Please invite anyone who has been effected by cancer.
-        location: Immaculate Conception (356 Rogers St)
-        time: 6:00 PM
-        ordinal: "1800"
-  - date: 2019-11-27
-    recurring: *wednesday_november
-    specials:
-      - *rcia
-  - date: 2019-11-28
-    recurring: *thursday_november
-  - date: 2019-11-29
-    recurring: *friday_november
-  - date: 2019-11-30
-    recurring: *saturday_november
-    specials:
-      - *first_reconciliation_prep
-  - date: 2019-12-01
-    note: First day of Advent
-    season: *advent
-    recurring: *sunday_december
-    specials:
-      - title: Knights of Columbus Christmas Party
-        descriptive: |
-          The Knights of Columbus Councils 798 and 9873 are holding their
-          annual Chistmas Party. Refreshments, music, and gifts for children.
-
-          Parents are asked to signup for their children in advance.
-          The party will start following 10:30 Mass.
-        location: Bishop Doyle Hall
-        time: 11:30 AM
-        ordinal: "1130"
-      - title: Third Annual Fashion Show
-        descriptive: |
-          Models will wear Alia 'n Tanjay apparel. Ladies invited!
-
-          Tickets $15. After the show, tickets are redeemable at the store
-          for 30% off purchases up to $100.
-        location: Immaculate Conception (356 Rogers St)
-        time: 2:00-4:00 PM
-        ordinal: "1400"
-  - date: 2019-12-02
-    season: *advent
-    recurring: *monday_december
-    specials:
-      - *rcia
-  - date: 2019-12-03
-    season: *advent
-    recurring: *tuesday_december
-    specials:
-      - *confirmation_prep
-  - date: 2019-12-04
-    season: *advent
-    recurring: *wednesday_december
-  - date: 2019-12-05
-    season: *advent
-    recurring: *thursday_december
-  - date: 2019-12-06
-    season: *advent
-    recurring: *friday_december
-  - date: 2019-12-07
-    season: *advent
-    recurring: *saturday_december
-    specials:
-      - <<: *sacrament_reconciliation_saturday
-        title: Day of Reconciliation
-        color: "#c33"
-        location: Immaculate Conception (386 Rogers St)
-        time: 8:00 AM-4:00 PM
-        ordinal: "0800"
-  - date: 2019-12-08
-    season: *advent
-    recurring: *sunday_december
-    specials:
-      - title: >
-          Movie Showing: Unplanned
-        descriptive: |
-          See the movie that has changed hearts, the movie secular Hollywood
-          does not want you to see.
-
-          The movie will be shown in the Church Hall of
-          St&nbsp;Paul&nbsp;the&nbsp;Apostle in Lakefield. It will be featured
-          at no charge, but a free-will offering will be greatly accepted.
-          The evening will include light refreshments.
-
-          For information, contact the St&nbsp;Paul Parish&nbsp;Office at 705-652-3095.
-        location: St Paul the Apostle (Lakefield)
-        time: 6:30 PM
-        ordinal: "1830"
-  - date: 2019-12-09
-    season: *advent
-    recurring: *monday_december
-  - date: 2019-12-10
-    season: *advent
-    recurring: *tuesday_december
-    specials:
-      - title: Saint Teresa School Mass
-        color: "#933"
-        time: 9:30 AM
-        ordinal: "0930"
-  - date: 2019-12-11
-    season: *advent
-    recurring: *wednesday_december
-    specials:
-      - <<: *rcia
-        time: Cancelled
-        descriptive: >
-          Please note the RCIA meeting scheduled for this evening is cancelled.
-          Our regular RCIA meetings will resume in the new&nbsp;year.
-  - date: 2019-12-12
-    season: *advent
-    recurring: *thursday_december
-  - date: 2019-12-13
-    season: *advent
-    recurring: *friday_december
-  - date: 2019-12-14
-    season: *advent
-    recurring: *saturday_december
-    specials:
-      - *cwl
-      - <<: *sacrament_reconciliation_saturday
-        title: Day of Grace and Reconciliation
-        color: "#c33"
-        time: 8:00 AM-4:45 PM
-        ordinal: "0800"
-  - date: 2019-12-15
-    season: *advent
-    recurring: *sunday_december
-  - date: 2019-12-16
-    season: *advent
-    recurring: *monday_december
-  - date: 2019-12-17
-    season: *advent
-    recurring: *tuesday_december
-  - date: 2019-12-18
-    season: *advent
-    recurring: *wednesday_december
-  - date: 2019-12-19
-    season: *advent
-    recurring: *thursday_december
-  - date: 2019-12-20
-    season: *advent
-    recurring: *friday_december
-  - date: 2019-12-21
-    note: Winter Solstice
-    season: *advent
-    recurring: *saturday_december
-    specials:
-      - <<: *confirmation_prep
-        title: Confirmation Preparation Christmas Clean-Up
-        descriptive: >
-          The Christmas Clean-Up is part of the Service&nbsp;Component of the
-          Confirmation&nbsp;Preparation&nbsp;Class.
-        time: 9:30 AM
-        ordinal: "0930"
-  - date: 2019-12-22
-    season: *advent
-    recurring: *sunday_december
-    specials:
-      - title: Christmas Church Decoration
-        descriptive: |
-          Volunteers are invited to help decorate the Cathedral.
-
-          *Lots to be done, but many hands make light work!*
-        time: 4:00 PM
-        ordinal: "1600"
-  - date: 2019-12-23
-    note: Office closes at 12:00 PM for the Christmas Holiday.
-    season: *advent
-    recurring: *monday_december
-    specials:
-      - <<: *sacrament_reconciliation_saturday
-        title: Day of Reconciliation
-        color: "#c33"
-        location: St Alphonsis (810 Frank St)
-        time: 9:00 AM-9:00 PM
-        ordinal: "0900"
-  - date: 2019-12-24
-    note: Office closed.
-    season: *christmas_octave
-    celebration: *vigil_nativity
-    recurring: *tuesday_december
-    exclusions: [ weekday_mass, choir_practice ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_20191224
-        descriptive: |
-          For parishioners who begin their day in faith&nbsp;and&nbsp;praise.
-
-          Please note that our regular Weekday Mass held at 12:10&nbsp;PM is cancelled today.
-        time: 7:30 AM
-      - title: Christmas Eve Mass
-        descriptive: |
-          *Join us for our annual Christmas&nbsp;Eve&nbsp;Mass,
-          as we celebrate the birth of **Jesus&nbsp;Christ**, our
-          Lord&nbsp;and&nbsp;Saviour.*
-
-          This special Mass will be held
-          at 4:00&nbsp;PM, 8:00&nbsp;PM, and 12:00&nbsp;AM&nbsp;Midnight.
-
-          Be sure to arrive early to ensure seating for these popular&nbsp;events.
-
-          **All&nbsp;are&nbsp;welcome!**
-        color: "#c33"
-        time: 4:00 PM, 8:00 PM, 12:00 AM Midnight
-        ordinal: "1600"
-  - date: 2019-12-25
-    note: Office closed.
-    season: *christmas_octave
-    celebration: *nativity
-    recurring: *wednesday_december
-    exclusions: [ weekday_mass, reflections, legion_of_mary ]
-    specials:
-      - title: Christmas Day Mass
-        descriptive: |
-          *Join us for our annual Christmas&nbsp;Day&nbsp;Mass,
-          as we celebrate the birth of **Jesus&nbsp;Christ**, our
-          Lord&nbsp;and&nbsp;Saviour.*
-
-          Please arrive early to ensure seating for this popular&nbsp;event.
-
-          **All&nbsp;are&nbsp;welcome!**
-        color: "#c33"
-        time: 10:00 AM
-        ordinal: "1000"
-  - date: 2019-12-26
-    note: Office closed.
-    season: *christmas_octave
-    celebration:
-      <<: *nativity_feast
-      title: Feast of Saint Stephen
-    recurring: *thursday_december
-    exclusions: [ weekday_mass ]
-    specials:
-      - &weekday_mass_20191226
-        <<: *weekday_mass
-        mnemonic: weekday_mass_20191226
-        descriptive: |
-          For parishioners who begin their day in faith&nbsp;and&nbsp;praise.
-
-          Please note that only one Weekday Mass is scheduled today.
-        time: 9:00 AM
-        ordinal: "0900"
-  - date: 2019-12-27
-    note: Office closed.
-    season: *christmas_octave
-    celebration:
-      <<: *nativity_feast
-      title: Feast of Saint John
-    recurring: *friday_december
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass_20191226
-        mnemonic: weekday_mass_20191227
-  - date: 2019-12-28
-    season: *christmas_octave
-    celebration:
-      <<: *nativity_feast
-      title: Feast of the Holy Innocents
-    recurring: *saturday_december
-  - date: 2019-12-29
-    season: *christmas_octave
-    celebration:
-      <<: *nativity_feast
-      title: Feast of the Holy Family
-    recurring: *sunday_december
-  - date: 2019-12-30
-    note: Office closed.
-    season: *christmas_octave
-    recurring: *monday_december
-  - date: 2019-12-31
-    note: Office closed.
-    season: *christmas_octave
-    recurring: *tuesday_december
-    exclusions: [ weekday_mass, choir_practice ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_20191231
-        descriptive: |
-          For parishioners who begin their day in faith&nbsp;and&nbsp;praise.
-
-          Please note that our regular Weekday Mass held at 12:10&nbsp;PM is cancelled today.
-        time: 7:30 AM
-      - title: New Year&apos;s Eve Mass
-        descriptive: |
-          Join us for our annual New&nbsp;Year&apos;s&nbsp;Eve&nbsp;Mass.
-
-          We celebrate **Christ&nbsp;our&nbsp;Saviour**, as we embark on a new year and a new decade.
-
-          Please arrive early to ensure seating for this popular&nbsp;event.
-
-          **All&nbsp;are&nbsp;welcome.**
-        color: "#c33"
-        time: 5:00 PM
-        ordinal: "1700"
   - date: 2020-01-01
     note: Office closed; re-opens January 2.
     season: *christmas_octave
@@ -1076,6 +538,11 @@ calendar:
     recurring: *sunday_february
   - date: 2020-02-17
     recurring: *monday_february
+    exclusions: [ weekday_mass_monday ]
+    specials:
+      - <<: *weekday_mass_monday
+        time: 9:00 AM
+        ordinal: "0900"
   - date: 2020-02-18
     recurring: *tuesday_february
   - date: 2020-02-19
@@ -1088,12 +555,33 @@ calendar:
     recurring: *saturday_february
   - date: 2020-02-23
     recurring: *sunday_february
+    exclusions: [ sunday_mass ]
+    specials:
+      - <<: *sunday_mass
+        mnemonic: sunday_mass_20200223
+        descriptive: |
+          Join us for our signature Mass, held twice each Sunday&nbsp;morning.
+
+          During the 10:30 AM Mass, we welcome ten Seminarians, visiting from
+          Saint Augustine&apos;s Seminary. They will offer a
+          short&nbsp;presentation.
   - date: 2020-02-24
     recurring: *monday_february
     specials:
       - *koc
   - date: 2020-02-25
     recurring: *tuesday_february
+    specials:
+      - title: CWL Shrove Tuesday Pancake Supper
+        descriptive: |
+          What happens on Shrove Tuesday? Pancakes!
+
+          Families (up to six people) $20, adults $10, youth 6-12 $5,
+          children under 6 free.
+          All procedes go to the Cathedral&nbsp;CWL.
+        location: Bishop Doyle Hall
+        time: 4:30-6:30 PM
+        ordinal: "1630"
   - date: 2020-02-26
     recurring: *wednesday_february
     exclusions: [ weekday_mass ]
@@ -1114,6 +602,10 @@ calendar:
     recurring: *saturday_february
     specials:
       - *first_communion_prep
+      - title: Cursillo Movement Ultreya
+        location: St Alphonsus Parish Hall (810 Frank St)
+        time: 1:00-3:00 PM
+        ordinal: "1300"
   - date: 2020-03-01
     recurring: *sunday_march
     specials:
