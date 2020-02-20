@@ -196,6 +196,12 @@ recurring:
     color: "#933"
     time: 12:00 PM
     ordinal: "1200"
+  stations_of_the_cross: &stations_of_the_cross
+    title: Stations of the Cross
+    descriptive: >
+      Held following the 12:10&nbsp;PM Weekday Mass each Friday during&nbsp;Lent.
+    time: 12:40 PM
+    ordinal: "1240"
 
 weekly:
   monday_january: &monday_january
@@ -332,6 +338,11 @@ season:
     short: Easter Octave
     color: black
     bgcolor: "#ffc"
+  easter_season: &easter_season
+    title: Season of Easter
+    short: Easter Season
+    color: black
+    bgcolor: "#cc9"
   advent: &advent
     title: Season of Advent
     short: Advent
@@ -580,11 +591,12 @@ calendar:
 
           Families (up to six people) $20, adults $10, youth 6-12 $5,
           children under 6 free.
-          All procedes go to the Cathedral&nbsp;CWL.
+          All proceeds go to the Cathedral&nbsp;CWL.
         location: Bishop Doyle Hall
         time: 4:30-6:30 PM
         ordinal: "1630"
   - date: 2020-02-26
+    season: *lent
     recurring: *wednesday_february
     exclusions: [ weekday_mass ]
     specials:
@@ -593,14 +605,20 @@ calendar:
         title: Ash Wednesday Mass
         descriptive: |
           Join us for Ash Wednesday Mass at any of these four special times.
+          Please note the the Saint&nbsp;Teresa&nbsp;School Mass is scheduled
+          for the 9:30&nbsp;AM event, though everyone is&nbsp;welcome.
 
-          Please bring your palms from last year to produce the ash.
+          Please bring your palms from last year, which are used to
+          produce the&nbsp;ash.
         time: 7:30 AM, 9:30 AM, 12:10 PM, 7:00 PM
   - date: 2020-02-27
+    season: *lent
     recurring: *thursday_february
   - date: 2020-02-28
+    season: *lent
     recurring: *friday_february
   - date: 2020-02-29
+    season: *lent
     recurring: *saturday_february
     specials:
       - *first_communion_prep
@@ -609,6 +627,7 @@ calendar:
         time: 1:00-3:00 PM
         ordinal: "1300"
   - date: 2020-03-01
+    season: *lent
     recurring: *sunday_march
     specials:
       - <<: *confirmation_prep
@@ -616,89 +635,162 @@ calendar:
         time: 10:30 AM
         ordinal: "1030"
   - date: 2020-03-02
+    season: *lent
     recurring: *monday_march
   - date: 2020-03-03
+    season: *lent
     recurring: *tuesday_march
     specials:
       - *confirmation_prep
   - date: 2020-03-04
+    season: *lent
     recurring: *wednesday_march
   - date: 2020-03-05
+    season: *lent
     recurring: *thursday_march
   - date: 2020-03-06
+    season: *lent
     recurring: *friday_march
+    specials:
+      - *stations_of_the_cross
   - date: 2020-03-07
+    season: *lent
     recurring: *saturday_march
   - date: 2020-03-08
+    season: *lent
     recurring: *sunday_march
+    specials:
+      - title: Ennismore Irish Concert
+        descriptive: |
+          Come out and enjoy Irish music, jokes, and&nbsp;dancing!
+          Invite your friends and neighbours, and stay for a hearty bowl of
+          homemade&nbsp;soup!
+
+          Donations gratefully accepted at the door.
+        location: St Martin&apos;s Parish Hall
+        time: 2:30 PM
+        ordinal: "1430"
   - date: 2020-03-09
+    season: *lent
     recurring: *monday_march
   - date: 2020-03-10
+    season: *lent
     recurring: *tuesday_march
   - date: 2020-03-11
+    season: *lent
     recurring: *wednesday_march
   - date: 2020-03-12
+    season: *lent
     recurring: *thursday_march
   - date: 2020-03-13
+    season: *lent
     recurring: *friday_march
+    specials:
+      - *stations_of_the_cross
   - date: 2020-03-14
+    season: *lent
     recurring: *saturday_march
+    specials:
+      - *cwl
   - date: 2020-03-15
+    season: *lent
     recurring: *sunday_march
   - date: 2020-03-16
+    season: *lent
     recurring: *monday_march
   - date: 2020-03-17
+    season: *lent
     recurring: *tuesday_march
   - date: 2020-03-18
+    season: *lent
     recurring: *wednesday_march
   - date: 2020-03-19
+    season: *lent
     recurring: *thursday_march
   - date: 2020-03-20
+    season: *lent
     recurring: *friday_march
+    specials:
+      - *stations_of_the_cross
   - date: 2020-03-21
+    season: *lent
     recurring: *saturday_march
   - date: 2020-03-22
+    season: *lent
     recurring: *sunday_march
   - date: 2020-03-23
+    season: *lent
     recurring: *monday_march
   - date: 2020-03-24
+    season: *lent
     recurring: *tuesday_march
   - date: 2020-03-25
+    season: *lent
     recurring: *wednesday_march
   - date: 2020-03-26
+    season: *lent
     recurring: *thursday_march
   - date: 2020-03-27
+    season: *lent
     recurring: *friday_march
+    specials:
+      - *stations_of_the_cross
   - date: 2020-03-28
+    season: *lent
     recurring: *saturday_march
     specials:
       - *first_communion_prep
   - date: 2020-03-29
+    season: *lent
     recurring: *sunday_march
   - date: 2020-03-30
+    season: *lent
     recurring: *monday_march
   - date: 2020-03-31
+    season: *lent
     recurring: *tuesday_march
   - date: 2020-04-01
+    season: *lent
     recurring: *wednesday_april
   - date: 2020-04-02
+    season: *lent
     recurring: *thursday_april
   - date: 2020-04-03
+    season: *lent
     recurring: *friday_april
+    specials:
+      - *stations_of_the_cross
   - date: 2020-04-04
+    season: *lent
     recurring: *saturday_april
     specials:
       - <<: *confirmation_prep
         descriptive: Church cleanup.
         time: To be announced
         ordinal: "1400"
+      - &diocese_cwl_convention
+        title: Diocese CWL Convention
+        descriptive: >
+          To be held over Saturday and Sunday.
+          Registration forms are available at the Cathedral Office.
+          Deadline to register is February&nbsp;27.
+        location: St Anne&apos;s Hall
+        time: All day
+        ordinal: "0600"
   - date: 2020-04-05
+    season: *lent
     recurring: *sunday_april
+    specials:
+      - <<: *diocese_cwl_convention
+        descriptive:
   - date: 2020-04-06
+    season: *lent
     recurring: *monday_april
   - date: 2020-04-07
+    season: *lent
     recurring: *tuesday_april
   - date: 2020-04-08
+    season: *lent
     recurring: *wednesday_april
   - date: 2020-04-09
     recurring: *thursday_april
