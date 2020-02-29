@@ -1,4 +1,4 @@
 { "exclude"         : [ "node_modules" ],
   "compilerOptions" :
-  { "target"  : "es2018",
-    "checkJs" : false } }
+  { "target"        : "es2020",
+    "checkJs"       : false } }

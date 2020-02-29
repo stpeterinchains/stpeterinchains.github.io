@@ -266,6 +266,7 @@ weekly:
     - *weekday_mass
     - *sacrament_reconciliation_friday
     - *exposition_blessed_sacrament_friday
+    - *rcia_friday
   saturday_march: &saturday_march
     - *weekday_mass_saturday
     - *saturday_vigil
@@ -327,7 +328,7 @@ season:
     title: Season of Lent
     short: Lent
     color: white
-    bgcolor: "#dac"
+    bgcolor: "#a69"
   easter: &easter
     title: Easter Triduum
     short: Easter
@@ -617,6 +618,8 @@ calendar:
   - date: 2020-02-28
     season: *lent
     recurring: *friday_february
+    specials:
+      - *stations_of_the_cross
   - date: 2020-02-29
     season: *lent
     recurring: *saturday_february
@@ -698,6 +701,8 @@ calendar:
   - date: 2020-03-16
     season: *lent
     recurring: *monday_march
+    specials:
+      - *koc
   - date: 2020-03-17
     season: *lent
     recurring: *tuesday_march
@@ -715,6 +720,10 @@ calendar:
   - date: 2020-03-21
     season: *lent
     recurring: *saturday_march
+    specials:
+      - title: The Cathedral Day of Grace
+        time: 9:00 AM-5:00 PM
+        ordinal: "0900"
   - date: 2020-03-22
     season: *lent
     recurring: *sunday_march

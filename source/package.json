@@ -1,14 +1,14 @@
 { "name"                    : "cathedral-stpeterinchains-client",
   "description"             : "Client-side source and build scripts for the website of the Cathedral of Saint Peter-in-Chains",
-  "version"                 : "0.1.0",
+  "version"                 : "0.2.0",
   "private"                 : true,
   "engines"                 :
-    { "node"                : "~11.14",
-      "npm"                 : "~6.9" },
+    { "node"                : "~13.8",
+      "npm"                 : "~6.13" },
   "devDependencies"         :
-    { "@babel/cli"          : "~7.4",
-      "@babel/core"         : "~7.4",
-      "@babel/preset-env"   : "~7.4",
+    { "@babel/cli"          : "~7.8",
+      "@babel/core"         : "~7.8",
+      "@babel/preset-env"   : "~7.8",
       "babel-preset-minify" : "~0.5" },
   "scripts"                 :
     { "lint"                : "eslint js/*.js",

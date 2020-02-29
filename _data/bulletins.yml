@@ -13,6 +13,18 @@ issues:
     months:
 
       -
+        month: March
+        bulletins:
+          -
+            date: 1
+            title: First Sunday in Lent
+            link: https://drive.google.com/file/d/1zLikIXmYg7rv-Fq-LhprbCkSG16ZKhY5/view
+            inserts:
+              -
+                title: March 2020 Calendar
+                link: https://drive.google.com/file/d/1wGkyRnbCXuo6nUofIrQBpmMCVsqN7-GP/view
+
+      -
         month: February
         bulletins:
           -
