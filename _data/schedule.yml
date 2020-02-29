@@ -19,7 +19,7 @@ select:
     days_forward: 15
   schedule:
     earliest: 2020-01-01
-    latest:   2020-03-31
+    latest:   2020-04-30
 
 recurring:
   weekday_mass: &weekday_mass
@@ -197,9 +197,19 @@ recurring:
     time: 12:00 PM
     ordinal: "1200"
   stations_of_the_cross: &stations_of_the_cross
-    title: Stations of the Cross
-    descriptive: >
-      Held following the 12:10&nbsp;PM Weekday Mass each Friday during&nbsp;Lent.
+    title: "Devotion: Stations of the Cross"
+    color: purple
+    descriptive: |
+      Please join us following the 12:10&nbsp;PM Weekday&nbsp;Mass each Friday
+      during Lent to participate in the Stations&nbsp;of&nbsp;the&nbsp;Cross
+      devotion.
+
+      Parishioners join the celebrant inside the church in walking
+      the 14&nbsp;steps, or *stations*, representative of Our&nbsp;Lord&apos;s
+      final day on Earth in mortal&nbsp;form. Each of the 14&nbsp;stations is
+      visited by a selected prayer and&nbsp;reflection.
+
+      Prayer books for the devotion are provided. All are&nbsp;welcome.
     time: 12:40 PM
     ordinal: "1240"
 
@@ -585,7 +595,13 @@ calendar:
       - *koc
   - date: 2020-02-25
     recurring: *tuesday_february
+    exclusions: [ weekday_mass ]
     specials:
+      - <<: *weekday_mass
+        mnemonic: weekday_mass_shrove
+        descriptive: >
+          Please bring your palms from last year to Holy Mass, which are used
+          to produce the&nbsp;ash for the blessings on Ash&nbsp;Wednesday.
       - title: CWL Shrove Tuesday Pancake Supper
         descriptive: |
           What happens on Shrove Tuesday? Pancakes!
@@ -604,13 +620,10 @@ calendar:
       - <<: *weekday_mass
         mnemonic: weekday_mass_ashwednesday
         title: Ash Wednesday Mass
-        descriptive: |
+        descriptive: >
           Join us for Ash Wednesday Mass at any of these four special times.
           Please note the the Saint&nbsp;Teresa&nbsp;School Mass is scheduled
           for the 9:30&nbsp;AM event, though everyone is&nbsp;welcome.
-
-          Please bring your palms from last year, which are used to
-          produce the&nbsp;ash.
         time: 7:30 AM, 9:30 AM, 12:10 PM, 7:00 PM
   - date: 2020-02-27
     season: *lent
@@ -634,7 +647,6 @@ calendar:
     recurring: *sunday_march
     specials:
       - <<: *confirmation_prep
-        descriptive: Rite of Enrollment
         time: 10:30 AM
         ordinal: "1030"
   - date: 2020-03-02
@@ -788,46 +800,80 @@ calendar:
         ordinal: "0600"
   - date: 2020-04-05
     season: *lent
+    celebration:
+      <<: *holy_week
+      title: Palm Sunday
+      color: white
+      bgcolor: "#c33"
     recurring: *sunday_april
     specials:
+      - <<: *sunday_mass
+        mnemonic: sunday_mass_holyweek
+        title: Special Sunday Mass
+        descriptive: Join us for Mass on this Palm&nbsp;Sunday.
       - <<: *diocese_cwl_convention
         descriptive:
   - date: 2020-04-06
     season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Monday
     recurring: *monday_april
   - date: 2020-04-07
     season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Tuesday
     recurring: *tuesday_april
   - date: 2020-04-08
     season: *lent
+    celebration:
+      <<: *holy_week
+      title: Holy Wednesday
     recurring: *wednesday_april
   - date: 2020-04-09
+    season: *lent
+    celebration: *maundy_thursday
     recurring: *thursday_april
   - date: 2020-04-10
+    season: *easter
+    celebration: *good_friday
     recurring: *friday_april
   - date: 2020-04-11
+    season: *easter
+    celebration: *black_saturday
     recurring: *saturday_april
   - date: 2020-04-12
+    season: *easter
+    celebration: *easter_sunday
     recurring: *sunday_april
   - date: 2020-04-13
+    season: *easter_octave
     recurring: *monday_april
   - date: 2020-04-14
+    season: *easter_octave
     recurring: *tuesday_april
   - date: 2020-04-15
+    season: *easter_octave
     recurring: *wednesday_april
   - date: 2020-04-16
+    season: *easter_octave
     recurring: *thursday_april
   - date: 2020-04-17
+    season: *easter_octave
     recurring: *friday_april
   - date: 2020-04-18
+    season: *easter_octave
     recurring: *saturday_april
     specials:
       - <<: *first_communion_prep
         descriptive: Session and Retreat Day.
         time: 10:00 AM-1:00 PM
   - date: 2020-04-19
+    season: *easter_octave
     recurring: *sunday_april
   - date: 2020-04-20
+    note: Season of Easter begins.
     recurring: *monday_april
   - date: 2020-04-21
     recurring: *tuesday_april
@@ -926,6 +972,7 @@ calendar:
   - date: 2020-05-30
     recurring: *saturday_may
   - date: 2020-05-31
+    note: Season of Easter ends.
     recurring: *sunday_may
     specials:
       - <<: *confirmation_prep
