@@ -683,6 +683,7 @@ calendar:
 
           Donations gratefully accepted at the door.
         location: St Martin&apos;s Parish Hall
+        color: green
         time: 2:30 PM
         ordinal: "1430"
   - date: 2020-03-09
@@ -702,14 +703,43 @@ calendar:
     recurring: *friday_march
     specials:
       - *stations_of_the_cross
+      - title: St Patrick&apos;s Concert
+        descriptive: >
+          See our weekly Bulletin for details.
+        location: St Luke&apos;s Parish Hall (Downeyville)
+        color: green
+        time:
+        ordinal: "2000"
   - date: 2020-03-14
     season: *lent
     recurring: *saturday_march
     specials:
       - *cwl
+      - title: Peterborough Canadian Irish Club St Patrick&apos;s Day Celebrations
+        descriptive: >
+          See our weekly Bulletin for details.
+        location: St Joseph&apos;s Parish Hall (Douro)
+        color: green
+        time: 9:00 AM-10:00 PM
+        ordinal: "0900"
+      - title: St Patrick&apos;s Concert
+        descriptive: >
+          See our weekly Bulletin for details.
+        location: St Luke&apos;s Parish Hall (Downeyville)
+        color: green
+        time:
+        ordinal: "2000"
   - date: 2020-03-15
     season: *lent
     recurring: *sunday_march
+    specials:
+      - title: St Patrick&apos;s Day Celebration
+        descriptive: >
+          See our weekly Bulletin for details.
+        location: St Paul the Apostle (Lakefield)
+        color: green
+        time: 5:00 PM
+        ordinal: "1700"
   - date: 2020-03-16
     season: *lent
     recurring: *monday_march
