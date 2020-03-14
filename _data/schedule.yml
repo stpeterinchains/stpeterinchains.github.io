@@ -713,8 +713,20 @@ calendar:
   - date: 2020-03-14
     season: *lent
     recurring: *saturday_march
+    exclusions: [ weekday_mass_saturday, saturday_vigil, sacrament_reconciliation_saturday, mother_perpetual_help ]
     specials:
-      - *cwl
+      - &covid19
+        title: Weekend Masses Cancelled
+        descriptive: |
+          The
+          [Roman Catholic Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)
+          has chosen to cancel Masses this weekend due to the spread of the
+          COVID-19 virus.
+
+          Please see the Diocese website for the latest information.
+        color: red
+        ordinal: "0200"
+      # - *cwl
       - title: Peterborough Canadian Irish Club St Patrick&apos;s Day Celebrations
         descriptive: >
           See our weekly Bulletin for details.
@@ -732,25 +744,28 @@ calendar:
   - date: 2020-03-15
     season: *lent
     recurring: *sunday_march
+    exclusions: [ sunday_mass ]
     specials:
-      - title: St Patrick&apos;s Day Celebration
-        descriptive: >
-          See our weekly Bulletin for details.
-        location: St Paul the Apostle (Lakefield)
-        color: green
-        time: 5:00 PM
-        ordinal: "1700"
+      - *covid19
+      # - title: St Patrick&apos;s Day Celebration
+      #   descriptive: >
+      #     See our weekly Bulletin for details.
+      #   location: St Paul the Apostle (Lakefield)
+      #   color: green
+      #   time: 5:00 PM
+      #   ordinal: "1700"
   - date: 2020-03-16
     season: *lent
     recurring: *monday_march
     specials:
-      - *koc
+      # - *koc
   - date: 2020-03-17
     season: *lent
     recurring: *tuesday_march
   - date: 2020-03-18
     season: *lent
     recurring: *wednesday_march
+    exclusions: [ reflections ]
   - date: 2020-03-19
     season: *lent
     recurring: *thursday_march
@@ -763,9 +778,9 @@ calendar:
     season: *lent
     recurring: *saturday_march
     specials:
-      - title: The Cathedral Day of Grace
-        time: 9:00 AM-5:00 PM
-        ordinal: "0900"
+      # - title: The Cathedral Day of Grace
+      #   time: 9:00 AM-5:00 PM
+      #   ordinal: "0900"
   - date: 2020-03-22
     season: *lent
     recurring: *sunday_march
