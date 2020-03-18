@@ -3,6 +3,7 @@
 **/package-lock.json
 Gemfile.lock
 .jekyll-metadata
+.jekyll-cache
 _site
 .vscode
 media

@@ -21,75 +21,9 @@ banner:
 
 slideshow:
   -
-    image: cathedral-exterior-interior.jpg
-    caption: The Cathedral of **Saint&nbsp;Peter&#x2011;in&#x2011;Chains**
-  -
-    image: mural.jpg
-    caption: The Great Mural of **The Last Supper**
-  -
-    image: way-of-the-cross-2019.jpg
-    caption: |
-      April 19, 2019
-
-      *Good Friday*
-
-      **Way of the Cross**
-  -
-    image: good-friday1-2019.jpg
-    caption: |
-      April 19, 2019
-
-      *Good Friday*
-
-      **Veneration of the Cross**
-  -
-    image: good-friday2-2019.jpg
-    caption: |
-      April 19, 2019
-
-      *Good Friday*
-
-      **Veneration of the Cross**
-  -
-    image: good-friday3-2019.jpg
-    caption: |
-      April 19, 2019
-
-      *Good Friday*
-
-      **Veneration of the Cross**
-  -
-    image: easter-vigil1-2019.jpg
-    caption: |
-      April 20, 2019
-
-      *Holy Saturday*
-
-      **Easter Vigil**
-  -
-    image: easter-vigil2-2019.jpg
-    caption: |
-      April 20, 2019
-
-      *Holy Saturday*
-
-      **Easter Vigil**
-  -
-    image: easter-vigil3-2019.jpg
-    caption: |
-      April 20, 2019
-
-      *Holy Saturday*
-
-      **Easter Vigil**
-  -
-    image: easter-vigil4-2019.jpg
-    caption: |
-      April 20, 2019
-
-      *Holy Saturday*
-
-      **Easter Vigil**
+    image: covid19.jpg
+    caption: >
+      [COVID-19 Announcement](/covid19.html)
 
 navbar:
   -
@@ -99,9 +33,13 @@ navbar:
         mnemonic: index
         url: /
       -
-        title: Schedule
-        mnemonic: schedule
-        url: /schedule.html
+        title: COVID-19
+        mnemonic: covid19
+        url: /covid19.html
+      # -
+      #   title: Schedule
+      #   mnemonic: schedule
+      #   url: /schedule.html
       -
         title: Bulletins
         mnemonic: bulletins

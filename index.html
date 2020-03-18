@@ -13,6 +13,16 @@ open_graph_description: >
   Join our loving faith community today!
 ---
 
+<!-- COVID-19 -->
+
+{% assign covid19 = site.data.index.covid19 %}
+
+<section id="index-covid19">
+  <h1>{{ covid19.title }}</h1>
+  <div id="index-covid19-text" class="markdown">{{ covid19.text | markdownify }}</div>
+  <div id="index-covid19-announcement" class="markdown">{{ covid19.announcement | markdownify }}</div>
+</section>
+
 <!-- SCHEDULE -->
 
 {% assign schedule = site.data.schedule %}

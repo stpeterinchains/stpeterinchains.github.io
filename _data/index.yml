@@ -1,5 +1,16 @@
 ---
 
+covid19:
+  title: Cancellation Notice
+  text: |
+    In an effort limit the spread of the COVID-19 virus,
+
+    our regularly scheduled events are **CANCELLED**
+
+    until further notice.
+  announcement: >
+    See our [COVID-19 Announcement](/covid19.html) for details.
+
 exposition:
   title: >
     Join us for a contemporary Christian experience

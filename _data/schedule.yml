@@ -18,7 +18,7 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2020-01-01
+    earliest: 2020-03-01
     latest:   2020-04-30
 
 recurring:
@@ -212,126 +212,30 @@ recurring:
       Prayer books for the devotion are provided. All are&nbsp;welcome.
     time: 12:40 PM
     ordinal: "1240"
+  covid19: &covid19
+    mnemonic: covid19
+    title: COVID-19 Cancellation
+    color: red
+    time:
+    ordinal: "0200"
+    descriptive: >
+      All events are cancelled until further notice.
 
 weekly:
-  monday_january: &monday_january
-    - *weekday_mass_monday
-  tuesday_january: &tuesday_january
-    - *weekday_mass
-  wednesday_january: &wednesday_january
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-    - *rcia
-  thursday_january: &thursday_january
-    - *weekday_mass
-  friday_january: &friday_january
-    - *weekday_mass_friday
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_january: &saturday_january
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_january: &sunday_january
-    - *sunday_mass
-  monday_february: &monday_february
-    - *weekday_mass_monday
-  tuesday_february: &tuesday_february
-    - *weekday_mass
-  wednesday_february: &wednesday_february
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_february: &thursday_february
-    - *weekday_mass
-  friday_february: &friday_february
-    - *weekday_mass_friday
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-    - *rcia_friday
-  saturday_february: &saturday_february
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_february: &sunday_february
-    - *sunday_mass
-  monday_march: &monday_march
-    - *weekday_mass
-  tuesday_march: &tuesday_march
-    - *weekday_mass
-  wednesday_march: &wednesday_march
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_march: &thursday_march
-    - *weekday_mass
-  friday_march: &friday_march
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-    - *rcia_friday
-  saturday_march: &saturday_march
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_march: &sunday_march
-    - *sunday_mass
-  monday_april: &monday_april
-    - *weekday_mass
-  tuesday_april: &tuesday_april
-    - *weekday_mass
-  wednesday_april: &wednesday_april
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_april: &thursday_april
-    - *weekday_mass
-  friday_april: &friday_april
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_april: &saturday_april
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_april: &sunday_april
-    - *sunday_mass
-  monday_may: &monday_may
-    - *weekday_mass
-  tuesday_may: &tuesday_may
-    - *weekday_mass
-  wednesday_may: &wednesday_may
-    - *weekday_mass
-    - *reflections
-    - *legion_of_mary
-  thursday_may: &thursday_may
-    - *weekday_mass
-  friday_may: &friday_may
-    - *weekday_mass
-    - *sacrament_reconciliation_friday
-    - *exposition_blessed_sacrament_friday
-  saturday_may: &saturday_may
-    - *weekday_mass_saturday
-    - *saturday_vigil
-    - *exposition_blessed_sacrament_saturday
-    - *sacrament_reconciliation_saturday
-    - *anointing_sick
-    - *mother_perpetual_help
-  sunday_may: &sunday_may
-    - *sunday_mass
+  monday: &monday
+    - *covid19
+  tuesday: &tuesday
+    - *covid19
+  wednesday: &wednesday
+    - *covid19
+  thursday: &thursday
+    - *covid19
+  friday: &friday
+    - *covid19
+  saturday: &saturday
+    - *covid19
+  sunday: &sunday
+    - *covid19
 
 season:
   lent: &lent
@@ -404,624 +308,99 @@ celebration:
     bgcolor: "#933"
 
 calendar:
-  - date: 2020-01-01
-    note: Office closed; re-opens January 2.
-    season: *christmas_octave
-    recurring: *wednesday_january
-    exclusions: [ reflections, legion_of_mary, rcia ]
-  - date: 2020-01-02
-    season: *christmas_season
-    recurring: *thursday_january
-  - date: 2020-01-03
-    season: *christmas_season
-    recurring: *friday_january
-    exclusions: [ weekday_mass_friday ]
-    specials:
-      - *weekday_mass
-  - date: 2020-01-04
-    season: *christmas_season
-    recurring: *saturday_january
-  - date: 2020-01-05
-    season: *christmas_season
-    recurring: *sunday_january
-  - date: 2020-01-06
-    season: *christmas_season
-    recurring: *monday_january
-  - date: 2020-01-07
-    season: *christmas_season
-    recurring: *tuesday_january
-  - date: 2020-01-08
-    season: *christmas_season
-    recurring: *wednesday_january
-  - date: 2020-01-09
-    season: *christmas_season
-    recurring: *thursday_january
-  - date: 2020-01-10
-    season: *christmas_season
-    recurring: *friday_january
-  - date: 2020-01-11
-    season: *christmas_season
-    recurring: *saturday_january
-    specials:
-      - *cwl
-      - <<: *first_reconciliation_prep
-        descriptive: >
-          Students complete their First Reconciliation.
-        time: To be announced
-        ordinal: "1400"
-  - date: 2020-01-12
-    season: *christmas_season
-    recurring: *sunday_january
-  - date: 2020-01-13
-    recurring: *monday_january
-  - date: 2020-01-14
-    recurring: *tuesday_january
-    specials:
-      - *confirmation_prep
-  - date: 2020-01-15
-    recurring: *wednesday_january
-  - date: 2020-01-16
-    recurring: *thursday_january
-  - date: 2020-01-17
-    recurring: *friday_january
-  - date: 2020-01-18
-    recurring: *saturday_january
-  - date: 2020-01-19
-    recurring: *sunday_january
-  - date: 2020-01-20
-    recurring: *monday_january
-    specials:
-      - *koc
-  - date: 2020-01-21
-    recurring: *tuesday_january
-  - date: 2020-01-22
-    recurring: *wednesday_january
-  - date: 2020-01-23
-    recurring: *thursday_january
-  - date: 2020-01-24
-    recurring: *friday_january
-  - date: 2020-01-25
-    recurring: *saturday_january
-    specials:
-      - title: Roast Beef Dinner
-        descriptive: |
-          Tickets $15 for adaults; $8 for children under 12.
-          Please call 705-742-5466 for details.
-
-          Dinner after 4:30 PM Mass.
-        location: Immaculate Conception (356 Rogers St)
-        time: 4:30 PM
-        ordinal: "1630"
-  - date: 2020-01-26
-    recurring: *sunday_january
-  - date: 2020-01-27
-    recurring: *monday_january
-  - date: 2020-01-28
-    recurring: *tuesday_january
-  - date: 2020-01-29
-    recurring: *wednesday_january
-  - date: 2020-01-30
-    recurring: *thursday_january
-  - date: 2020-01-31
-    recurring: *friday_january
-  - date: 2020-02-01
-    recurring: *saturday_february
-    specials:
-      - *first_communion_prep
-  - date: 2020-02-02
-    recurring: *sunday_february
-  - date: 2020-02-03
-    recurring: *monday_february
-  - date: 2020-02-04
-    recurring: *tuesday_february
-  - date: 2020-02-05
-    recurring: *wednesday_february
-  - date: 2020-02-06
-    recurring: *thursday_february
-  - date: 2020-02-07
-    recurring: *friday_february
-    exclusions: [ weekday_mass_friday ]
-    specials:
-      - *weekday_mass
-  - date: 2020-02-08
-    recurring: *saturday_february
-    specials:
-      - *cwl
-  - date: 2020-02-09
-    recurring: *sunday_february
-    exclusions: [ sunday_mass ]
-    specials:
-      - <<: *sunday_mass
-        mnemonic: sunday_mass_20200209
-        time: 8:30 AM
-      - title: White Mass
-        descriptive: >
-          Join us for this special, annual Mass to highlight the
-          critical role that health care providers play in our society and
-          to recognize the unique burdens these professionals bear.
-        color: "#c33"
-        time: 10:30 AM
-        ordinal: "1030"
-  - date: 2020-02-10
-    recurring: *monday_february
-  - date: 2020-02-11
-    recurring: *tuesday_february
-    specials:
-      - *confirmation_prep
-  - date: 2020-02-12
-    recurring: *wednesday_february
-  - date: 2020-02-13
-    recurring: *thursday_february
-  - date: 2020-02-14
-    recurring: *friday_february
-  - date: 2020-02-15
-    recurring: *saturday_february
-  - date: 2020-02-16
-    recurring: *sunday_february
-  - date: 2020-02-17
-    note: Family Day
-    recurring: *monday_february
-    exclusions: [ weekday_mass_monday ]
-    specials:
-      - <<: *weekday_mass_friday
-        mnemonic: weekday_mass_monday_20200217
-        time: 9:00 AM
-        ordinal: "0900"
-  - date: 2020-02-18
-    recurring: *tuesday_february
-  - date: 2020-02-19
-    recurring: *wednesday_february
-  - date: 2020-02-20
-    recurring: *thursday_february
-  - date: 2020-02-21
-    recurring: *friday_february
-  - date: 2020-02-22
-    recurring: *saturday_february
-  - date: 2020-02-23
-    recurring: *sunday_february
-    exclusions: [ sunday_mass ]
-    specials:
-      - <<: *sunday_mass
-        mnemonic: sunday_mass_20200223
-        descriptive: |
-          Join us for our signature Mass, held twice each Sunday&nbsp;morning.
-
-          During the 10:30 AM Mass, we welcome ten Seminarians, visiting from
-          Saint Augustine&apos;s Seminary. They will offer a
-          short&nbsp;presentation.
-  - date: 2020-02-24
-    recurring: *monday_february
-    specials:
-      - *koc
-  - date: 2020-02-25
-    recurring: *tuesday_february
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_shrove
-        descriptive: >
-          Please bring your palms from last year to Holy Mass, which are used
-          to produce the&nbsp;ash for the blessings on Ash&nbsp;Wednesday.
-      - title: CWL Shrove Tuesday Pancake Supper
-        descriptive: |
-          What happens on Shrove Tuesday? Pancakes!
-
-          Families (up to six people) $20, adults $10, youth 6-12 $5,
-          children under 6 free.
-          All proceeds go to the Cathedral&nbsp;CWL.
-        location: Bishop Doyle Hall
-        time: 4:30-6:30 PM
-        ordinal: "1630"
-  - date: 2020-02-26
-    season: *lent
-    recurring: *wednesday_february
-    exclusions: [ weekday_mass ]
-    specials:
-      - <<: *weekday_mass
-        mnemonic: weekday_mass_ashwednesday
-        title: Ash Wednesday Mass
-        descriptive: >
-          Join us for Ash Wednesday Mass at any of these four special times.
-          Please note the the Saint&nbsp;Teresa&nbsp;School Mass is scheduled
-          for the 9:30&nbsp;AM event, though everyone is&nbsp;welcome.
-        time: 7:30 AM, 9:30 AM, 12:10 PM, 7:00 PM
-  - date: 2020-02-27
-    season: *lent
-    recurring: *thursday_february
-  - date: 2020-02-28
-    season: *lent
-    recurring: *friday_february
-    specials:
-      - *stations_of_the_cross
-  - date: 2020-02-29
-    season: *lent
-    recurring: *saturday_february
-    specials:
-      - *first_communion_prep
-      - title: Cursillo Movement Ultreya
-        location: St Alphonsus Parish Hall (810 Frank St)
-        time: 1:00-3:00 PM
-        ordinal: "1300"
-  - date: 2020-03-01
-    season: *lent
-    recurring: *sunday_march
-    specials:
-      - <<: *confirmation_prep
-        time: 10:30 AM
-        ordinal: "1030"
-  - date: 2020-03-02
-    season: *lent
-    recurring: *monday_march
-  - date: 2020-03-03
-    season: *lent
-    recurring: *tuesday_march
-    specials:
-      - *confirmation_prep
-  - date: 2020-03-04
-    season: *lent
-    recurring: *wednesday_march
-  - date: 2020-03-05
-    season: *lent
-    recurring: *thursday_march
-  - date: 2020-03-06
-    season: *lent
-    recurring: *friday_march
-    specials:
-      - *stations_of_the_cross
-  - date: 2020-03-07
-    season: *lent
-    recurring: *saturday_march
-  - date: 2020-03-08
-    season: *lent
-    recurring: *sunday_march
-    specials:
-      - title: Ennismore Irish Concert
-        descriptive: |
-          Come out and enjoy Irish music, jokes, and&nbsp;dancing!
-          Invite your friends and neighbours, and stay for a hearty bowl of
-          homemade&nbsp;soup!
-
-          Donations gratefully accepted at the door.
-        location: St Martin&apos;s Parish Hall
-        color: green
-        time: 2:30 PM
-        ordinal: "1430"
-  - date: 2020-03-09
-    season: *lent
-    recurring: *monday_march
-  - date: 2020-03-10
-    season: *lent
-    recurring: *tuesday_march
-  - date: 2020-03-11
-    season: *lent
-    recurring: *wednesday_march
-  - date: 2020-03-12
-    season: *lent
-    recurring: *thursday_march
-  - date: 2020-03-13
-    season: *lent
-    recurring: *friday_march
-    specials:
-      - *stations_of_the_cross
-      - title: St Patrick&apos;s Concert
-        descriptive: >
-          See our weekly Bulletin for details.
-        location: St Luke&apos;s Parish Hall (Downeyville)
-        color: green
-        time:
-        ordinal: "2000"
   - date: 2020-03-14
-    season: *lent
-    recurring: *saturday_march
-    exclusions: [ weekday_mass_saturday, saturday_vigil, sacrament_reconciliation_saturday, mother_perpetual_help ]
-    specials:
-      - &covid19
-        title: Weekend Masses Cancelled
-        descriptive: |
-          The
-          [Roman Catholic Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)
-          has chosen to cancel Masses this weekend due to the spread of the
-          COVID-19 virus.
-
-          Please see the Diocese website for the latest information.
-        color: red
-        ordinal: "0200"
-      # - *cwl
-      - title: Peterborough Canadian Irish Club St Patrick&apos;s Day Celebrations
-        descriptive: >
-          See our weekly Bulletin for details.
-        location: St Joseph&apos;s Parish Hall (Douro)
-        color: green
-        time: 9:00 AM-10:00 PM
-        ordinal: "0900"
-      - title: St Patrick&apos;s Concert
-        descriptive: >
-          See our weekly Bulletin for details.
-        location: St Luke&apos;s Parish Hall (Downeyville)
-        color: green
-        time:
-        ordinal: "2000"
+    recurring: *saturday
   - date: 2020-03-15
-    season: *lent
-    recurring: *sunday_march
-    exclusions: [ sunday_mass ]
-    specials:
-      - *covid19
-      # - title: St Patrick&apos;s Day Celebration
-      #   descriptive: >
-      #     See our weekly Bulletin for details.
-      #   location: St Paul the Apostle (Lakefield)
-      #   color: green
-      #   time: 5:00 PM
-      #   ordinal: "1700"
+    recurring: *sunday
   - date: 2020-03-16
-    season: *lent
-    recurring: *monday_march
-    specials:
-      # - *koc
+    recurring: *monday
   - date: 2020-03-17
-    season: *lent
-    recurring: *tuesday_march
+    recurring: *tuesday
   - date: 2020-03-18
-    season: *lent
-    recurring: *wednesday_march
-    exclusions: [ reflections ]
+    recurring: *wednesday
   - date: 2020-03-19
-    season: *lent
-    recurring: *thursday_march
+    recurring: *thursday
   - date: 2020-03-20
-    season: *lent
-    recurring: *friday_march
-    specials:
-      - *stations_of_the_cross
+    recurring: *friday
   - date: 2020-03-21
-    season: *lent
-    recurring: *saturday_march
-    specials:
-      # - title: The Cathedral Day of Grace
-      #   time: 9:00 AM-5:00 PM
-      #   ordinal: "0900"
+    recurring: *saturday
   - date: 2020-03-22
-    season: *lent
-    recurring: *sunday_march
+    recurring: *sunday
   - date: 2020-03-23
-    season: *lent
-    recurring: *monday_march
+    recurring: *monday
   - date: 2020-03-24
-    season: *lent
-    recurring: *tuesday_march
+    recurring: *tuesday
   - date: 2020-03-25
-    season: *lent
-    recurring: *wednesday_march
+    recurring: *wednesday
   - date: 2020-03-26
-    season: *lent
-    recurring: *thursday_march
+    recurring: *thursday
   - date: 2020-03-27
-    season: *lent
-    recurring: *friday_march
-    specials:
-      - *stations_of_the_cross
+    recurring: *friday
   - date: 2020-03-28
-    season: *lent
-    recurring: *saturday_march
-    specials:
-      - *first_communion_prep
+    recurring: *saturday
   - date: 2020-03-29
-    season: *lent
-    recurring: *sunday_march
+    recurring: *sunday
   - date: 2020-03-30
-    season: *lent
-    recurring: *monday_march
+    recurring: *monday
   - date: 2020-03-31
-    season: *lent
-    recurring: *tuesday_march
+    recurring: *tuesday
   - date: 2020-04-01
-    season: *lent
-    recurring: *wednesday_april
+    recurring: *wednesday
   - date: 2020-04-02
-    season: *lent
-    recurring: *thursday_april
+    recurring: *thursday
   - date: 2020-04-03
-    season: *lent
-    recurring: *friday_april
-    specials:
-      - *stations_of_the_cross
+    recurring: *friday
   - date: 2020-04-04
-    season: *lent
-    recurring: *saturday_april
-    specials:
-      - <<: *confirmation_prep
-        descriptive: Church cleanup.
-        time: To be announced
-        ordinal: "1400"
-      - &diocese_cwl_convention
-        title: Diocese CWL Convention
-        descriptive: >
-          To be held over Saturday and Sunday.
-          Registration forms are available at the Cathedral Office.
-          Deadline to register is February&nbsp;27.
-        location: St Anne&apos;s Hall
-        time: All day
-        ordinal: "0600"
+    recurring: *saturday
   - date: 2020-04-05
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Palm Sunday
-      color: white
-      bgcolor: "#c33"
-    recurring: *sunday_april
-    specials:
-      - <<: *sunday_mass
-        mnemonic: sunday_mass_holyweek
-        title: Special Sunday Mass
-        descriptive: Join us for Mass on this Palm&nbsp;Sunday.
-      - <<: *diocese_cwl_convention
-        descriptive:
+    recurring: *sunday
   - date: 2020-04-06
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Monday
-    recurring: *monday_april
+    recurring: *monday
   - date: 2020-04-07
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Tuesday
-    recurring: *tuesday_april
+    recurring: *tuesday
   - date: 2020-04-08
-    season: *lent
-    celebration:
-      <<: *holy_week
-      title: Holy Wednesday
-    recurring: *wednesday_april
+    recurring: *wednesday
   - date: 2020-04-09
-    season: *lent
-    celebration: *maundy_thursday
-    recurring: *thursday_april
+    recurring: *thursday
   - date: 2020-04-10
-    season: *easter
-    celebration: *good_friday
-    recurring: *friday_april
+    recurring: *friday
   - date: 2020-04-11
-    season: *easter
-    celebration: *black_saturday
-    recurring: *saturday_april
+    recurring: *saturday
   - date: 2020-04-12
-    season: *easter
-    celebration: *easter_sunday
-    recurring: *sunday_april
+    recurring: *sunday
   - date: 2020-04-13
-    season: *easter_octave
-    recurring: *monday_april
+    recurring: *monday
   - date: 2020-04-14
-    season: *easter_octave
-    recurring: *tuesday_april
+    recurring: *tuesday
   - date: 2020-04-15
-    season: *easter_octave
-    recurring: *wednesday_april
+    recurring: *wednesday
   - date: 2020-04-16
-    season: *easter_octave
-    recurring: *thursday_april
+    recurring: *thursday
   - date: 2020-04-17
-    season: *easter_octave
-    recurring: *friday_april
+    recurring: *friday
   - date: 2020-04-18
-    season: *easter_octave
-    recurring: *saturday_april
-    specials:
-      - <<: *first_communion_prep
-        descriptive: Session and Retreat Day.
-        time: 10:00 AM-1:00 PM
+    recurring: *saturday
   - date: 2020-04-19
-    season: *easter_octave
-    recurring: *sunday_april
+    recurring: *sunday
   - date: 2020-04-20
-    note: Season of Easter begins.
-    recurring: *monday_april
+    recurring: *monday
   - date: 2020-04-21
-    recurring: *tuesday_april
-    specials:
-      - *confirmation_prep
+    recurring: *tuesday
   - date: 2020-04-22
-    recurring: *wednesday_april
+    recurring: *wednesday
   - date: 2020-04-23
-    recurring: *thursday_april
+    recurring: *thursday
   - date: 2020-04-24
-    recurring: *friday_april
+    recurring: *friday
   - date: 2020-04-25
-    recurring: *saturday_april
+    recurring: *saturday
   - date: 2020-04-26
-    recurring: *sunday_april
+    recurring: *sunday
   - date: 2020-04-27
-    recurring: *monday_april
+    recurring: *monday
   - date: 2020-04-28
-    recurring: *tuesday_april
-    specials:
-      - <<: *first_communion_prep
-        descriptive: Students take their First Holy Communion.
-        location:
-        time: 10:30 AM
-        ordinal: "1030"
+    recurring: *tuesday
   - date: 2020-04-29
-    recurring: *wednesday_april
+    recurring: *wednesday
   - date: 2020-04-30
-    recurring: *thursday_april
-  - date: 2020-05-01
-    recurring: *friday_may
-  - date: 2020-05-02
-    recurring: *saturday_may
-  - date: 2020-05-03
-    recurring: *sunday_may
-  - date: 2020-05-04
-    recurring: *monday_may
-  - date: 2020-05-05
-    recurring: *tuesday_may
-  - date: 2020-05-06
-    recurring: *wednesday_may
-  - date: 2020-05-07
-    recurring: *thursday_may
-  - date: 2020-05-08
-    recurring: *friday_may
-  - date: 2020-05-09
-    recurring: *saturday_may
-  - date: 2020-05-10
-    recurring: *sunday_may
-  - date: 2020-05-11
-    recurring: *monday_may
-  - date: 2020-05-12
-    recurring: *tuesday_may
-    specials:
-      - *confirmation_prep
-  - date: 2020-05-13
-    recurring: *wednesday_may
-  - date: 2020-05-14
-    recurring: *thursday_may
-  - date: 2020-05-15
-    recurring: *friday_may
-  - date: 2020-05-16
-    recurring: *saturday_may
-  - date: 2020-05-17
-    recurring: *sunday_may
-  - date: 2020-05-18
-    recurring: *monday_may
-  - date: 2020-05-19
-    recurring: *tuesday_may
-  - date: 2020-05-20
-    recurring: *wednesday_may
-  - date: 2020-05-21
-    recurring: *thursday_may
-  - date: 2020-05-22
-    recurring: *friday_may
-    specials:
-      - <<: *confirmation_prep
-        descriptive: Retreat Day.
-        location: Mount St Joseph
-        time: 10:00 AM-2:00 PM
-        ordinal: "1000"
-  - date: 2020-05-23
-    recurring: *saturday_may
-  - date: 2020-05-24
-    recurring: *sunday_may
-  - date: 2020-05-25
-    recurring: *monday_may
-  - date: 2020-05-26
-    recurring: *tuesday_may
-  - date: 2020-05-27
-    recurring: *wednesday_may
-  - date: 2020-05-28
-    recurring: *thursday_may
-  - date: 2020-05-29
-    recurring: *friday_may
-  - date: 2020-05-30
-    recurring: *saturday_may
-  - date: 2020-05-31
-    note: Season of Easter ends.
-    recurring: *sunday_may
-    specials:
-      - <<: *confirmation_prep
-        descriptive: Confirmation.
-        location:
-        time: 10:30 AM
-        ordinal: "1030"
+    recurring: *thursday
