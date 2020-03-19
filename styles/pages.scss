@@ -30,7 +30,9 @@
   letter-spacing: -0.05rem;
 }
 
-// #covid19 > div strong { font-size: 1.5rem; }
+#index-covid19-give {
+  margin-top: 2rem;
+}
 
 
 /* SECTION: SCHEDULE */
@@ -765,25 +767,26 @@ div.giving-descriptive > p {
 
 
 
-/*** PAGE: COVID-19 ***/
+/*** PAGE: GENERAL POST ***/
 
-#covid19-text > h1 {
+div.post > h1 {
   margin: 2rem 0 1rem 0;
   border-bottom: 2px solid #eee;
   font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
 }
 
-#covid19-text > h2 {
+div.post > h2 {
   margin: 1rem 0;
   font-weight: 600; font-size: 1.25rem;
   color: #933;
 }
 
-#covid19-text > p { margin: 0 0 0.5rem 0; font-size: 0.9rem; }
-#covid19-text > ul { font-weight: 300; font-size: 0.9rem; }
-#covid19-text > ul > li { margin: 0; }
-#covid19-text > blockquote { margin: 0 0 0 2rem; }
-#covid19-text > blockquote > p {
+div.post > p { margin: 0 0 0.5rem 0; font-size: 0.9rem; }
+div.post > ul { font-weight: 300; font-size: 0.9rem; }
+// div.post > ul > li { margin: 0; }
+div.post > ul p { margin: 0 0 0.5rem 0; }
+div.post > blockquote { margin: 0 0 0 2rem; }
+div.post > blockquote > p {
   margin: 0 0 0.5rem 0;
   font-weight: 300; font-size: 0.9rem; font-style: italic;
 }

@@ -21,9 +21,13 @@ banner:
 
 slideshow:
   -
-    image: covid19.jpg
+    image: covid19a.jpg
     caption: >
-      [COVID-19 Announcement](/covid19.html)
+      [COVID-19 Announcement...](/covid19.html)
+  -
+    image: covid19b.jpg
+    # caption: >
+    #   [Other Ways to Give...](/giving.html)
 
 navbar:
   -
