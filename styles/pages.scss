@@ -20,18 +20,22 @@
   color: #c33;
 }
 
-#index-covid19-text p {
-  font-size: 1.25rem; font-weight: 300;
-}
-
+#index-covid19-text p { font-size: 1.25rem; font-weight: 300; }
 #index-covid19-announcement p {
   margin-top: 1rem;
   font-size: 1.5rem; font-weight: 400;
   letter-spacing: -0.05rem;
 }
 
-#index-covid19-give {
-  margin-top: 2rem;
+#index-covid19-give { margin-top: 2rem; }
+
+#index-covid19-video {
+  margin: 3rem 0 1rem 0;
+  width: 240px; height: 135px;
+  box-shadow: -4px 4px 6px #666;
+}
+@media screen and (min-width: 48rem) {
+  #index-covid19-video { width: 560px; height: 315px; }
 }
 
 
@@ -276,7 +280,7 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
   text-align: center;
 }
 
-#video > iframe { width: 240px; height: 135px; }
+#video > iframe { width: 240px; height: 135px; box-shadow: -4px 4px 6px #666; }
 @media screen and (min-width: 48rem) {
   #video > iframe { width: 560px; height: 315px; }
 }
