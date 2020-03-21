@@ -21,13 +21,32 @@
 }
 
 #index-covid19-text p { font-size: 1.25rem; font-weight: 300; }
-#index-covid19-announcement p {
-  margin-top: 1rem;
-  font-size: 1.5rem; font-weight: 400;
-  letter-spacing: -0.05rem;
+
+#index-covid19-give { margin-top: 3rem; }
+
+#index-covid19-announcements { margin-top: 3rem; }
+
+#index-covid19-announcements > h1 {
+  margin: 0;
+  font-size: 1.5rem; font-weight: 400; letter-spacing: -0.05rem;
+  color: #666;
 }
 
-#index-covid19-give { margin-top: 2rem; }
+h2.index-covid19-announcements-date {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 0.9rem; font-weight: 300; //letter-spacing: -0.05rem;
+  color: #999;
+
+}
+
+p.index-covid19-announcements-item {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.2rem; font-weight: 300; //letter-spacing: -0.05rem;
+  color: #333;
+}
+
+p.index-covid19-announcements-item > a { text-decoration: none; color: #333; }
+p.index-covid19-announcements-item > a:hover { color: skyblue; }
 
 #index-covid19-video {
   margin: 3rem 0 1rem 0;

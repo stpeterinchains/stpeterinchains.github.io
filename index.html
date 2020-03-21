@@ -20,11 +20,19 @@ open_graph_description: >
 <section id="index-covid19">
   <h1>{{ covid19.title }}</h1>
   <div id="index-covid19-text" class="markdown">{{ covid19.text | markdownify }}</div>
-  <div id="index-covid19-announcement" class="markdown">{{ covid19.announcement | markdownify }}</div>
   <div id="index-covid19-give">
     <button class="tithely-give-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">Donate Now</button>
     <script src="https://tithe.ly/widget/v3/give.js?3"></script>
     <script>var tw = create_tithely_widget();</script>
+  </div>
+  <div id="index-covid19-announcements">
+    <h1>Announcements</h1>
+    {% for group in covid19.announcements %}
+    <h2 class="index-covid19-announcements-date">{{ group.date }}</h1>
+    {% for item in group.items %}
+    <p class="index-covid19-announcements-item"><a href="{{ item.link }}">{{ item.title }}</a></p>
+    {% endfor %}
+    {% endfor %}
   </div>
   <iframe id="index-covid19-video" src="https://www.youtube.com/embed/{{ covid19.video_id }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </section>

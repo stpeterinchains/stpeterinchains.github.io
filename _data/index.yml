@@ -11,6 +11,19 @@ covid19:
   announcement: >
     See our [COVID-19 Announcement](/covid19.html) for details.
   video_id: _PmCbZAS_Xs
+  announcements:
+    - date: March 20
+      items:
+        - title: Weekly Bulletin (Special COVID-19&nbsp;Edition)
+          link: https://drive.google.com/file/d/1u6j9WPBhSe-Dehycg1dY21ZG0vDlzWJQ/view
+        - title: Letter from Fr&nbsp;Tom&nbsp;Lynch on&nbsp;COVID-19
+          link: https://drive.google.com/file/d/1sBoVL6UW0fkiBeG2HYvMXOZEYDlyQX0K/view
+        - title: Spiritual Resources to use During the COVID-19&nbsp;Closures
+          link: https://drive.google.com/file/d/1etAI-PUB3xdyWa5VqTZ94jU-gTIJbRd2/view
+    - date: March 18
+      items:
+        - title: Cancellation of Masses—Preventing the Spread of&nbsp;COVID-19
+          link: /covid19.html
 
 exposition:
   title: >
