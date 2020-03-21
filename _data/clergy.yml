@@ -66,6 +66,18 @@ clergy:
         link: frinnocentumezika@peterboroughdioces.org
 
   -
+    last_name: Joshy, CMI
+    first_name: George
+    title: Father
+    position: Associate Pastor
+    image:
+    bio:
+    contact:
+      -
+        platform: E&ndash;mail
+        link: frjoshygeorge@peterboroughdiocese.org
+
+  -
     last_name: Radigan
     first_name: Bill
     title: Deacon
