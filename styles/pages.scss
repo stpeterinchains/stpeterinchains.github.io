@@ -8,11 +8,7 @@
 
 /* SECTION: COVID-19 */
 
-#index-covid19 {
-  margin-bottom: 6rem; padding-bottom: 2rem;
-  border-bottom: 4px solid #eee;
-  text-align: center;
-}
+#index-covid19 { margin-bottom: 3rem; text-align: center; }
 
 #index-covid19 > h1 {
   margin: 0 0 1rem 0;
@@ -20,47 +16,75 @@
   color: #c33;
 }
 
-#index-covid19-text p { font-size: 1.25rem; font-weight: 300; }
+#index-covid19-text { margin-bottom: 3rem; }
 
-#index-covid19-give { margin-top: 3rem; }
-
-#index-covid19-announcements { margin-top: 3rem; }
-
-#index-covid19-announcements > h1 {
-  margin: 0;
-  font-size: 1.5rem; font-weight: 400; letter-spacing: -0.05rem;
-  color: #666;
-}
-
-h2.index-covid19-announcements-date {
-  margin: 1rem 0 0 0;
-  font-size: 0.9rem; font-weight: 300; //letter-spacing: -0.05rem;
-  color: #999;
-
-}
-
-p.index-covid19-announcements-item {
+#index-covid19-text p {
   margin: 0.5rem 0 0 0;
-  font-size: 1.1rem; font-weight: 300; //letter-spacing: -0.05rem;
+  font-size: 1.25rem; font-weight: 300;
+}
+
+
+/* SECTION: SOCIAL MEDIA & MAP */
+
+#social { margin: 0 5% 3rem 5%; text-align: center; }
+
+#social-logos > a { margin-right: 5%; filter: grayscale(0.5); }
+#social-logos > a:last-of-type { margin: 0 0 0 8%; }
+
+#social-logos > a > img { width: 36px; height: 36px; }
+
+#social-message {
+  margin-top: 0.25rem; padding-top: 0.25rem;
+  border-top: 2px solid #eee;
+  font-weight: 400; font-size: 0.9rem;
   color: #333;
 }
 
-p.index-covid19-announcements-item > a { text-decoration: none; color: #333; }
-p.index-covid19-announcements-item > a:hover { color: skyblue; }
-
-#index-covid19-video {
-  margin: 3rem 0 1rem 0;
-  width: 240px; height: 135px;
-  box-shadow: -4px 4px 6px #666;
+@media screen and (min-width: 35.5rem) {
+  #social-logos > a > img { width: 45px; height: 45px; }
 }
+
 @media screen and (min-width: 48rem) {
-  #index-covid19-video { width: 560px; height: 315px; }
+  #social-logos > a > img { width: 54px; height: 54px; }
+  #social-message { font-size: 1rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #social { margin-left: 10%; margin-right: 10%; }
+  #social-logos > a > img { width: 72px; height: 72px; }
+  #social-message { font-size: 1.1rem; }
+}
+
+
+/* SECTION: TWITTER */
+
+#twitter { margin-bottom: 3rem; }
+
+#twitter > h1 {DISPLAY:NONE;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem; font-weight: 300;
+  text-align: center;
+}
+
+#twitter > h1 > a { text-decoration: none; color: #333; }
+#twitter > h1 > a:hover { color: skyblue; }
+
+@media screen and (min-width: 35.5rem) {
+  #twitter > h1 { font-size: 1.5rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #twitter > h1 { font-size: 1.75rem; }
+}
+
+@media screen and (min-width: 80rem) {
+  #twitter > h1 { font-size: 2rem; }
 }
 
 
 /* SECTION: SCHEDULE */
 
-#index-schedule { DISPLAY: NONE; text-align: center; }
+#index-schedule { text-align: center; }
 
 #index-schedule-title {
   margin: 0 5%; padding-bottom: 0.25rem;
@@ -232,41 +256,6 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
   div.exposition-item-patch-blurb strong { font-size: 1.3rem; }
   div.exposition-item-title { font-size: 1.1rem; }
   div.exposition-item-text p { margin-top: 0.5rem; font-size: 1rem; }
-}
-
-
-/* SECTION: SOCIAL MEDIA */
-
-#social {
-  margin: 0 5% 1rem 5%;
-  text-align: center;
-}
-
-#social-logos > a { margin-right: 5%; filter: grayscale(0.5); }
-#social-logos > a:last-of-type { margin: 0 0 0 8%; }
-
-#social-logos > a > img { width: 36px; height: 36px; }
-
-#social-message {
-  margin-top: 0.25rem; padding-top: 0.25rem;
-  border-top: 2px solid #eee;
-  font-weight: 400; font-size: 0.9rem;
-  color: #333;
-}
-
-@media screen and (min-width: 35.5rem) {
-  #social-logos > a > img { width: 45px; height: 45px; }
-}
-
-@media screen and (min-width: 48rem) {
-  #social-logos > a > img { width: 54px; height: 54px; }
-  #social-message { font-size: 1rem; }
-}
-
-@media screen and (min-width: 64rem) {
-  #social { margin-left: 10%; margin-right: 10%; }
-  #social-logos > a > img { width: 72px; height: 72px; }
-  #social-message { font-size: 1.1rem; }
 }
 
 

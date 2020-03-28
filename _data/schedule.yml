@@ -10,6 +10,7 @@ sections:
   upcoming:
     anchor: schedule-upcoming-events
     title: Upcoming events
+    title: Events
   past:
     anchor: schedule-past-events
     title: Past events
@@ -18,7 +19,7 @@ select:
   index:
     days_forward: 15
   schedule:
-    earliest: 2020-03-01
+    earliest: 2020-03-21
     latest:   2020-04-30
 
 recurring:
@@ -214,12 +215,13 @@ recurring:
     ordinal: "1240"
   covid19: &covid19
     mnemonic: covid19
-    title: COVID-19 Cancellation
-    color: red
+    title: COVID-19 Cancellations
+    # color: red
+    color: "#666"
     time:
-    ordinal: "0200"
+    ordinal: "2300"
     descriptive: >
-      All events are cancelled until further notice.
+      Events are cancelled until further notice.
 
 weekly:
   monday: &monday
@@ -308,38 +310,64 @@ celebration:
     bgcolor: "#933"
 
 calendar:
-  - date: 2020-03-14
-    recurring: *saturday
-  - date: 2020-03-15
-    recurring: *sunday
-  - date: 2020-03-16
-    recurring: *monday
-  - date: 2020-03-17
-    recurring: *tuesday
-  - date: 2020-03-18
-    recurring: *wednesday
-  - date: 2020-03-19
-    recurring: *thursday
-  - date: 2020-03-20
-    recurring: *friday
   - date: 2020-03-21
     recurring: *saturday
+    exclusions: [ covid19 ]
+    specials:
+      - &mass_20200322
+        color: "#c33"
+        title: Sunday Mass&mdash;Fourth&nbsp;Sunday in&nbsp;Lent
+        descriptive: |
+          During this time of social distancing due to COVID-19,
+          please join our Catholic community for this very special prerecorded
+          Holy&nbsp;Mass, celebrated at
+          Saint&nbsp;Alphonsus Liguori&nbsp;Church
+          by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
+
+          [View this Mass on YouTube](https://youtu.be/nmt5O5bHfis)
+
+          For other events, please see the
+          [Peterborough Diocese Channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg)
+          on YouTube.
+
+          Bravo!
+        location: YouTube
+        time: Prerecorded
+        ordinal: "1200"
   - date: 2020-03-22
     recurring: *sunday
-  - date: 2020-03-23
-    recurring: *monday
-  - date: 2020-03-24
-    recurring: *tuesday
-  - date: 2020-03-25
-    recurring: *wednesday
-  - date: 2020-03-26
-    recurring: *thursday
-  - date: 2020-03-27
-    recurring: *friday
+    exclusions: [ covid19 ]
+    specials:
+      - *mass_20200322
   - date: 2020-03-28
     recurring: *saturday
+    exclusions: [ covid19 ]
+    specials:
+      - &mass_20200329
+        color: "#c33"
+        title: Sunday Mass&mdash;Fifth&nbsp;Sunday in&nbsp;Lent
+        descriptive: |
+          During this time of social distancing due to COVID-19,
+          please join our Catholic community for this very special prerecorded
+          Holy&nbsp;Mass, celebrated at
+          the Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains
+          by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
+
+          [View this Mass on YouTube](https://youtu.be/yJpznJE4WdU)
+
+          For other events, please see the
+          [Peterborough Diocese Channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg)
+          on YouTube.
+
+          Bravo!
+        location: YouTube
+        time: Prerecorded
+        ordinal: "1200"
   - date: 2020-03-29
     recurring: *sunday
+    exclusions: [ covid19 ]
+    specials:
+      - *mass_20200329
   - date: 2020-03-30
     recurring: *monday
   - date: 2020-03-31

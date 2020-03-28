@@ -3,34 +3,32 @@
 covid19:
   title: Cancellation Notice
   text: |
-    In an effort to limit the spread of the COVID-19 virus,
-
+    In an effort to limit the spread of COVID-19,
     our regularly scheduled events are **CANCELLED**
+    until&nbsp;further&nbsp;notice.
 
-    until further notice.
-  video_id: _PmCbZAS_Xs
-  announcements:
-    - date: March 21
-      items:
-        - title: >
-            YouTube<br>
-            <strong style="color:#933">Mass Celebrated by Bishop Daniel Miehm</strong><br>
-            <em>Fourth Sunday in Lent</em>
-          link: https://youtu.be/nmt5O5bHfis
-    - date: March 20
-      items:
-        - title: >
-            Weekly Bulletin<br>
-            <em>Special COVID-19 Edition</em>
-          link: https://drive.google.com/file/d/1u6j9WPBhSe-Dehycg1dY21ZG0vDlzWJQ/view
-        - title: Letter from Fr&nbsp;Tom&nbsp;Lynch on&nbsp;COVID-19
-          link: https://drive.google.com/file/d/1sBoVL6UW0fkiBeG2HYvMXOZEYDlyQX0K/view
-        - title: Spiritual Resources to use During COVID-19&nbsp;Closures
-          link: https://drive.google.com/file/d/1etAI-PUB3xdyWa5VqTZ94jU-gTIJbRd2/view
-    - date: March 18
-      items:
-        - title: Cancellation of Masses—Preventing the Spread of&nbsp;COVID-19
-          link: /covid19.html
+    Please join us on social media for the latest&nbsp;updates.
+  donate_button: Please Donate
+
+social:
+  message: Join us on social media, and in the real world
+  apps:
+    -
+      link: https://twitter.com/cathedralstpet
+      logo: twitter-logo.png
+    -
+      link: https://www.facebook.com/CathedralSaintPeterInChains/
+      logo: facebook-logo.png
+    -
+      logo: youtube-logo.png
+      link: https://www.youtube.com/user/PriestsForLifeCanada/videos
+    -
+      logo: google-maps-logo.png
+      link: https://goo.gl/maps/Vz73TcvLW8P2
+
+twitter:
+  title: The Cathedral on Twitter
+  link: https://twitter.com/cathedralstpet
 
 exposition:
   title: >
@@ -140,19 +138,6 @@ exposition:
         Cathedral in the years and decades to come.
         Please consider regular donations, or
         [donate&nbsp;online](/giving.html).
-
-social:
-  message: Join us on social media, and in the real world
-  apps:
-    -
-      link: https://www.facebook.com/CathedralSaintPeterInChains/
-      logo: facebook-logo.png
-    -
-      logo: youtube-logo.png
-      link: https://www.youtube.com/user/PriestsForLifeCanada/videos
-    -
-      logo: google-maps-logo.png
-      link: https://goo.gl/maps/Vz73TcvLW8P2
 
 video:
   id: Z8FQvfdpcV8
