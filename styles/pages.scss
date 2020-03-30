@@ -60,25 +60,30 @@
 
 #twitter { margin-bottom: 3rem; }
 
-#twitter > h1 {DISPLAY:NONE;
-  margin: 0 0 0.5rem 0;
-  font-size: 1.25rem; font-weight: 300;
-  text-align: center;
+#twitter > h1 {
+  margin: 0 5% 0.25rem 5%;
+  font-size: 0.9rem; font-weight: 300;
 }
 
-#twitter > h1 > a { text-decoration: none; color: #333; }
+#twitter > h1 > a { text-decoration: none; color: #999; }
 #twitter > h1 > a:hover { color: skyblue; }
 
-@media screen and (min-width: 35.5rem) {
-  #twitter > h1 { font-size: 1.5rem; }
+#twitter > div {
+  width: 90%;
+  margin: 0 auto; padding: 0.5rem 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  background-color: #f4f4f4;
 }
 
 @media screen and (min-width: 64rem) {
-  #twitter > h1 { font-size: 1.75rem; }
+  #twitter > h1 { margin: 0 10% 0.5rem 10%; }
+  #twitter > div { width: 80%; }
 }
 
 @media screen and (min-width: 80rem) {
-  #twitter > h1 { font-size: 2rem; }
+  #twitter > h1 { margin: 0 15% 0.5rem 15%; }
+  #twitter > div { width: 70%; }
 }
 
 

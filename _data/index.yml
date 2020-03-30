@@ -11,7 +11,7 @@ covid19:
   donate_button: Please Donate
 
 social:
-  message: Join us on social media, and in the real world
+  message: Join us on social media, and in&nbsp;the&nbsp;real&nbsp;world
   apps:
     -
       link: https://twitter.com/cathedralstpet
@@ -27,7 +27,7 @@ social:
       link: https://goo.gl/maps/Vz73TcvLW8P2
 
 twitter:
-  title: The Cathedral on Twitter
+  title: "@cathedralstpet"
   link: https://twitter.com/cathedralstpet
 
 exposition:

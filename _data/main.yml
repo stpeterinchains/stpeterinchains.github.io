@@ -26,8 +26,14 @@ slideshow:
       [COVID-19 Announcement...](/covid19.html)
   -
     image: covid19b.jpg
-    # caption: >
-    #   [Other Ways to Give...](/giving.html)
+  -
+    image: mass20200329.jpg
+    caption: |
+      **Sunday Mass**
+
+      *March 29, 2020*
+
+      [View on YouTube](https://youtu.be/yJpznJE4WdU)
 
 navbar:
   -
@@ -40,10 +46,10 @@ navbar:
         title: COVID-19
         mnemonic: covid19
         url: /covid19.html
-      # -
-      #   title: Schedule
-      #   mnemonic: schedule
-      #   url: /schedule.html
+      -
+        title: Schedule
+        mnemonic: schedule
+        url: /schedule.html
       -
         title: Bulletins
         mnemonic: bulletins
