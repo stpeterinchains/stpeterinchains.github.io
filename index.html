@@ -33,8 +33,8 @@ open_graph_description: >
 
 <section id="social">
   <div id="social-logos">
-    {% for app in social.apps %}
-    <a target="_blank" href="{% if app.link %}{{ app.link }}{% else %}javascript:void(0){% endif %}"><img src="{{ app.logo | prepend: site.social_images_path | relative_url }}"></a>
+    {% for profile in social.profiles %}
+    <a target="_blank" href="{% if profile.link %}{{ profile.link }}{% else %}javascript:void(0){% endif %}"><img src="{{ profile.logo | prepend: site.social_images_path | relative_url }}" alt="{{ profile.title }}"></a>
     {% endfor %}
   </div>
   <div id="social-message">{{ social.message }}</div>

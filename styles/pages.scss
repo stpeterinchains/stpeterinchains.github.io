@@ -29,7 +29,7 @@
 #social { margin: 0 5% 3rem 5%; text-align: center; }
 
 #social-logos > a { margin-right: 5%; filter: grayscale(0.5); }
-#social-logos > a:last-of-type { margin: 0 0 0 8%; }
+#social-logos > a:last-of-type { margin: 0 0 0 5%; }
 
 #social-logos > a > img { width: 36px; height: 36px; }
 
@@ -70,10 +70,11 @@
 
 #twitter > div {
   width: 90%;
-  margin: 0 auto; padding: 0.5rem 0;
-  border-top: 2px solid #eee;
-  border-bottom: 2px solid #eee;
+  margin: 0 auto;
+  border-top: 2px solid #eee; border-bottom: 2px solid #eee;
+  padding: 0.5rem 0;
   background-color: #f4f4f4;
+  text-align: center;
 }
 
 @media screen and (min-width: 64rem) {

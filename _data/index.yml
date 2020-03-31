@@ -4,25 +4,35 @@ covid19:
   title: Cancellation Notice
   text: |
     In an effort to limit the spread of COVID-19,
-    our regularly scheduled events are **CANCELLED**
+    our regularly scheduled events are **cancelled**
     until&nbsp;further&nbsp;notice.
 
-    Please join us on social media for the latest&nbsp;updates.
+    For the latest updates, please visit the
+    [Peterborough&nbsp;Diocese](https://www.peterboroughdiocese.org/en/index.aspx),
+    or join us on social&nbsp;media.
   donate_button: Please Donate
 
 social:
   message: Join us on social media, and in&nbsp;the&nbsp;real&nbsp;world
-  apps:
+  profiles:
     -
+      title: Cathedral of Saint Peter-in-Chains on Twitter
       link: https://twitter.com/cathedralstpet
       logo: twitter-logo.png
     -
+      title: Cathedral of Saint Peter-in-Chains on Facebook
       link: https://www.facebook.com/CathedralSaintPeterInChains/
       logo: facebook-logo.png
     -
+      title: Diocese of Peterborough on YouTube
+      logo: youtube-logo.png
+      link: https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg
+    -
+      title: Priests for Life Canada on YouTube
       logo: youtube-logo.png
       link: https://www.youtube.com/user/PriestsForLifeCanada/videos
     -
+      title: Cathedral of Saint Peter-in-Chains on Google Maps
       logo: google-maps-logo.png
       link: https://goo.gl/maps/Vz73TcvLW8P2
 
