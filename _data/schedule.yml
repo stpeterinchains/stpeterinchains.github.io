@@ -312,6 +312,8 @@ celebration:
 calendar:
   - date: 2020-03-21
     recurring: *saturday
+  - date: 2020-03-22
+    recurring: *sunday
     exclusions: [ covid19 ]
     specials:
       - &mass_20200322
@@ -324,23 +326,20 @@ calendar:
           Saint&nbsp;Alphonsus Liguori&nbsp;Church
           by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
 
-          [View this Mass on YouTube](https://youtu.be/nmt5O5bHfis)
+          [View this Mass on&nbsp;YouTube](https://youtu.be/nmt5O5bHfis)
 
           For other events, please see the
-          [Peterborough Diocese Channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg)
-          on YouTube.
+          [Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)
+          channel on&nbsp;YouTube.
 
           Bravo!
         location: YouTube
         time: Prerecorded
         ordinal: "1200"
-  - date: 2020-03-22
-    recurring: *sunday
-    exclusions: [ covid19 ]
-    specials:
-      - *mass_20200322
   - date: 2020-03-28
     recurring: *saturday
+  - date: 2020-03-29
+    recurring: *sunday
     exclusions: [ covid19 ]
     specials:
       - &mass_20200329
@@ -353,21 +352,16 @@ calendar:
           the Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains
           by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
 
-          [View this Mass on YouTube](https://youtu.be/yJpznJE4WdU)
+          [View this Mass on&nbsp;YouTube](https://youtu.be/yJpznJE4WdU)
 
           For other events, please see the
-          [Peterborough Diocese Channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg)
-          on YouTube.
+          [Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)
+          channel on&nbsp;YouTube.
 
           Bravo!
         location: YouTube
         time: Prerecorded
         ordinal: "1200"
-  - date: 2020-03-29
-    recurring: *sunday
-    exclusions: [ covid19 ]
-    specials:
-      - *mass_20200329
   - date: 2020-03-30
     recurring: *monday
   - date: 2020-03-31
@@ -382,6 +376,22 @@ calendar:
     recurring: *saturday
   - date: 2020-04-05
     recurring: *sunday
+    exclusions: [ covid19 ]
+    specials:
+      - &mass_20200405
+        color: "#c33"
+        title: Palm Sunday Mass
+        descriptive: |
+          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at the Cathedral, this very special
+          *Mass for the Palm&nbsp;Sunday of the Lord&apos;s&nbsp;Passion*
+          will air on **Channel&nbsp;700** on Cogeco&nbsp;Cable.
+
+          The Mass will also be available on the
+          [Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)
+          channel on&nbsp;YouTube.
+        location: Cogeco Cable, YouTube
+        time: 11:30 AM, 6:00 PM
+        ordinal: "1130"
   - date: 2020-04-06
     recurring: *monday
   - date: 2020-04-07
