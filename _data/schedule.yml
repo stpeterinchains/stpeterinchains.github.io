@@ -316,8 +316,7 @@ calendar:
     recurring: *sunday
     exclusions: [ covid19 ]
     specials:
-      - &mass_20200322
-        color: "#c33"
+      - color: "#c33"
         title: Sunday Mass&mdash;Fourth&nbsp;Sunday in&nbsp;Lent
         descriptive: |
           During this time of social distancing due to COVID-19,
@@ -340,8 +339,7 @@ calendar:
     recurring: *sunday
     exclusions: [ covid19 ]
     specials:
-      - &mass_20200329
-        color: "#c33"
+      - color: "#c33"
         title: Sunday Mass&mdash;Fifth&nbsp;Sunday in&nbsp;Lent
         descriptive: |
           During this time of social distancing due to COVID-19,
@@ -371,14 +369,14 @@ calendar:
   - date: 2020-04-04
     recurring: *saturday
   - date: 2020-04-05
+    celebration: *holy_week
     recurring: *sunday
     exclusions: [ covid19 ]
     specials:
-      - &mass_20200405
-        color: "#c33"
+      - color: "#c33"
         title: Palm Sunday Mass
         descriptive: |
-          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at the Cathedral, this very special
+          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral, this very special
           *Mass for the Palm&nbsp;Sunday of the Lord&apos;s&nbsp;Passion*
           airs on **Channel&nbsp;700** on Cogeco&nbsp;Cable.
 
@@ -391,19 +389,43 @@ calendar:
         time: 11:30 AM, 6:00 PM
         ordinal: "1130"
   - date: 2020-04-06
+    celebration: *holy_week
     recurring: *monday
   - date: 2020-04-07
+    celebration: *holy_week
     recurring: *tuesday
   - date: 2020-04-08
+    celebration: *holy_week
     recurring: *wednesday
   - date: 2020-04-09
+    celebration: *maundy_thursday
     recurring: *thursday
   - date: 2020-04-10
+    season: *easter
+    celebration: *good_friday
     recurring: *friday
   - date: 2020-04-11
+    season: *easter
+    celebration: *black_saturday
     recurring: *saturday
   - date: 2020-04-12
+    season: *easter
+    celebration: *easter_sunday
     recurring: *sunday
+    exclusions: [ covid19 ]
+    specials:
+      - color: "#c33"
+        title: Easter Sunday Mass
+        descriptive: |
+          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral, this very special
+          Mass will be livestreamed on Cogeco&nbsp;YourTV and on&nbsp;Facebook.
+
+          Join us on the
+          [Peterborough&nbsp;Diocese Facebook&nbsp;Page](https://www.facebook.com/DiocesePtbo/)
+          this Easter&nbsp;Sunday.
+        location: Facebook&nbsp;Livestream
+        time: 11:00 AM
+        ordinal: "1100"
   - date: 2020-04-13
     recurring: *monday
   - date: 2020-04-14
