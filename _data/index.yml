@@ -11,13 +11,13 @@ covid19:
     [Peterborough&nbsp;Diocese](https://www.peterboroughdiocese.org/en/index.aspx),
     or join us on social&nbsp;media.
 
-    *To stay informed of news from The&nbsp;Cathedral
-    and our Pastoral&nbsp;Team, please check the
-    [weekly&nbsp;Bulletins](/bulletins.html).*
+    Please check the
+    [weekly&nbsp;Bulletins](/bulletins.html)
+    for news from The&nbsp;Cathedral and our&nbsp;Pastoral&nbsp;Team.
   donate_button: Please Donate
 
 social:
-  message: Join us on social media, and in&nbsp;the&nbsp;real&nbsp;world
+  message: Join us on social media<s>, and in&nbsp;the&nbsp;real&nbsp;world</s>
   profiles:
     -
       title: Cathedral of Saint Peter-in-Chains on Twitter

@@ -40,6 +40,9 @@
   color: #333;
 }
 
+#social-logos > a:last-child > img { filter: opacity(50%) blur(3px); }
+#social-message > s { color: #ccc; }
+
 @media screen and (min-width: 35.5rem) {
   #social-logos > a > img { width: 45px; height: 45px; }
 }
