@@ -446,9 +446,9 @@ calendar:
         title: Second Sunday of Easter Mass
         descriptive: |
           Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral,
-          this very special Mass airs on
-          **Channel&nbsp;10&nbsp;and&nbsp;700** on Cogeco&nbsp;Cable and will
-          be livestreamed on Cogeco&nbsp;YourTV.
+          this very special Mass
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
+          will be available on&nbsp;YouTube.
 
           [View this Mass on YouTube](https://youtu.be/ifEstXYvWKw)
         location: Cogeco Cable, YouTube
@@ -468,6 +468,20 @@ calendar:
     recurring: *saturday
   - date: 2020-04-26
     recurring: *sunday
+    exclusions: [ covid19 ]
+    specials:
+      - color: "#c33"
+        title: Third Sunday of Easter Mass
+        descriptive: |
+          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral,
+          this very special Mass
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
+          will be available on&nbsp;YouTube.
+
+          [View this Mass on YouTube](https://youtu.be/1ND4BL1t9iY)
+        location: Cogeco Cable, YouTube
+        time: 11:30 AM, 6:00 PM
+        ordinal: "1130"
   - date: 2020-04-27
     recurring: *monday
   - date: 2020-04-28
