@@ -325,11 +325,7 @@ calendar:
           Saint&nbsp;Alphonsus Liguori&nbsp;Church
           by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
 
-          [View this Mass on&nbsp;YouTube](https://youtu.be/nmt5O5bHfis)
-
-          For other events, please see the
-          Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough
-          [YouTube&nbsp;channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos).
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/nmt5O5bHfis)
         location: YouTube
         time: Prerecorded
         ordinal: "1200"
@@ -348,11 +344,7 @@ calendar:
           the Cathedral&nbsp;of Saint&nbsp;Peter-in-Chains
           by His&nbsp;Excellency Bishop&nbsp;Daniel&nbsp;Miehm.
 
-          [View this Mass on&nbsp;YouTube](https://youtu.be/yJpznJE4WdU)
-
-          For other events, please see the
-          Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough
-          [YouTube&nbsp;channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos).
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/yJpznJE4WdU)
         location: YouTube
         time: Prerecorded
         ordinal: "1200"
@@ -378,13 +370,9 @@ calendar:
         descriptive: |
           Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral, this very special
           *Mass for the Palm&nbsp;Sunday of the Lord&apos;s&nbsp;Passion*
-          airs on **Channel&nbsp;700** on Cogeco&nbsp;Cable.
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable.
 
-          [View this Mass on&nbsp;YouTube](https://youtu.be/QYTl04HwU9U)
-
-          For other events, please see the
-          Roman&nbsp;Catholic Diocese&nbsp;of&nbsp;Peterborough
-          [YouTube&nbsp;channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos).
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/QYTl04HwU9U)
         location: Cogeco Cable, YouTube
         time: 11:30 AM, 6:00 PM
         ordinal: "1130"
@@ -417,13 +405,13 @@ calendar:
       - color: "#c33"
         title: Easter Sunday Mass
         descriptive: |
-          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral, this very special
-          Mass will be livestreamed on Cogeco&nbsp;YourTV and on&nbsp;Facebook.
+          Celebrated by Bishop&nbsp;Daniel&nbsp;Miehm at The&nbsp;Cathedral,
+          this very special Mass
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
+          will be available on&nbsp;YouTube.
 
-          Join us on the
-          [Peterborough&nbsp;Diocese Facebook&nbsp;Page](https://www.facebook.com/DiocesePtbo/)
-          this Easter&nbsp;Sunday.
-        location: Facebook&nbsp;Livestream
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/1UkOJBpW4E4)
+        location: Cogeco Cable, YouTube
         time: 11:00 AM
         ordinal: "1100"
   - date: 2020-04-13
@@ -450,7 +438,7 @@ calendar:
           airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
           will be available on&nbsp;YouTube.
 
-          [View this Mass on YouTube](https://youtu.be/ifEstXYvWKw)
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/ifEstXYvWKw)
         location: Cogeco Cable, YouTube
         time: 11:30 AM, 6:00 PM
         ordinal: "1130"
@@ -478,7 +466,7 @@ calendar:
           airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
           will be available on&nbsp;YouTube.
 
-          [View this Mass on YouTube](https://youtu.be/1ND4BL1t9iY)
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/1ND4BL1t9iY)
         location: Cogeco Cable, YouTube
         time: 11:30 AM, 6:00 PM
         ordinal: "1130"
