@@ -5,18 +5,13 @@
     subsections:
       - subsection: Leadership
         items:
+          - item: Most Rev Daniel Miehm, Pastor
           - item: Fr Thomas Lynch, Rector
-            mail: frtomlynch@peterboroughdiocese.org
           - item: Fr Innocent Umezika (SMMM), Associate Pastor
-            mail: frinnocentumezika@peterboroughdioces.org
           - item: Fr Joshy George (CMI), Associate Pastor
-            mail: frjoshygeorge@peterboroughdiocese.org
           - item: Dn Bill Radigan, Permanent Deacon
-            mail: billradigan@peterboroughdiocese.org
           - item: Fr Clair Hickson, Resident Priest
-            mail: revhickson@peterboroughdiocese.org
           - item: Fr Andrew Begin, Chaplain of Seniors
-            mail: frandrewbegin@peterboroughdiocese.org
       - subsection: Office
         items:
           - item: Office Administrator
@@ -27,8 +22,10 @@
             mail: office@stpeterspeterborough.ca
           - item: Hours
             text: |
-              Monday&nbsp;to&nbsp;Thursday: 9:00&nbsp;AM&nbsp;-&nbsp;5:00&nbsp;PM<br>
-              Friday,&nbsp;Saturday,&nbsp;Sunday: Closed
+              Office temporarily closed during COVID-19&nbsp;lockdown.<br>
+              Regular hours:<br>
+              Monday&nbsp;to&nbsp;Thursday: 9:00&nbsp;AM-5:00&nbsp;PM<br>
+              Friday,&nbsp;Saturday,&nbsp;Sunday: Closed<br>
           - item: Physical address
             text: |
               411 Reid St<br>
@@ -39,16 +36,16 @@
               PO Box 175<br>
               Peterborough, ON<br>
               K9J 6Y8
-      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising Committee
+      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising&nbsp;Committee
         items:
           - item: E-mail
             mail: payitforwardspic@gmail.com
-      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Perpetual Fund
+      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Perpetual&nbsp;Fund
         items:
           - item: President
             text: Ranald Pearson
-          - item: E-mail
-            mail: ranaldpearson@gmail.com
+          - item: Website
+            link: https://cathedralperpetualfund.ca/
 
 -
   - section: Peterborough Diocese
@@ -56,11 +53,7 @@
       - subsection: Leadership
         items:
           - item: Most Rev Daniel Miehm
-            text: Bishop
-          - item: Fr Joseph Devereaux
-            text: Chancellor, Spiritual and Temporal Affairs
-          - item: Fr Joseph J Moran
-            text: Vicar General
+            text: Bishop of Peterborough
       - subsection: Office
         items:
           - item: Physical address
@@ -107,8 +100,6 @@
             text: 705-742-9951
           - item: Fax
             text: 705-742-0344
-          - item: E-mail
-            mail: stpeterscemetery@bellnet.ca
   - section: >
       Hall Rentals<br>
       Ernest J Wolf Council 798

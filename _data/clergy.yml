@@ -1,18 +1,22 @@
 ---
 
 title: Clergy
-descriptive: >
+descriptive: |
   Our parish is blessed to have men dedicated to the call of Christian
   ministry. Each of our faith leaders brings his own conviction and dedication
-  to the faith life of the Cathedral and its parishioners.
+  to the faith life of The Cathedral and its&nbsp;parishioners.
+
+  To contact members of the clergy, please visit the
+  [Priest Directory](https://www.peterboroughdiocese.org/en/about-us/priest-directory.aspx)
+  on the Diocese&nbsp;of&nbsp;Peterborough website.
 
 clergy:
 
   -
     last_name: Miehm
     first_name: Daniel
-    title: Most Reverend
-    position: Bishop
+    title: Most Reverend Bishop
+    position: Pastor
     image: bp-miehm-portrait.jpg
     bio:
     contact:
@@ -28,9 +32,6 @@ clergy:
       -
         platform: Newsletter
         link: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
-      -
-        platform: E&ndash;mail
-        link: bishopmiehm@peterboroughdiocese.org
 
   -
     last_name: Lynch
@@ -49,9 +50,6 @@ clergy:
       -
         platform: YouTube
         link: https://www.youtube.com/user/PriestsForLifeCanada/videos
-      -
-        platform: E&ndash;mail
-        link: frtomlynch@peterboroughdiocese.org
 
   -
     last_name: Umezika, SMMM
@@ -61,9 +59,6 @@ clergy:
     image: fr-umezika-portrait.jpg
     bio:
     contact:
-      -
-        platform: E&ndash;mail
-        link: frinnocentumezika@peterboroughdioces.org
 
   -
     last_name: George, CMI
@@ -73,9 +68,6 @@ clergy:
     image:
     bio:
     contact:
-      -
-        platform: E&ndash;mail
-        link: frjoshygeorge@peterboroughdiocese.org
 
   -
     last_name: Radigan
@@ -85,6 +77,3 @@ clergy:
     image: dc-radigan-portrait.jpg
     bio:
     contact:
-      -
-        platform: E&ndash;mail
-        link: billradigan@peterboroughdiocese.org
