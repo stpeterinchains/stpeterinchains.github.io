@@ -20,8 +20,7 @@ banner:
     title: Rediscover faith, and a loving community
 
 slideshow:
-  -
-    image: covid19a.jpg
+  - image: cathedral-exterior-interior.jpg
     caption: >
       [COVID-19 Announcement...](/covid19.html)
   -
@@ -29,17 +28,11 @@ slideshow:
   -
     image: mass20200329.jpg
     caption: |
-      **Sunday Mass**
+      **Fifth Sunday in Lent Mass**
 
       *March 29, 2020*
 
       [View on YouTube...](https://youtu.be/yJpznJE4WdU)
-  -
-    image: chrism20200330.jpg
-    caption: |
-      **Chrism Mass**
-
-      *March 30, 2020*
 
 navbar:
   -

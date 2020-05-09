@@ -1,10 +1,13 @@
 ---
 
-title: Ways to Give
+title: Giving
 descriptive: |
   In addition to the traditional offeratory during Holy&nbsp;Mass,
-  please consider supporting **The&nbsp;Cathedral** through electronic donations
-  using your mobile&nbsp;device or&nbsp;computer.
+  please consider supporting **The&nbsp;Cathedral** by donating&nbsp;online.
+
+  Make a donation now by clicking the Give button below, or give anytime
+  using your mobile phone. Just text **give** to the number below, or install
+  the app for your iOS or Android&nbsp;device.
 
 provider:
   name: Tithe.ly
@@ -18,6 +21,9 @@ online:
     to signup as a regular donor.
     As a registered users, you can make convenient one-time donations anytime,
     or setup recurring&nbsp;donations.
+
+    If you prefer to donate online using the Diocese&nbsp;of&nbsp;Peterborough website,
+    [click here](https://www.peterboroughdiocese.org/en/get-involved/donate.aspx).
 
 text:
   title: Text to Give

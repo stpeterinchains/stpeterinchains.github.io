@@ -512,6 +512,20 @@ calendar:
     recurring: *saturday
   - date: 2020-05-10
     recurring: *sunday
+    exclusions: [ covid19 ]
+    specials:
+      - color: "#c33"
+        title: Fifth Sunday of Easter Mass
+        descriptive: |
+          Celebrated at The&nbsp;Cathedral by Bishop&nbsp;Daniel&nbsp;Miehm,
+          this very special Mass
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
+          will be available on&nbsp;YouTube.
+
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/cVOv3FK_mM4)
+        location: Cogeco Cable, YouTube
+        time: 11:30 AM, 6:00 PM
+        ordinal: "1130"
   - date: 2020-05-11
     recurring: *monday
   - date: 2020-05-12
