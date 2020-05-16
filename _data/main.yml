@@ -21,18 +21,7 @@ banner:
 
 slideshow:
   - image: cathedral-exterior-interior.jpg
-    caption: >
-      [COVID-19 Announcement...](/covid19.html)
-  -
-    image: covid19b.jpg
-  -
-    image: mass20200329.jpg
-    caption: |
-      **Fifth Sunday in Lent Mass**
-
-      *March 29, 2020*
-
-      [View on YouTube...](https://youtu.be/yJpznJE4WdU)
+  - image: covid19b.jpg
 
 navbar:
   -
@@ -41,10 +30,6 @@ navbar:
         title: Home
         mnemonic: index
         url: /
-      -
-        title: COVID-19
-        mnemonic: covid19
-        url: /covid19.html
       -
         title: Schedule
         mnemonic: schedule
