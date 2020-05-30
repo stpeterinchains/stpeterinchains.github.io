@@ -1,10 +1,15 @@
 ---
 
 title: Bulletins
-descriptive: >
+descriptive: |
   The weekly Bulletin covers the life of our&nbsp;parish.
   If you missed your copy of this week&apos;s printed&nbsp;Bulletin,
-  find links below to the current as&nbsp;well&nbsp;as to past&nbsp;Bulletins.
+  the links below list the current and past&nbsp;Bulletins.
+
+  Please note that each link opens a PDF&nbsp;viewer on Google&nbsp;Drive.
+  For easier reading, please use the **Zoom**&nbsp;buttons near the
+  bottom of the viewer, or the **Print** or **Download** buttons in the
+  upper-right&nbsp;corner.
 
 issues:
 
@@ -18,7 +23,7 @@ issues:
           -
             date: 31
             title: "Eighth Sunday of Easter: Feast of&nbsp;Pentecost"
-            link: https://drive.google.com/file/d/1xXDcSi5gSVP-l5_UNgCCjzQWVMDy8GgU/view
+            link: https://drive.google.com/file/d/1Odu4Ku-sZcLc5JOJ81wWiKdvEptzuH2u/view
           -
             date: 24
             title: "Seventh Sunday of Easter: Ascension of the&nbsp;Lord"
