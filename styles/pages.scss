@@ -79,7 +79,7 @@
 #video-title { margin: 0.5rem 10% 0 10%; color: #333; }
 
 #video-title p { font-weight: 400; letter-spacing: -0.025; }
-#video-title strong { display: block; }
+#video-title strong { display: block; letter-spacing: -0.025; }
 
 #video-title a { font-weight: 300; color: #333; }
 #video-title a:hover { color: skyblue; }
@@ -93,7 +93,7 @@
 #video-link:hover { color: skyblue; }
 
 @media screen and (min-width: 48rem) {
-  #video-title strong { display: inline; margin-right: 0.5rem; }
+  #video-title strong { display: inline; margin-right: 0.25rem; }
   #video-title > p { font-size: 1.1rem; }
 }
 
