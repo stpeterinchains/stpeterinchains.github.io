@@ -18,7 +18,7 @@ open_graph_description: >
 {% assign covid19 = site.data.index.covid19 %}
 
 <section id="index-covid19">
-  <h1>{{ covid19.title }}</h1>
+  <h1 id="index-covid19-title">{{ covid19.title }}</h1>
   <div id="index-covid19-text" class="markdown">{{ covid19.text | markdownify }}</div>
   <div id="index-covid19-give">
     <button class="tithely-give-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">{{ covid19.donate_button }}</button>
@@ -38,6 +38,16 @@ open_graph_description: >
     {% endfor %}
   </div>
   <div id="social-message">{{ social.message }}</div>
+</section>
+
+<!-- VIDEO -->
+
+{% assign video = site.data.index.video %}
+
+<section id="video">
+  <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+  <div id="video-title" class="markdown">{{ video.title | markdownify }}</div>
+  <a id="video-link" target="_blank" href="https://youtu.be/{{ video.id }}">View on YouTube...</a>
 </section>
 
 <!-- TWITTER -->
@@ -145,12 +155,3 @@ open_graph_description: >
   <img src="{{ 'formed-logo.png' | prepend: site.images_path | relative_url }}">
   <div>Parishioners register on the site using Access&nbsp;Code&nbsp;<strong>{{ access_code }}</strong></div>
 </a>
-
-<!-- VIDEO -->
-
-{% assign video = site.data.index.video %}
-
-<section id="video">
-  <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-  <div id="video-description" class="markdown">{{ video.description | markdownify }}</div>
-</section>

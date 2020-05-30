@@ -10,9 +10,9 @@
 
 #index-covid19 { margin-bottom: 3rem; text-align: center; }
 
-#index-covid19 > h1 {
+#index-covid19-title {
   margin: 0 0 1rem 0;
-  font-size: 2rem; font-weight: 600;
+  font-size: 1.5rem; font-weight: 600;
   color: #c33;
 }
 
@@ -20,8 +20,11 @@
 
 #index-covid19-text p {
   margin: 0.5rem 0 0 0;
-  font-size: 1.25rem; font-weight: 300;
+  font-size: 1.1rem; font-weight: 300;
 }
+
+#index-covid19-text p:nth-child(2) a { color: red; }
+#index-covid19-text p:nth-child(2) a:hover { color: skyblue; }
 
 
 /* SECTION: SOCIAL MEDIA & MAP */
@@ -56,6 +59,50 @@
   #social { margin-left: 10%; margin-right: 10%; }
   #social-logos > a > img { width: 72px; height: 72px; }
   #social-message { font-size: 1.1rem; }
+}
+
+
+/* SECTION: VIDEO */
+
+#video { margin: 3rem 0; text-align: center; }
+
+#video > iframe { width: 240px; height: 135px; box-shadow: -4px 4px 6px #666; }
+
+@media screen and (min-width: 35.5rem) {
+  #video > iframe { width: 360px; height: 203px; }
+}
+
+@media screen and (min-width: 48rem) {
+  #video > iframe { width: 560px; height: 315px; }
+}
+
+#video-title { margin: 0.5rem 10% 0 10%; color: #333; }
+
+#video-title p { font-weight: 400; letter-spacing: -0.025; }
+#video-title strong { display: block; }
+
+#video-title a { font-weight: 300; color: #333; }
+#video-title a:hover { color: skyblue; }
+
+#video-link {
+  inline: block;
+  font-weight: 300; font-size: 0.8rem;
+  color: #666; text-decoration: none;
+}
+
+#video-link:hover { color: skyblue; }
+
+@media screen and (min-width: 48rem) {
+  #video-title strong { display: inline; margin-right: 0.5rem; }
+  #video-title > p { font-size: 1.1rem; }
+}
+
+@media screen and (min-width: 64rem) {
+  #video-title > p { font-size: 1.2rem; }
+}
+
+@media screen and (min-width: 80rem) {
+  #video-title > p { margin-left: 15%; margin-right: 15%; }
 }
 
 
@@ -98,7 +145,7 @@
 #index-schedule-title {
   margin: 0 5%; padding-bottom: 0.25rem;
   border-bottom: 2px solid #eee;
-  font-weight: 400; font-size: 0.9rem; font-size: 1.1rem;
+  font-weight: 400; font-size: 1.1rem;
   color: #333;
 }
 
@@ -287,40 +334,6 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
   margin-top: 0.25rem;
   font-weight: 300; font-size: 0.9rem;
   color: #333;
-}
-
-
-/* SECTION: VIDEO */
-
-#video {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-#video > iframe { width: 240px; height: 135px; box-shadow: -4px 4px 6px #666; }
-@media screen and (min-width: 48rem) {
-  #video > iframe { width: 560px; height: 315px; }
-}
-
-#video-description {
-  margin: 0.5rem 10%;
-  font-weight: 300; font-size: 0.9rem;
-  color: #666;
-}
-
-#video-description a { font-weight: 400; color: #333; }
-#video-description a:hover { color: skyblue; }
-
-@media screen and (min-width: 48rem) {
-  #video-description > p { font-size: 1rem; }
-}
-
-@media screen and (min-width: 64rem) {
-  #video-description > p { font-size: 1.1rem; }
-}
-
-@media screen and (min-width: 80rem) {
-  #video-description > p { margin-left: 15%; margin-right: 15%; }
 }
 
 

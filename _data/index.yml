@@ -5,22 +5,29 @@ covid19:
   text: |
     In an effort to limit the spread of COVID-19,
     our regularly scheduled events are **cancelled**
-    until&nbsp;further&nbsp;notice.<br>
+    until&nbsp;further&nbsp;notice.
     Please visit the
     [Diocese&nbsp;of&nbsp;Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)&nbsp;website
     for the&nbsp;latest&nbsp;updates.
 
-    During this time, please join Bishop&nbsp;Daniel&nbsp;Miehm for the
-    celebration of **Sunday&nbsp;Mass**, airing weekly on Cogeco&nbsp;YourTV and
-    available on&nbsp;YouTube and social&nbsp;media.
-    Please check our [Schedule](/schedule.html) for
-    times&nbsp;and&nbsp;links for both upcoming and past
-    Sunday&nbsp;Mass&nbsp;events.
-
-    For the latest from The&nbsp;Cathedral and our&nbsp;Pastoral&nbsp;Team,
-    please check our [weekly&nbsp;Bulletins](/bulletins.html), or
-    join us on social&nbsp;media.
+    Please check the [weekly&nbsp;Bulletin](/bulletins.html)
+    or join us on social media
+    for the latest from The&nbsp;Cathedral and our&nbsp;Pastoral&nbsp;Team,
   donate_button: Please Donate
+
+bulletin:
+  section_title: Latest Bulletin
+  title: >
+    **May 31** Eighth Sunday of Easter: Feast of&nbsp;Pentecost
+  link: https://drive.google.com/file/d/1xXDcSi5gSVP-l5_UNgCCjzQWVMDy8GgU/view
+
+video:
+  id: 0aaifSOfkPc
+  title: |
+    **May 31, 2020**
+    Sunday Mass: Feast of Pentecost
+  diocese:
+    link: https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos
 
 social:
   message: Join us on social media<s>, and in&nbsp;the&nbsp;real&nbsp;world</s>
@@ -154,14 +161,3 @@ exposition:
         Cathedral in the years and decades to come.
         Please consider regular donations, or
         [donate&nbsp;online](/giving.html).
-
-video:
-  id: Z8FQvfdpcV8
-  offset: 110
-  description: >
-    A televised Mass celebrated by
-    **Fr&nbsp;Thomas&nbsp;Lynch**<br>
-    at the Archdiocese&nbsp;of&nbsp;Toronto,
-    April&nbsp;29,&nbsp;2018.
-
-formed_access_code: MT9YZ7
