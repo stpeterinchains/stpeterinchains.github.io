@@ -13,53 +13,12 @@ open_graph_description: >
   Join our loving faith community today!
 ---
 
-<!-- COVID-19 -->
-
-{% assign covid19 = site.data.index.covid19 %}
-
-<section id="index-covid19">
-  <h1 id="index-covid19-title">{{ covid19.title }}</h1>
-  <div id="index-covid19-text" class="markdown">{{ covid19.text | markdownify }}</div>
-  <div id="index-covid19-give">
-    <button class="tithely-give-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">{{ covid19.donate_button }}</button>
-    <script src="https://tithe.ly/widget/v3/give.js?3"></script>
-    <script>var tw = create_tithely_widget();</script>
-  </div>
-</section>
-
-<!-- SOCIAL MEDIA & MAP -->
-
-{% assign social = site.data.index.social %}
-
-<section id="social">
-  <div id="social-logos">
-    {% for profile in social.profiles %}
-    <a target="_blank" href="{% if profile.link %}{{ profile.link }}{% else %}javascript:void(0){% endif %}"><img src="{{ profile.logo | prepend: site.social_images_path | relative_url }}" alt="{{ profile.title }}"></a>
-    {% endfor %}
-  </div>
-  <div id="social-message">{{ social.message }}</div>
-</section>
-
 <!-- VIDEO -->
 
 {% assign video = site.data.index.video %}
 
 <section id="video">
   <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-  <div id="video-title" class="markdown">{{ video.title | markdownify }}</div>
-  <a id="video-link" target="_blank" href="https://youtu.be/{{ video.id }}">View on YouTube...</a>
-</section>
-
-<!-- TWITTER -->
-
-{% assign twitter = site.data.index.twitter %}
-
-<section id="twitter">
-  <h1><a href="{{ twitter.link }}" target="_blank">{{ twitter.title }}</a></h1>
-  <div>
-    <a class="twitter-timeline" data-height="1000" data-width="568" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/cathedralstpet?ref_src=twsrc%5Etfw">Tweets by @cathedralstpet</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
 </section>
 
 <!-- SCHEDULE -->
@@ -67,7 +26,7 @@ open_graph_description: >
 {% assign schedule = site.data.schedule %}
 
 <section id="index-schedule">
-  <h1 id="index-schedule-title">{{ schedule.sections.upcoming.title }}</h1>
+  <h1 id="index-schedule-title">{{ schedule.title }}</h1>
   <div id="index-schedule-calendar">
     {% assign earliest = site.time | date: '%Y-%m-%d' %}
     {% assign daysForward = schedule.select.index.days_forward | times: 86400 %}
@@ -122,6 +81,41 @@ open_graph_description: >
 
 <script src="{{ 'schedule.js' | prepend: site.scripts_path | relative_url }}"></script>
 <script>trimIndexSchedule();</script>
+
+<!-- DONATE -->
+
+{% assign donate = site.data.index.donate %}
+
+<section id="donate">
+  <button class="tithely-donate-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">{{ donate.button_text }}</button>
+  <script src="https://tithe.ly/widget/v3/give.js?3"></script>
+  <script>var tw = create_tithely_widget();</script>
+</section>
+
+<!-- SOCIAL MEDIA & MAP -->
+
+{% assign social = site.data.index.social %}
+
+<section id="social">
+  <div id="social-logos">
+    {% for profile in social.profiles %}
+    <a target="_blank" href="{% if profile.link %}{{ profile.link }}{% else %}javascript:void(0){% endif %}"><img src="{{ profile.logo | prepend: site.social_images_path | relative_url }}" alt="{{ profile.title }}"></a>
+    {% endfor %}
+  </div>
+  <div id="social-message">{{ social.message }}</div>
+</section>
+
+<!-- TWITTER -->
+
+{% assign twitter = site.data.index.twitter %}
+
+<section id="twitter">
+  <h1 id="twitter-link"><a href="{{ twitter.link }}" target="_blank">{{ twitter.title }}</a></h1>
+  <div id="twitter-content">
+    <a class="twitter-timeline" data-height="{{ twitter.height }}" data-width="{{ twitter.width }}" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/cathedralstpet?ref_src=twsrc%5Etfw">Tweets by @cathedralstpet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</section>
 
 <!-- EXPOSITION -->
 

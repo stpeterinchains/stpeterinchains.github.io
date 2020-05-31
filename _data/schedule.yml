@@ -10,7 +10,6 @@ sections:
   upcoming:
     anchor: schedule-upcoming-events
     title: Upcoming events
-    title: Events
   past:
     anchor: schedule-past-events
     title: Past events
@@ -213,31 +212,69 @@ recurring:
       Prayer books for the devotion are provided. All are&nbsp;welcome.
     time: 12:40 PM
     ordinal: "1240"
-  covid19: &covid19
-    mnemonic: covid19
-    title: COVID-19 Cancellations
-    # color: red
-    color: "#666"
-    time:
+  covid_youtube: &covid_youtube
+    mnemonic: covid_youtube
+    title: Sunday Mass and other Catholic&nbsp;Video&nbsp;Content
+    color: "#933"
     ordinal: "2300"
+    descriptive: |
+      The
+      [Diocese&nbsp;of&nbsp;Peterborough channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)
+      on&nbsp;YouTube features the weekly Sunday&nbsp;Mass celebrated by
+      Bishop&nbsp;Daniel&nbsp;Miehm, as&nbsp;well&nbsp;as other inspirational content from around
+      the&nbsp;Diocese.
+
+      The
+      [Cogeco&nbsp;YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)
+      on&nbsp;YouTube also features the weekly Sunday&nbsp;Mass, along with
+      other Peterborough&nbsp;area&nbsp;content.
+  covid_bulletins: &covid_bulletins
+    mnemonic: covid_bulletins
+    title: Weekly Bulletins
+    ordinal: "2301"
     descriptive: >
-      Events are cancelled until further notice.
+      Check our weekly [Bulletins](/bulletins.html) for the latest from
+      The&nbsp;Cathedral and the&nbsp;Pastoral&nbsp;Team.
+  covid_cancelled: &covid_cancelled
+    mnemonic: covid_cancelled
+    title: COVID-19
+    ordinal: "2302"
+    descriptive: |
+      Regularly scheduled events are cancelled until further notice.
+
+      Visit the
+      [Diocese&nbsp;of&nbsp;Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)
+      website for the latest&nbsp;updates.
 
 weekly:
   monday: &monday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   tuesday: &tuesday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   wednesday: &wednesday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   thursday: &thursday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   friday: &friday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   saturday: &saturday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
   sunday: &sunday
-    - *covid19
+    - *covid_bulletins
+    - *covid_youtube
+    - *covid_cancelled
 
 season:
   lent: &lent
@@ -314,7 +351,7 @@ calendar:
     recurring: *saturday
   - date: 2020-03-22
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sunday Mass&mdash;Fourth&nbsp;Sunday in&nbsp;Lent
@@ -333,7 +370,7 @@ calendar:
     recurring: *saturday
   - date: 2020-03-29
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sunday Mass&mdash;Fifth&nbsp;Sunday in&nbsp;Lent
@@ -363,7 +400,7 @@ calendar:
   - date: 2020-04-05
     celebration: *holy_week
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Palm Sunday Mass
@@ -400,7 +437,7 @@ calendar:
     season: *easter
     celebration: *easter_sunday
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Easter Sunday Mass
@@ -428,7 +465,7 @@ calendar:
     recurring: *saturday
   - date: 2020-04-19
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Second Sunday of Easter Mass
@@ -456,7 +493,7 @@ calendar:
     recurring: *saturday
   - date: 2020-04-26
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Third Sunday of Easter Mass
@@ -484,7 +521,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-03
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Fourth Sunday of Easter Mass
@@ -512,7 +549,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-10
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Fifth Sunday of Easter Mass
@@ -540,7 +577,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-17
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sixth Sunday of Easter Mass
@@ -568,7 +605,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-24
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: "Sunday Mass: Ascension of the&nbsp;Lord"
@@ -596,7 +633,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-31
     recurring: *sunday
-    exclusions: [ covid19 ]
+    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: "Sunday Mass: Feast of Pentecost"

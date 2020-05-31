@@ -347,9 +347,6 @@ nav.navbar-group:nth-child(2) > a:hover { color: #6cc; }
 nav.navbar-group:nth-child(2) > a:first-of-type { font-weight: 400; }
 nav.navbar-group:nth-child(2) > a:first-of-type:hover {}
 
-nav.navbar-group:nth-child(1) > a:nth-child(3) { color: red; }
-nav.navbar-group:nth-child(1) > a:nth-child(3):hover { color: skyblue; }
-
 @media screen and (min-width: 48rem) {
   #main { margin-top: 2rem; }
 
