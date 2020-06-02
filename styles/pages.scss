@@ -10,13 +10,17 @@
 
 #video { margin-bottom: 3rem; text-align: center; }
 
-#video > iframe { width: 240px; height: 135px; box-shadow: -4px 4px 6px #666; }
+#video > iframe { width: 280px; height: 157px; box-shadow: -4px 4px 6px #666; }
 
 @media screen and (min-width: 35.5rem) {
   #video > iframe { width: 360px; height: 203px; }
 }
 
 @media screen and (min-width: 48rem) {
+  #video > iframe { width: 480px; height: 270px; }
+}
+
+@media screen and (min-width: 64rem) {
   #video > iframe { width: 560px; height: 315px; }
 }
 
@@ -34,7 +38,7 @@
 
 ul.index-bulletins-list { margin: 0; padding: 0; list-style: none; }
 
-li.index-bulletins-item { margin-top: 2rem; }
+li.index-bulletins-item { margin-top: 1rem; }
 
 h1.index-bulletins-item-date {
   margin: 0;
