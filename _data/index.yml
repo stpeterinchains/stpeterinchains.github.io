@@ -3,6 +3,9 @@
 video:
   id: 0aaifSOfkPc
 
+bulletins:
+  title: Bulletins
+
 donate:
   button_text: Please Donate
 

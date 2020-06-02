@@ -33,10 +33,10 @@ open_graph_description: >
             {{ month.month }}&nbsp;{{ bulletin.date }}&nbsp;&ndash; {{ bulletin.title }}
           </a>
         <div>
-            {% if bulletin.inserts %}<div class="bulletins-bulletin-insert-label">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</div>{% endif %}
-            {% for insert in bulletin.inserts %}
-            <a target="_blank" class="bulletins-bulletin-insert" href="{% if insert.link %}{{ insert.link }}{% else %}javascript:void(0){% endif %}">{{ insert.title }}</a>
-            {% endfor %}
+          {% if bulletin.inserts %}<div class="bulletins-bulletin-insert-label">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</div>{% endif %}
+          {% for insert in bulletin.inserts %}
+          <a target="_blank" class="bulletins-bulletin-insert" href="{% if insert.link %}{{ insert.link }}{% else %}javascript:void(0){% endif %}">{{ insert.title }}</a>
+          {% endfor %}
           </div>
         </div>
         {% endfor %}

@@ -21,6 +21,70 @@
 }
 
 
+/* SECTION: BULLETINS */
+
+#index-bulletins { text-align: center; margin: 0 5% 3rem 5%; }
+
+#index-bulletins-title {
+  margin: 0; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  font-weight: 400; font-size: 1.1rem;
+  color: #333;
+}
+
+ul.index-bulletins-list { margin: 0; padding: 0; list-style: none; }
+
+li.index-bulletins-item { margin-top: 2rem; }
+
+h1.index-bulletins-item-date {
+  margin: 0;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+span.index-bulletins-item-date-latest {
+  margin-right: 0.5rem;
+  font-weight: 400;
+  color: #c33;
+}
+
+span.index-bulletins-item-date-date {
+  padding: 0.25rem 0.75rem;
+  border-radius: 11px;
+  background-color: #eee;
+}
+
+h2.index-bulletins-item-title {
+  margin: 0.5rem 0 0 0;
+  font-weight: 300; font-size: 1rem;
+}
+
+div.index-bulletins-item-container:first-of-type h1.index-bulletins-item-date { font-weight: 400; }
+div.index-bulletins-item-container:first-of-type h2.index-bulletins-item-title { font-weight: 400; }
+
+h2.index-bulletins-item-title > a { text-decoration: none; color: #333; }
+h2.index-bulletins-item-title > a:hover { color: skyblue; }
+
+h3.index-bulletins-item-inserts {
+  margin: 0.5rem 0 0 0;
+  font-weight: 600; font-size: 0.8rem;
+  color: #666;
+}
+
+ul.index-bulletins-inserts-list { margin: 0; padding: 0; list-style: none; }
+
+li.index-bulletins-inserts-item { margin-top: 0.25rem; }
+
+h1.index-bulletins-inserts-item-title {
+  margin: 0;
+  font-weight: 300; font-size: 0.9rem;
+  color: #333;
+}
+
+h1.index-bulletins-inserts-item-title > a { text-decoration: none; color: #333; }
+h1.index-bulletins-inserts-item-title > a:hover { color: skyblue; }
+
+
 /* SECTION: SCHEDULE */
 
 #index-schedule { text-align: center; margin: 0 5%; }
