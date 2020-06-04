@@ -676,6 +676,20 @@ calendar:
         ordinal: "1300"
   - date: 2020-06-07
     recurring: *sunday
+    exclusions: [ covid_youtube, covid_cancelled ]
+    specials:
+      - color: "#c33"
+        title: "Sunday Mass: The Most Holy Trinity"
+        descriptive: |
+          Celebrated at The&nbsp;Cathedral by Bishop&nbsp;Daniel&nbsp;Miehm,
+          this very special Mass
+          airs on **Channel&nbsp;10&nbsp;and&nbsp;700** on&nbsp;Cogeco&nbsp;Cable and
+          will be available on&nbsp;YouTube.
+
+          [View this Mass on&nbsp;YouTube...](https://youtu.be/pCgrkplzwYs)
+        location: Cogeco Cable, YouTube
+        time: 11:30 AM, 6:00 PM
+        ordinal: "1130"
   - date: 2020-06-08
     recurring: *monday
   - date: 2020-06-09
