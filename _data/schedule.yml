@@ -228,13 +228,6 @@ recurring:
       [Cogeco&nbsp;YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)
       on&nbsp;YouTube also features the weekly Sunday&nbsp;Mass, along with
       other Peterborough&nbsp;area&nbsp;content.
-  covid_bulletins: &covid_bulletins
-    mnemonic: covid_bulletins
-    title: Weekly Bulletins
-    ordinal: "2301"
-    descriptive: >
-      Check our weekly [Bulletins](/bulletins.html) for the latest from
-      The&nbsp;Cathedral and the&nbsp;Pastoral&nbsp;Team.
   covid_cancelled: &covid_cancelled
     mnemonic: covid_cancelled
     title: COVID-19
@@ -248,31 +241,24 @@ recurring:
 
 weekly:
   monday: &monday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   tuesday: &tuesday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   wednesday: &wednesday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   thursday: &thursday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   friday: &friday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   saturday: &saturday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
   sunday: &sunday
-    - *covid_bulletins
     - *covid_youtube
     - *covid_cancelled
 
@@ -351,7 +337,7 @@ calendar:
     recurring: *saturday
   - date: 2020-03-22
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sunday Mass&mdash;Fourth&nbsp;Sunday in&nbsp;Lent
@@ -370,7 +356,7 @@ calendar:
     recurring: *saturday
   - date: 2020-03-29
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sunday Mass&mdash;Fifth&nbsp;Sunday in&nbsp;Lent
@@ -400,7 +386,7 @@ calendar:
   - date: 2020-04-05
     celebration: *holy_week
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Palm Sunday Mass
@@ -437,7 +423,7 @@ calendar:
     season: *easter
     celebration: *easter_sunday
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Easter Sunday Mass
@@ -465,7 +451,7 @@ calendar:
     recurring: *saturday
   - date: 2020-04-19
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Second Sunday of Easter Mass
@@ -493,7 +479,7 @@ calendar:
     recurring: *saturday
   - date: 2020-04-26
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Third Sunday of Easter Mass
@@ -521,7 +507,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-03
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Fourth Sunday of Easter Mass
@@ -549,7 +535,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-10
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Fifth Sunday of Easter Mass
@@ -577,7 +563,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-17
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: Sixth Sunday of Easter Mass
@@ -605,7 +591,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-24
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: "Sunday Mass: Ascension of the&nbsp;Lord"
@@ -633,7 +619,7 @@ calendar:
     recurring: *saturday
   - date: 2020-05-31
     recurring: *sunday
-    exclusions: [ covid_bulletins, covid_youtube, covid_cancelled ]
+    exclusions: [ covid_youtube, covid_cancelled ]
     specials:
       - color: "#c33"
         title: "Sunday Mass: Feast of Pentecost"
@@ -657,8 +643,37 @@ calendar:
     recurring: *thursday
   - date: 2020-06-05
     recurring: *friday
+    exclusions: [ covid_youtube, covid_cancelled ]
+    specials:
+      - title: Adoration and Benediction
+        descriptive: |
+          Please join us for our first faith event since the beginning of the
+          COVID-19&nbsp;lockdowns!
+
+          The celebration will take place outdoors, in the parking&nbsp;lot
+          across Hunter&nbsp;St from The&nbsp;Cathedral.
+          Volunteers will be on-hand to assist with parking.
+          Please arrive&nbsp;early.
+        location: Bishop Doyle Hall parking lot
+        time: 7:00 PM
+        ordinal: "1900"
   - date: 2020-06-06
     recurring: *saturday
+    exclusions: [ covid_youtube, covid_cancelled ]
+    specials:
+      - title: Drive-Thru Confession
+        descriptive: |
+          Come Saturday afternoon to participate in the
+          Holy&nbsp;Sacrament of&nbsp;Reconciliation, from the safety and
+          comfort of your&nbsp;vehicle.
+
+          Two priests will be available. Parishioners are asked to follow
+          the signs and remain in their&nbsp;vehicles.
+
+          **Take a spin, bring your&nbsp;sin!**
+        location: Bishop Doyle Hall parking lot
+        time: 1:00-5:00 PM
+        ordinal: "1300"
   - date: 2020-06-07
     recurring: *sunday
   - date: 2020-06-08
