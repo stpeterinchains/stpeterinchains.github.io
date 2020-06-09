@@ -1,1 +1,40 @@
-{"regularEvents":[{"title":"COVID-19","times":[],"descriptive":"Regularly scheduled events are cancelled until further notice.\n\nVisit the\n[Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)\nwebsite for the latest updates.\n"},{"title":"Sunday Mass and other Catholic Video Content","color":"#933","location":"YouTube","times":[],"descriptive":"\n\nThe\n[Diocese of Peterborough channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)\non YouTube features the weekly Sunday Mass celebrated by\nBishop Daniel Miehm, as well as other inspirational content from around\nthe Diocese.\n\n\nThe\n[Cogeco YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)\non YouTube also features the weekly Sunday Mass, along with\nother Peterborough area content.\n"}],"specialEvents":[{"title":"Adoration and Benediction","location":"Bishop Doyle Hall parking lot","times":[{"day":"Friday","time":"7:00 PM"}],"descriptive":"Please join us for our first faith event since the beginning of the\nCOVID-19 lockdowns!\n\n\nThe celebration will take place outdoors, in the parking lot\nacross Hunter St from The Cathedral.\nVolunteers will be on-hand to assist with parking.\nPlease arrive early.\n"},{"title":"Drive-Thru Confession","location":"Bishop Doyle Hall parking lot","times":[{"day":"Saturday","time":"1:00-5:00 PM"}],"descriptive":"Come Saturday afternoon to participate in the\nHoly Sacrament of Reconciliation, from the safety and\ncomfort of your vehicle.\n\n\nThree priests will be available. Parishioners are asked to follow\nthe signs and remain in their vehicles.\n\n**Take a spin, bring your sin!**\n"},{"title":"Sunday Mass","subtitle":"The Most Holy Trinity","color":"#c33","location":"Cogeco Cable, YouTube","times":[{"day":"Sunday","time":"11:30 AM, 6:00 PM"}],"descriptive":"\n\nCelebrated at The Cathedral by Bishop Daniel Miehm,\nthis very special Mass\nairs on **Channel 10 and 700** on Cogeco Cable and\nwill be available on YouTube.\n\n[View this Mass on YouTube...](https://youtu.be/pCgrkplzwYs)\n"}],"bulletins":[{"date":"June 7, 2020","title":"Solemnity of the Most Holy Trinity","link":"https://drive.google.com/file/d/1JA1V5-pkJUvJqFV6407XjUzCfpfUtH5O/view","inserts":[]},{"date":"May 31, 2020","title":"Eighth Sunday of Easter","subtitle":"Feast of Pentecost","link":"https://drive.google.com/file/d/1Odu4Ku-sZcLc5JOJ81wWiKdvEptzuH2u/view","inserts":[]},{"date":"May 24, 2020","title":"Seventh Sunday of Easter","subtitle":"Ascension of the Lord","link":"https://drive.google.com/file/d/1xXDcSi5gSVP-l5_UNgCCjzQWVMDy8GgU/view","inserts":[]},{"date":"May 17, 2020","title":"Sixth Sunday of Easter","link":"https://drive.google.com/file/d/1K3LtvmcS3djkV1n43tCwYxuKgsy9GAuE/view","inserts":[]},{"date":"May 10, 2020","title":"Fifth Sunday of Easter","link":"https://drive.google.com/file/d/1MaDokA8qHKqvkdTPsu_XeCUJRacQj2Pn/view","inserts":[]},{"date":"May 3, 2020","title":"Fourth Sunday of Easter","link":"https://drive.google.com/file/d/1LD55jMZ3DgJXoJGY6XOi0i8WwUChDFtr/view","inserts":[]}],"digests":["234af6603b5d810b9e3999c6e7832ab1","28a0b71c57ab1380fdd1d2b2f87c9ca5","010a49bd028f34daf40486f7b22851f2"],"regularEventsErrors":[],"specialEventsErrors":[],"bulletinsErrors":[]}
+{
+  "regularEvents": [
+    {
+      "title":"COVID-19",
+      "times":[],
+      "descriptive":"Regularly scheduled events are cancelled until further notice.\n\nVisit the\n[Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)\nwebsite for the latest updates.\n"
+    },
+    {
+      "title":"Catholic Video Content",
+      "location":"Available on YouTube",
+      "times":[],
+      "descriptive":"\n\nThe\n[Diocese of Peterborough channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)\non YouTube features the weekly Sunday Mass celebrated by\nBishop Daniel Miehm, as well as other inspirational content from around\nthe Diocese.\n\n\nThe\n[Cogeco YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)\non YouTube also features the weekly Sunday Mass, along with\nother Peterborough area content.\n"
+    }
+  ],
+  "specialEvents":[
+    {
+      "title":"Adoration and Benediction",
+      "location":"Bishop Doyle Hall parking lot",
+      "times":[{"day":"June 5, 2020","time":"7:00 PM"}],
+      "descriptive":"Please join us for our first faith event since the beginning of the\nCOVID-19 lockdowns!\n\n\nThe celebration will take place outdoors, in the parking lot\nacross Hunter St from The Cathedral.\nVolunteers will be on-hand to assist with parking.\nPlease arrive early.\n"
+    },
+    {
+      "title":"Drive-Thru Confession",
+      "location":"Bishop Doyle Hall parking lot",
+      "times":[{"day":"June 6, 2020","time":"1:00-5:00 PM"}],
+      "descriptive":"Come Saturday afternoon to participate in the\nHoly Sacrament of Reconciliation, from the safety and\ncomfort of your vehicle.\n\n\nThree priests will be available. Parishioners are asked to follow\nthe signs and remain in their vehicles.\n\n**Take a spin, bring your sin!**\n"
+    },
+    {
+      "title":"Sunday Mass",
+      "subtitle":"The Most Holy Trinity",
+      "color":"#c33",
+      "location":"Cogeco Cable, YouTube",
+      "times":[{"day":"June 7, 2020","time":"11:30 AM, 6:00 PM"}],
+      "descriptive":"\n\nCelebrated at The Cathedral by Bishop Daniel Miehm,\nthis very special Mass\nairs on **Channel 10 and 700** on Cogeco Cable and\nwill be available on YouTube.\n\n[View this Mass on YouTube...](https://youtu.be/pCgrkplzwYs)\n"
+    }
+  ],
+  "bulletins":[{"date":"June 7, 2020","title":"Solemnity of the Most Holy Trinity","link":"https://drive.google.com/file/d/1JA1V5-pkJUvJqFV6407XjUzCfpfUtH5O/view","inserts":[]},{"date":"May 31, 2020","title":"Eighth Sunday of Easter","subtitle":"Feast of Pentecost","link":"https://drive.google.com/file/d/1Odu4Ku-sZcLc5JOJ81wWiKdvEptzuH2u/view","inserts":[]},{"date":"May 24, 2020","title":"Seventh Sunday of Easter","subtitle":"Ascension of the Lord","link":"https://drive.google.com/file/d/1xXDcSi5gSVP-l5_UNgCCjzQWVMDy8GgU/view","inserts":[]},{"date":"May 17, 2020","title":"Sixth Sunday of Easter","link":"https://drive.google.com/file/d/1K3LtvmcS3djkV1n43tCwYxuKgsy9GAuE/view","inserts":[]},{"date":"May 10, 2020","title":"Fifth Sunday of Easter","link":"https://drive.google.com/file/d/1MaDokA8qHKqvkdTPsu_XeCUJRacQj2Pn/view","inserts":[]},{"date":"May 3, 2020","title":"Fourth Sunday of Easter","link":"https://drive.google.com/file/d/1LD55jMZ3DgJXoJGY6XOi0i8WwUChDFtr/view","inserts":[]}],
+  "digests":["234af6603b5d810b9e3999c6e7832ab1","28a0b71c57ab1380fdd1d2b2f87c9ca5","010a49bd028f34daf40486f7b22851f2"],
+  "regularEventsErrors":[],"specialEventsErrors":[],"bulletinsErrors":[]
+}

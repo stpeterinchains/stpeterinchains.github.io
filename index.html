@@ -21,99 +21,6 @@ open_graph_description: >
   <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </section>
 
-<!-- BULLETINS -->
-
-{% assign bulletins       = site.data.generated-content.bulletins %}
-{% assign index-bulletins = site.data.index.bulletins %}
-
-<section id="index-bulletins">
-  <h1 id="index-bulletins-title">{{ index-bulletins.title }}</h1>
-  <div class="pure-g">
-    <ul class="index-bulletins-list">
-      {% for bulletin in bulletins limit:6 %}
-      <div class="index-bulletins-item-container pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
-        <li class="index-bulletins-item">
-          <h1 class="index-bulletins-item-date">
-            {% if forloop.first %}<span class="index-bulletins-item-date-latest">Latest</span>{% endif %}
-            <span class="index-bulletins-item-date-date">{{ bulletin.date }}</span>
-          </h1>
-          <h2 class="index-bulletins-item-title"><a href="{{ bulletin.link }}" target="_blank">{{ bulletin.title }}</a></h2>
-          {% if bulletin.inserts.size >= 1 %}<h3 class="index-bulletins-item-inserts">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</h3>{% endif %}
-          <ul class="index-bulletins-inserts-list">
-            {% for insert in bulletin.inserts %}
-            <li class="index-bulletins-inserts-item">
-              <h1 class="index-bulletins-inserts-item-title"><a href="{{ insert.link }}" target="_blank">{{ insert.title }}</a></h1>
-            </li>
-            {% endfor %}
-          </ul>
-        </li>
-      </div>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
-
-<!-- SCHEDULE -->
-
-{% assign schedule = site.data.schedule %}
-
-<section id="index-schedule">
-  <h1 id="index-schedule-title">{{ schedule.title }}</h1>
-  <div id="index-schedule-calendar">
-    {% assign earliest = site.time | date: '%Y-%m-%d' %}
-    {% assign daysForward = schedule.select.index.days_forward | times: 86400 %}
-    {% assign latest = earliest | date: '%s' | plus: daysForward | date: '%Y-%m-%d' %}
-    {% for diem in schedule.calendar %}
-    {% assign diemDate = diem.date | date: '%Y-%m-%d' %}
-    {% if earliest <= diemDate and diemDate <= latest %}
-    {% assign dayOfMonth = diem.date | date: '%d' %}
-    {% if dayOfMonth <= "07" %}
-      {% assign isFirstWeek = true %}
-    {% else %}
-      {% assign isFirstWeek = false %}
-    {% endif %}
-    {% if diem.specials %}
-      {% assign events = diem.recurring | concat: diem.specials | sort: 'ordinal' %}
-    {% else %}
-      {% assign events = diem.recurring | sort: 'ordinal' %}
-    {% endif %}
-    <ul class="index-schedule-diem-list" data-diem="{{ diem.date | date: '%Y%m%d' }}">
-      <li class="index-schedule-diem-item">
-        <h1 class="index-schedule-diem-day">
-          <span class="index-schedule-diem-dayofweek{% if diem.celebration %}-celebration{% endif %}">{{ diem.date | date: '%A' }}</span>
-          <span class="index-schedule-diem-formatteddate">{{ diem.date | date: '%B %-d, %Y' }}</span>
-          {% if diem.celebration %}<span class="index-schedule-diem-celebration" style="{% if diem.celebration.color %}color: {{ diem.celebration.color }}; {% endif %}{% if diem.celebration.bgcolor %}background-color: {{ diem.celebration.bgcolor }}{% endif %}">{{ diem.celebration.title }}</span>{% endif %}
-        </h1>
-        {% if diem.note %}<h2 class="index-schedule-diem-note">{{ diem.note }}</h2>{% endif %}
-        <ul class="index-schedule-event-list">
-          {% for event in events %}
-          {% unless diem.exclusions contains event.mnemonic %}
-          {% if event.reparatory != true or isFirstWeek == true %}
-          <li class="index-schedule-event-item">
-            {% if event.mnemonic %}{% assign event_class = 'index-schedule-event-recurring' %}{% else %}{% assign event_class = 'index-schedule-event-special' %}{% endif %}
-            <span class="index-schedule-event-title {{ event_class }}"{% if event.color %} style="color: {{ event.color }}"{% endif %}>{{ event.title }}</span>
-            <span class="index-schedule-event-time">{{ event.time }}</span>
-            {% if event.location %}<span class="index-schedule-event-location">{{ event.location }}</span>{% endif %}
-            {% if event.descriptive %}<div class="index-schedule-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
-          </li>
-          {% endif %}
-          {% endunless %}
-          {% endfor %}
-        </ul>
-      </li>
-    </ul>
-    {% endif %}
-    {% endfor %}
-  </div>
-  <div id="index-schedule-more">
-    <a href="{{ '/schedule.html' | relative_url }}">Full schedule</a>
-    <a href="{{ '/schedule.html' | relative_url | append: '#' | append: schedule.sections.past.anchor }}">Past events</a>
-  </div>
-</section>
-
-<script src="{{ 'schedule.js' | prepend: site.scripts_path | relative_url }}"></script>
-<script>trimIndexSchedule();</script>
-
 <!-- DONATE -->
 
 {% assign donate = site.data.index.donate %}
@@ -135,6 +42,103 @@ open_graph_description: >
     {% endfor %}
   </div>
   <div id="social-message">{{ social.message }}</div>
+</section>
+
+<!-- BULLETINS2 -->
+
+{% assign index-bulletins = site.data.index.bulletins %}
+{% assign bulletins       = site.data.generated-content.bulletins %}
+
+<section id="bulletins2">
+  <h1 id="bulletins2-title">{{ index-bulletins.title }}</h1>
+  <div class="pure-g">
+    <ul class="bulletins2-list">
+      {% for bulletin in bulletins limit:6 %}
+      <div class="bulletins2-item-container pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
+        <li class="bulletins2-item">
+          <h1 class="bulletins2-item-date">
+            {% if forloop.first %}<span class="bulletins2-item-date-latest">Latest</span>{% endif %}
+            <span class="bulletins2-item-date-date">{{ bulletin.date }}</span>
+          </h1>
+          <h2 class="bulletins2-item-title"><a href="{{ bulletin.link }}" target="_blank">{{ bulletin.title }}</a></h2>
+          {% if bulletin.inserts.size >= 1 %}<h3 class="bulletins2-item-inserts">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</h3>{% endif %}
+          <ul class="bulletins2-inserts-list">
+            {% for insert in bulletin.inserts %}
+            <li class="bulletins2-inserts-item">
+              <h1 class="bulletins2-inserts-item-title"><a href="{{ insert.link }}" target="_blank">{{ insert.title }}</a></h1>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- SCHEDULE2 -->
+
+{% assign index-schedule2 = site.data.index.schedule2 %}
+{% assign regular-events  = site.data.generated-content.regularEvents %}
+{% assign special-events  = site.data.generated-content.specialEvents %}
+
+<section id="schedule2">
+  <div class="pure-g">
+    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
+      <h1 class="schedule2-title">{{ index-schedule2.regular }}</h1>
+      <ul class="schedule2-events">
+        {% for event in regular-events %}
+        <li class="schedule2-event">
+          {% if event.color %}
+          {% capture color %}color: {{ event.color }}{% endcapture %}
+          {% else %}
+          {% assign color = "" %}
+          {% endif %}
+          <h1 class="schedule2-event-title" style="{{ color }}">{{ event.title }}</h1>
+          {% if event.subtitle %}<h2 class="schedule2-event-subtitle" style="{{ color }}">{{ event.subtitle }}</h2>{% endif %}
+          {% if event.location %}<h3 class="schedule2-event-location">{{ event.location }}</h3>{% endif %}
+          {% if event.times.size >= 1 %}
+          <ul class="schedule2-times">
+            {% for time in event.times %}
+            <li class="schedule2-time">
+              <span class="schedule2-time-day">{{ time.day }}</span>
+              <span class="schedule2-time-time">{{ time.time }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if event.descriptive %}<div class="schedule2-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
+      <h1 class="schedule2-title">{{ index-schedule2.special }}</h1>
+      <ul class="schedule2-events">
+        {% for event in special-events %}
+        <li class="schedule2-event">
+          {% if event.color %}
+          {% capture color %}color: {{ event.color }}{% endcapture %}
+          {% else %}
+          {% assign color = "" %}
+          {% endif %}
+          <h1 class="schedule2-event-title" style="{{ color }}">{{ event.title }}</h1>
+          {% if event.subtitle %}<h2 class="schedule2-event-subtitle" style="{{ color }}">{{ event.subtitle }}</h2>{% endif %}
+          {% if event.location %}<h3 class="schedule2-event-location">{{ event.location }}</h3>{% endif %}
+          <ul class="schedule2-times">
+            {% for time in event.times %}
+            <li class="schedule2-time">
+              <span class="schedule2-time-day">{{ time.day }}</span>
+              <span class="schedule2-time-time">{{ time.time }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+          {% if event.descriptive %}<div class="schedule2-event-descriptive markdown">{{ event.descriptive | markdownify }}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>
 
 <!-- TWITTER -->
@@ -172,12 +176,3 @@ open_graph_description: >
     {% endfor %}
   </div>
 </section>
-
-<!-- FORMED -->
-
-{% assign access_code = site.data.index.formed_access_code %}
-
-<a id="formed" target="_blank" href="https://formed.org/">
-  <img src="{{ 'formed-logo.png' | prepend: site.images_path | relative_url }}">
-  <div>Parishioners register on the site using Access&nbsp;Code&nbsp;<strong>{{ access_code }}</strong></div>
-</a>

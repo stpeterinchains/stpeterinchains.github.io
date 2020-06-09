@@ -6,6 +6,10 @@ video:
 bulletins:
   title: Bulletins
 
+schedule2:
+  regular: Regular schedule
+  special: Special events
+
 donate:
   button_text: Please Donate
 

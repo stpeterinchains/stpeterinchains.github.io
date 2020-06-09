@@ -31,13 +31,13 @@ navbar:
         mnemonic: index
         url: /
       -
-        title: Schedule
-        mnemonic: schedule
-        url: /schedule.html
-      -
         title: Bulletins
         mnemonic: bulletins
-        url: /bulletins.html
+        url: "#bulletins2"
+      -
+        title: Schedule
+        mnemonic: schedule
+        url: "#schedule2"
       -
         title: Clergy
         mnemonic: clergy
