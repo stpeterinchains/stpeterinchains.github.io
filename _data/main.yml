@@ -31,6 +31,10 @@ navbar:
         mnemonic: index
         url: /
       -
+        title: Announcements
+        mnemonic: announcements
+        url: "#announcements"
+      -
         title: Bulletins
         mnemonic: bulletins
         url: "#bulletins2"
