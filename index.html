@@ -44,6 +44,35 @@ open_graph_description: >
   <div id="social-message">{{ social.message }}</div>
 </section>
 
+<!-- ANNOUNCEMENTS -->
+
+{% assign index-announcements = site.data.index.announcements %}
+{% assign announcements       = site.data.generated-content.announcements %}
+
+{% if announcements.size >= 1 %}
+<section id="announcements">
+  <h1 id="announcements-title">{{ index-announcements.title }}</h1>
+  <div class="pure-g">
+    <ul class="announcements-list">
+      {% for announcement in announcements limit:8 %}
+      <div class="announcements-item-container pure-u-1 pure-u-lg-1-2">
+        <li class="announcements-item">
+          {% if announcement.color %}
+          {% capture color %}color: {{ announcement.color }}{% endcapture %}
+          {% else %}
+          {% assign color = "" %}
+          {% endif %}
+          <h1 class="announcements-item-title" style="{{ color }}">{{ announcement.title }}</h1>
+          {% if announcement.subtitle %}<h2 class="announcements-item-subtitle" style="{{ color }}">{{ announcement.subtitle }}</h2>{% endif %}
+          {% if announcement.descriptive %}<div class="announcements-item-descriptive markdown">{{ announcement.descriptive | markdownify }}</div>{% endif %}
+        </li>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
 <!-- BULLETINS2 -->
 
 {% assign index-bulletins = site.data.index.bulletins %}

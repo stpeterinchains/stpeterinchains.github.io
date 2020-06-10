@@ -1,15 +1,26 @@
 {
-  "regularEvents": [
+  "announcements": [
     {
-      "title":"COVID-19",
-      "times":[],
-      "descriptive":"Regularly scheduled events are cancelled until further notice.\n\nVisit the\n[Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)\nwebsite for the latest updates.\n"
+      "title": "Discerning Our Future",
+      "subtitle" : "Planning for the Next Five to Ten Years",
+      "descriptive": "As church closures come to an end in Ontario,\nThe Cathedral is seeking your input on our future.\nPlease tell us how we can best serve you,\nour parishioners.\n\nWe invite you to complete a short survey.\nYour responses will be crucial in helping us plan for the years ahead.\n\n[Take the survey...](https://forms.gle/Cod2ub2cf7g5rgzN9)\n"
     },
     {
-      "title":"Catholic Video Content",
-      "location":"Available on YouTube",
-      "times":[],
-      "descriptive":"\n\nThe\n[Diocese of Peterborough channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)\non YouTube features the weekly Sunday Mass celebrated by\nBishop Daniel Miehm, as well as other inspirational content from around\nthe Diocese.\n\n\nThe\n[Cogeco YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)\non YouTube also features the weekly Sunday Mass, along with\nother Peterborough area content.\n"
+      "title": "Join our mailing list",
+      "descriptive": "Be the first to know!\nStay in the loop with everything going on at The Cathedral.\n\nSign up to receive regular updates, announcements, links to bulletins, and more, delivered straight to your inbox!\n\nLet's stay connected.\n\n[Sign up...](https://mailchi.mp/ac8e8cadb5e8/dont-miss-out)\n"
+    }
+  ],
+  "regularEvents": [
+    {
+      "title": "COVID-19",
+      "times": [],
+      "descriptive": "Regularly scheduled events are cancelled until further notice.\n\nVisit the\n[Diocese of Peterborough](https://www.peterboroughdiocese.org/en/index.aspx)\nwebsite for the latest updates.\n"
+    },
+    {
+      "title": "Catholic Video Content",
+      "location": "Available on YouTube",
+      "times": [],
+      "descriptive": "\n\nThe\n[Diocese of Peterborough channel](https://www.youtube.com/channel/UC_Cd0rFPwUxMtMRhS_UtCxg/videos)\non YouTube features the weekly Sunday Mass celebrated by\nBishop Daniel Miehm, as well as other inspirational content from around\nthe Diocese.\n\n\nThe\n[Cogeco YourTV channel](https://www.youtube.com/channel/UCwtRHLhr6gUGaVt_5gG7Ynw/videos)\non YouTube also features the weekly Sunday Mass, along with\nother Peterborough area content.\n"
     }
   ],
   "specialEvents":[
@@ -35,6 +46,6 @@
     }
   ],
   "bulletins":[{"date":"June 7, 2020","title":"Solemnity of the Most Holy Trinity","link":"https://drive.google.com/file/d/1JA1V5-pkJUvJqFV6407XjUzCfpfUtH5O/view","inserts":[]},{"date":"May 31, 2020","title":"Eighth Sunday of Easter","subtitle":"Feast of Pentecost","link":"https://drive.google.com/file/d/1Odu4Ku-sZcLc5JOJ81wWiKdvEptzuH2u/view","inserts":[]},{"date":"May 24, 2020","title":"Seventh Sunday of Easter","subtitle":"Ascension of the Lord","link":"https://drive.google.com/file/d/1xXDcSi5gSVP-l5_UNgCCjzQWVMDy8GgU/view","inserts":[]},{"date":"May 17, 2020","title":"Sixth Sunday of Easter","link":"https://drive.google.com/file/d/1K3LtvmcS3djkV1n43tCwYxuKgsy9GAuE/view","inserts":[]},{"date":"May 10, 2020","title":"Fifth Sunday of Easter","link":"https://drive.google.com/file/d/1MaDokA8qHKqvkdTPsu_XeCUJRacQj2Pn/view","inserts":[]},{"date":"May 3, 2020","title":"Fourth Sunday of Easter","link":"https://drive.google.com/file/d/1LD55jMZ3DgJXoJGY6XOi0i8WwUChDFtr/view","inserts":[]}],
-  "digests":["234af6603b5d810b9e3999c6e7832ab1","28a0b71c57ab1380fdd1d2b2f87c9ca5","010a49bd028f34daf40486f7b22851f2"],
+  "digests":["","234af6603b5d810b9e3999c6e7832ab1","28a0b71c57ab1380fdd1d2b2f87c9ca5","010a49bd028f34daf40486f7b22851f2"],
   "regularEventsErrors":[],"specialEventsErrors":[],"bulletinsErrors":[]
 }

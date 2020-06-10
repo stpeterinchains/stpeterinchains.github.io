@@ -64,6 +64,43 @@
 }
 
 
+/* SECTION: ANNOUNCEMENTS */
+
+#announcements { margin: 0 5% 3rem 5%; text-align: center; }
+
+#announcements-title {
+  margin: 0; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
+  font-weight: 400; font-size: 1.1rem;
+  color: #333;
+}
+
+ul.announcements-list { margin: 0; padding: 0; list-style: none; }
+
+li.announcements-item { margin-top: 1rem; padding: 0.5rem 0; }
+li.announcements-item:hover { background-color: #f3f7f9; }
+
+h1.announcements-item-title {
+  margin: 0;
+  font-weight: 600; font-size: 1.1rem;
+  color: #333;
+}
+
+h2.announcements-item-subtitle {
+  margin: 0;
+  font-weight: 400; font-size: 1rem;
+  color: #333;
+}
+
+div.announcements-item-descriptive { margin-top: 1rem; }
+
+@media screen and (min-width: 64rem) {
+  div.announcements-item-container { box-sizing: border-box; }
+  div.announcements-item-container:nth-of-type(odd) { padding-right: 1%; }
+  div.announcements-item-container:nth-of-type(even) { padding-left: 1%; }
+}
+
+
 /* SECTION: BULLETINS2 */
 
 #bulletins2 { margin: 0 5% 3rem 5%; text-align: center; }
@@ -77,7 +114,7 @@
 
 ul.bulletins2-list { margin: 0; padding: 0; list-style: none; }
 
-li.bulletins2-item { margin-top: 1.5rem; }
+li.bulletins2-item { margin-top: 1.5rem; padding: 0.75rem 0 0.5rem 0; }
 li.bulletins2-item:hover { background-color: #f3f7f9; }
 
 h1.bulletins2-item-date {
@@ -144,7 +181,7 @@ h1.schedule2-title {
 
 ul.schedule2-events { margin: 0; padding: 0; list-style: none; }
 
-li.schedule2-event { margin-top: 1.5rem; }
+li.schedule2-event { margin-top: 1.5rem; padding: 0.5rem 0; }
 li.schedule2-event:first-of-type { margin-top: 1rem; }
 li.schedule2-event:hover { background-color: #f3f7f9; }
 
@@ -183,7 +220,7 @@ span.schedule2-time-time { padding-left: 0.25rem; font-weight: 300; }
 div.schedule2-event-descriptive { margin-top: 1rem; font-size: 0.8rem; }
 
 @media screen and (min-width: 64rem) {
-  div.schedule2-container { box-sizing: border-box; text-align: center; }
+  div.schedule2-container { box-sizing: border-box; }
   div.schedule2-container:first-of-type { padding-right: 1%; }
   div.schedule2-container:last-of-type { padding-left: 1%; }
 }
@@ -358,7 +395,7 @@ div.ministries-ministry-image > img,
 h1.ministries-ministry-text-title {
   margin: 0 0 0.5rem 0;
   border-bottom: 2px solid #eee;
-  font-weight: 400; font-size: 0.9rem;
+  font-weight: 600; font-size: 0.9rem;
   color: #333;
 }
 
