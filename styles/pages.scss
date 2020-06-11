@@ -77,8 +77,7 @@
 
 ul.announcements-list { margin: 0; padding: 0; list-style: none; }
 
-li.announcements-item { margin-top: 1rem; padding: 0.5rem 0; }
-li.announcements-item:hover { background-color: #f3f7f9; }
+li.announcements-item { margin-top: 1rem; }
 
 h1.announcements-item-title {
   margin: 0;
@@ -114,8 +113,7 @@ div.announcements-item-descriptive { margin-top: 1rem; }
 
 ul.bulletins2-list { margin: 0; padding: 0; list-style: none; }
 
-li.bulletins2-item { margin-top: 1.5rem; padding: 0.75rem 0 0.5rem 0; }
-li.bulletins2-item:hover { background-color: #f3f7f9; }
+li.bulletins2-item { margin-top: 1.5rem; }
 
 h1.bulletins2-item-date {
   margin: 0;
@@ -181,9 +179,8 @@ h1.schedule2-title {
 
 ul.schedule2-events { margin: 0; padding: 0; list-style: none; }
 
-li.schedule2-event { margin-top: 1.5rem; padding: 0.5rem 0; }
+li.schedule2-event { margin-top: 1.5rem; }
 li.schedule2-event:first-of-type { margin-top: 1rem; }
-li.schedule2-event:hover { background-color: #f3f7f9; }
 
 h1.schedule2-event-title {
   margin: 0;
