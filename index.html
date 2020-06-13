@@ -13,12 +13,19 @@ open_graph_description: >
   Join our loving faith community today!
 ---
 
-<!-- VIDEO -->
+<!-- VIDEOS -->
 
-{% assign video = site.data.index.video %}
+{% assign videos = site.data.generated-content.videos %}
 
-<section id="video">
-  <iframe src="https://www.youtube.com/embed/{{ video.id }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+<section id="videos">
+  {% for video in videos %}
+  <div class="videos-container">
+    <iframe class="videos-frame" src="https://www.youtube.com/embed/{{ video.youtube }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    {% if video.title %}<h1 class="videos-title">{{ video.title }}</h1>{% endif %}
+    {% if video.subtitle %}<h2 class="videos-subtitle">{{ video.subtitle }}</h2>{% endif %}
+    {% if video.descriptive %}<div class="videos-descriptive markdown">{{ video.descriptive | markdownify }}</div>{% endif %}
+  </div>
+  {% endfor %}
 </section>
 
 <!-- DONATE -->

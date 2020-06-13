@@ -6,22 +6,42 @@
 /*** PAGE: INDEX ***/
 
 
-/* SECTION: VIDEO */
+/* SECTION: VIDEOS */
 
-#video { margin-bottom: 3rem; text-align: center; }
+#videos { /* margin-bottom: 3rem; */ text-align: center; }
 
-#video > iframe { width: 280px; height: 157px; box-shadow: -4px 4px 6px #666; }
+div.videos-container { margin-bottom: 3rem; }
+// div.videos-container:first-of-type { margin-top: 0; }
+
+iframe.videos-frame {
+  display: block;
+  margin: 0 auto;
+  box-shadow: -4px 4px 6px #666;
+  width: 280px; height: 157px;
+}
+
+h1.videos-title {
+  margin: 1rem 0 0 0;
+  font-weight: 600; font-size: 1.1rem;
+  color: #333;
+}
+
+h2.videos-subtitle {
+  margin: 0;
+  font-weight: 400; font-size: 1rem;
+  color: #333;
+}
 
 @media screen and (min-width: 35.5rem) {
-  #video > iframe { width: 360px; height: 203px; }
+  iframe.videos-frame { width: 360px; height: 203px; }
 }
 
 @media screen and (min-width: 48rem) {
-  #video > iframe { width: 480px; height: 270px; }
+  iframe.videos-frame { width: 480px; height: 270px; }
 }
 
 @media screen and (min-width: 64rem) {
-  #video > iframe { width: 560px; height: 315px; }
+  iframe.videos-frame { width: 560px; height: 315px; }
 }
 
 
