@@ -216,7 +216,7 @@ h2.schedule2-event-subtitle {
 
 h3.schedule2-event-location {
   margin: 0;
-  font-weight: 300; font-size: 0.8rem;
+  font-weight: 400; font-size: 0.8rem;
   color: #393;
 }
 
@@ -225,14 +225,16 @@ ul.schedule2-times { margin: 0; padding: 0; list-style: none; }
 li.schedule2-time { margin-top: 1.25rem; font-size: 0.9rem; color: #333; }
 li.schedule2-time:first-of-type { margin-top: 1rem; }
 
-span.schedule2-time-day {
-  padding: 0.25rem 0.75rem;
+div.schedule2-time-day {}
+
+div.schedule2-time-day > span {
+  padding: 0.2rem 0.75rem;
   border-radius: 11px;
   background-color: #eee;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-span.schedule2-time-time { padding-left: 0.25rem; font-weight: 300; }
+div.schedule2-time-time { margin-top: 0.35rem; font-weight: 300; }
 
 div.schedule2-event-descriptive { margin-top: 1rem; font-size: 0.8rem; }
 

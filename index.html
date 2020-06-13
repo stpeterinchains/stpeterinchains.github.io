@@ -137,8 +137,8 @@ open_graph_description: >
           <ul class="schedule2-times">
             {% for time in event.times %}
             <li class="schedule2-time">
-              <span class="schedule2-time-day">{{ time.day }}</span>
-              <span class="schedule2-time-time">{{ time.time }}</span>
+              <div class="schedule2-time-day"><span>{{ time.day }}</span></div>
+              <div class="schedule2-time-time">{{ time.time }}</div>
             </li>
             {% endfor %}
           </ul>
@@ -164,8 +164,8 @@ open_graph_description: >
           <ul class="schedule2-times">
             {% for time in event.times %}
             <li class="schedule2-time">
-              <span class="schedule2-time-day">{{ time.day }}</span>
-              <span class="schedule2-time-time">{{ time.time }}</span>
+              <div class="schedule2-time-day"><span>{{ time.day }}</span></div>
+              <div class="schedule2-time-time">{{ time.time }}</div>
             </li>
             {% endfor %}
           </ul>
