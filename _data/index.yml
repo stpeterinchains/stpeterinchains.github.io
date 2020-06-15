@@ -14,7 +14,7 @@ donate:
   button_text: Please Donate
 
 social:
-  message: Join us on social media<s>, and in&nbsp;the&nbsp;real&nbsp;world</s>
+  message: Join us on social media, and <strong>in&nbsp;the&nbsp;real&nbsp;world</strong>
   profiles:
     -
       title: Cathedral of Saint Peter-in-Chains on Twitter

@@ -13,21 +13,6 @@ open_graph_description: >
   Join our loving faith community today!
 ---
 
-<!-- VIDEOS -->
-
-{% assign videos = site.data.generated-content.videos %}
-
-<section id="videos">
-  {% for video in videos %}
-  <div class="videos-container">
-    <iframe class="videos-frame" src="https://www.youtube.com/embed/{{ video.youtube }}{% if video.offset %}?start={{ video.offset }}{% endif %}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-    {% if video.title %}<h1 class="videos-title">{{ video.title }}</h1>{% endif %}
-    {% if video.subtitle %}<h2 class="videos-subtitle">{{ video.subtitle }}</h2>{% endif %}
-    {% if video.descriptive %}<div class="videos-descriptive markdown">{{ video.descriptive | markdownify }}</div>{% endif %}
-  </div>
-  {% endfor %}
-</section>
-
 <!-- DONATE -->
 
 {% assign donate = site.data.index.donate %}
@@ -93,8 +78,8 @@ open_graph_description: >
       <div class="bulletins2-item-container pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
         <li class="bulletins2-item">
           <h1 class="bulletins2-item-date">
-            {% if forloop.first %}<span class="bulletins2-item-date-latest">Latest</span>{% endif %}
             <span class="bulletins2-item-date-date">{{ bulletin.date }}</span>
+            {% if forloop.first %}<span class="bulletins2-item-date-latest">Latest</span>{% endif %}
           </h1>
           <h2 class="bulletins2-item-title"><a href="{{ bulletin.link }}" target="_blank">{{ bulletin.title }}</a></h2>
           {% if bulletin.inserts.size >= 1 %}<h3 class="bulletins2-item-inserts">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</h3>{% endif %}
