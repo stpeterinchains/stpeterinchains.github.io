@@ -56,6 +56,7 @@ open_graph_description: >
           {% endif %}
           <h1 class="announcements-item-title" style="{{ color }}">{{ announcement.title }}</h1>
           {% if announcement.subtitle %}<h2 class="announcements-item-subtitle" style="{{ color }}">{{ announcement.subtitle }}</h2>{% endif %}
+          {% if announcement.youtube %}<iframe class="announcements-video" src="https://www.youtube.com/embed/{{ announcement.youtube }}" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>{% endif %}
           {% if announcement.descriptive %}<div class="announcements-item-descriptive markdown">{{ announcement.descriptive | markdownify }}</div>{% endif %}
         </li>
       </div>

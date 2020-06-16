@@ -44,16 +44,17 @@
 
 /* SECTION: ANNOUNCEMENTS */
 
-#announcements { margin: 0 1% 5rem 1%; }
+#announcements { margin: 0 1% 3rem 1%; }
 
 #announcements-title {
-  margin: 0;
+  margin: 0 0 1rem 0; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
   font-weight: 300; font-size: 1.1rem;
   color: #666;
 }
 
 ul.announcements-list { margin: 0; padding: 0; list-style: none; }
-li.announcements-item { margin-top: 2rem; }
+li.announcements-item { margin-bottom: 2rem; }
 
 h1.announcements-item-title {
   margin: 0;
@@ -63,6 +64,11 @@ h1.announcements-item-title {
 h2.announcements-item-subtitle {
   margin: 0;
   font-weight: 400; font-size: 1rem;
+}
+
+iframe.announcements-video {
+  margin-top: 1rem;
+  box-shadow: -4px 4px 6px #666;
 }
 
 div.announcements-item-descriptive { margin-top: 1rem; }
@@ -83,7 +89,8 @@ div.announcements-item-descriptive a,
 #bulletins2 { margin: 0 1% 5rem 1%; }
 
 #bulletins2-title {
-  margin: 0;
+  margin: 0; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
   font-weight: 300; font-size: 1.1rem;
   color: #666;
 }
@@ -144,13 +151,15 @@ h1.bulletins2-inserts-item-title > a:hover { color: skyblue; }
 div.schedule2-container { margin-bottom: 5rem; }
 
 h1.schedule2-title {
-  margin: 0;
+  margin: 0 0 1rem 0; padding-bottom: 0.25rem;
+  border-bottom: 2px solid #eee;
   font-weight: 300; font-size: 1.1rem;
   color: #666;
 }
 
 ul.schedule2-events { margin: 0; padding: 0; list-style: none; }
-li.schedule2-event { margin-top: 2rem; }
+li.schedule2-event { margin-bottom: 2rem; }
+li.schedule2-event:last-of-type { margin-bottom: 0; }
 
 h1.schedule2-event-title {
   margin: 0;
@@ -189,8 +198,8 @@ div.schedule2-event-descriptive a,
 
 @media screen and (min-width: 64rem) {
   div.schedule2-container { box-sizing: border-box; }
-  div.schedule2-container:first-of-type { padding-right: 0.5%; }
-  div.schedule2-container:last-of-type { padding-left: 0.5%; }
+  div.schedule2-container:first-of-type { padding-right: 1%; }
+  div.schedule2-container:last-of-type { padding-left: 1%; }
 }
 
 
