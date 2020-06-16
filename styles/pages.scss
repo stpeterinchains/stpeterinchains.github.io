@@ -44,29 +44,32 @@
 
 /* SECTION: ANNOUNCEMENTS */
 
-#announcements { margin: 0 1% 3rem 1%; }
+#announcements { margin: 0 1% 2rem 1%; }
 
 #announcements-title {
-  margin: 0 0 1rem 0; padding-bottom: 0.25rem;
-  border-bottom: 2px solid #eee;
-  font-weight: 300; font-size: 1.1rem;
-  color: #666;
+  display: none;
+  margin: 0 0 1rem 0;
+  font-weight: 300; font-size: 2rem; letter-spacing: -0.05rem;
+  color: #ccc;
 }
 
 ul.announcements-list { margin: 0; padding: 0; list-style: none; }
-li.announcements-item { margin-bottom: 2rem; }
+li.announcements-item { margin-bottom: 3rem; }
 
 h1.announcements-item-title {
   margin: 0;
   font-weight: 400; font-size: 1.2rem;
+  font-weight: 300; font-size: 2rem; letter-spacing: -0.05rem;
 }
 
 h2.announcements-item-subtitle {
   margin: 0;
   font-weight: 400; font-size: 1rem;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.025rem;
 }
 
 iframe.announcements-video {
+  width: 240px; height: 135px;
   margin-top: 1rem;
   box-shadow: -4px 4px 6px #666;
 }
@@ -76,11 +79,18 @@ div.announcements-item-descriptive p { color: #666; font-size: 0.9rem; }
 div.announcements-item-descriptive a,
   div.announcements-item-descriptive strong { color: black; }
 
-
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 35.5rem) {
   div.announcements-item-container { box-sizing: border-box; }
   div.announcements-item-container:nth-of-type(odd) { padding-right: 1%; }
   div.announcements-item-container:nth-of-type(even) { padding-left: 1%; }
+}
+
+@media screen and (min-width: 64rem) {
+  iframe.announcements-video { width: 360px; height: 203px; }
+}
+
+@media screen and (min-width: 80rem) {
+  iframe.announcements-video { width: 480px; height: 270px; }
 }
 
 
@@ -89,10 +99,9 @@ div.announcements-item-descriptive a,
 #bulletins2 { margin: 0 1% 5rem 1%; }
 
 #bulletins2-title {
-  margin: 0; padding-bottom: 0.25rem;
-  border-bottom: 2px solid #eee;
-  font-weight: 300; font-size: 1.1rem;
-  color: #666;
+  margin: 0;
+  font-weight: 300; font-size: 2rem; letter-spacing: -0.05rem;
+  color: #999;
 }
 
 ul.bulletins2-list { margin: 0; padding: 0; list-style: none; }
@@ -151,10 +160,9 @@ h1.bulletins2-inserts-item-title > a:hover { color: skyblue; }
 div.schedule2-container { margin-bottom: 5rem; }
 
 h1.schedule2-title {
-  margin: 0 0 1rem 0; padding-bottom: 0.25rem;
-  border-bottom: 2px solid #eee;
-  font-weight: 300; font-size: 1.1rem;
-  color: #666;
+  margin: 0 0 1rem 0;
+  font-weight: 300; font-size: 2rem; letter-spacing: -0.05rem;
+  color: #999;
 }
 
 ul.schedule2-events { margin: 0; padding: 0; list-style: none; }
