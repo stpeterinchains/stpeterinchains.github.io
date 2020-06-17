@@ -9,9 +9,15 @@ bulletins:
 schedule2:
   regular: Regular schedule
   special: Special events
+  empty: >
+    &#x1F622; Boohoo. Nothing here.
 
 donate:
   button_text: Please Donate
+  text_to_give:
+    title: Text to Give
+    number: 855-937-0501
+    logo: tithely-logo.png
 
 social:
   message: Join us on social media, and <strong>in&nbsp;the&nbsp;real&nbsp;world</strong>

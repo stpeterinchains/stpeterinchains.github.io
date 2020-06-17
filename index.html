@@ -21,6 +21,10 @@ open_graph_description: >
   <button class="tithely-donate-btn" style="background-color: #00DB72;font-family: inherit;font-weight: bold;font-size: 19px; padding: 15px 70px; border-radius: 4px; cursor: pointer; background-image: none; color: white; text-shadow: none; display: inline-block; float: none; border: none;" data-church-id="1097756">{{ donate.button_text }}</button>
   <script src="https://tithe.ly/widget/v3/give.js?3"></script>
   <script>var tw = create_tithely_widget();</script>
+  <div id="donate-text">
+    <h1 id="donate-text-title">{{ donate.text_to_give.title }}<img id="donate-text-logos" src="{{ donate.text_to_give.logo | prepend: site.giving_images_path | relative_url }}"></h1>
+    <h2 id="donate-text-number">&#x1F4F1;{{ donate.text_to_give.number }}</h2>
+  </div>
 </section>
 
 <!-- SOCIAL MEDIA & MAP -->
@@ -106,9 +110,9 @@ open_graph_description: >
 
 <section id="schedule2">
   <div class="pure-g">
-    {% if regular-events.size > 0 %}
-    {% if special-events.size > 0 %}<div class="schedule2-container pure-u-1 pure-u-lg-1-2">{% else %}<div class="schedule2-container pure-u-1">{% endif %}
+    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
       <h1 class="schedule2-title">{{ index-schedule2.regular }}</h1>
+      {% if regular-events.size > 0 %}
       <ul class="schedule2-events">
         {% for event in regular-events %}
         <li class="schedule2-event">
@@ -134,11 +138,13 @@ open_graph_description: >
         </li>
         {% endfor %}
       </ul>
+      {% else %}
+      <p class="schedule2-empty">{{ index-schedule2.empty }}</p>
+      {% endif %}
     </div>
-    {% endif %}
-    {% if special-events.size > 0 %}
-    {% if regular-events.size > 0 %}<div class="schedule2-container pure-u-1 pure-u-lg-1-2">{% else %}<div class="schedule2-container pure-u-1">{% endif %}
+    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
       <h1 class="schedule2-title">{{ index-schedule2.special }}</h1>
+      {% if special-events.size > 0 %}
       <ul class="schedule2-events">
         {% for event in special-events %}
         <li class="schedule2-event">
@@ -162,8 +168,10 @@ open_graph_description: >
         </li>
         {% endfor %}
       </ul>
+      {% else %}
+      <p class="schedule2-empty">{{ index-schedule2.empty }}</p>
+      {% endif %}
     </div>
-    {% endif %}
   </div>
 </section>
 

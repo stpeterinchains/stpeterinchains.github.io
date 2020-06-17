@@ -144,10 +144,10 @@ div.markdown td { font-weight: 300; }
 }
 
 @media screen and (min-width: 48rem) {
-  /* #slideshow-banner {
+  #slideshow-banner {
     position: absolute; z-index: 1; width: 100%;
     background: linear-gradient(to bottom, rgba(0,0,0,255), rgba(0,0,0,0));
-  } */
+  }
 
   #slideshow-banner-heading-diocese > img { height: 48px; }
   #slideshow-banner-heading-donate { top: 16px; right: 1.5rem; }

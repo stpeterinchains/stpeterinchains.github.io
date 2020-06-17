@@ -10,6 +10,26 @@
 
 #donate { margin-bottom: 3rem; text-align: center; }
 
+#donate-text {
+  margin-top: 1rem;
+  line-height: 2rem; letter-spacing: -0.05rem;
+  color: #333;
+}
+
+#donate-text-title {
+  margin: 0;
+  font-weight: 300; font-size: 1.5rem;
+}
+
+#donate-text-number {
+  margin: 0;
+  font-weight: 600; font-size: 2.5rem;
+}
+
+#donate-text-logos {
+  margin-left: 0.25rem; height: 1.1rem; vertical-align: middle;
+}
+
 
 /* SECTION: SOCIAL MEDIA & MAP */
 
@@ -187,6 +207,12 @@ h3.schedule2-event-location {
 
 ul.schedule2-times { margin: 0; padding: 0; list-style: none; }
 li.schedule2-time { margin-top: 1rem; font-size: 0.9rem; color: #333; }
+
+p.schedule2-empty {
+  margin: 0;
+  font-weight: 400; font-size: 1.2rem;
+  color: #ccc;
+}
 
 div.schedule2-time-day {}
 
