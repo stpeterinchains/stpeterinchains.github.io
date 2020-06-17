@@ -106,7 +106,8 @@ open_graph_description: >
 
 <section id="schedule2">
   <div class="pure-g">
-    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
+    {% if regular-events.size > 0 %}
+    {% if special-events.size > 0 %}<div class="schedule2-container pure-u-1 pure-u-lg-1-2">{% else %}<div class="schedule2-container pure-u-1">{% endif %}
       <h1 class="schedule2-title">{{ index-schedule2.regular }}</h1>
       <ul class="schedule2-events">
         {% for event in regular-events %}
@@ -134,7 +135,9 @@ open_graph_description: >
         {% endfor %}
       </ul>
     </div>
-    <div class="schedule2-container pure-u-1 pure-u-lg-1-2">
+    {% endif %}
+    {% if special-events.size > 0 %}
+    {% if regular-events.size > 0 %}<div class="schedule2-container pure-u-1 pure-u-lg-1-2">{% else %}<div class="schedule2-container pure-u-1">{% endif %}
       <h1 class="schedule2-title">{{ index-schedule2.special }}</h1>
       <ul class="schedule2-events">
         {% for event in special-events %}
@@ -160,6 +163,7 @@ open_graph_description: >
         {% endfor %}
       </ul>
     </div>
+    {% endif %}
   </div>
 </section>
 
