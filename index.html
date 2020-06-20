@@ -23,7 +23,8 @@ open_graph_description: >
   <script>var tw = create_tithely_widget();</script>
   <div id="donate-text">
     <h1 id="donate-text-title">{{ donate.text_to_give.title }}<img id="donate-text-logos" src="{{ donate.text_to_give.logo | prepend: site.giving_images_path | relative_url }}"></h1>
-    <h2 id="donate-text-number">&#x1F4F1;{{ donate.text_to_give.number }}</h2>
+    <h2 id="donate-text-number">{{ donate.text_to_give.number }}</h2>
+    <h3 id="donate-text-start" class="markdown">{{ donate.text_to_give.start | markdownify }}</h3>
   </div>
 </section>
 

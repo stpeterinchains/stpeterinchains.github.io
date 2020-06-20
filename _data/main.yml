@@ -34,15 +34,27 @@ navbar:
       -
         title: Announcements
         mnemonic: announcements
-        url: "#announcements"
+        url: "/#announcements"
       -
         title: Bulletins
         mnemonic: bulletins
-        url: "#bulletins2"
+        url: "/#bulletins2"
       -
         title: Schedule
         mnemonic: schedule
-        url: "#schedule2"
+        url: "/#schedule2"
+      -
+        title: Twitter/@cathedralstpet
+        mnemonic: twitter
+        url: "/#twitter"
+      -
+        title: About Us
+        mnemonic: aboutus
+        url: "/#exposition"
+      -
+        title: Contact
+        mnemonic: contact
+        url: "/#contact"
       -
         title: Clergy
         mnemonic: clergy
@@ -80,7 +92,7 @@ navbar:
     title: Institutions
     links:
       -
-        title: Peterborough Diocese
+        title: Diocese of Peterborough
         url: https://www.peterboroughdiocese.org/en/index.aspx
       -
         title: Peterborough Vocations

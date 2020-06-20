@@ -12,8 +12,7 @@
 
 #donate-text {
   margin-top: 1rem;
-  line-height: 2rem; letter-spacing: -0.05rem;
-  color: #333;
+  letter-spacing: -0.05rem;
 }
 
 #donate-text-title {
@@ -21,14 +20,27 @@
   font-weight: 300; font-size: 1.5rem;
 }
 
-#donate-text-number {
-  margin: 0;
-  font-weight: 600; font-size: 2.5rem;
-}
-
 #donate-text-logos {
   margin-left: 0.25rem; height: 1.1rem; vertical-align: middle;
 }
+
+#donate-text-number {
+  margin: 0;
+  font-weight: 600; font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+#donate-text-number a { text-decoration: none; color: black; }
+
+#donate-text-start {
+  margin: 0;
+  line-height: normal; letter-spacing: normal;
+  font-weight: 300; font-size: 0.9rem;
+  line-height: 1rem;
+  color: #666;
+}
+
+#donate-text-start strong { color: black; }
 
 
 /* SECTION: SOCIAL MEDIA & MAP */
@@ -578,8 +590,8 @@ div.giving-descriptive > p {
 #giving-online > button { margin-top: 1rem; }
 
 #giving-text > div em {
-  font-weight: 600; font-size: 1.5rem; font-style: normal; letter-spacing: 0.05rem;
-  color: #363;
+  font-weight: 600; font-size: 1.5rem; font-style: normal;
+  letter-spacing: 0.05rem;
 }
 
 #giving-apps-stores { margin-top: 1rem; }

@@ -17,6 +17,8 @@ donate:
   text_to_give:
     title: Text to Give
     number: 855-937-0501
+    start: >
+      Get started: Text the word **give**
     logo: tithely-logo.png
 
 social:
