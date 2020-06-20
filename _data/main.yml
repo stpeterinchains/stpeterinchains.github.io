@@ -44,7 +44,7 @@ navbar:
         mnemonic: schedule
         url: "/#schedule2"
       -
-        title: Twitter/@cathedralstpet
+        title: "@cathedralstpet"
         mnemonic: twitter
         url: "/#twitter"
       -
