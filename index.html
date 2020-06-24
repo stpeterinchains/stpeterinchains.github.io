@@ -87,7 +87,10 @@ open_graph_description: >
             <span class="bulletins2-item-date-date">{{ bulletin.date }}</span>
             {% if forloop.first %}<span class="bulletins2-item-date-latest">Latest</span>{% endif %}
           </h1>
-          <h2 class="bulletins2-item-title"><a href="{{ bulletin.link }}" target="_blank">{{ bulletin.title }}</a></h2>
+          <a class="bulletins2-item-link" href="{{ bulletin.link }}" target="_blank">
+            <h2 class="bulletins2-item-title">{{ bulletin.title }}</h2>
+            <h3 class="bulletins2-item-subtitle">{{ bulletin.subtitle }}</h3>
+          </a>
           {% if bulletin.inserts.size >= 1 %}<h3 class="bulletins2-item-inserts">Insert{% if bulletin.inserts.size > 1 %}s{% endif %}</h3>{% endif %}
           <ul class="bulletins2-inserts-list">
             {% for insert in bulletin.inserts %}

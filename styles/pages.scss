@@ -156,16 +156,27 @@ span.bulletins2-item-date-date {
   background-color: #eee;
 }
 
+a.bulletins2-item-link {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+a.bulletins2-item-link:hover { color: skyblue; }
+
 h2.bulletins2-item-title {
   margin: 0.5rem 0 0 0;
   font-weight: 300; font-size: 1rem;
 }
 
-div.bulletins2-item-container:first-of-type h1.bulletins2-item-date { font-weight: 400; }
-div.bulletins2-item-container:first-of-type h2.bulletins2-item-title { font-weight: 400; }
+h3.bulletins2-item-subtitle {
+  margin: 0;
+  font-weight: 300; font-size: 0.9rem;
+}
 
-h2.bulletins2-item-title > a { text-decoration: none; color: black; }
-h2.bulletins2-item-title > a:hover { color: skyblue; }
+div.bulletins2-item-container:first-of-type h1.bulletins2-item-date,
+  div.bulletins2-item-container:first-of-type h2.bulletins2-item-title,
+  div.bulletins2-item-container:first-of-type h3.bulletins2-item-subtitle { font-weight: 400; }
 
 h3.bulletins2-item-inserts {
   margin: 0.5rem 0 0 0;
