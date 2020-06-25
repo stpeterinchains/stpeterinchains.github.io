@@ -33,7 +33,7 @@ The Cathedral website employs tweets, timelines, and collections on Twitter to s
 In addition to [@cathedralstpet](https://twitter.com/cathedralstpet), The Cathedral's Twitter timeline, we define four purpose-specific collections:
 
 Title          | Collection
------          | ----------
+:----          | :---------
 Announcements  | https://twitter.com/cathedralstpet/timelines/1270455700167307267
 Bulletins      | https://twitter.com/cathedralstpet/timelines/1253031034083520512
 Regular Events | https://twitter.com/cathedralstpet/timelines/1253030938398859265
@@ -109,7 +109,7 @@ Announcements are intended to express something presently noteworthy in the life
 Note that items scheduled to occur on a specific date and time are better suited as regular or special events. Those should be in the Regular Events or Special Events collection instead.
 
 Field       | Key     | Required | Markdown | Value type
------       | ---     | -------- | -------- | ----------
+:----       | :--     | :------- | :------- | :---------
 Title       | title   | Yes      | No       | Single-line text
 Subtitle    | sub     | No       | No       | Single-line text
 Color       | color   | No       | No       | Web color
@@ -245,7 +245,7 @@ desc: |
 ```
 
 
-## Regular Events and Special Event
+## Regular Events and Special Events
 
 https://twitter.com/cathedralstpet/timelines/1253030938398859265
 https://twitter.com/cathedralstpet/timelines/1253030671557308420
@@ -253,7 +253,7 @@ https://twitter.com/cathedralstpet/timelines/1253030671557308420
 Events represent scheduled occassions in the life of the parish. Events are divided into two general classifications, regular and special. Regular events are intended for signature faith events which typically occur predictably on a weekly or monthly basis. These include Holy Mass, confessions, and devotions. Special events are irregular or unique events, such as socials or specially scheduled faith events. Regular events are scheduled according to a day (or days) of the week, while special events are scheduled with a full calendar date.
 
 Field       | Key   | Required | Markdown | Value type
------       | ---   | -------- | -------- | ----------
+:----       | :--   | :------- | :------- | :---------
 Title       | title | Yes      | No       | Single-line text
 Subtitle    | sub   | No       | No       | Single-line text
 Color       | color | No       | No       | Web color
@@ -336,7 +336,7 @@ desc: |
 Tweets intended for the Bulletins collection represent the weekly bulletin entries that appear on the home page. The maximum number of bulletin entries displayed on the home page is six, ordered from most to least recent. Care should be taken to arrange tweets in the Bulletins collection in this order. Only the first six tweets are used. For aesthetics, it is recommended to keep at least six in the collection, and to delete superfluous tweets on a regular basis.
 
 Field        | Key     | Required | Markdown | Value type
------        | ---     | -------- | -------- | ----------
+:----        | :--     | :------- | :------- | :---------
 Date         | date    | Yes      | No       | Date; see below
 Title        | title   | Yes      | No       | Single-line text
 Subtitle     | sub     | No       | No       | Single-line text
