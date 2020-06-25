@@ -1,12 +1,14 @@
 # The Website of the Cathedral of Saint Peter-in-Chains
 
-This repository contains the Jekyll source for the website of The Cathedral of Saint Peter-in-Chains, an historic church located in Peterborough, Ontario. This document outlines some of the technical details behind the website, which is hosted on GitHub Pages, and is intended as a primer of sorts on the technologies involved. Its intended audience is primarily office or clerical staff interested in making content changes to the site, but also anyone curious as to some of the design and implementation details.
+This repository contains the Jekyll source for the website of The Cathedral of Saint Peter-in-Chains, an historic church located in Peterborough, Ontario. This document outlines some of the technical details behind the website and is intended as a primer of sorts on the chosen technology stack. Its intended audience is primarily office or clerical staff interested in making content changes to the site, but also anyone curious as to some of the design and implementation details.
 
-There are many advantages to static sites, but the various technical prerequisites for operating a static site, though straightforward for those with technical skills, proved to be barriers to non-technical staff needing to update the site's content. With no desire on my part to adopt a server-based CMS for the church site, I saw the need to engineer a workaround of sorts to offer some level of interactivity for staff. To that end, I recently upgraded the site to employ Twitter as a user interface and backing store for content appearing on the home page of the site. The other part of the solution is a periodic background Google Cloud Function that scans for 'special' tweets containing content to be committed as source changes to the repository. It's all kind of kludgy, by no means a 'perfect' solution, but it fills the usability gap, and the church gets to retain free web hosting so graciously provided by GitHub Pages.
+There are many advantages to static sites, but the various technical prerequisites for operating a static site, though straightforward for those with technical skills, have proven to be barriers to non-technical staff needing to update content. With no desire on my part to adopt a server-based CMS, I saw the need to engineer a workaround to offer some level of interactivity for staff. To that end, I recently implemented a 'solution' which employs Twitter as a user interface and backing store, and a Google Cloud Function which scans some Twitter collections we created for tweets containing content to be committed as source changes to the site repository.
+
+It's all kind of kludgy, by no means a 'perfect' solution, but it fills the usability gap, and the church gets to retain free web hosting so graciously provided by GitHub Pages.
 
 For the cloud function, see https://github.com/stpeterinchains/refresh.
 
-**TL;DR** — Scroll down to Reference for info on the YAML document structures expected in the four Twitter collections.
+**TL;DR** — Scroll down to [Reference](#reference) for info on the YAML document structures expected in the four Twitter collections.
 
 
 ## General Architecture
@@ -17,7 +19,7 @@ The term *static site* does not mean that pages are static—as in unchanging. I
 
 The *source files* for The Cathedral website live in a **git** *repository* on **GitHub**. Git is a popular *version control system* used by software developers, and GitHub is a popular social media website based on Git dedicated to software development. GitHub Pages is a web hosting service dedicated to static sites operated by GitHub. A repository is a place where files and directories belonging to a project are stored. Version control is a system that manages changes to a project over time. In the case of The Cathedral website, when changes to any of its source files are committed to the repository on GitHub, GitHub Pages automatically re-generates the files that comprise what's presented to visitors.
 
-This technology stack was chosen for, among other reason, its advantages in hosting costs and versatility. However, the principal trade-off is the technical prerequisites needed to manage and make changes to the site. To bridge this gap, we use **Twitter** along with a periodic *background function* running on **Google Cloud Platform**.
+This technology stack was chosen for, among other reason, its advantages in hosting costs and versatility. However, the principal trade-off is the technical prerequisites needed to manage and make changes to the site. To bridge this gap, we use **Twitter** along with a periodic background *cloud function* running on **Google Cloud Platform**.
 
 
 ## Twitter and Google Cloud Platform
@@ -30,8 +32,8 @@ The Cathedral website employs tweets, timelines, and collections on Twitter to s
 
 In addition to [@cathedralstpet](https://twitter.com/cathedralstpet), The Cathedral's Twitter timeline, we define four purpose-specific collections:
 
-Title          | Link
------          | ----
+Title          | Collection
+-----          | ----------
 Announcements  | https://twitter.com/cathedralstpet/timelines/1270455700167307267
 Bulletins      | https://twitter.com/cathedralstpet/timelines/1253031034083520512
 Regular Events | https://twitter.com/cathedralstpet/timelines/1253030938398859265
@@ -39,7 +41,7 @@ Special Events | https://twitter.com/cathedralstpet/timelines/125303067155730842
 
 These collections correspond to sections on the [home page](https://stpeterspeterborough.ca). By writing tweets in a specific way (covered below) and adding those tweets to the appropriate collection, we can update content in those sections without touching the website's source code.
 
-The tweets described above do not, by themselves, change the website. A *cloud function* running on Google Cloud Platform periodically checks the collections for changes. When changes are detected, the function processes the tweets and makes a commit (a change) to the repository holding the site's source code. This triggers the site re-generation process, after which the changes go live for visitors.
+The tweets described above do not, by themselves, change the website. A cloud function running on Google Cloud Platform periodically checks the collections for changes. When changes are detected (by computing a hash on each collection), the function processes the tweets and makes a commit (a change) to the repository holding the site's source code. This triggers the site re-generation process, after which the changes go live for visitors to see.
 
 
 ## Structured text: YAML and Markdown
@@ -131,114 +133,114 @@ For announcements needing long descriptive text, continuations are used. See the
 #### An announcement
 
 ```
-# Announcement↩︎
-title: Some Wonderful Announcement↩︎
-sub: The Best Announcement Ever!↩︎
-color: red↩︎
-desc: |↩︎
-  Get your shiny, fabulous, all-you-can eat whatsits,↩︎
-  on sale today!↩︎
-↩︎
-  And remember:↩︎
-  When your only tool is a hammer, every problem↩︎
-  looks like a nail.↩︎
+# Announcement
+title: Some Wonderful Announcement
+sub: The Best Announcement Ever!
+color: red
+desc: |
+  Get your shiny, fabulous, all-you-can eat whatsits,
+  on sale today!
+
+  And remember:
+  When your only tool is a hammer, every problem
+  looks like a nail.
   —Abraham Maslow
 ```
 
 #### An announcement with only a title and descriptive text
 
 ```
-# Announcement↩︎
+# Announcement
 title: One Simple Announcement
-desc: |↩︎
-  No subtitle. No color override. No embedded video.↩︎
+desc: |
+  No subtitle. No color override. No embedded video.
   Just a single paragraph of descriptive text.
 ```
 
 #### An announcement with only a title
 
 ```
-# Announcement↩︎
+# Announcement
 title: Attention! Look up!
 ```
 
 #### An announcement with an embedded YouTube video
 
 ```
-# Announcement↩︎
-title: Vertical Video Syndrome↩︎
-youtube: f2picMQC-9E↩︎
-desc: |↩︎
+# Announcement
+title: Vertical Video Syndrome
+youtube: f2picMQC-9E
+desc: |
   Just say no to vertical videos.
 ```
 
 #### An announcement featuring bold and italics in the descriptive
 
 ```
-# Announcement↩︎
-title: Some Wonderful Announcement↩︎
-desc: |↩︎
-  Express *emphasis* with italics.↩︎
-↩︎
+# Announcement
+title: Some Wonderful Announcement
+desc: |
+  Express *emphasis* with italics.
+
   Make a **strong** statement using bold.
 ```
 
 #### An announcement with a hyperlink in the descriptive
 
 ```
-# Announcement↩︎
-title: Some Wonderful Announcement↩︎
-desc: |↩︎
-  Everyone loves attending↩︎
-  [The Cathedral](https://stpeterspeterborough.ca/),↩︎
-  the best church in town!↩︎
-↩︎
-  Tip: It looks better and can help with controlling line length↩︎
-  to place hyperlink syntax on a line of its own.↩︎
+# Announcement
+title: Some Wonderful Announcement
+desc: |
+  Everyone loves attending
+  [The Cathedral](https://stpeterspeterborough.ca/),
+  the best church in town!
+
+  Tip: It looks better and can help with controlling line length
+  to place hyperlink syntax on a line of its own.
 ```
 
 #### An announcement with continuations
 
 ```
-# Announcement↩︎
+# Announcement
 title: An Information-Filled Announcement
 ```
 
 ```
-# Announcement continued↩︎
-desc: |↩︎
-  This is an announcement whose descriptive is provided by more↩︎
-  than one continuation. This is the first continuation tweet,↩︎
-  immediately following the primary tweet in its collection.↩︎
+# Announcement continued
+desc: |
+  This is an announcement whose descriptive is provided by more
+  than one continuation. This is the first continuation tweet,
+  immediately following the primary tweet in its collection.
   This is the first paragraph of the announcement.
 ```
 
 ```
-# Announcement continued↩︎
-desc: |↩︎
-  This second continuation follows the first, both of which↩︎
-  are attached to the primary tweet above.↩︎
-↩︎
-  It also contains the third and fourth paragraphs.↩︎
-  There's always an implicit paragraph separation between↩︎
+# Announcement continued
+desc: |
+  This second continuation follows the first, both of which
+  are attached to the primary tweet above.
+
+  It also contains the third and fourth paragraphs.
+  There's always an implicit paragraph separation between
   the first and second continuations.
 ```
 
 ```
-# Announcement continued↩︎
-desc: |↩︎
-  As a reminder, a single newline character in YAML merely↩︎
-  ends the current line. You can insert explicit newlines↩︎
+# Announcement continued
+desc: |
+  As a reminder, a single newline character in YAML merely
+  ends the current line. You can insert explicit newlines
   anywhere, to write clean, short lines for each paragraph.
 ```
 
 ```
-# Announcement continued↩︎
-desc: |↩︎
-  When parsed by a Markdown interpreter or when rendered in↩︎
-  a web browser, newlines are turned into inline whitespace.↩︎
-↩︎
-  One exception: Double newline characters↩︎
+# Announcement continued
+desc: |
+  When parsed by a Markdown interpreter or when rendered in
+  a web browser, newlines are turned into inline whitespace.
+
+  One exception: Double newline characters
   in Markdown mean an explicit paragraph separation.
 ```
 
@@ -282,49 +284,49 @@ For events needing long descriptive text, continuations are used. See the discus
 #### A regular event, with descriptive text in a continuation
 
 ```
-# Event↩︎
-title: Weekday Mass↩︎
-color: "#933"↩︎
-loc: Cathedral↩︎
-times:↩︎
-  - day: Monday-Friday↩︎
-    time: 7:30 AM, 12:10 PM↩︎
-  - day: Saturday↩︎
+# Event
+title: Weekday Mass
+color: "#933"
+loc: Cathedral
+times:
+  - day: Monday-Friday
+    time: 7:30 AM, 12:10 PM
+  - day: Saturday
     time: 9:00 AM
 ```
 
 ```
-# Event continued↩︎
-desc: |↩︎
-  For parishioners who begin or punctuate↩︎
-  their day in faith and praise.↩︎
-↩︎
-  Parishioners are asked to review↩︎
-  [Worship Safe in Pictures and Points](https://...)↩︎
+# Event continued
+desc: |
+  For parishioners who begin or punctuate
+  their day in faith and praise.
+
+  Parishioners are asked to review
+  [Worship Safe in Pictures and Points](https://...)
   during this time of re-opening.
 ```
 
 #### A special event, with descriptive text in a continuation
 
 ```
-# Event↩︎
-title: Sunday Mass↩︎
-sub: 12th Sunday in Ordinary Time↩︎
-color: "#933"↩︎
-loc: Cogeco, YouTube↩︎
-times:↩︎
-  - day: June 21, 2020↩︎
+# Event
+title: Sunday Mass
+sub: 12th Sunday in Ordinary Time
+color: "#933"
+loc: Cogeco, YouTube
+times:
+  - day: June 21, 2020
     time: 11:30 AM, 6:00 PM
 ```
 
 ```
-# Event continued↩︎
-desc: |↩︎
-  Celebrated at The Cathedral by Bishop Daniel Miehm,↩︎
-  this very special Mass↩︎
-  airs on **Channel 10 and 700** on Cogeco Cable and↩︎
-  will be available on YouTube.↩︎
-↩︎
+# Event continued
+desc: |
+  Celebrated at The Cathedral by Bishop Daniel Miehm,
+  this very special Mass
+  airs on **Channel 10 and 700** on Cogeco Cable and
+  will be available on YouTube.
+
   [View this Mass on YouTube...](https://youtu.be/dneww9vZh5g)
 ```
 
@@ -349,7 +351,7 @@ Note that bulletins, unlike announcements and events, have no descriptive text a
 
 The **Date** field specifies the full calendar date (e.g., June 21, 2020) of the bulletin, typically identifying a Sunday. No specific format is defined for how dates are written, but one should be adopted and applied consistently.
 
-Both the **Title** and **Subtitle** fields are single-line text values. Note that single-line text fields do not support Markdown. It is recommended to entitle bulletins by the ordinal of a given Sunday within a season of the liturgical year, as in *Fourth Sunday in Lent* or *Eighth Sunday of Easter*. Use the subtitle for solemnities, when applicable, as in *Feast of Corpus Christi* or *Feast of Pentecost*.
+Both the **Title** and **Subtitle** fields are single-line text values. Note that single-line text fields do not support Markdown. It is recommended to entitle bulletins with the ordinal within the respective season of the liturgical year, as in *Fourth Sunday in Lent* or *Eighth Sunday of Easter*, and use the subtitle for the solemnity when one occurs, as in *Feast of Corpus Christi* or *Feast of Pentecost*. Alternatively, write the solemnity as the title where the ordinal and season are not specified, and omit the subtitle.
 
 The top-level **Link** field specifies the absolute URL of the bulletin resource. This is typically a PDF stored on Google Drive. Care should be taken to get a shareable link from Google Drive, as in the form shown in the examples below.
 
