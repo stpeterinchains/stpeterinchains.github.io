@@ -1,0 +1,21 @@
+---
+
+title: Twitter Collection Errors
+
+groups:
+  - announcementsErrors
+  - bulletinsErrors
+  - regularEventsErrors
+  - specialEventsErrors
+
+collections:
+  - Announcements
+  - Bulletins
+  - Regular Events
+  - Special Events
+
+collectionIds:
+  - "1270455700167307267"
+  - "1253031034083520512"
+  - "1253030671557308420"
+  - "1253030938398859265"

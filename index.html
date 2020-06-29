@@ -52,7 +52,7 @@ open_graph_description: >
   <div class="pure-g">
     <ul class="announcements-list">
       {% for announcement in announcements limit:8 %}
-      <div class="announcements-item-container pure-u-1 pure-u-sm-1-2">
+      <div class="announcements-item-container pure-u-1 pure-u-lg-1-2">
         <li class="announcements-item">
           {% if announcement.color %}
           {% capture color %}color: {{ announcement.color }}{% endcapture %}

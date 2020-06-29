@@ -1,0 +1,47 @@
+---
+mnemonic: errors
+layout: main
+display_title: Cathedral of Saint Peter-in-Chains - Errors
+open_graph_title: >
+  Twitter errors for the website of
+  The Cathedral of Saint Peter-in-Chains
+  Roman Catholic Parish
+  in Peterborough, Ontario
+open_graph_description: >
+  When a tweet in one of our Twitter collections generates an error,
+  it appears here.
+---
+
+{% assign errors  = site.data.errors %}
+{% assign content = site.data.generated-content %}
+
+<section id="errors" class="page-container">
+  <h1 class="page-title">{{ errors.title }}</h1>
+  <div class="page-descriptive markdown">{{ errors.descriptive | markdownify }}</div>
+  {% for errorGroup in errors.groups %}
+  <div class="errors-group-increment">{% increment index %}</div>
+  {% assign groupIndex = index | minus: 1 %}
+  <section class="errors-group">
+    <h1 class="errors-group-title"><a class="errors-group-link" href="https://twitter.com/cathedralstpet/timelines/{{ errors.collectionIds[groupIndex] }}" target="_blank">{{ errors.collections[groupIndex] }} collection</a></h1>
+    {% for error in content[errorGroup] %}
+    {% capture tweetLink %}https://twitter.com/cathedralstpet/status/{{ error.tweetId }}{% endcapture %}
+    <dl class="errors-tweet">
+      <dt>Tweet</dt>
+      <dd><a href="{{ tweetLink }}">{{ tweetLink }}</a></dd>
+      <dt>Error</dt>
+      <dd>{{ error.error }}</dd>
+      <dt>Type</dt>
+      <dd>{{ error.type }}</dd>
+      <dt>Reason</dt>
+      <dd>{{ error.reason }}</dd>
+      {% if error.mark %}
+      <dt>Mark</dt>
+      <dd><pre>{{ error.mark }}</pre></dd>
+      {% endif %}
+    </dl>
+    {% else %}
+    <p class="errors-none">Nothing wrong here. Good job!</p>
+    {% endfor %}
+  </section>
+  {% endfor %}
+</section>

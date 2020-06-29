@@ -239,6 +239,18 @@ span.slideshow-indicator {
   transition: background-color 0.25s ease;
 }
 
+#slideshow-errors {
+  display: inline-block;
+  width: 0.75rem; height: 0.75rem;
+  margin-left: 8px;
+  font-weight: 600;
+
+  // background-color: #c33;
+}
+
+#slideshow-errors > a { text-decoration: none; color: #c33; }
+#slideshow-errors > a:hover { color: skyblue; }
+
 span.slideshow-indicator:hover, #slideshow-pause:hover { background-color: black; }
 span.slideshow-indicator-active { background-color: #666; }
 span.slideshow-pause-inactive { background-color: #ccc; }

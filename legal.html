@@ -16,9 +16,9 @@ open_graph_description: >
 <section id="legal" class="page-container">
   <h1 class="page-title">{{ legal.title }}</h1>
   {% for declaration in legal.declarations %}
-    <section>
-      <h1 class="legal-title">{{ declaration.title }}</h1>
-      <div class="legal-statement markdown">{{ declaration.statement | markdownify }}</div>
-    </section>
+  <section>
+    <h1 class="legal-title">{{ declaration.title }}</h1>
+    <div class="legal-statement markdown">{{ declaration.statement | markdownify }}</div>
+  </section>
   {% endfor %}
 </section>

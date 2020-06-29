@@ -45,8 +45,14 @@
 
 {% if page.mnemonic == 'index' %}
 
-{% assign banner = site.data.main.banner %}
-{% assign slideshow = site.data.main.slideshow %}
+{% assign banner                 = site.data.main.banner %}
+{% assign slideshow              = site.data.main.slideshow %}
+{% assign generatedContent       = site.data.generated-content %}
+{% assign generatedContentErrors =
+    generatedContent.announcementsErrors.size |
+      plus: generatedContent.regularEventsErrors.size |
+      plus: generatedContent.specialEventsErrors.size |
+      plus: generatedContent.bulletinsErrors.size %}
 
 <div id="slideshow">
   <div id="slideshow-banner">
@@ -78,6 +84,7 @@
     <span class="slideshow-indicator" onclick="slideshow.set({% increment slide_index %})"></span>
     {% endfor %}
     <span id="slideshow-pause" class="slideshow-pause-inactive" onclick="slideshow.pause()"></span>
+    {% if generatedContentErrors > 0 %}<span id="slideshow-errors"><a href="/errors.html" target="_blank">!</a></span>{% endif %}
   </div>
 </div>
 
