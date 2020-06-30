@@ -44,10 +44,6 @@ navbar:
         mnemonic: schedule
         url: "/#schedule2"
       -
-        title: "@cathedralstpet"
-        mnemonic: twitter
-        url: "/#twitter"
-      -
         title: About Us
         mnemonic: aboutus
         url: "/#exposition"
