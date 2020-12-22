@@ -26,11 +26,6 @@ ministries:
       joining the choir or becoming a cantor!
     image: music.jpg
     contacts:
-      -
-        name: Claudio Engli
-        title: Music Director
-        phone: 705-740-1284
-        email: engbar2@gmail.com
 
   -
     title: Ministry of Lectors
@@ -83,22 +78,6 @@ ministries:
         email: billradigan@peterboroughdiocese.org
 
   -
-    title: Youth Ministry
-    anchor: youth
-    descriptive: |
-      The Cathedral is a thriving family, of young and old. For our many
-      young people, from childhood to young adult, the Youth Ministry is here
-      to engage.
-
-      For information, please get in touch with Jacob, our Youth Director.
-    image:
-    contacts:
-      -
-        name: Fr Roy Villas
-        title: Youth Director
-        email: frroyvillas@peterboroughdiocese.org
-
-  -
     title: EMHC
     anchor: emhc
     descriptive: |
@@ -140,10 +119,10 @@ ministries:
     image: cwl.jpg
     contacts:
       -
-        name: Merina Csercsics
+        name: Colleen Allen
         title: President
-        email: heneratha@gmail.com
-        phone: 705-559-7698
+        email: cmtallen@cogeco.ca
+        phone: 705-741-3023
 
   -
     title: Legion of Mary

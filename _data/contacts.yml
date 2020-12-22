@@ -7,10 +7,10 @@
         items:
           - item: Most Rev Daniel Miehm, Pastor
           - item: Fr Thomas Lynch, Rector
-          - item: Fr Innocent Umezika (SMMM), Associate Pastor
           - item: Fr Joshy George (CMI), Associate Pastor
+          - item: Fr Michael Nneji, Associate Pastor
+          - item: Fr Peter Selvaraj, Associate Pastor
           - item: Dn Bill Radigan, Permanent Deacon
-          - item: Fr Clair Hickson, Resident Priest
           - item: Fr Andrew Begin, Chaplain of Seniors
       - subsection: Office
         items:
@@ -22,9 +22,7 @@
             mail: office@stpeterspeterborough.ca
           - item: Hours
             text: |
-              Office temporarily closed during COVID-19&nbsp;lockdown.<br>
-              Regular hours:<br>
-              Monday&nbsp;to&nbsp;Thursday: 9:00&nbsp;AM-5:00&nbsp;PM<br>
+              Monday&nbsp;to&nbsp;Thursday: 9:00&nbsp;AM-2:00&nbsp;PM<br>
               Friday,&nbsp;Saturday,&nbsp;Sunday: Closed<br>
           - item: Physical address
             text: |
@@ -36,10 +34,12 @@
               PO Box 175<br>
               Peterborough, ON<br>
               K9J 6Y8
-      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising&nbsp;Committee
+      - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Fundraising&nbsp;Project
         items:
+          - item: Manager
+            text: Mary Catherine O'Neill
           - item: E-mail
-            mail: payitforwardspic@gmail.com
+            mail: projectmgr@stpeterspeterborough.ca
       - subsection: Saint&nbsp;Peter&#x2011;in&#x2011;Chains Perpetual&nbsp;Fund
         items:
           - item: President

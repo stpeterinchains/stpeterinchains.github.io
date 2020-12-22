@@ -52,20 +52,29 @@ clergy:
         link: https://www.youtube.com/user/PriestsForLifeCanada/videos
 
   -
-    last_name: Umezika, SMMM
-    first_name: Innocent
-    title: Father
-    position: Associate Pastor
-    image: fr-umezika-portrait.jpg
-    bio:
-    contact:
-
-  -
     last_name: George, CMI
     first_name: Joshy
     title: Father
     position: Associate Pastor
-    image:
+    image: fr-george-portrait.jpg
+    bio:
+    contact:
+
+  -
+    last_name: Nneji
+    first_name: Michael
+    title: Father
+    position: Associate Pastor
+    image: fr-nneji-portrait.jpg
+    bio:
+    contact:
+
+  -
+    last_name: Selvaraj
+    first_name: Peter
+    title: Father
+    position: Associate Pastor
+    image: fr-selvaraj-portrait.jpg
     bio:
     contact:
 
