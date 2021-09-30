@@ -1,3 +1,11 @@
+# Deprecation Notice
+
+This source was live from May 2018 through August 2021.
+
+Kept for posterity.
+
+
+
 # The Cathedral of Saint Peter-in-Chains
 
 This repository contains the Jekyll source for the website of [The Cathedral of Saint Peter-in-Chains](https://stpeterspeterborough.ca/), an historic church located in Peterborough, Ontario. This document outlines some of the technical details behind the website and is intended as a primer of sorts on the chosen technology stack. Its intended audience is primarily office or clerical staff interested in making content changes to the site, but also anyone curious as to some of the design and implementation details.
